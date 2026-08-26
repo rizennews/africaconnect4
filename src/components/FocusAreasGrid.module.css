@@ -21,11 +21,15 @@
   color: #fff;
   padding: 3rem;
   border-right: 1px solid #ddd;
+  display: flex;
+  flex-direction: column;
 }
 
 .card2 {
   flex: 6;
   padding: 3rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .bottomRow {
@@ -36,6 +40,8 @@
   flex: 1;
   padding: 3rem;
   border-right: 1px solid #ddd;
+  display: flex;
+  flex-direction: column;
 }
 
 .card5 {
@@ -85,6 +91,7 @@
   line-height: 1.6;
   color: var(--color-gray);
   margin-bottom: 2rem;
+  flex-grow: 1;
 }
 
 .card1 .description {

@@ -1,0 +1,140 @@
+.footer {
+  background-color: var(--color-primary-dark);
+  color: var(--color-light-gray);
+  padding: 6rem 2rem 2rem;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.topSection {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 4rem;
+  padding-bottom: 4rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  margin-bottom: 2rem;
+}
+
+.companyInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.description {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.8);
+  max-width: 400px;
+}
+
+.address {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.6);
+  line-height: 1.6;
+  font-style: normal;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.contact {
+  font-size: 0.9rem;
+  color: var(--color-light-gray);
+  margin-top: 0.5rem;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.columnTitle {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.link {
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.link:hover {
+  color: var(--color-primary-orange);
+}
+
+.socialLinks {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.socialIcon {
+  color: var(--color-light-gray);
+  transition: color 0.2s, transform 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.05);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.socialIcon:hover {
+  color: #fff;
+  background-color: var(--color-primary-orange);
+  transform: translateY(-3px);
+}
+
+.bottomSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.bottomLinks {
+  display: flex;
+  gap: 2rem;
+}
+
+@media (max-width: 1024px) {
+  .topSection {
+    grid-template-columns: 1fr 1fr;
+    row-gap: 3rem;
+    column-gap: 2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .topSection {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  
+  .bottomSection {
+    flex-direction: column-reverse;
+    gap: 1.5rem;
+    text-align: center;
+  }
+  
+  .bottomLinks {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}

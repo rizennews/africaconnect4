@@ -1,0 +1,83 @@
+.section {
+  padding: 4rem 2rem;
+  background-color: var(--color-light-gray);
+  border-top: 1px solid #ddd;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4rem;
+}
+
+.leftContent {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  flex: 1;
+}
+
+.logoWrapper {
+  flex-shrink: 0;
+  width: 140px;
+}
+
+.textContent {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.fundedBy {
+  font-size: 0.85rem;
+  color: var(--color-gray);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.fundingText {
+  font-size: 1.1rem;
+  color: var(--color-primary-dark);
+  font-weight: 500;
+  line-height: 1.5;
+  max-width: 500px;
+}
+
+.rightContent {
+  flex: 1;
+  max-width: 500px;
+  border-left: 2px solid #ddd;
+  padding-left: 2.5rem;
+}
+
+.disclaimerText {
+  font-size: 0.9rem;
+  color: var(--color-gray);
+  line-height: 1.6;
+}
+
+@media (max-width: 992px) {
+  .container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3rem;
+  }
+  
+  .leftContent {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+  }
+  
+  .rightContent {
+    border-left: none;
+    border-top: 2px solid #ddd;
+    padding-left: 0;
+    padding-top: 2rem;
+    max-width: 100%;
+  }
+}

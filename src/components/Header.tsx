@@ -9,27 +9,27 @@ const focusItems = [
   {
     title: 'Connectivity Expansion',
     desc: 'Growing regional network infrastructure',
-    href: 'https://wacren.net/en/africaconnect4/connectivity-expansion',
+    href: '/connectivity-expansion',
   },
   {
     title: 'Climate Data Infrastructure',
     desc: 'Data systems supporting climate resilience',
-    href: 'https://wacren.net/en/africaconnect4/climate-data-infrastructure',
+    href: '/climate-data-infrastructure',
   },
   {
     title: 'Women-In-STEM',
     desc: 'Advancing gender inclusion in technology',
-    href: 'https://wacren.net/en/africaconnect4/women-in-stem',
+    href: '/women-in-stem',
   },
   {
     title: 'Cybersecurity & Threat Intelligence',
     desc: 'Strengthening regional cyber resilience',
-    href: 'https://wacren.net/en/africaconnect4/cybersecurity-threat-intelligence',
+    href: '/cybersecurity-threat-intelligence',
   },
   {
     title: 'Capacity Building',
     desc: 'Training and institutional development',
-    href: 'https://wacren.net/en/africaconnect4/capacity-building',
+    href: '/capacity-building',
   },
 ];
 
@@ -37,12 +37,12 @@ const mediaItems = [
   {
     title: 'News',
     desc: 'Latest updates and announcements',
-    href: 'https://wacren.net/en/africaconnect4/news',
+    href: '/news',
   },
   {
     title: 'Publications',
     desc: 'Reports, briefs and research papers',
-    href: 'https://wacren.net/en/africaconnect4/publications',
+    href: '/publications',
   },
   {
     title: 'Gallery',
@@ -60,7 +60,7 @@ const topbarItems = [
   { title: 'AfricaConnect', href: 'https://africaconnect1.net/Pages/Home.html' },
   { title: 'AfricaConnect2', href: 'https://www.africaconnect2.net/' },
   { title: 'AfricaConnect3', href: '#' },
-  { title: 'Faq', href: '#' },
+  { title: 'Faq', href: '/faq' },
 ];
 
 const languages = [
@@ -164,7 +164,7 @@ export default function Header() {
               </div>
             </li>
             <li className={styles.navItem}>
-              <Link href="#" className={styles.navLink}>Activities</Link>
+              <Link href="/activities" className={styles.navLink}>Activities</Link>
             </li>
             <li className={styles.navItem}>
               <span className={styles.navLink}>
@@ -183,7 +183,7 @@ export default function Header() {
               </div>
             </li>
             <li className={styles.navItem}>
-              <Link href="#" className={styles.navLink}>Contact</Link>
+              <Link href="/contact" className={styles.navLink}>Contact</Link>
             </li>
           </ul>
         </nav>
@@ -222,7 +222,7 @@ export default function Header() {
             </div>
           </li>
           <li className={styles.mobileNavItem}>
-            <Link href="#" className={styles.mobileNavLink} onClick={toggleMobileMenu}>Activities</Link>
+            <Link href="/activities" className={styles.mobileNavLink} onClick={toggleMobileMenu}>Activities</Link>
           </li>
           <li className={styles.mobileNavItem}>
             <button className={styles.mobileNavLink} onClick={() => toggleMobileMega('media')}>
@@ -241,7 +241,7 @@ export default function Header() {
             </div>
           </li>
           <li className={styles.mobileNavItem}>
-            <Link href="#" className={styles.mobileNavLink} onClick={toggleMobileMenu}>Contact</Link>
+            <Link href="/contact" className={styles.mobileNavLink} onClick={toggleMobileMenu}>Contact</Link>
           </li>
         </ul>
 

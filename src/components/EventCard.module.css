@@ -1,0 +1,139 @@
+.card {
+  display: flex;
+  background: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(12, 25, 77, 0.05);
+  height: 100%;
+}
+
+.dateSidebar {
+  width: 100px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  padding: 2rem 1rem;
+}
+
+.upcoming .dateSidebar {
+  background-color: var(--color-primary-dark);
+}
+
+.past .dateSidebar {
+  background-color: #f0f0f1;
+  color: var(--color-primary-dark);
+}
+
+.day {
+  font-size: 2.5rem;
+  font-weight: 900;
+  line-height: 1;
+  margin-bottom: 0.25rem;
+}
+
+.month {
+  font-size: 0.9rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+.upcoming .month {
+  color: var(--color-primary-orange);
+}
+
+.past .month {
+  color: rgba(12, 25, 77, 0.5);
+}
+
+.year {
+  font-size: 0.85rem;
+  font-weight: 600;
+  opacity: 0.8;
+}
+
+.content {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.tags {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  align-items: center;
+}
+
+.statusTag {
+  font-size: 0.75rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+}
+
+.upcoming .statusTag {
+  background-color: rgba(250, 154, 13, 0.15);
+  color: var(--color-primary-orange);
+}
+
+.past .statusTag {
+  background-color: #f0f0f1;
+  color: rgba(12, 25, 77, 0.5);
+}
+
+.typeTag {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: rgba(12, 25, 77, 0.4);
+  letter-spacing: 0.05em;
+}
+
+.title {
+  color: var(--color-primary-dark);
+  font-size: 1.25rem;
+  font-weight: 800;
+  line-height: 1.3;
+  margin-bottom: 1rem;
+}
+
+.description {
+  color: rgba(12, 25, 77, 0.7);
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  flex-grow: 1;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.8rem;
+  color: rgba(12, 25, 77, 0.5);
+  font-weight: 600;
+}
+
+.upcoming .footer::before {
+  content: '';
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: var(--color-primary-orange);
+}
+
+.past .footer::before {
+  content: '';
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: rgba(12, 25, 77, 0.3);
+}

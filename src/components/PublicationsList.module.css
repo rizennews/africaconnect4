@@ -1,0 +1,246 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: var(--color-background);
+  font-family: 'Outfit', 'Inter', sans-serif;
+  color: var(--color-primary-dark);
+}
+
+.headerTitle {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: var(--color-primary-dark);
+}
+
+.searchBox {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  margin-bottom: 2rem;
+}
+
+.searchInput {
+  width: 100%;
+  padding: 0.8rem 1rem 0.8rem 2.5rem;
+  border-radius: 24px;
+  border: 1px solid rgba(12, 25, 77, 0.1);
+  background-color: rgba(12, 25, 77, 0.03);
+  color: var(--color-primary-dark);
+  font-size: 0.95rem;
+  outline: none;
+  font-family: inherit;
+  transition: border-color 0.2s, background-color 0.2s;
+}
+
+.searchInput:focus {
+  border-color: var(--color-primary-orange);
+  background-color: #fff;
+}
+
+.searchInput::placeholder {
+  color: rgba(12, 25, 77, 0.4);
+}
+
+.searchIcon {
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 18px;
+  height: 18px;
+  color: rgba(12, 25, 77, 0.5);
+}
+
+.sectionSubtitle {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  color: var(--color-primary-dark);
+}
+
+.sectionLabel {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: rgba(12, 25, 77, 0.5);
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* Folders */
+.foldersGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2.5rem;
+}
+
+.folderCard {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  border: 1px solid rgba(12, 25, 77, 0.1);
+  border-radius: 8px;
+  background-color: #fff;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  gap: 1rem;
+}
+
+.folderCard:hover {
+  border-color: rgba(12, 25, 77, 0.3);
+  box-shadow: 0 4px 12px rgba(12, 25, 77, 0.05);
+}
+
+.folderCard.active {
+  border-color: var(--color-primary-orange);
+  background-color: #fff;
+  box-shadow: 0 0 0 1px var(--color-primary-orange);
+}
+
+.folderIconBox {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  background-color: rgba(12, 25, 77, 0.05);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-primary-dark);
+  transition: all 0.2s ease;
+}
+
+.folderCard.active .folderIconBox {
+  background-color: var(--color-primary-orange);
+  color: var(--color-primary-dark);
+}
+
+.folderIconBox svg {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
+.folderInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.folderName {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--color-primary-dark);
+}
+
+.folderCount {
+  font-size: 0.75rem;
+  color: rgba(12, 25, 77, 0.6);
+  font-weight: 500;
+}
+
+/* Files Table */
+.tableContainer {
+  border: 1px solid rgba(12, 25, 77, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.tableHeader {
+  display: grid;
+  grid-template-columns: 3fr 1fr 100px 50px;
+  padding: 1rem 1.5rem;
+  background-color: rgba(12, 25, 77, 0.02);
+  border-bottom: 1px solid rgba(12, 25, 77, 0.1);
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: rgba(12, 25, 77, 0.6);
+  letter-spacing: 0.05em;
+}
+
+.tableRow {
+  display: grid;
+  grid-template-columns: 3fr 1fr 100px 50px;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  border-bottom: 1px solid rgba(12, 25, 77, 0.06);
+  font-size: 0.9rem;
+  color: var(--color-primary-dark);
+  transition: background-color 0.2s;
+}
+
+.tableRow:nth-child(even) {
+  background-color: rgba(12, 25, 77, 0.01);
+}
+
+.tableRow:hover {
+  background-color: rgba(12, 25, 77, 0.04);
+}
+
+.tableRow:last-child {
+  border-bottom: none;
+}
+
+.fileNameCol {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-weight: 600;
+}
+
+.fileIcon {
+  color: var(--color-primary-orange);
+  width: 18px;
+  height: 18px;
+}
+
+.fileDateCol {
+  color: rgba(12, 25, 77, 0.6);
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.fileSizeCol {
+  color: rgba(12, 25, 77, 0.6);
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.downloadBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  color: var(--color-primary-orange);
+  background-color: transparent;
+  transition: background-color 0.2s;
+  text-decoration: none;
+}
+
+.downloadBtn:hover {
+  background-color: rgba(250, 154, 13, 0.1);
+}
+
+.downloadBtn svg {
+  width: 18px;
+  height: 18px;
+}
+
+@media (max-width: 768px) {
+  .foldersGrid {
+    grid-template-columns: 1fr;
+  }
+  
+  .tableHeader, .tableRow {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+  
+  .fileDateCol, .fileSizeCol {
+    padding-left: 28px;
+  }
+}

@@ -1,16 +1,17 @@
 import PageHero from '@/components/PageHero';
+import PublicationsList from '@/components/PublicationsList';
 
 export default function Page() {
   return (
     <main>
       <PageHero 
-        title="Publications." 
-        description="Reports, briefs and research papers."
+        title="Publications & reports." 
+        description="Narrative reports, strategy documents, country fiches, impact reports and policy briefs from across AC4."
       />
       
-      <section style={{ padding: '6rem 2rem', minHeight: '50vh', backgroundColor: '#f0f0f1', textAlign: 'center', color: '#7d7c7d' }}>
-        <p>Content for Publications. coming soon...</p>
-      </section>
+      <div style={{ backgroundColor: '#f9f9fa', padding: '4rem 0' }}>
+        <PublicationsList />
+      </div>
     </main>
   );
 }

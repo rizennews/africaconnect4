@@ -1,0 +1,55 @@
+.section {
+  padding: 6rem 2rem;
+  background-color: var(--color-light-gray);
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+
+.leftColumn {
+  flex: 1;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 600;
+  color: var(--color-primary-dark);
+  line-height: 1.2;
+}
+
+.highlight {
+  color: var(--color-primary-orange);
+  font-style: italic;
+  font-weight: 500;
+}
+
+.rightColumn {
+  flex: 1;
+}
+
+.description {
+  font-size: 1.25rem;
+  line-height: 1.6;
+  color: var(--color-gray);
+}
+
+@media (max-width: 992px) {
+  .container {
+    flex-direction: column;
+    text-align: left;
+    gap: 2rem;
+  }
+  
+  .title {
+    font-size: 2.5rem;
+  }
+  
+  .description {
+    font-size: 1.15rem;
+  }
+}

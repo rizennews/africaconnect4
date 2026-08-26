@@ -1,0 +1,125 @@
+.heroSection {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4rem 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+  min-height: calc(100vh - 120px);
+  gap: 4rem;
+}
+
+.content {
+  flex: 1;
+  max-width: 600px;
+}
+
+.title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: var(--color-primary-dark);
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
+}
+
+.description {
+  font-size: 1.125rem;
+  color: var(--color-gray);
+  line-height: 1.6;
+  margin-bottom: 2.5rem;
+}
+
+.buttonGroup {
+  display: flex;
+  gap: 1rem;
+}
+
+.primaryButton {
+  display: inline-block;
+  background-color: var(--color-primary-orange);
+  color: #fff;
+  font-weight: 600;
+  padding: 0.875rem 2rem;
+  border-radius: 8px;
+  transition: background-color 0.2s, transform 0.2s;
+  border: 2px solid var(--color-primary-orange);
+}
+
+.primaryButton:hover {
+  background-color: var(--color-secondary-orange);
+  border-color: var(--color-secondary-orange);
+  transform: translateY(-2px);
+}
+
+.secondaryButton {
+  display: inline-block;
+  background-color: transparent;
+  color: var(--color-primary-blue);
+  font-weight: 600;
+  padding: 0.875rem 2rem;
+  border-radius: 8px;
+  transition: background-color 0.2s, transform 0.2s;
+  border: 2px solid var(--color-primary-blue);
+}
+
+.secondaryButton:hover {
+  background-color: var(--color-off-white);
+  transform: translateY(-2px);
+}
+
+.imageContainer {
+  flex: 1;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.heroImage {
+  width: 100%;
+  height: auto;
+  max-height: 600px;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 992px) {
+  .heroSection {
+    flex-direction: column;
+    text-align: center;
+    padding: 3rem 1.5rem;
+    gap: 3rem;
+  }
+  
+  .content {
+    max-width: 100%;
+  }
+  
+  .title {
+    font-size: 2.5rem;
+  }
+  
+  .buttonGroup {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .imageContainer {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 2rem;
+  }
+  
+  .buttonGroup {
+    flex-direction: column;
+  }
+  
+  .primaryButton, .secondaryButton {
+    width: 100%;
+  }
+}

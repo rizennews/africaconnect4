@@ -1,0 +1,138 @@
+.section {
+  padding: 0 2rem 6rem;
+  background-color: var(--color-light-gray);
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  border: 1px solid #ddd;
+  background-color: #fff;
+}
+
+.topRow {
+  display: flex;
+  border-bottom: 1px solid #ddd;
+}
+
+.card1 {
+  flex: 4;
+  background-color: var(--color-primary-dark);
+  color: #fff;
+  padding: 3rem;
+  border-right: 1px solid #ddd;
+}
+
+.card2 {
+  flex: 6;
+  padding: 3rem;
+}
+
+.bottomRow {
+  display: flex;
+}
+
+.card3, .card4, .card5 {
+  flex: 1;
+  padding: 3rem;
+  border-right: 1px solid #ddd;
+}
+
+.card5 {
+  border-right: none;
+}
+
+.iconWrapper {
+  margin-bottom: 2rem;
+}
+
+.iconCircle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 2px solid var(--color-primary-dark);
+  color: var(--color-primary-dark);
+}
+
+.card1 .iconCircle {
+  border-color: var(--color-primary-orange);
+  color: var(--color-primary-orange);
+}
+
+.number {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--color-primary-orange);
+  margin-bottom: 1rem;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-primary-dark);
+  margin-bottom: 1rem;
+}
+
+.card1 .title {
+  color: #fff;
+}
+
+.description {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--color-gray);
+  margin-bottom: 2rem;
+}
+
+.card1 .description {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.exploreLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--color-primary-dark);
+  transition: color 0.2s;
+}
+
+.card1 .exploreLink {
+  color: var(--color-primary-orange);
+}
+
+.exploreLink:hover {
+  color: var(--color-primary-orange);
+}
+
+.card1 .exploreLink:hover {
+  color: #fff;
+}
+
+@media (max-width: 992px) {
+  .topRow {
+    flex-direction: column;
+  }
+  
+  .card1 {
+    border-right: none;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .bottomRow {
+    flex-direction: column;
+  }
+  
+  .card3, .card4, .card5 {
+    border-right: none;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .card5 {
+    border-bottom: none;
+  }
+}

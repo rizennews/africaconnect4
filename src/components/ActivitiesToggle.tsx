@@ -86,7 +86,7 @@ export const futureEvents: EventData[] = [
     status: 'UPCOMING',
     type: 'LAB',
     title: 'Women-In-WACREN Climate Innovation Lab',
-    description: 'Climate Innovation Lab 2026',
+    description: 'Tuesday 25 Aug 2026, 13:00 to 14:00',
     day: '25', month: 'AUG', year: '2026',
     location: 'TBA',
     link: 'https://indico.wacren.net/event/279/'
@@ -95,7 +95,7 @@ export const futureEvents: EventData[] = [
     status: 'UPCOMING',
     type: 'CALL',
     title: 'Women-In-WACREN Call for Facilitators',
-    description: 'Open: 25 Aug 2026, 09:00 → 15 Sept 2026, 23:59',
+    description: 'Open from 25 Aug 2026, 09:00 to 15 Sept 2026, 23:59',
     day: '25', month: 'AUG', year: '2026',
     location: 'Virtual',
     link: 'https://indico.wacren.net/event/282/'

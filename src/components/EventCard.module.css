@@ -23,8 +23,8 @@
 }
 
 .past .dateSidebar {
-  background-color: #f0f0f1;
-  color: var(--color-primary-dark);
+  background-color: #333333;
+  color: #ffffff;
 }
 
 .day {
@@ -46,7 +46,7 @@
 }
 
 .past .month {
-  color: rgba(12, 25, 77, 0.5);
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .year {

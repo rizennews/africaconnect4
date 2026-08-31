@@ -132,7 +132,7 @@ export default function ActivitiesToggle() {
     <div className={styles.wrapper}>
       <div className={styles.toggleContainer}>
         <button 
-          className={`${styles.toggleButton} ${activeTab === 'PAST' ? `${styles.active} ${styles.activePast}` : ''}`}
+          className={`${styles.toggleButton} ${activeTab === 'PAST' ? styles.active : ''}`}
           onClick={() => setActiveTab('PAST')}
         >
           Past

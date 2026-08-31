@@ -39,6 +39,11 @@
   color: white;
 }
 
+.toggleButton.activePast {
+  background: #333333; /* Deep grey */
+  color: white;
+}
+
 .eventsWrapper {
   width: 100%;
 }

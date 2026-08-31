@@ -60,7 +60,6 @@ const topbarItems = [
   { title: 'AfricaConnect', href: 'https://africaconnect1.net/Pages/Home.html' },
   { title: 'AfricaConnect2', href: 'https://www.africaconnect2.net/' },
   { title: 'AfricaConnect3', href: 'https://africaconnect3.net/' },
-  { title: 'Faq', href: '/faq' },
 ];
 
 const languages = [

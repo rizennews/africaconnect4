@@ -28,7 +28,7 @@ const allFiles: Publication[] = [
     tag: 'MAPS',
     title: 'WACREN Timeline.mp4',
     date: 'Aug 31, 2026',
-    size: '49.8 MB',
+    size: '47.5 MB',
     category: 'Maps',
     path: '/documents/maps/WACREN Timeline.mp4'
   }

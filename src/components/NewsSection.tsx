@@ -22,10 +22,7 @@ export default function NewsSection() {
       <div className={styles.container}>
         <div className={styles.header}>
           <div className={styles.headerText}>
-            <h2 className={styles.title}>News & updates.</h2>
-            <p className={styles.description}>
-              Announcements, milestones, partnership updates and stories from the field across the West and Central Africa cluster.
-            </p>
+            <h2 className={styles.title}>News & updates</h2>
           </div>
           <Link href="/news" className={styles.viewAll}>
             View all news

@@ -87,7 +87,7 @@ export const futureEvents: EventData[] = [
     type: 'LAB',
     title: 'Women-In-WACREN Climate Innovation Lab',
     description: 'Climate Innovation Lab 2026',
-    day: '15', month: 'MAY', year: '2026',
+    day: '25', month: 'AUG', year: '2026',
     location: 'TBA',
     link: 'https://indico.wacren.net/event/279/'
   },

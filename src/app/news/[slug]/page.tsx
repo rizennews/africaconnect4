@@ -133,18 +133,16 @@ export default async function Page({ params }: PageProps) {
             )}
 
             {article.content.sections.map((section, sIdx) => (
-              <section key={section.id || sIdx} id={section.id}>
+              <section key={section.id || sIdx} id={section.id} className={styles.articleSection}>
                 {section.heading && (
                   <h2 className={styles.sectionHeading}>{section.heading}</h2>
                 )}
                 {section.image && (
-                  <div className={styles.sectionImageWrapper} style={{ position: 'relative' }}>
-                    <Image 
+                  <div className={styles.sectionImageWrapper}>
+                    <img 
                       src={section.image} 
-                      alt="Section feature" 
-                      fill
+                      alt="Section inline visual" 
                       className={styles.sectionImage}
-                      sizes="(max-width: 960px) 100vw, 800px"
                     />
                   </div>
                 )}
@@ -155,8 +153,11 @@ export default async function Page({ params }: PageProps) {
                 ))}
                 {section.quote && (
                   <blockquote className={styles.quoteBlock}>
-                    <p className={styles.quoteText}>"{section.quote.text}"</p>
-                    <cite className={styles.quoteAuthor}>— {section.quote.author}</cite>
+                    <span className={styles.quoteIcon}>“</span>
+                    <div className={styles.quoteContent}>
+                      <p className={styles.quoteText}>{section.quote.text}</p>
+                      <cite className={styles.quoteAuthor}>— {section.quote.author}</cite>
+                    </div>
                   </blockquote>
                 )}
               </section>

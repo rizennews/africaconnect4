@@ -336,39 +336,5 @@ export const ARTICLES: ArticleData[] = [
       ]
     }
   },
-  {
-    slug: 'women-stem-hackathon-2026',
-    id: '6',
-    category: 'Event',
-    tags: ['Event', 'STEM'],
-    date: 'May 28, 2026',
-    readTime: '5 Min Read',
-    title: 'Women in STEM Regional Hackathon: Driving Digital Innovation in Higher Ed',
-    author: {
-      name: 'Padmore Aning',
-      avatar: '/africaconnect4.png',
-      role: 'Communications Lead'
-    },
-    image: '/africaconnect4.png',
-    cutoutPosition: 'top',
-    timestamp: 1780012800000,
-    tableOfContents: [
-      {
-        id: 'hackathon-winners',
-        title: 'Showcasing Groundbreaking Prototypes'
-      }
-    ],
-    content: {
-      intro: 'Over 200 female university students from across 12 countries convened virtually to build scalable solutions for agricultural monitoring and digital healthcare.',
-      sections: [
-        {
-          id: 'hackathon-winners',
-          heading: 'Showcasing Groundbreaking Prototypes',
-          paragraphs: [
-            'Teams presented working prototypes leveraging cloud compute and high-speed campus networks, earning mentorship placements with leading African and European tech hubs.'
-          ]
-        }
-      ]
-    }
-  }
+
 ];

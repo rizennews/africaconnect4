@@ -11,45 +11,61 @@
   position: sticky;
   top: 120px;
   height: fit-content;
+  border-right: 1px solid #e5e7eb;
+  padding-right: 2rem;
 }
 
 .sidebarTitle {
-  font-size: 1.1rem;
-  color: var(--color-primary-dark);
-  margin-bottom: 1.5rem;
+  font-size: 0.85rem;
+  color: #9ca3af;
+  margin-bottom: 2rem;
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.15em;
 }
 
 .sidebarNav {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  gap: 1.5rem;
 }
 
 .sidebarLink {
-  padding: 1.25rem 1.5rem;
-  border-radius: 8px;
   text-decoration: none;
-  color: #4b5563;
-  font-weight: 500;
-  transition: all 0.2s;
-  background-color: #f9fafb;
-  border-left: 4px solid transparent;
+  color: #6b7280;
+  font-weight: 400;
+  font-size: 1.05rem;
+  transition: all 0.3s ease;
+  position: relative;
+  padding-left: 1rem;
+}
+
+.sidebarLink::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background-color: #e5e7eb;
+  transition: background-color 0.3s ease;
 }
 
 .sidebarLink:hover {
-  background-color: rgba(250, 154, 13, 0.05);
-  color: var(--color-primary-orange);
+  color: var(--color-primary-dark);
+}
+
+.sidebarLink:hover::before {
+  background-color: #9ca3af;
 }
 
 .sidebarLink.active {
-  background-color: white;
   color: var(--color-primary-dark);
-  font-weight: 700;
-  border-left-color: var(--color-primary-orange);
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  font-weight: 600;
+}
+
+.sidebarLink.active::before {
+  background-color: var(--color-primary-orange);
 }
 
 .content {
@@ -83,13 +99,6 @@
   padding: 2.5rem;
   border-radius: 12px;
   border: 1px solid #e5e7eb;
-  transition: transform 0.2s, box-shadow 0.2s;
-}
-
-.featureCard:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 30px rgba(12, 25, 77, 0.05);
-  border-color: rgba(250, 154, 13, 0.2);
 }
 
 .featureCard h3 {

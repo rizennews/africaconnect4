@@ -11,9 +11,9 @@ export default function ActivitiesPage() {
         description="Conferences, workshops, hackathons, training sessions and community meetings across the AfricaConnect4 programme in West and Central Africa." 
       />
       
-      <ActivitiesToggle />
-
       <UpcomingCrawler />
+      
+      <ActivitiesToggle />
       
       <FundingBanner />
     </main>

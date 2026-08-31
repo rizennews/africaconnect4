@@ -3,6 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { ARTICLES, ArticleData } from '@/data/articles';
+import { getPlaceholderBase64 } from '@/utils/placeholder';
 import NewsGrid, { NewsArticle } from '@/components/NewsGrid';
 import ShareButton from './ShareButton';
 import styles from './ArticleSingle.module.css';
@@ -80,6 +81,7 @@ export default async function Page({ params }: PageProps) {
                     src={article.author.avatar}
                     alt={article.author.name}
                     fill
+                    sizes="48px"
                     style={{ objectFit: 'cover' }}
                   />
                 </div>
@@ -102,6 +104,8 @@ export default async function Page({ params }: PageProps) {
               alt={article.title}
               fill
               priority
+              placeholder="blur"
+              blurDataURL={getPlaceholderBase64()}
               className={styles.heroImage}
               sizes="(max-width: 960px) 100vw, 50vw"
             />

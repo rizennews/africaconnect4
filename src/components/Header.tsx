@@ -92,7 +92,7 @@ export default function Header() {
           <ul className={styles.topbarNav}>
             {topbarItems.map((item) => (
               <li key={item.title}>
-                <Link href={item.href}>{item.title}</Link>
+                <Link href={item.href} target={item.href.startsWith('http') ? '_blank' : undefined} rel={item.href.startsWith('http') ? 'noopener noreferrer' : undefined}>{item.title}</Link>
               </li>
             ))}
           </ul>
@@ -157,7 +157,7 @@ export default function Header() {
               </span>
               <div className={styles.megaMenu}>
                 {focusItems.map((item) => (
-                  <Link href={item.href} key={item.title} className={styles.megaMenuLink}>
+                  <Link href={item.href} key={item.title} className={styles.megaMenuLink} target={item.href.startsWith('http') ? '_blank' : undefined} rel={item.href.startsWith('http') ? 'noopener noreferrer' : undefined}>
                     <div className={styles.megaMenuItem}>
                       <span className={styles.megaMenuTitle}>{item.title}</span>
                       <span className={styles.megaMenuDesc}>{item.desc}</span>
@@ -176,7 +176,7 @@ export default function Header() {
               </span>
               <div className={`${styles.megaMenu} ${styles.megaMenuRight}`}>
                 {mediaItems.map((item) => (
-                  <Link href={item.href} key={item.title} className={styles.megaMenuLink}>
+                  <Link href={item.href} key={item.title} className={styles.megaMenuLink} target={item.href.startsWith('http') ? '_blank' : undefined} rel={item.href.startsWith('http') ? 'noopener noreferrer' : undefined}>
                     <div className={styles.megaMenuItem}>
                       <span className={styles.megaMenuTitle}>{item.title}</span>
                       <span className={styles.megaMenuDesc}>{item.desc}</span>
@@ -218,7 +218,7 @@ export default function Header() {
             </button>
             <div className={`${styles.mobileMegaMenu} ${openMobileMega === 'focus' ? styles.open : ''}`}>
               {focusItems.map((item) => (
-                <Link href={item.href} key={item.title} className={styles.megaMenuLink} onClick={toggleMobileMenu}>
+                <Link href={item.href} key={item.title} className={styles.megaMenuLink} onClick={toggleMobileMenu} target={item.href.startsWith('http') ? '_blank' : undefined} rel={item.href.startsWith('http') ? 'noopener noreferrer' : undefined}>
                   <div className={styles.megaMenuItem}>
                     <span className={styles.megaMenuTitle}>{item.title}</span>
                     <span className={styles.megaMenuDesc}>{item.desc}</span>
@@ -237,7 +237,7 @@ export default function Header() {
             </button>
             <div className={`${styles.mobileMegaMenu} ${openMobileMega === 'media' ? styles.open : ''}`}>
               {mediaItems.map((item) => (
-                <Link href={item.href} key={item.title} className={styles.megaMenuLink} onClick={toggleMobileMenu}>
+                <Link href={item.href} key={item.title} className={styles.megaMenuLink} onClick={toggleMobileMenu} target={item.href.startsWith('http') ? '_blank' : undefined} rel={item.href.startsWith('http') ? 'noopener noreferrer' : undefined}>
                   <div className={styles.megaMenuItem}>
                     <span className={styles.megaMenuTitle}>{item.title}</span>
                     <span className={styles.megaMenuDesc}>{item.desc}</span>
@@ -256,7 +256,7 @@ export default function Header() {
           <ul className={styles.mobileTopbarList}>
             {topbarItems.map((item) => (
               <li key={item.title}>
-                <Link href={item.href} onClick={toggleMobileMenu}>{item.title}</Link>
+                <Link href={item.href} onClick={toggleMobileMenu} target={item.href.startsWith('http') ? '_blank' : undefined} rel={item.href.startsWith('http') ? 'noopener noreferrer' : undefined}>{item.title}</Link>
               </li>
             ))}
           </ul>

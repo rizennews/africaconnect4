@@ -4,6 +4,7 @@ import React, { useState, useMemo } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import styles from './NewsGrid.module.css';
+import { getPlaceholderBase64 } from '@/utils/placeholder';
 
 export interface NewsArticle {
   id: string;
@@ -146,6 +147,8 @@ export default function NewsGrid({ articles, items, showControls = true }: NewsG
                   src={item.image}
                   alt={item.title}
                   fill
+                  placeholder="blur"
+                  blurDataURL={getPlaceholderBase64()}
                   className={styles.cardImage}
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 />

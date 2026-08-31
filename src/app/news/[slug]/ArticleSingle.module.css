@@ -315,6 +315,46 @@
   scroll-margin-top: 120px;
 }
 
+.sectionImageWrapper {
+  position: relative;
+  width: 100%;
+  height: 350px;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 2rem;
+  background-color: #f3f4f6;
+  box-shadow: 0 4px 15px rgba(12, 25, 77, 0.06);
+}
+
+.sectionImage {
+  object-fit: cover;
+}
+
+.quoteBlock {
+  margin: 2.5rem 0;
+  padding: 2rem 2.5rem;
+  background-color: rgba(12, 25, 77, 0.03);
+  border-left: 4px solid var(--color-primary-orange, #fa9a0d);
+  border-radius: 0 12px 12px 0;
+}
+
+.quoteText {
+  font-size: 1.25rem;
+  line-height: 1.7;
+  font-weight: 500;
+  color: var(--color-primary-dark, #0c194d);
+  font-style: italic;
+  margin: 0 0 1rem 0;
+}
+
+.quoteAuthor {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #374151;
+  font-style: normal;
+  display: block;
+}
+
 .ctaBox {
   margin-top: 2.5rem;
   padding: 1.5rem 0;

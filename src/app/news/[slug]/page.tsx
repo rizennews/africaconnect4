@@ -27,9 +27,12 @@ export default async function Page({ params }: PageProps) {
     notFound();
   }
 
-  // Related posts (exclude current article)
-  const relatedArticles: NewsArticle[] = ARTICLES
-    .filter((a) => a.slug !== article.slug)
+  // Related posts (exclude current, strictly same category)
+  let related = ARTICLES.filter(
+    (a) => a.slug !== article.slug && a.category === article.category
+  );
+
+  const relatedArticles: NewsArticle[] = related
     .slice(0, 3)
     .map((item) => ({
       id: item.id,
@@ -134,11 +137,28 @@ export default async function Page({ params }: PageProps) {
                 {section.heading && (
                   <h2 className={styles.sectionHeading}>{section.heading}</h2>
                 )}
+                {section.image && (
+                  <div className={styles.sectionImageWrapper} style={{ position: 'relative' }}>
+                    <Image 
+                      src={section.image} 
+                      alt="Section feature" 
+                      fill
+                      className={styles.sectionImage}
+                      sizes="(max-width: 960px) 100vw, 800px"
+                    />
+                  </div>
+                )}
                 {section.paragraphs.map((p, pIdx) => (
                   <p key={pIdx} className={styles.paragraph}>
                     {p}
                   </p>
                 ))}
+                {section.quote && (
+                  <blockquote className={styles.quoteBlock}>
+                    <p className={styles.quoteText}>"{section.quote.text}"</p>
+                    <cite className={styles.quoteAuthor}>— {section.quote.author}</cite>
+                  </blockquote>
+                )}
               </section>
             ))}
 

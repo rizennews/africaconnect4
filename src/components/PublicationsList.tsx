@@ -17,18 +17,27 @@ const allFiles: Publication[] = [
   {
     id: '1',
     tag: 'CONSULTANCY',
-    title: 'Terms of Reference - GPU-HPC-Based Water and Energy Budget Modelling.pdf',
-    date: 'Aug 10, 2026',
-    size: '1.2 MB',
+    title: 'ToR- Consultancy for GPUHPC-Based Water and Energy Budget Modelling_WACREN.pdf',
+    date: 'Aug 31, 2026',
+    size: '258 KB',
     category: 'Consultancy',
-    path: '/documents/consultancy/Terms of Reference - GPU-HPC-Based Water and Energy Budget Modelling.pdf'
+    path: '/documents/consultancy/ToR- Consultancy for GPUHPC-Based Water and Energy Budget Modelling_WACREN.pdf'
+  },
+  {
+    id: '2',
+    tag: 'MAPS',
+    title: 'WACREN Timeline.mp4',
+    date: 'Aug 31, 2026',
+    size: '49.8 MB',
+    category: 'Maps',
+    path: '/documents/maps/WACREN Timeline.mp4'
   }
 ];
 
 const folders = [
   { name: 'Presentations', count: 0 },
   { name: 'Consultancy', count: 1 },
-  { name: 'Maps', count: 0 }
+  { name: 'Maps', count: 1 }
 ];
 
 export default function PublicationsList() {

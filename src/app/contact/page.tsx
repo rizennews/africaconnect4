@@ -12,11 +12,7 @@ export default function Page() {
       
       <section className={styles.container}>
         <div className={styles.infoSection}>
-          <h2 className={styles.infoTitle}>Let's talk about digital transformation.</h2>
-          <p className={styles.infoDesc}>
-            Whether you have a question about our infrastructure, need assistance with network access, or want to explore partnership opportunities across Africa, our team is ready to help.
-          </p>
-          
+
           <div className={styles.contactDetails}>
             <div className={styles.detailItem}>
               <div className={styles.iconWrapper}>

@@ -5,7 +5,7 @@ export default function Page() {
   return (
     <main>
       <PageHero 
-        title="Public Documents." 
+        title="Public Documents" 
         description=""
       />
       

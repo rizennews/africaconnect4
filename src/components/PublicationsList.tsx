@@ -46,7 +46,6 @@ export default function PublicationsList() {
 
   return (
     <section className={styles.container}>
-      <h2 className={styles.headerTitle}>Resource Documents</h2>
       
       <div className={styles.searchBox}>
         <svg className={styles.searchIcon} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">

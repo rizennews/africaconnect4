@@ -15,20 +15,7 @@ export default function AboutIntro() {
             The project's overall objective is to increase African research and education communities' access to and use of information and communications technology, and to strengthen international cooperation on science, technology and innovation to address global challenges.
           </p>
           
-          <div className={styles.historyLinks}>
-            <Link href="https://africaconnect1.net/Pages/Home.html" className={styles.historyPill} target="_blank" rel="noopener noreferrer">
-              AfricaConnect · 2011-2015
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
-            </Link>
-            <Link href="https://www.africaconnect2.net/" className={styles.historyPill} target="_blank" rel="noopener noreferrer">
-              AfricaConnect2 · 2015-2019
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
-            </Link>
-            <Link href="https://africaconnect3.net/" className={styles.historyPill} target="_blank" rel="noopener noreferrer">
-              AfricaConnect3 · 2019-2024
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
-            </Link>
-          </div>
+
         </div>
 
         <div className={styles.rightColumn}>

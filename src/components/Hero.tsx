@@ -7,10 +7,10 @@ export default function Hero() {
     <section className={styles.heroSection}>
       <div className={styles.content}>
         <h1 className={styles.title}>
-          Connecting Africa to unlimited possibilities.
+          Connecting Africa to unlimited possibilities
         </h1>
         <p className={styles.description}>
-          AfricaConnect4 is the fourth chapter of an EU-funded initiative growing Africa’s research and education sector through high-speed connectivity, climate data infrastructure, digital services and capacity building — implemented in West and Central Africa by WACREN.
+          AfricaConnect4 is the fourth chapter of an EU-funded initiative growing Africa’s research and education sector through high-speed connectivity, climate data infrastructure, digital services and capacity building implemented in West and Central Africa by WACREN.
         </p>
         <div className={styles.buttonGroup}>
           <Link href="#" className={styles.primaryButton}>

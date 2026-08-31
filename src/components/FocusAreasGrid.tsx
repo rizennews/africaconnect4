@@ -17,7 +17,7 @@ export default function FocusAreasGrid() {
 
           <h3 className={styles.title}>Connectivity Expansion</h3>
           <p className={styles.description}>
-            Strengthening the WACREN backbone, extending high-speed regional links and tackling last-mile gaps — bringing 6 new countries into the network in Phase 4.
+            Strengthening the WACREN backbone, extending high-speed regional links and tackling last-mile gaps bringing 6 new countries into the network in Phase 4.
           </p>
           <Link href="#" className={styles.exploreLink}>
             Explore 
@@ -39,7 +39,7 @@ export default function FocusAreasGrid() {
 
           <h3 className={styles.title}>Climate Data Infrastructure</h3>
           <p className={styles.description}>
-            HPC clusters, EUMETCast terrestrial data portals, WMO-compliant weather stations and LoRaWAN gateways — building the digital plumbing for African climate research.
+            HPC clusters, EUMETCast terrestrial data portals, WMO-compliant weather stations and LoRaWAN gateways building the digital plumbing for African climate research.
           </p>
           <Link href="#" className={styles.exploreLink}>
             Explore 

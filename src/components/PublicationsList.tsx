@@ -12,39 +12,12 @@ interface Publication {
   category: string;
 }
 
-const allFiles: Publication[] = [
-  {
-    id: '1', tag: 'REPORT', title: 'AfricaConnect4 Interim Narrative Report — Year 1.pdf',
-    date: 'Mar 15, 2026', size: '4.2 MB', category: 'Reports'
-  },
-  {
-    id: '2', tag: 'STRATEGY', title: 'AfricaConnect Knowledge Management Strategy & Plan.pdf',
-    date: 'Apr 02, 2025', size: '2.8 MB', category: 'Strategy'
-  },
-  {
-    id: '3', tag: 'IMPACT', title: 'AfricaConnect Impact Report — Cumulative phases 1—3.pdf',
-    date: 'Jun 10, 2025', size: '8.4 MB', category: 'Reports'
-  },
-  {
-    id: '4', tag: 'FICHE', title: 'NREN Country Fiches 2026 — West & Central Africa.pdf',
-    date: 'Feb 20, 2026', size: '12.6 MB', category: 'Country fiches'
-  },
-  {
-    id: '5', tag: 'GUIDE', title: 'EUMETCast specialised training curriculum.pdf',
-    date: 'Jan 05, 2026', size: '3.1 MB', category: 'Guidelines'
-  },
-  {
-    id: '6', tag: 'POLICY', title: 'Global Gateway advice to DG INTPA — Regional connectivity priorities.pdf',
-    date: 'Nov 12, 2025', size: '1.8 MB', category: 'Policy briefs'
-  }
-];
+const allFiles: Publication[] = [];
 
 const folders = [
-  { name: 'Reports', count: 2 },
-  { name: 'Strategy', count: 1 },
-  { name: 'Country fiches', count: 1 },
-  { name: 'Policy briefs', count: 1 },
-  { name: 'Guidelines', count: 1 }
+  { name: 'Presentations', count: 0 },
+  { name: 'Consultancy', count: 0 },
+  { name: 'Maps', count: 0 }
 ];
 
 export default function PublicationsList() {

@@ -5,8 +5,8 @@ export default function Page() {
   return (
     <main>
       <PageHero 
-        title="Publications & reports." 
-        description="Narrative reports, strategy documents, country fiches, impact reports and policy briefs from across AC4."
+        title="Public Documents." 
+        description=""
       />
       
       <div style={{ backgroundColor: '#f9f9fa', padding: '4rem 0' }}>

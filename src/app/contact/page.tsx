@@ -7,7 +7,7 @@ export default function Page() {
     <main>
       <PageHero 
         title="Contact Us" 
-        description="We'd love to hear from you. Get in touch with the AfricaConnect4 team."
+        description="We'd love to hear from you."
       />
       
       <section className={styles.container}>

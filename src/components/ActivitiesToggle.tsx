@@ -104,8 +104,8 @@ export const futureEvents: EventData[] = [
     status: 'UPCOMING',
     type: 'CALL',
     title: 'Women-In-WACREN Call for Mentors',
-    description: 'Women-In-WACREN Call for Mentors',
-    day: '01', month: 'JUL', year: '2026',
+    description: 'Open from 25 Aug 2026, 09:00 to 15 Sept 2026, 23:59',
+    day: '25', month: 'AUG', year: '2026',
     location: 'Virtual',
     link: 'https://indico.wacren.net/event/283/'
   }

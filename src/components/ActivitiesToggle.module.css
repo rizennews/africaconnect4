@@ -1,0 +1,57 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background-color: var(--color-light-gray);
+  padding-top: 4rem;
+}
+
+.toggleContainer {
+  display: inline-flex;
+  gap: 0.25rem;
+  background: #ffffff;
+  padding: 0.5rem;
+  border-radius: 50px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+  margin-bottom: -1rem; /* Pulls the grid closer */
+  z-index: 10; /* Ensures it sits above if needed */
+}
+
+.toggleButton {
+  padding: 0.85rem 2.5rem;
+  border: none;
+  border-radius: 50px;
+  background: transparent;
+  color: #777;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  font-size: 1rem;
+}
+
+.toggleButton:hover {
+  color: var(--color-primary-dark);
+}
+
+.toggleButton.active {
+  background: var(--color-primary-orange);
+  color: white;
+}
+
+.eventsWrapper {
+  width: 100%;
+}
+
+.emptyState {
+  text-align: center;
+  padding: 5rem 2rem;
+  color: var(--color-primary-dark);
+  background-color: var(--color-light-gray);
+  margin-top: 2rem;
+}
+
+.emptyState h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}

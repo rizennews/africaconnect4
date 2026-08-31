@@ -59,7 +59,7 @@ const mediaItems = [
 const topbarItems = [
   { title: 'AfricaConnect', href: 'https://africaconnect1.net/Pages/Home.html' },
   { title: 'AfricaConnect2', href: 'https://www.africaconnect2.net/' },
-  { title: 'AfricaConnect3', href: '#' },
+  { title: 'AfricaConnect3', href: 'https://africaconnect3.net/' },
   { title: 'Faq', href: '/faq' },
 ];
 
@@ -148,6 +148,9 @@ export default function Header() {
         <nav className={styles.desktopNav}>
           <ul className={styles.navList}>
             <li className={styles.navItem}>
+              <Link href="/about" className={styles.navLink}>About</Link>
+            </li>
+            <li className={styles.navItem}>
               <span className={styles.navLink}>
                 Focus
                 <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
@@ -205,6 +208,9 @@ export default function Header() {
       {/* Mobile Navigation Overlay */}
       <div className={`${styles.mobileNav} ${isMobileMenuOpen ? styles.open : ''}`}>
         <ul className={styles.mobileNavList}>
+          <li className={styles.mobileNavItem}>
+            <Link href="/about" className={styles.mobileNavLink} onClick={toggleMobileMenu}>About</Link>
+          </li>
           <li className={styles.mobileNavItem}>
             <button className={styles.mobileNavLink} onClick={() => toggleMobileMega('focus')}>
               Focus

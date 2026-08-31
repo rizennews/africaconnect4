@@ -1,0 +1,152 @@
+.section {
+  padding: 6rem 2rem;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  align-items: center;
+}
+
+/* Left Column */
+.leftColumn {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--color-primary-dark);
+  margin-bottom: 2rem;
+  letter-spacing: -0.02em;
+}
+
+.paragraph {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: var(--color-primary-dark);
+  margin-bottom: 1.5rem;
+  opacity: 0.85;
+}
+
+.historyLinks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.historyPill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.6rem 1.25rem;
+  background-color: #fcf1eb;
+  color: var(--color-primary-dark);
+  font-weight: 700;
+  font-size: 0.9rem;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.historyPill:hover {
+  background-color: #f5e4d9;
+  transform: translateY(-2px);
+}
+
+/* Right Column */
+.card {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 3rem;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.06);
+  border: 1px solid rgba(0,0,0,0.06);
+}
+
+.cardHeader {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #888;
+  letter-spacing: 0.05em;
+  margin-bottom: 2.5rem;
+}
+
+.objectiveList {
+  display: flex;
+  flex-direction: column;
+}
+
+.objectiveItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  padding-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.objectiveItem:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.badge {
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 0.95rem;
+  border: 2px solid;
+}
+
+.badgeOrange {
+  color: var(--color-primary-orange);
+  border-color: var(--color-primary-orange);
+}
+
+.badgeBlue {
+  color: var(--color-primary-dark);
+  border-color: var(--color-primary-dark);
+}
+
+.objectiveText {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--color-primary-dark);
+  opacity: 0.85;
+  margin-top: 0.2rem;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    grid-template-columns: 1fr;
+    gap: 4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 4rem 1.5rem;
+  }
+
+  .card {
+    padding: 2rem;
+  }
+  
+  .title {
+    font-size: 2rem;
+  }
+}

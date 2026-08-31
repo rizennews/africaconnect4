@@ -2,15 +2,16 @@ import React from 'react';
 import styles from './EventCard.module.css';
 
 interface EventCardProps {
-  status: 'UPCOMING' | 'PAST';
-  type: string;
+  status: 'UPCOMING' | 'PAST' | 'PRESENT';
+  type?: string;
   title: string;
-  description: string;
-  day: string;
-  month: string;
-  year: string;
-  location: string;
+  description?: string;
+  day?: string;
+  month?: string;
+  year?: string;
+  location?: string;
   duration?: string;
+  link?: string;
 }
 
 export default function EventCard({
@@ -22,29 +23,34 @@ export default function EventCard({
   month,
   year,
   location,
-  duration
+  duration,
+  link
 }: EventCardProps) {
   const isUpcoming = status === 'UPCOMING';
   const cardClass = isUpcoming ? styles.upcoming : styles.past;
+  const CardWrapper = link ? 'a' : 'div';
+  const linkProps = link ? { href: link, target: "_blank", rel: "noopener noreferrer", style: {textDecoration: 'none'} } : {};
 
   return (
-    <div className={`${styles.card} ${cardClass}`}>
+    <CardWrapper className={`${styles.card} ${cardClass}`} {...linkProps as any}>
       <div className={styles.dateSidebar}>
-        <span className={styles.day}>{day}</span>
-        <span className={styles.month}>{month}</span>
-        <span className={styles.year}>{year}</span>
+        {day && <span className={styles.day}>{day}</span>}
+        {month && <span className={styles.month}>{month}</span>}
+        {year && <span className={styles.year}>{year}</span>}
       </div>
       <div className={styles.content}>
         <div className={styles.tags}>
           <span className={styles.statusTag}>{status}</span>
-          <span className={styles.typeTag}>{type}</span>
+          {type && <span className={styles.typeTag}>{type}</span>}
         </div>
         <h3 className={styles.title}>{title}</h3>
-        <p className={styles.description}>{description}</p>
-        <div className={styles.footer}>
-          {location}{duration && ` · ${duration}`}
-        </div>
+        {description && <p className={styles.description}>{description}</p>}
+        {(location || duration) && (
+          <div className={styles.footer}>
+            {location}{location && duration ? ' · ' : ''}{duration}
+          </div>
+        )}
       </div>
-    </div>
+    </CardWrapper>
   );
 }

@@ -3,15 +3,16 @@ import styles from './EventsGrid.module.css';
 import EventCard from './EventCard';
 
 export interface EventData {
-  status: 'UPCOMING' | 'PAST';
-  type: string;
+  status: 'UPCOMING' | 'PAST' | 'PRESENT';
+  type?: string;
   title: string;
-  description: string;
-  day: string;
-  month: string;
-  year: string;
-  location: string;
+  description?: string;
+  day?: string;
+  month?: string;
+  year?: string;
+  location?: string;
   duration?: string;
+  link?: string;
 }
 
 interface EventsGridProps {

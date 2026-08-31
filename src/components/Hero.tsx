@@ -1,6 +1,5 @@
 import React from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
 import styles from './Hero.module.css';
 
 export default function Hero() {
@@ -23,13 +22,13 @@ export default function Hero() {
         </div>
       </div>
       <div className={styles.imageContainer}>
-        <Image 
-          src="/hero_image.jpg" 
-          alt="Abstract representation of digital connectivity in Africa" 
-          width={800} 
-          height={600} 
+        <video 
+          src="/WACREN Timeline.mp4" 
+          autoPlay 
+          loop 
+          muted 
+          playsInline 
           className={styles.heroImage}
-          priority
         />
       </div>
     </section>

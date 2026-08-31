@@ -13,6 +13,11 @@ export default function FeaturedActivity() {
             <p className={styles.description}>
               The flagship annual gathering of the West and Central African research and education networking community — a week of workshops, project meetings and the main two-day conference under the theme <em>Advancing Africa&apos;s Digital Sovereignty Through Open Collaboration.</em>
             </p>
+            <div style={{ marginBottom: '3rem' }}>
+              <a href="https://wacren2026.wacren.net/" target="_blank" rel="noopener noreferrer" style={{ display: 'inline-block', backgroundColor: 'var(--color-primary-orange)', color: 'var(--color-primary-dark)', padding: '0.75rem 2rem', borderRadius: '50px', fontWeight: 'bold', textDecoration: 'none' }}>
+                Visit Conference Website
+              </a>
+            </div>
           </div>
           
           <div className={styles.metaGrid}>

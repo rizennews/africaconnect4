@@ -44,10 +44,10 @@ export const ARTICLES: ArticleData[] = [
     title: "Women-in-WACREN to launch a new forum and a lab to enhance women's contribution to climate innovation in Africa",
     author: {
       name: 'Padmore Aning',
-      avatar: '/media_1787762934654.png',
+      avatar: '/africaconnect4.png',
       role: 'Communications Lead'
     },
-    image: '/media_1787756986396.png',
+    image: '/africaconnect4.png',
     cutoutPosition: 'bottom',
     timestamp: 1787097600000,
     tableOfContents: [
@@ -90,10 +90,10 @@ export const ARTICLES: ArticleData[] = [
     title: 'High-speed Cross-border Backbone Link Goes Live Across 4 West African States',
     author: {
       name: 'Dr. Boubakar Barry',
-      avatar: '/media_1787762934654.png',
+      avatar: '/africaconnect4.png',
       role: 'CEO, WACREN'
     },
-    image: '/hero_image_1787760501288.jpg',
+    image: '/hero_image.jpg',
     cutoutPosition: 'bottom',
     timestamp: 1786147200000,
     tableOfContents: [
@@ -125,10 +125,10 @@ export const ARTICLES: ArticleData[] = [
     title: 'Harnessing Climate & Satellite Data: Empowering Regional Agrometeorology Hubs',
     author: {
       name: 'Ousmane Diawara',
-      avatar: '/media_1787762934654.png',
+      avatar: '/africaconnect4.png',
       role: 'Climate Data Specialist'
     },
-    image: '/media_1787768877637.png',
+    image: '/africaconnect4.png',
     cutoutPosition: 'top',
     timestamp: 1784678400000,
     tableOfContents: [
@@ -160,10 +160,10 @@ export const ARTICLES: ArticleData[] = [
     title: 'WACREN Annual Conference 2026: Connecting the African Knowledge Economy',
     author: {
       name: 'Padmore Aning',
-      avatar: '/media_1787762934654.png',
+      avatar: '/africaconnect4.png',
       role: 'Communications Lead'
     },
-    image: '/media_1787769224584.png',
+    image: '/africaconnect4.png',
     cutoutPosition: 'bottom',
     timestamp: 1782864000000,
     tableOfContents: [
@@ -195,10 +195,10 @@ export const ARTICLES: ArticleData[] = [
     title: 'Cybersecurity Threat Intelligence: Launching the Regional SOC & CERT Network',
     author: {
       name: 'Security Operations Team',
-      avatar: '/media_1787762934654.png',
+      avatar: '/africaconnect4.png',
       role: 'WACREN SOC'
     },
-    image: '/media_1787769224584.png',
+    image: '/africaconnect4.png',
     cutoutPosition: 'bottom',
     timestamp: 1781568000000,
     tableOfContents: [
@@ -230,10 +230,10 @@ export const ARTICLES: ArticleData[] = [
     title: 'Women in STEM Regional Hackathon: Driving Digital Innovation in Higher Ed',
     author: {
       name: 'Padmore Aning',
-      avatar: '/media_1787762934654.png',
+      avatar: '/africaconnect4.png',
       role: 'Communications Lead'
     },
-    image: '/media_1787757496478.png',
+    image: '/africaconnect4.png',
     cutoutPosition: 'top',
     timestamp: 1780012800000,
     tableOfContents: [

@@ -45,9 +45,13 @@ export default function EventCard({
         </div>
         <h3 className={styles.title}>{title}</h3>
         {description && <p className={styles.description}>{description}</p>}
-        {(location || duration) && (
+        {(location || duration || isUpcoming) && (
           <div className={styles.footer}>
-            {location}{location && duration ? ' · ' : ''}{duration}
+            {isUpcoming ? (
+              <span style={{color: 'var(--color-primary-orange)'}}>Click to apply →</span>
+            ) : (
+              <>{location}{location && duration ? ' · ' : ''}{duration}</>
+            )}
           </div>
         )}
       </div>

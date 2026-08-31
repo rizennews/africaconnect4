@@ -51,7 +51,7 @@ export default function AboutTimeline() {
               <div className={styles.iconWrapper}>
                 <div className={styles.ring}></div>
               </div>
-              <div className={styles.year}>2019 - 2024</div>
+              <div className={styles.year}>2019 - 2025</div>
               <h3 className={styles.cardTitle}>AfricaConnect3</h3>
               <p className={styles.cardDesc}>
                 Expanded to Cote d'Ivoire, Benin and Burkina Faso, and opened a new Dakar aggregation hub.
@@ -66,7 +66,7 @@ export default function AboutTimeline() {
               <div className={styles.iconWrapper}>
                 <div className={`${styles.ring} ${styles.ringActive}`}></div>
               </div>
-              <div className={styles.year}>2024 - 2028</div>
+              <div className={styles.year}>2025 - 2029</div>
               <h3 className={styles.cardTitle}>AfricaConnect4</h3>
               <p className={styles.cardDesc}>
                 Closes remaining gaps, deepens above-the-network services and builds long-term sustainability.

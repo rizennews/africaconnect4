@@ -136,8 +136,8 @@ export default function Header() {
             <Image 
               src="/africaconnect4.png" 
               alt="AfricaConnect4 Logo" 
-              width={160} 
-              height={50} 
+              width={125} 
+              height={40} 
               style={{ objectFit: 'contain' }}
               priority
             />

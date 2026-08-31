@@ -139,8 +139,6 @@ export default function NewsGrid({ articles, items, showControls = true }: NewsG
       {/* Grid of Articles */}
       <div className={styles.grid}>
         {filteredAndSortedArticles.map((item) => {
-          const isTopCutout = item.cutoutPosition === 'top';
-
           return (
             <Link key={item.id} href={item.link} className={styles.card}>
               <div className={styles.imageWrapper}>
@@ -151,40 +149,19 @@ export default function NewsGrid({ articles, items, showControls = true }: NewsG
                   className={styles.cardImage}
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 />
-
-                {/* Scallop / Arch Cutout */}
-                {isTopCutout ? (
-                  <svg
-                    viewBox="0 0 100 24"
-                    preserveAspectRatio="none"
-                    className={styles.cutoutTop}
-                  >
-                    <path
-                      d="M0,0 C30,0 35,24 50,24 C65,24 70,0 100,0 Z"
-                      fill="#ffffff"
-                    />
-                  </svg>
-                ) : (
-                  <svg
-                    viewBox="0 0 100 24"
-                    preserveAspectRatio="none"
-                    className={styles.cutoutBottom}
-                  >
-                    <path
-                      d="M0,24 C30,24 35,0 50,0 C65,0 70,24 100,24 Z"
-                      fill="#ffffff"
-                    />
-                  </svg>
-                )}
+                <div className={styles.overlayCategory}>
+                  {item.category ? item.category.toUpperCase() : 'FEATURED READ'}
+                </div>
+                <div className={styles.overlayTime}>
+                  {item.readTime}
+                </div>
               </div>
 
               <div className={styles.cardBody}>
-                <div className={styles.metaInfo}>
-                  <span>{item.date}</span>
-                  <span> • </span>
-                  <span>{item.readTime}</span>
-                </div>
                 <h3 className={styles.cardTitle}>{item.title}</h3>
+                <div className={styles.readButton}>
+                  Read &raquo;
+                </div>
               </div>
             </Link>
           );

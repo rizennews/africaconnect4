@@ -19,7 +19,7 @@ const allFiles: Publication[] = [
     tag: 'CONSULTANCY',
     title: 'ToR- Consultancy for GPUHPC-Based Water and Energy Budget Modelling_WACREN.pdf',
     date: 'Aug 31, 2026',
-    size: '258 KB',
+    size: '253 KB',
     category: 'Consultancy',
     path: '/documents/consultancy/ToR- Consultancy for GPUHPC-Based Water and Energy Budget Modelling_WACREN.pdf'
   },

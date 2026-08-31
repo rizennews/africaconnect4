@@ -14,7 +14,7 @@ export default function FocusAreasGrid() {
               <circle cx="12" cy="12" r="4"></circle>
             </svg>
           </div>
-          <div className={styles.number}>01 / 05</div>
+
           <h3 className={styles.title}>Connectivity Expansion</h3>
           <p className={styles.description}>
             Strengthening the WACREN backbone, extending high-speed regional links and tackling last-mile gaps — bringing 6 new countries into the network in Phase 4.
@@ -36,7 +36,7 @@ export default function FocusAreasGrid() {
               <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>
             </svg>
           </div>
-          <div className={styles.number}>02 / 05</div>
+
           <h3 className={styles.title}>Climate Data Infrastructure</h3>
           <p className={styles.description}>
             HPC clusters, EUMETCast terrestrial data portals, WMO-compliant weather stations and LoRaWAN gateways — building the digital plumbing for African climate research.
@@ -55,7 +55,7 @@ export default function FocusAreasGrid() {
               <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
             </svg>
           </div>
-          <div className={styles.number}>03 / 05</div>
+
           <h3 className={styles.title}>Women-In-STEM</h3>
           <p className={styles.description}>
             Growing women’s leadership through the Women-in-WACREN programme, annual hackathons and mentorship.
@@ -73,7 +73,7 @@ export default function FocusAreasGrid() {
               <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
             </svg>
           </div>
-          <div className={styles.number}>04 / 05</div>
+
           <h3 className={styles.title}>Cybersecurity & Threat Intelligence</h3>
           <p className={styles.description}>
             Standing up an ISAC, strengthening CSIRT cooperation and securing federated identity across the region’s NRENs.
@@ -93,7 +93,7 @@ export default function FocusAreasGrid() {
               <line x1="12" y1="17" x2="12" y2="21"></line>
             </svg>
           </div>
-          <div className={styles.number}>05 / 05</div>
+
           <h3 className={styles.title}>Capacity Building</h3>
           <p className={styles.description}>
             The NREN Academy, business accelerators, technical training and exchange programmes equipping a new generation of African REN leaders.

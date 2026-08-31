@@ -81,7 +81,7 @@ const pastEvents: EventData[] = [
 
 const presentEvents: EventData[] = [];
 
-const futureEvents: EventData[] = [
+export const futureEvents: EventData[] = [
   {
     status: 'UPCOMING',
     type: 'LAB',

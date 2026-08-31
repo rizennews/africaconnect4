@@ -1,0 +1,124 @@
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 5rem 2rem;
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 5rem;
+}
+
+.sidebar {
+  position: sticky;
+  top: 120px;
+  height: fit-content;
+}
+
+.sidebarTitle {
+  font-size: 1.1rem;
+  color: var(--color-primary-dark);
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.sidebarNav {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.sidebarLink {
+  padding: 1.25rem 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #4b5563;
+  font-weight: 500;
+  transition: all 0.2s;
+  background-color: #f9fafb;
+  border-left: 4px solid transparent;
+}
+
+.sidebarLink:hover {
+  background-color: rgba(250, 154, 13, 0.05);
+  color: var(--color-primary-orange);
+}
+
+.sidebarLink.active {
+  background-color: white;
+  color: var(--color-primary-dark);
+  font-weight: 700;
+  border-left-color: var(--color-primary-orange);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.lead {
+  font-size: 1.5rem;
+  line-height: 1.6;
+  color: var(--color-primary-dark);
+  font-weight: 400;
+}
+
+.paragraph {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #4b5563;
+}
+
+.featureGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+.featureCard {
+  background: white;
+  padding: 2.5rem;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.featureCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(12, 25, 77, 0.05);
+  border-color: rgba(250, 154, 13, 0.2);
+}
+
+.featureCard h3 {
+  font-size: 1.25rem;
+  color: var(--color-primary-dark);
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.featureIcon {
+  color: var(--color-primary-orange);
+}
+
+.featureCard p {
+  color: #6b7280;
+  line-height: 1.7;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  .sidebar {
+    position: static;
+  }
+  .featureGrid {
+    grid-template-columns: 1fr;
+  }
+}

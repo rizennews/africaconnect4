@@ -1,3 +1,5 @@
+"use client";
+
 import React from 'react';
 import styles from './UpcomingCrawler.module.css';
 import { futureEvents } from './ActivitiesToggle';

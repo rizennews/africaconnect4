@@ -112,12 +112,15 @@ const futureEvents: EventData[] = [
 ];
 
 export default function ActivitiesToggle() {
-  const [activeTab, setActiveTab] = useState<'PAST' | 'PRESENT' | 'FUTURE'>('PAST');
+  const [activeTab, setActiveTab] = useState<'ALL' | 'PAST' | 'PRESENT' | 'FUTURE'>('ALL');
 
   let activeEvents: EventData[] = [];
   let categoryLabel = '';
   
-  if (activeTab === 'PAST') {
+  if (activeTab === 'ALL') {
+    activeEvents = [...futureEvents, ...presentEvents, ...pastEvents];
+    categoryLabel = 'All Activities';
+  } else if (activeTab === 'PAST') {
     activeEvents = pastEvents;
     categoryLabel = 'Past Activities';
   } else if (activeTab === 'PRESENT') {
@@ -131,6 +134,12 @@ export default function ActivitiesToggle() {
   return (
     <div className={styles.wrapper}>
       <div className={styles.toggleContainer}>
+        <button 
+          className={`${styles.toggleButton} ${activeTab === 'ALL' ? styles.active : ''}`}
+          onClick={() => setActiveTab('ALL')}
+        >
+          All
+        </button>
         <button 
           className={`${styles.toggleButton} ${activeTab === 'PAST' ? styles.active : ''}`}
           onClick={() => setActiveTab('PAST')}
@@ -155,7 +164,7 @@ export default function ActivitiesToggle() {
         {activeEvents.length > 0 ? (
           <EventsGrid 
             title={categoryLabel} 
-            category={activeTab === 'PAST' ? 'Archived Events' : activeTab === 'PRESENT' ? 'Ongoing Events' : 'Upcoming Events'} 
+            category={activeTab === 'ALL' ? 'All Events' : activeTab === 'PAST' ? 'Archived Events' : activeTab === 'PRESENT' ? 'Ongoing Events' : 'Upcoming Events'} 
             events={activeEvents} 
           />
         ) : (

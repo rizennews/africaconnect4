@@ -47,12 +47,12 @@ const mediaItems = [
   {
     title: 'Gallery',
     desc: 'Photos from events and activities',
-    href: 'https://photos.wacren.net/',
+    href: 'https://photos.wacren.net/index.php?/category/178',
   },
   {
     title: 'Videos',
     desc: 'Session recordings and highlights',
-    href: 'https://video.wacren.net/',
+    href: 'https://video.wacren.net/channel/WACREN+Conferences/597270',
   },
 ];
 

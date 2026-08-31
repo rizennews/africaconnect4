@@ -5,7 +5,7 @@ import styles from './FocusPage.module.css';
 const focusItems = [
   { title: 'Connectivity Expansion', href: '/connectivity-expansion' },
   { title: 'Climate Data Infrastructure', href: '/climate-data-infrastructure' },
-  { title: 'Women-In-STEM', href: '/women-in-stem' },
+  { title: 'Women in STEM', href: '/women-in-stem' },
   { title: 'Cybersecurity & Threat Intelligence', href: '/cybersecurity-threat-intelligence' },
   { title: 'Capacity Building', href: '/capacity-building' },
 ];

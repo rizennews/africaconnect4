@@ -56,7 +56,7 @@ export default function FocusAreasGrid() {
             </svg>
           </div>
 
-          <h3 className={styles.title}>Women In STEM</h3>
+          <h3 className={styles.title}>Women in STEM</h3>
           <p className={styles.description}>
             Growing women’s leadership through the Women-in-WACREN programme, annual hackathons and mentorship.
           </p>

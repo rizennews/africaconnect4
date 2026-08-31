@@ -6,7 +6,7 @@ export default function Page() {
   return (
     <main>
       <PageHero 
-        title="Women-In-STEM" 
+        title="Women in STEM" 
         description="Advancing gender inclusion in technology."
       />
       <FocusLayout activeHref="/women-in-stem">

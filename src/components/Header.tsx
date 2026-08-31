@@ -17,7 +17,7 @@ const focusItems = [
     href: '/climate-data-infrastructure',
   },
   {
-    title: 'Women-In-STEM',
+    title: 'Women in STEM',
     desc: 'Advancing gender inclusion in technology',
     href: '/women-in-stem',
   },

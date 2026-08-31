@@ -6,12 +6,8 @@ export default function AboutHero() {
     <section className={styles.hero}>
       <div className={styles.container}>
         <h1 className={styles.title}>
-          Connecting Africa's research and education community, one phase at a time.
+          Connecting Africa to unlimited possibilities
         </h1>
-        <p className={styles.description}>
-          AfricaConnect4 is the fourth chapter of an EU-funded programme growing Africa's research and education sector through high-speed connectivity, climate data infrastructure, digital services and capacity building, implemented in West and Central Africa by WACREN.
-        </p>
-        
         <div className={styles.tagsContainer}>
           <div className={styles.tag}>
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>

@@ -12,11 +12,20 @@ interface Publication {
   category: string;
 }
 
-const allFiles: Publication[] = [];
+const allFiles: Publication[] = [
+  {
+    id: '1',
+    tag: 'CONSULTANCY',
+    title: 'Terms of Reference - GPU-HPC-Based Water and Energy Budget Modelling.pdf',
+    date: 'Aug 10, 2026',
+    size: '1.2 MB',
+    category: 'Consultancy'
+  }
+];
 
 const folders = [
   { name: 'Presentations', count: 0 },
-  { name: 'Consultancy', count: 0 },
+  { name: 'Consultancy', count: 1 },
   { name: 'Maps', count: 0 }
 ];
 

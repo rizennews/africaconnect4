@@ -3,11 +3,11 @@ import Link from 'next/link';
 import styles from './PartnersBanner.module.css';
 
 const partners = [
-  { name: 'WACREN', role: 'Lead — W&C Africa', url: '#' },
-  { name: 'UbuntuNet Alliance', role: 'E&S Africa Cluster', url: '#' },
-  { name: 'GÉANT', role: 'European RREN', url: '#' },
-  { name: 'NORDUnet', role: 'Nordic Partner', url: '#' },
-  { name: 'Expertise France/IRD', role: 'Implementing Partners', url: '#' },
+  { name: 'WACREN', role: 'Lead — W&C Africa', url: 'https://wacren.net/' },
+  { name: 'UbuntuNet Alliance', role: 'E&S Africa Cluster', url: 'https://ubuntunet.net/' },
+  { name: 'GÉANT', role: 'European RREN', url: 'https://geant.org/' },
+  { name: 'NORDUnet', role: 'Nordic Partner', url: 'https://nordu.net/' },
+  { name: 'Expertise France/IRD', role: 'Implementing Partners', url: 'https://www.expertisefrance.fr/en' },
 ];
 
 export default function PartnersBanner() {
@@ -23,7 +23,7 @@ export default function PartnersBanner() {
         <div className={styles.partnersList}>
           {partners.map((partner, index) => (
             <div key={index} className={styles.partnerItem}>
-              <Link href={partner.url} className={styles.partnerName}>{partner.name}</Link>
+              <Link href={partner.url} className={styles.partnerName} target="_blank" rel="noopener noreferrer">{partner.name}</Link>
               <span className={styles.partnerRole}>{partner.role}</span>
             </div>
           ))}

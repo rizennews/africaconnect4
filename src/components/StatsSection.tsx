@@ -12,10 +12,10 @@ export default function StatsSection() {
             Building on the success of three earlier phases.
           </h2>
           <p className={styles.description}>
-            Since 2011, the AfricaConnect series has fundamentally reshaped Africa’s research and education networking landscape. Phase 4 consolidates and expands these results across both clusters.
+            Since 2015, WACREN's participation inthe AfricaConnect project has fundamentally reshaped our region's research and education networking landscape. Phase 4 of the project consolidates and expands these results across the WACREN region
           </p>
-          <Link href="#" className={styles.button}>
-            See what&apos;s coming up
+          <Link href="https://africaconnect3.net/wp-content/uploads/2026/02/AC3-impact-report_English.pdf" target="_blank" rel="noopener noreferrer" className={styles.button}>
+            Read AfricaConnect impact report
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
           </Link>
         </div>

@@ -213,7 +213,7 @@
   position: relative;
   width: 100%;
   height: 380px;
-  border-radius: 16px;
+  border-radius: 0;
   overflow: hidden;
   box-shadow: 0 8px 24px rgba(12, 25, 77, 0.06);
   background-color: #f3f4f6;
@@ -223,12 +223,9 @@
   object-fit: cover;
 }
 
-/* Content Layout (Sidebar + Body) */
+/* Content Layout */
 .contentLayout {
-  display: grid;
-  grid-template-columns: 280px 1fr;
-  gap: 4rem;
-  align-items: start;
+  display: block;
 }
 
 /* Table of Contents Sidebar */
@@ -288,7 +285,7 @@
 
 /* Article Body */
 .articleBody {
-  max-width: 780px;
+  max-width: 100%;
 }
 
 .introText {

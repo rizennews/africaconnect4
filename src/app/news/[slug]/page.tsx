@@ -112,25 +112,9 @@ export default async function Page({ params }: PageProps) {
           </div>
         </header>
 
-        {/* 2-Column Content Layout (Sidebar + Article Body) */}
+        {/* Content Layout */}
         <div className={styles.contentLayout}>
-          {/* Left Sidebar: Table of Contents */}
-          <aside className={styles.sidebar}>
-            <div className={styles.tocHeader}>Table of contents</div>
-            <div className={styles.tocDivider}></div>
-            <ul className={styles.tocList}>
-              {article.tableOfContents.map((item) => (
-                <li key={item.id} className={styles.tocItem}>
-                  <span className={styles.tocBullet}>•</span>
-                  <a href={`#${item.id}`} className={styles.tocLink}>
-                    {item.title}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </aside>
-
-          {/* Right Main Article Content */}
+          {/* Main Article Content */}
           <div className={styles.articleBody}>
             {article.content.intro && (
               <p className={styles.introText}>{article.content.intro}</p>

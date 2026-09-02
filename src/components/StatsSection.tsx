@@ -23,23 +23,23 @@ export default function StatsSection() {
         {/* Right Content - Stats Grid */}
         <div className={styles.rightContent}>
           <div className={styles.statCard}>
-            <div className={styles.statNumber}>38</div>
-            <div className={styles.statLabel}>NRENs supported into formation across the continent</div>
+            <div className={styles.statNumber}>18</div>
+            <div className={styles.statLabel}>NRENs in 22 countries supported</div>
           </div>
           
           <div className={styles.statCard}>
-            <div className={styles.statNumber}>3,000</div>
-            <div className={styles.statLabel}>Institutions on high-speed connections</div>
+            <div className={styles.statNumber}>150+</div>
+            <div className={styles.statLabel}>Institutions on high-speed connectivity</div>
           </div>
           
           <div className={styles.statCard}>
-            <div className={styles.statNumber}>9M+</div>
-            <div className={styles.statLabel}>Students & staff reached by the programme</div>
+            <div className={styles.statNumber}>1M+</div>
+            <div className={styles.statLabel}>Researchers, students and staff impacted</div>
           </div>
           
           <div className={styles.statCard}>
-            <div className={styles.statNumber}>6 → 12</div>
-            <div className={styles.statLabel}>Countries on the WACREN backbone after Phase 4 expansion</div>
+            <div className={styles.statNumber}>12</div>
+            <div className={styles.statLabel}>Countries connected to the regional backbone</div>
           </div>
         </div>
       </div>

@@ -53,6 +53,12 @@
   font-weight: 700;
   font-size: 1.1rem;
   color: var(--color-primary-dark);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.partnerName:hover {
+  color: var(--color-primary-orange);
 }
 
 .partnerRole {

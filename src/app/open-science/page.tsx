@@ -14,7 +14,7 @@ export default function Page() {
           Open, equitable access to African research is central to the region's digital transformation.
         </p>
         <p className={styles.paragraph}>
-          Through the AfricaConnect4 project, WACREN advances this agenda via LIBSENSE, a WACREN-led programme building a community of practice for open science and progressing the adoption of open science services and infrastructures across Africa.
+          Through the AfricaConnect4 project, WACREN advances this agenda via <a href="https://libsense.ren.africa/" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--color-primary-orange)', fontWeight: 600 }}>LIBSENSE</a>, a WACREN-led programme building a community of practice for open science and progressing the adoption of open science services and infrastructures across Africa.
         </p>
       </FocusLayout>
     </main>

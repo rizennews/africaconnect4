@@ -128,7 +128,7 @@ export default function ActivitiesToggle() {
     categoryLabel = 'Present Activities';
   } else {
     activeEvents = futureEvents;
-    categoryLabel = 'Future Activities';
+    categoryLabel = 'Upcoming Activities';
   }
 
   return (
@@ -164,7 +164,7 @@ export default function ActivitiesToggle() {
         {activeEvents.length > 0 ? (
           <EventsGrid 
             title={categoryLabel} 
-            category={activeTab === 'ALL' ? 'All Events' : activeTab === 'PAST' ? 'Archived Events' : activeTab === 'PRESENT' ? 'Ongoing Events' : 'Upcoming Events'} 
+            category="" 
             events={activeEvents} 
           />
         ) : (

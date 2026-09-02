@@ -16,21 +16,7 @@ export default function AboutTimeline() {
         <div className={styles.timelineWrapper}>
           <div className={styles.timelineLine}></div>
           <div className={styles.grid}>
-            {/* Card 1 */}
-            <div className={styles.card}>
-              <div className={styles.iconWrapper}>
-                <div className={styles.ring}></div>
-              </div>
-              <div className={styles.year}>2011 - 2015</div>
-              <h3 className={styles.cardTitle}>AfricaConnect</h3>
-              <p className={styles.cardDesc}>
-                Established the first regional research and education backbone, in Eastern and Southern Africa.
-              </p>
-              <Link href="https://africaconnect1.net/Pages/Home.html" className={styles.link} target="_blank" rel="noopener noreferrer">
-                Visit site <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
-              </Link>
-            </div>
-            
+
             {/* Card 2 */}
             <div className={styles.card}>
               <div className={styles.iconWrapper}>
@@ -54,7 +40,7 @@ export default function AboutTimeline() {
               <div className={styles.year}>2019 - 2025</div>
               <h3 className={styles.cardTitle}>AfricaConnect3</h3>
               <p className={styles.cardDesc}>
-                Expanded to Cote d'Ivoire, Benin and Burkina Faso, and opened a new Dakar aggregation hub.
+                Extended connectivity to six new countries and opened a new Dakar aggregation hub.
               </p>
               <Link href="https://africaconnect3.net/" className={styles.link} target="_blank" rel="noopener noreferrer">
                 Visit site <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>

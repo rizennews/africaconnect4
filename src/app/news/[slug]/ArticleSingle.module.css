@@ -220,7 +220,7 @@
 }
 
 .heroImage {
-  object-fit: cover;
+  object-fit: contain;
 }
 
 /* Content Layout */
@@ -368,25 +368,26 @@
 .ctaBox {
   margin-top: 2.5rem;
   padding: 1.5rem 0;
-  font-size: 1.02rem;
-  color: #374151;
 }
 
 .ctaLabel {
-  font-weight: 600;
-  color: var(--color-primary-dark, #0c194d);
+  display: none;
 }
 
 .ctaLink {
-  color: #062d75;
-  text-decoration: underline;
-  word-break: break-all;
-  font-weight: 500;
-  transition: color 0.2s;
+  display: inline-block;
+  background-color: var(--color-primary-orange, #fa9a0d);
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.2s;
 }
 
 .ctaLink:hover {
-  color: var(--color-primary-orange, #fa9a0d);
+  background-color: #e0890b;
+  color: #fff;
 }
 
 /* Related Posts Section */

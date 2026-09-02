@@ -45,8 +45,8 @@ export const ARTICLES: ArticleData[] = [
     readTime: '2 Min Read',
     title: "Women-in-WACREN to launch a new forum and a lab to enhance women's contribution to climate innovation in Africa",
     author: {
-      name: 'Padmore Aning',
-      avatar: '/authors/PAD.png',
+      name: 'Kwaku Effah Amponsah',
+      avatar: '/authors/Kwaku Effah Amponsah.png',
       role: 'Communications Lead'
     },
     image: '/blog/WIW Network poster.jpg',
@@ -81,8 +81,8 @@ export const ARTICLES: ArticleData[] = [
         }
       ],
       cta: {
-        label: 'Register here: ',
-        linkText: 'https://wacren.zoom.us/meeting/register/FYmtU0JnSNy8138x8Zkluw',
+        label: '',
+        linkText: 'Register here',
         url: 'https://wacren.zoom.us/meeting/register/FYmtU0JnSNy8138x8Zkluw'
       }
     }
@@ -96,8 +96,8 @@ export const ARTICLES: ArticleData[] = [
     readTime: '1 Min Read',
     title: 'WACREN NREN Academy 2026 to strengthen NRENs for long-term sustainability',
     author: {
-      name: 'Padmore Aning',
-      avatar: '/authors/PAD.png',
+      name: 'Kwaku Effah Amponsah',
+      avatar: '/authors/Kwaku Effah Amponsah.png',
       role: 'Communications Lead'
     },
     image: '/blog/NREN-Academy-poster_v1.jpg',
@@ -122,8 +122,8 @@ export const ARTICLES: ArticleData[] = [
         }
       ],
       cta: {
-        label: 'Find out more at ',
-        linkText: 'https://indico.wacren.net/event/265/',
+        label: '',
+        linkText: 'Find out more',
         url: 'https://indico.wacren.net/event/265/'
       }
     }
@@ -137,8 +137,8 @@ export const ARTICLES: ArticleData[] = [
     readTime: '2 Min Read',
     title: 'President of The Gambia to open WACREN 2026 Conference in Banjul',
     author: {
-      name: 'Padmore Aning',
-      avatar: '/authors/PAD.png',
+      name: 'Kwaku Effah Amponsah',
+      avatar: '/authors/Kwaku Effah Amponsah.png',
       role: 'Communications Lead'
     },
     image: '/blog/Gambia-President-poster.jpg',
@@ -175,8 +175,8 @@ export const ARTICLES: ArticleData[] = [
     readTime: '1 Min Read',
     title: 'WACREN opens Early Bird Registration for 2026 Conference',
     author: {
-      name: 'Padmore Aning',
-      avatar: '/authors/PAD.png',
+      name: 'Kwaku Effah Amponsah',
+      avatar: '/authors/Kwaku Effah Amponsah.png',
       role: 'Communications Lead'
     },
     image: '/blog/WACREN-2026-poster.jpeg',
@@ -205,8 +205,8 @@ export const ARTICLES: ArticleData[] = [
         }
       ],
       cta: {
-        label: 'Register now: ',
-        linkText: 'Click to register',
+        label: '',
+        linkText: 'Register now',
         url: 'https://wacren2026.wacren.net/register'
       }
     }
@@ -220,8 +220,8 @@ export const ARTICLES: ArticleData[] = [
     readTime: '10 Min Read',
     title: 'AfricaConnect receives €40 million boost from the EU to expand digital infrastructure for Research and Education in Sub-Saharan Africa',
     author: {
-      name: 'Padmore Aning',
-      avatar: '/authors/PAD.png',
+      name: 'Kwaku Effah Amponsah',
+      avatar: '/authors/Kwaku Effah Amponsah.png',
       role: 'Communications Lead'
     },
     image: '/blog/AfricaConnect receives €40 million boost from the EU.jpg',

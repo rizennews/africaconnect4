@@ -31,6 +31,11 @@ const focusItems = [
     desc: 'Training and institutional development',
     href: '/capacity-building',
   },
+  {
+    title: 'Open Science',
+    desc: 'Open scholarly communication infrastructure',
+    href: '/open-science',
+  },
 ];
 
 const mediaItems = [

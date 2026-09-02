@@ -8,6 +8,7 @@ const focusItems = [
   { title: 'Women in STEM', href: '/women-in-stem' },
   { title: 'Cybersecurity & Threat Intelligence', href: '/cybersecurity-threat-intelligence' },
   { title: 'Capacity Building', href: '/capacity-building' },
+  { title: 'Open Science', href: '/open-science' },
 ];
 
 export default function FocusLayout({ children, activeHref }: { children: React.ReactNode, activeHref: string }) {

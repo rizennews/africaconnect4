@@ -14,12 +14,15 @@
   --foreground: var(--color-deep-blue);
 }
 
+/* Dark mode is disabled by user request to keep the UI consistent */
+/*
 @media (prefers-color-scheme: dark) {
   :root {
     --background: var(--color-primary-dark);
     --foreground: var(--color-light-gray);
   }
 }
+*/
 
 html {
   scroll-behavior: smooth;

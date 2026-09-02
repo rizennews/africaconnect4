@@ -6,7 +6,7 @@ export default function Page() {
   return (
     <main>
       <PageHero 
-        title="Open Science and open scholarly communication infrastructure" 
+        title="Open Science and Open scholarly communication infrastructure" 
         description="Advancing open science paradigm"
       />
       <FocusLayout activeHref="/open-science">

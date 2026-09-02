@@ -32,7 +32,7 @@ const focusItems = [
     href: '/capacity-building',
   },
   {
-    title: 'Open Science and open scholarly communication infrastructure',
+    title: 'Open Science and Open scholarly communication infrastructure',
     desc: 'Advancing open science paradigm',
     href: '/open-science',
   },

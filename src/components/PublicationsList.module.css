@@ -150,7 +150,7 @@
 
 .tableHeader {
   display: grid;
-  grid-template-columns: 3fr 1fr 100px 140px;
+  grid-template-columns: 3fr 1fr 100px 100px;
   padding: 1rem 1.5rem;
   background-color: rgba(12, 25, 77, 0.02);
   border-bottom: 1px solid rgba(12, 25, 77, 0.1);
@@ -162,7 +162,7 @@
 
 .tableRow {
   display: grid;
-  grid-template-columns: 3fr 1fr 100px 140px;
+  grid-template-columns: 3fr 1fr 100px 100px;
   align-items: center;
   padding: 1rem 1.5rem;
   border-bottom: 1px solid rgba(12, 25, 77, 0.06);
@@ -212,13 +212,9 @@
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  gap: 0.5rem;
   color: var(--color-primary-orange);
   background-color: transparent;
   transition: opacity 0.2s;
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 0.85rem;
 }
 
 .downloadBtn:hover {

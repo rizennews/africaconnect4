@@ -116,11 +116,11 @@ export default function PublicationsList() {
           <div>NAME</div>
           <div>LAST MODIFIED</div>
           <div>SIZE</div>
-          <div></div>
+          <div style={{ textAlign: 'right', paddingRight: '0.5rem' }}>DOWNLOAD</div>
         </div>
         
         {filteredFiles.map(file => (
-          <div key={file.id} className={styles.tableRow}>
+          <a key={file.id} href={file.path} target="_blank" rel="noopener noreferrer" className={styles.tableRow} style={{ color: 'inherit', textDecoration: 'none' }}>
             <div className={styles.fileNameCol}>
               <svg className={styles.fileIcon} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                 <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
@@ -133,15 +133,14 @@ export default function PublicationsList() {
             </div>
             <div className={styles.fileDateCol}>{file.date}</div>
             <div className={styles.fileSizeCol}>{file.size}</div>
-            <a href={file.path} target="_blank" rel="noopener noreferrer" className={styles.downloadBtn} title="Download file" aria-label="Download">
-              <span>Download</span>
+            <div className={styles.downloadBtn} title="Download file" aria-label="Download">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                 <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
                 <polyline points="7 10 12 15 17 10"></polyline>
                 <line x1="12" y1="15" x2="12" y2="3"></line>
               </svg>
-            </a>
-          </div>
+            </div>
+          </a>
         ))}
         
         {filteredFiles.length === 0 && (

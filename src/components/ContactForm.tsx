@@ -4,15 +4,49 @@ import React, { useState } from 'react';
 import styles from './ContactForm.module.css';
 
 export default function ContactForm() {
-  const [status, setStatus] = useState<'idle' | 'submitting' | 'success'>('idle');
+  const [status, setStatus] = useState<'idle' | 'submitting' | 'success' | 'error'>('idle');
+  const [errorMessage, setErrorMessage] = useState('');
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setStatus('submitting');
-    // Simulate API call
-    setTimeout(() => {
-      setStatus('success');
-    }, 1500);
+    setErrorMessage('');
+    
+    const target = e.target as typeof e.target & {
+      name: { value: string };
+      email: { value: string };
+      subject: { value: string };
+      message: { value: string };
+    };
+    
+    const data = {
+      name: target.name.value,
+      email: target.email.value,
+      subject: target.subject.value,
+      message: target.message.value,
+    };
+
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
+      });
+
+      if (response.ok) {
+        setStatus('success');
+        (e.target as HTMLFormElement).reset();
+      } else {
+        setStatus('error');
+        setErrorMessage('Failed to send message. Please try again later.');
+      }
+    } catch (error) {
+      console.error('Submission error:', error);
+      setStatus('error');
+      setErrorMessage('An unexpected error occurred. Please try again.');
+    }
   };
 
   return (
@@ -22,6 +56,12 @@ export default function ContactForm() {
       {status === 'success' && (
         <div className={styles.successMessage}>
           Thank you for reaching out! Your message has been received and we will get back to you shortly.
+        </div>
+      )}
+      
+      {status === 'error' && (
+        <div className={styles.successMessage} style={{ backgroundColor: 'rgba(220, 38, 38, 0.1)', color: '#dc2626', borderColor: 'rgba(220, 38, 38, 0.2)' }}>
+          {errorMessage}
         </div>
       )}
 

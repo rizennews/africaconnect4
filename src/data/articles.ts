@@ -49,7 +49,7 @@ export const ARTICLES: ArticleData[] = [
       avatar: '/authors/Kwaku Effah Amponsah.png',
       role: 'Communications Lead'
     },
-    image: '/blog/wiw-image.jpg',
+    image: '/blog/WIW Network poster.jpg',
     cutoutPosition: 'bottom',
     timestamp: 1787097600000,
     tableOfContents: [

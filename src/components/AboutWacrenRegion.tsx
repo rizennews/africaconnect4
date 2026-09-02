@@ -1,5 +1,7 @@
 import React from 'react';
+import Link from 'next/link';
 import styles from './AboutWacrenRegion.module.css';
+import focusStyles from './FocusAreasGrid.module.css';
 
 export default function AboutWacrenRegion() {
   return (
@@ -12,62 +14,103 @@ export default function AboutWacrenRegion() {
           </p>
         </div>
 
-        <div className={styles.grid}>
-          {/* Top Left - Dark */}
-          <div className={`${styles.cell} ${styles.cellTopLeft}`}>
-            <div className={styles.iconWrapper}>
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary-orange)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
+        <div className={focusStyles.container}>
+          {/* Card 1 */}
+          <div className={`${focusStyles.card} ${focusStyles.card1}`}>
+            <div className={focusStyles.iconWrapper}>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <circle cx="12" cy="12" r="4"></circle>
+              </svg>
             </div>
-            <h3 className={styles.cellTitle}>Extend the backbone into Central Africa</h3>
-            <p className={styles.cellDesc}>
-              A new Lagos-Douala link will connect Cameroon's NREN (RIC), creating WACREN's first point of presence in Central Africa and a fifth aggregation hub, opening the door to future connections with Chad, Equatorial Guinea and Gabon.
+
+            <h3 className={focusStyles.title}>Connectivity Expansion</h3>
+            <p className={focusStyles.description}>
+              Strengthening the WACREN backbone, extending high-speed regional links and tackling last-mile gaps bringing new countries into the network in Phase 4.
             </p>
+            <Link href="#" className={focusStyles.exploreLink}>
+              Explore 
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </Link>
           </div>
 
-          {/* Top Right */}
-          <div className={`${styles.cell} ${styles.cellTopRight}`}>
-            <div className={styles.iconWrapperLight}>
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary-orange)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2"></path><path d="M12 20v2"></path><path d="M4.93 4.93l1.41 1.41"></path><path d="M17.66 17.66l1.41 1.41"></path><path d="M2 12h2"></path><path d="M20 12h2"></path><path d="M6.34 17.66l-1.41 1.41"></path><path d="M19.07 4.93l-1.41 1.41"></path></svg>
+          {/* Card 2 */}
+          <div className={`${focusStyles.card} ${focusStyles.card2}`}>
+            <div className={focusStyles.iconWrapper}>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <circle cx="18" cy="5" r="3"></circle>
+                <circle cx="6" cy="12" r="3"></circle>
+                <circle cx="18" cy="19" r="3"></circle>
+                <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line>
+                <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>
+              </svg>
             </div>
-            <h3 className={styles.cellTitleDark}>Strengthen West African connectivity</h3>
-            <p className={styles.cellDescLight}>
-              Peering with Senegal's research and education network via the Dakar hub, and a new Dakar-Praia link bringing Cabo Verde's emerging NREN onto the network, with future links to the Americas through the BELLA programme.
+
+            <h3 className={focusStyles.title}>Climate Data Infrastructure</h3>
+            <p className={focusStyles.description}>
+              HPC clusters, EUMETCast terrestrial data portals, WMO-compliant weather stations and LoRaWAN gateways building the digital plumbing for African climate research, all under the WACREN CLIMET service. 
             </p>
+            <Link href="#" className={focusStyles.exploreLink}>
+              Explore 
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </Link>
           </div>
 
-          {/* Bottom 1 */}
-          <div className={`${styles.cell} ${styles.cellBottom}`}>
-            <div className={styles.iconWrapperLight}>
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary-orange)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path></svg>
+          {/* Card 3 */}
+          <div className={`${focusStyles.card} ${focusStyles.card3}`}>
+            <div className={focusStyles.iconWrapper}>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+              </svg>
             </div>
-            <h3 className={styles.cellTitleDark}>Build resilience</h3>
-            <p className={styles.cellDescLight}>
-              Redundant links building on the Lagos GXP and its peering connection to ZAOXI in Cape Town, with further resilience via Fortaleza and the AMPATH GXP in Miami.
+
+            <h3 className={focusStyles.title}>Women in STEM</h3>
+            <p className={focusStyles.description}>
+              Growing women’s leadership through the Women-in-WACREN programme, annual hackathons and mentorship.
             </p>
+            <Link href="#" className={focusStyles.exploreLink}>
+              Explore 
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </Link>
           </div>
 
-
-
-          {/* Bottom 3 */}
-          <div className={`${styles.cell} ${styles.cellBottom}`}>
-            <div className={styles.iconWrapperLight}>
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary-orange)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+          {/* Card 4 */}
+          <div className={`${focusStyles.card} ${focusStyles.card4}`}>
+            <div className={focusStyles.iconWrapper}>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              </svg>
             </div>
-            <h3 className={styles.cellTitleDark}>Deliver above-the-network services</h3>
-            <p className={styles.cellDescLight}>
-              Regional identity, security, video collaboration, data and computing services, including eduID.africa, an Information Sharing and Analysis Centre for cybersecurity, and federated high-performance computing.
+
+            <h3 className={focusStyles.title}>Cybersecurity & Threat Intelligence</h3>
+            <p className={focusStyles.description}>
+              Standing up an ISAC, strengthening CSIRT cooperation and securing federated identity across the region’s NRENs, through the TrustBroker Africa and the WACREN T&I programmes
             </p>
+            <Link href="#" className={focusStyles.exploreLink}>
+              Explore 
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </Link>
           </div>
 
-          {/* Bottom 4 */}
-          <div className={`${styles.cell} ${styles.cellBottom}`}>
-            <div className={styles.iconWrapperLight}>
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary-orange)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+          {/* Card 5 */}
+          <div className={`${focusStyles.card} ${focusStyles.card5}`}>
+            <div className={focusStyles.iconWrapper}>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                <line x1="8" y1="21" x2="16" y2="21"></line>
+                <line x1="12" y1="17" x2="12" y2="21"></line>
+              </svg>
             </div>
-            <h3 className={styles.cellTitleDark}>Grow women's leadership</h3>
-            <p className={styles.cellDescLight}>
-              An annual women's hackathon, training and mentorship programmes to increase women's participation in the REN ecosystem and in STEM more broadly.
+
+            <h3 className={focusStyles.title}>Capacity Building</h3>
+            <p className={focusStyles.description}>
+              The NREN Academy, business accelerators, technical training and exchange programmes equipping a new generation of African REN leaders, all through the Africa Training Initiative (ATI).
             </p>
+            <Link href="#" className={focusStyles.exploreLink}>
+              Explore 
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </Link>
           </div>
         </div>
       </div>

@@ -9,7 +9,7 @@ export default function AboutTimeline() {
         <div className={styles.header}>
           <h2 className={styles.title}>Building on a decade of progress</h2>
           <p className={styles.subtitle}>
-            The European Union has supported African RRENs through the AfricaConnect programme since 2011. Each phase has extended the network's reach across West and Central Africa.
+            The European Commission has supported African research and education networks (RENs) through the AfricaConnect programme since 2011. WACREN joined the project in the second phase (AfricaConnect2 - 2015 - 2019). 
           </p>
         </div>
         

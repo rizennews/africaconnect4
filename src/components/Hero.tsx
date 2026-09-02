@@ -11,7 +11,7 @@ export default function Hero() {
             Connecting Africa to unlimited possibilities
           </h1>
           <p className={styles.description}>
-            AfricaConnect4 is the fourth chapter of an EU-funded initiative growing Africa’s research and education sector through high-speed connectivity, climate data infrastructure, digital services and capacity building implemented in West and Central Africa by WACREN.
+            AfricaConnect4 is the fourth interation of an EU-funded initiative growing Africa’s research and education sector through high-speed connectivity, climate data infrastructure, digital services and capacity building implemented in West and Central Africa by WACREN.
           </p>
           <div className={styles.buttonGroup}>
             <Link href="/about" className={styles.primaryButton}>

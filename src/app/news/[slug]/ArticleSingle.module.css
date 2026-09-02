@@ -305,6 +305,7 @@
 
 .articleSection {
   scroll-margin-top: 130px;
+  clear: both;
 }
 
 .sectionHeading {
@@ -316,11 +317,15 @@
 }
 
 .sectionImageWrapper {
-  margin-bottom: 2rem;
+  float: right;
+  width: 45%;
+  min-width: 250px;
+  max-width: 450px;
+  margin: 0 0 1.5rem 2rem;
 }
 
 .sectionImage {
-  max-width: 100%;
+  width: 100%;
   height: auto;
   border-radius: 12px;
   box-shadow: 0 4px 15px rgba(12, 25, 77, 0.06);

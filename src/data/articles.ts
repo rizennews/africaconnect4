@@ -49,7 +49,7 @@ export const ARTICLES: ArticleData[] = [
       avatar: '/authors/Kwaku Effah Amponsah.png',
       role: 'Communications Lead'
     },
-    image: '/blog/WIW Network poster.jpg',
+    image: '/blog/wiw-image.jpg',
     cutoutPosition: 'bottom',
     timestamp: 1787097600000,
     tableOfContents: [
@@ -74,7 +74,7 @@ export const ARTICLES: ArticleData[] = [
           ]
         },
         {
-          image: '/blog/WIW Network poster.jpg',
+          image: '/blog/wiw-image.jpg',
           paragraphs: [
             'With support from the European Commission through AfricaConnect4, WACREN continues to unlock the potential of women in research and education. Join us for this transformative virtual launch to expand your network, elevate your skills, and help shape a sustainable future for African science and technology.'
           ]

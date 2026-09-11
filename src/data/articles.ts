@@ -336,5 +336,274 @@ export const ARTICLES: ArticleData[] = [
       ]
     }
   },
-
+  {
+    slug: 'women-in-wacren-call-for-facilitators',
+    id: '6',
+    category: 'News',
+    tags: ['News', 'Call'],
+    date: 'September 11, 2026',
+    readTime: '2 Min Read',
+    title: 'Women-In-WACREN Call for Facilitators',
+    author: {
+      name: 'Padmore',
+      avatar: '/authors/PAD.png',
+      role: 'Author'
+    },
+    image: '/blog/call-for-facilitators copy 2.jpg',
+    cutoutPosition: 'bottom',
+    timestamp: 1787616000000,
+    tableOfContents: [
+      { id: 'facilitator-profile', title: 'Facilitator Profile' },
+      { id: 'expertise', title: 'Expertise we need' },
+      { id: 'who-we-are-looking-for', title: 'Who we\'re looking for' },
+      { id: 'role', title: 'Role during the Lab' },
+      { id: 'benefits', title: 'What’s in it for you' }
+    ],
+    content: {
+      intro: 'Women-in-WACREN is seeking volunteer facilitators (men & women) for the Climate Innovation Lab 2026, scheduled for October 12–15. This four-day intensive program brings together multidisciplinary teams to design and build digital solutions addressing climate challenges across West and Central Africa.',
+      sections: [
+        {
+          id: 'expertise',
+          heading: 'Expertise we need',
+          paragraphs: [
+            'Facilitators should have hands-on experience in one or more of these areas:',
+            '• Climate & environment — adaptation, mitigation, environmental sustainability, resilience, or related African climate challenges.',
+            '• Digital technologies for climate action — applying AI, data science, GIS, Earth observation, IoT, digital platforms or other emerging tech to climate and environmental problems.',
+            '• Human-centred design — problem definition, user and stakeholder research, needs analysis, translating real-world challenges into solution requirements.',
+            '• Design thinking & ideation — running collaborative ideation, weighing approaches, helping teams sharpen ideas into viable concepts.',
+            '• Testing, documentation & iteration — user testing, interpreting feedback, refining solutions, producing the documentation teams need.',
+            '• Pitching & Adoption — helping teams articulate the problem, the solution, the expected impact, potential funding, partnerships, prepare a strong demo and what it takes to carry a promising prototype beyond the Lab.'
+          ]
+        },
+        {
+          id: 'who-we-are-looking-for',
+          heading: 'Who we\'re looking for',
+          paragraphs: [
+            '• Practical experience in at least one area above, not just familiarity with it.',
+            '• Comfortable facilitating and mentoring, not lecturing.',
+            '• At ease with multidisciplinary teams spanning different levels of technical skill.',
+            '• Skilled at helping teams turn broad challenges into specific, achievable solutions.',
+            '• Familiar with African research, education, innovation, climate or technology environments, ideally through direct experience.',
+            '• Able to give honest, constructive feedback while leaving teams ownership of their ideas.',
+            '• Open to working alongside other facilitators whose strengths complement their own.',
+            'Facilitators can come from universities, research institutions, NRENs, innovation hubs, government, industry, civil society or development organisations.'
+          ]
+        },
+        {
+          id: 'role',
+          heading: 'Role during the Lab',
+          paragraphs: [
+            'Facilitators guide teams through the full arc: climate challenge, problem definition, user needs, ideation, solution design, prototype, testing, demonstration, roadmap.',
+            'This is learning by doing. Most of a facilitator\'s time goes into working directly with teams: asking questions, challenging assumptions, offering specialist input, and helping participants make real progress rather than sitting in on theory.',
+            'Selected facilitators may also be invited into the programme\'s post-Lab Community of Practice and ongoing solution mentorship.'
+          ]
+        },
+        {
+          id: 'benefits',
+          heading: 'What’s in it for you',
+          paragraphs: [
+            '• Visibility and Recognition',
+            '• Expanded Professional Network',
+            '• Leadership Development',
+            '• Certificate/Formal Acknowledgment',
+            '• Sponsorship for in-person participation at the innovation lab'
+          ]
+        },
+        {
+          heading: 'Important Dates',
+          paragraphs: [
+            'Application Deadline: September 15, 2026',
+            'Selection Notification: September 21, 2026'
+          ]
+        }
+      ],
+      cta: {
+        label: '',
+        linkText: 'Call for Facilitators (Apply Here)',
+        url: 'https://indico.wacren.net/event/282/registrations/201/'
+      }
+    }
+  },
+  {
+    slug: 'women-in-wacren-call-for-mentors',
+    id: '7',
+    category: 'News',
+    tags: ['News', 'Call'],
+    date: 'September 11, 2026',
+    readTime: '2 Min Read',
+    title: 'Women-In-WACREN Call for Mentors',
+    author: {
+      name: 'Padmore',
+      avatar: '/authors/PAD.png',
+      role: 'Author'
+    },
+    image: '/blog/call-for-MENTORS copy.jpg',
+    cutoutPosition: 'bottom',
+    timestamp: 1787616000000,
+    tableOfContents: [
+      { id: 'areas-of-expertise', title: 'Areas of expertise' },
+      { id: 'what-mentors-will-do', title: 'What mentors will do' },
+      { id: 'benefits', title: 'What’s in it for you' },
+      { id: 'who-we-are-looking-for', title: 'Who we\'re looking for' }
+    ],
+    content: {
+      intro: 'Women-in-WACREN is looking for mentors (men & women) to volunteer to support teams in the Climate Innovation Lab 2026 as they build and refine digital solutions to climate challenges in West and Central Africa. Mentors contribute during the Lab itself and/or through the six-month post-Lab Community of Practice and Solution Mentorship programme.',
+      sections: [
+        {
+          id: 'areas-of-expertise',
+          heading: 'Areas of expertise',
+          paragraphs: [
+            'We\'re looking for practical experience in one or more of these:',
+            '• Climate change, environmental science, adaptation or mitigation',
+            '• Software development and solution architecture',
+            '• Artificial intelligence and data science',
+            '• GIS and Earth observation',
+            '• IoT, sensors and environmental monitoring',
+            '• User experience and human-centred design',
+            '• Entrepreneurship, business models and sustainability',
+            '• Product development and deployment',
+            '• Institutional adoption and partnerships',
+            '• Monitoring, evaluation and impact'
+          ]
+        },
+        {
+          id: 'what-mentors-will-do',
+          heading: 'What mentors will do',
+          paragraphs: [
+            'This varies by team, but mentors can expect to:',
+            '• Give specialist technical or domain advice.',
+            '• Review solution concepts and prototypes.',
+            '• Help teams spot technical or implementation challenges early.',
+            '• Connect teams to useful tools, data, expertise or networks.',
+            '• Advise on testing, deployment and adoption.',
+            '• Help teams build realistic technical and implementation roadmaps.',
+            '• Check in periodically as solutions develop after the Lab.'
+          ]
+        },
+        {
+          id: 'benefits',
+          heading: 'What’s in it for you',
+          paragraphs: [
+            '• Visibility and Recognition',
+            '• Expanded Professional Network',
+            '• Leadership Development',
+            '• Certificate/Formal Acknowledgment',
+            '• Sponsorship for in-person participation at the innovation lab'
+          ]
+        },
+        {
+          id: 'who-we-are-looking-for',
+          heading: 'Who we\'re looking for',
+          paragraphs: [
+            'Mentors can come from universities, research institutions, NRENs, government, industry, innovation hubs, civil society or development organisations.',
+            'What matters most is relevant, practical experience, ease working across multidisciplinary teams, and the ability to give honest guidance while letting participants keep ownership of their solutions.',
+            'Mentors don\'t need to be trainers or facilitators. The point is to make the right expertise available to teams exactly when they need it.'
+          ]
+        },
+        {
+          heading: 'Important Dates',
+          paragraphs: [
+            'Application Deadline: September 15, 2026',
+            'Selection Notification: September 21, 2026'
+          ]
+        }
+      ],
+      cta: {
+        label: '',
+        linkText: 'Call for Mentors (Apply Here)',
+        url: 'https://indico.wacren.net/event/283/registrations/203/'
+      }
+    }
+  },
+  {
+    slug: 'climate-innovation-lab-2026-applications',
+    id: '8',
+    category: 'News',
+    tags: ['News', 'Call'],
+    date: 'September 11, 2026',
+    readTime: '3 Min Read',
+    title: 'Climate Innovation Lab 2026 - Call for Applications',
+    author: {
+      name: 'Padmore',
+      avatar: '/authors/PAD.png',
+      role: 'Author'
+    },
+    image: '/blog/call-for-applications-final copy.jpg',
+    cutoutPosition: 'bottom',
+    timestamp: 1787616000000,
+    tableOfContents: [
+      { id: 'team-formation', title: 'Team Formation' },
+      { id: 'strong-team', title: 'What a strong team combines' },
+      { id: 'expectations', title: 'What we expect from teams' },
+      { id: 'selection-criteria', title: 'Selection Criteria' }
+    ],
+    content: {
+      intro: 'Women-In-WACREN (WiW) is hereby calling for applications from women in STEM across West and Central Africa for its Climate Innovation Lab 2026, a structured innovation programme that combines a virtual network of women in STEM, an intensive in-person Climate Innovation Lab, and a post-lab mentorship programme. The programme aims to strengthen the capacity of women in STEM across West and Central Africa to collaboratively design and develop innovative digital solutions that address climate change adaptation and mitigation challenges within their communities and institutions.',
+      sections: [
+        {
+          id: 'team-formation',
+          heading: 'Team Formation',
+          paragraphs: [
+            'Applicants may apply individually or as part of an existing team. Where appropriate, multidisciplinary teams comprising max of 3 participants can be formed to ensure complementary technical and domain expertise.'
+          ]
+        },
+        {
+          id: 'strong-team',
+          heading: 'What a strong team combines',
+          paragraphs: [
+            '• Climate or domain knowledge: Understanding of the climate, environmental, community or institutional problem being addressed.',
+            '• Technical capability: The ability to build or prototype the proposed solution, drawing on software development, AI, data science, GIS, Earth observation, IoT or related technologies as needed.',
+            '• User and problem understanding: The ability to understand affected users and stakeholders, investigate their needs, and make sure the solution addresses a real problem.',
+            '• Solution and product thinking: The ability to turn a problem into a practical solution: prioritising features, testing assumptions, iterating.',
+            '• Adoption and sustainability thinking: A sense of how the solution could be implemented, adopted, supported and sustained beyond the Lab',
+            'No team needs all of this on day one!',
+            'No single participant is expected to bring every capability, and a team doesn\'t need a dedicated person for each area. The goal is a complementary mix, enough domain, technical and user-facing capability to take a problem through:',
+            'Challenge → user need → solution → prototype → test → demonstration → roadmap',
+            'Facilitators and specialist mentors help teams fill capability gaps during the Lab and through the mentorship period that follows.'
+          ]
+        },
+        {
+          id: 'expectations',
+          heading: 'What we expect from teams',
+          paragraphs: [
+            '• Work collaboratively across disciplines.',
+            '• Stay focused on a clearly defined climate-related problem.',
+            '• Engage directly with the users or stakeholders their solution is for.',
+            '• Build and test a practical prototype or proof of concept.',
+            '• Take feedback well and iterate.',
+            '• Document their work and what they learn along the way.',
+            '• Present their solution with a realistic path for further development.',
+            '• Keep perfecting solutions through the post-Lab mentorship programme.',
+            'The team owns the problem and the solution. Facilitators guide the process; mentors bring in specialist expertise where it\'s needed.'
+          ]
+        },
+        {
+          id: 'selection-criteria',
+          heading: 'Selection Criteria',
+          paragraphs: [
+            'The programme welcomes applications from women across West and Central Africa who are passionate about climate action, innovation, and technology. Applicants should:',
+            '• Be female.',
+            '• Be affiliated with a university, research institution, innovation hub, government institution, private sector organisation, or STEM community.',
+            '• Demonstrate an interest in climate change, sustainability, STEM, innovation, or emerging digital technologies.',
+            '• Commit to actively participating in ALL WiW Network activities.',
+            '• Be willing to work collaboratively within multidisciplinary teams.',
+            'Applicants do not need to be software developers, and women from diverse disciplines are strongly encouraged to apply.'
+          ]
+        },
+        {
+          heading: 'Important Dates',
+          paragraphs: [
+            'Application Deadline: September 15, 2026',
+            'Selection Notification: September 21, 2026',
+            'The selection process will ensure regional representation within WACREN and prioritise inclusivity.'
+          ]
+        }
+      ],
+      cta: {
+        label: '',
+        linkText: 'Call for Applications (Apply Here)',
+        url: 'https://indico.wacren.net/event/279/registrations/198/'
+      }
+    }
+  }
 ];

@@ -108,6 +108,15 @@ export const futureEvents: EventData[] = [
     day: '25', month: 'AUG', year: '2026',
     location: 'Virtual',
     link: 'https://indico.wacren.net/event/283/'
+  },
+  {
+    status: 'UPCOMING',
+    type: 'WORKSHOP',
+    title: 'Responsible Research Governance (RRG) Workshop',
+    description: 'This workshop opens a new strand of LIBSENSE work on Responsible Research Governance (RRG): what it means to govern research responsibly within African institutions.',
+    day: '14', month: 'DEC', year: '2026',
+    location: 'Office of the University Librarian, KNUST - Kumasi',
+    link: 'https://indico.wacren.net/event/284/'
   }
 ];
 

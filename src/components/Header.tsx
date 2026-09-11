@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import { usePathname } from 'next/navigation';
 import styles from './Header.module.css';
 
 const focusItems = [
@@ -74,6 +75,9 @@ const languages = [
 ];
 
 export default function Header() {
+  const pathname = usePathname();
+  const isProcurement = pathname?.startsWith('/procurement');
+
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [openMobileMega, setOpenMobileMega] = useState<string | null>(null);
   const [currentLang, setCurrentLang] = useState(languages[0]);
@@ -151,47 +155,69 @@ export default function Header() {
         {/* Desktop Navigation */}
         <nav className={styles.desktopNav}>
           <ul className={styles.navList}>
-            <li className={styles.navItem}>
-              <Link href="/about" className={styles.navLink}>About</Link>
-            </li>
-            <li className={styles.navItem}>
-              <span className={styles.navLink}>
-                Focus
-                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
-              </span>
-              <div className={styles.megaMenu}>
-                {focusItems.map((item) => (
-                  <Link href={item.href} key={item.title} className={styles.megaMenuLink} target={item.href.startsWith('http') ? '_blank' : undefined} rel={item.href.startsWith('http') ? 'noopener noreferrer' : undefined}>
-                    <div className={styles.megaMenuItem}>
-                      <span className={styles.megaMenuTitle}>{item.title}</span>
-                      <span className={styles.megaMenuDesc}>{item.desc}</span>
-                    </div>
-                  </Link>
-                ))}
-              </div>
-            </li>
-            <li className={styles.navItem}>
-              <Link href="/activities" className={styles.navLink}>Activities</Link>
-            </li>
-            <li className={styles.navItem}>
-              <span className={styles.navLink}>
-                Media
-                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
-              </span>
-              <div className={`${styles.megaMenu} ${styles.megaMenuRight}`}>
-                {mediaItems.map((item) => (
-                  <Link href={item.href} key={item.title} className={styles.megaMenuLink} target={item.href.startsWith('http') ? '_blank' : undefined} rel={item.href.startsWith('http') ? 'noopener noreferrer' : undefined}>
-                    <div className={styles.megaMenuItem}>
-                      <span className={styles.megaMenuTitle}>{item.title}</span>
-                      <span className={styles.megaMenuDesc}>{item.desc}</span>
-                    </div>
-                  </Link>
-                ))}
-              </div>
-            </li>
-            <li className={styles.navItem}>
-              <Link href="/contact" className={styles.navLink}>Contact</Link>
-            </li>
+            {isProcurement ? (
+              <>
+                <li className={styles.navItem}>
+                  <Link href="/procurement" className={styles.navLink}>Opportunities</Link>
+                </li>
+                <li className={styles.navItem}>
+                  <Link href="/procurement?tab=contract-awards" className={styles.navLink}>Contract Awards</Link>
+                </li>
+                <li className={styles.navItem}>
+                  <Link href="#" className={styles.navLink}>Supplier Registration</Link>
+                </li>
+                <li className={styles.navItem}>
+                  <Link href="/" className={styles.navLink}>Back to Main Site</Link>
+                </li>
+              </>
+            ) : (
+              <>
+                <li className={styles.navItem}>
+                  <Link href="/about" className={styles.navLink}>About</Link>
+                </li>
+                <li className={styles.navItem}>
+                  <span className={styles.navLink}>
+                    Focus
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                  </span>
+                  <div className={styles.megaMenu}>
+                    {focusItems.map((item) => (
+                      <Link href={item.href} key={item.title} className={styles.megaMenuLink} target={item.href.startsWith('http') ? '_blank' : undefined} rel={item.href.startsWith('http') ? 'noopener noreferrer' : undefined}>
+                        <div className={styles.megaMenuItem}>
+                          <span className={styles.megaMenuTitle}>{item.title}</span>
+                          <span className={styles.megaMenuDesc}>{item.desc}</span>
+                        </div>
+                      </Link>
+                    ))}
+                  </div>
+                </li>
+                <li className={styles.navItem}>
+                  <Link href="/activities" className={styles.navLink}>Activities</Link>
+                </li>
+                <li className={styles.navItem}>
+                  <span className={styles.navLink}>
+                    Media
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                  </span>
+                  <div className={`${styles.megaMenu} ${styles.megaMenuRight}`}>
+                    {mediaItems.map((item) => (
+                      <Link href={item.href} key={item.title} className={styles.megaMenuLink} target={item.href.startsWith('http') ? '_blank' : undefined} rel={item.href.startsWith('http') ? 'noopener noreferrer' : undefined}>
+                        <div className={styles.megaMenuItem}>
+                          <span className={styles.megaMenuTitle}>{item.title}</span>
+                          <span className={styles.megaMenuDesc}>{item.desc}</span>
+                        </div>
+                      </Link>
+                    ))}
+                  </div>
+                </li>
+                <li className={styles.navItem}>
+                  <Link href="/procurement" className={styles.navLink}>Procurement</Link>
+                </li>
+                <li className={styles.navItem}>
+                  <Link href="/contact" className={styles.navLink}>Contact</Link>
+                </li>
+              </>
+            )}
           </ul>
         </nav>
 
@@ -212,47 +238,69 @@ export default function Header() {
       {/* Mobile Navigation Overlay */}
       <div className={`${styles.mobileNav} ${isMobileMenuOpen ? styles.open : ''}`}>
         <ul className={styles.mobileNavList}>
-          <li className={styles.mobileNavItem}>
-            <Link href="/about" className={styles.mobileNavLink} onClick={toggleMobileMenu}>About</Link>
-          </li>
-          <li className={styles.mobileNavItem}>
-            <button className={styles.mobileNavLink} onClick={() => toggleMobileMega('focus')}>
-              Focus
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ transform: openMobileMega === 'focus' ? 'rotate(180deg)' : 'rotate(0)' }}><polyline points="6 9 12 15 18 9"></polyline></svg>
-            </button>
-            <div className={`${styles.mobileMegaMenu} ${openMobileMega === 'focus' ? styles.open : ''}`}>
-              {focusItems.map((item) => (
-                <Link href={item.href} key={item.title} className={styles.megaMenuLink} onClick={toggleMobileMenu} target={item.href.startsWith('http') ? '_blank' : undefined} rel={item.href.startsWith('http') ? 'noopener noreferrer' : undefined}>
-                  <div className={styles.megaMenuItem}>
-                    <span className={styles.megaMenuTitle}>{item.title}</span>
-                    <span className={styles.megaMenuDesc}>{item.desc}</span>
-                  </div>
-                </Link>
-              ))}
-            </div>
-          </li>
-          <li className={styles.mobileNavItem}>
-            <Link href="/activities" className={styles.mobileNavLink} onClick={toggleMobileMenu}>Activities</Link>
-          </li>
-          <li className={styles.mobileNavItem}>
-            <button className={styles.mobileNavLink} onClick={() => toggleMobileMega('media')}>
-              Media
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ transform: openMobileMega === 'media' ? 'rotate(180deg)' : 'rotate(0)' }}><polyline points="6 9 12 15 18 9"></polyline></svg>
-            </button>
-            <div className={`${styles.mobileMegaMenu} ${openMobileMega === 'media' ? styles.open : ''}`}>
-              {mediaItems.map((item) => (
-                <Link href={item.href} key={item.title} className={styles.megaMenuLink} onClick={toggleMobileMenu} target={item.href.startsWith('http') ? '_blank' : undefined} rel={item.href.startsWith('http') ? 'noopener noreferrer' : undefined}>
-                  <div className={styles.megaMenuItem}>
-                    <span className={styles.megaMenuTitle}>{item.title}</span>
-                    <span className={styles.megaMenuDesc}>{item.desc}</span>
-                  </div>
-                </Link>
-              ))}
-            </div>
-          </li>
-          <li className={styles.mobileNavItem}>
-            <Link href="/contact" className={styles.mobileNavLink} onClick={toggleMobileMenu}>Contact</Link>
-          </li>
+          {isProcurement ? (
+            <>
+              <li className={styles.mobileNavItem}>
+                <Link href="/procurement" className={styles.mobileNavLink} onClick={toggleMobileMenu}>Opportunities</Link>
+              </li>
+              <li className={styles.mobileNavItem}>
+                <Link href="/procurement?tab=contract-awards" className={styles.mobileNavLink} onClick={toggleMobileMenu}>Contract Awards</Link>
+              </li>
+              <li className={styles.mobileNavItem}>
+                <Link href="#" className={styles.mobileNavLink} onClick={toggleMobileMenu}>Supplier Registration</Link>
+              </li>
+              <li className={styles.mobileNavItem}>
+                <Link href="/" className={styles.mobileNavLink} onClick={toggleMobileMenu}>Back to Main Site</Link>
+              </li>
+            </>
+          ) : (
+            <>
+              <li className={styles.mobileNavItem}>
+                <Link href="/about" className={styles.mobileNavLink} onClick={toggleMobileMenu}>About</Link>
+              </li>
+              <li className={styles.mobileNavItem}>
+                <button className={styles.mobileNavLink} onClick={() => toggleMobileMega('focus')}>
+                  Focus
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ transform: openMobileMega === 'focus' ? 'rotate(180deg)' : 'rotate(0)' }}><polyline points="6 9 12 15 18 9"></polyline></svg>
+                </button>
+                <div className={`${styles.mobileMegaMenu} ${openMobileMega === 'focus' ? styles.open : ''}`}>
+                  {focusItems.map((item) => (
+                    <Link href={item.href} key={item.title} className={styles.megaMenuLink} onClick={toggleMobileMenu} target={item.href.startsWith('http') ? '_blank' : undefined} rel={item.href.startsWith('http') ? 'noopener noreferrer' : undefined}>
+                      <div className={styles.megaMenuItem}>
+                        <span className={styles.megaMenuTitle}>{item.title}</span>
+                        <span className={styles.megaMenuDesc}>{item.desc}</span>
+                      </div>
+                    </Link>
+                  ))}
+                </div>
+              </li>
+              <li className={styles.mobileNavItem}>
+                <Link href="/activities" className={styles.mobileNavLink} onClick={toggleMobileMenu}>Activities</Link>
+              </li>
+              <li className={styles.mobileNavItem}>
+                <button className={styles.mobileNavLink} onClick={() => toggleMobileMega('media')}>
+                  Media
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ transform: openMobileMega === 'media' ? 'rotate(180deg)' : 'rotate(0)' }}><polyline points="6 9 12 15 18 9"></polyline></svg>
+                </button>
+                <div className={`${styles.mobileMegaMenu} ${openMobileMega === 'media' ? styles.open : ''}`}>
+                  {mediaItems.map((item) => (
+                    <Link href={item.href} key={item.title} className={styles.megaMenuLink} onClick={toggleMobileMenu} target={item.href.startsWith('http') ? '_blank' : undefined} rel={item.href.startsWith('http') ? 'noopener noreferrer' : undefined}>
+                      <div className={styles.megaMenuItem}>
+                        <span className={styles.megaMenuTitle}>{item.title}</span>
+                        <span className={styles.megaMenuDesc}>{item.desc}</span>
+                      </div>
+                    </Link>
+                  ))}
+                </div>
+              </li>
+              <li className={styles.mobileNavItem}>
+                <Link href="/procurement" className={styles.mobileNavLink} onClick={toggleMobileMenu}>Procurement</Link>
+              </li>
+              <li className={styles.mobileNavItem}>
+                <Link href="/contact" className={styles.mobileNavLink} onClick={toggleMobileMenu}>Contact</Link>
+              </li>
+            </>
+          )}
         </ul>
 
         {/* Mobile Topbar Links */}
@@ -288,3 +336,4 @@ export default function Header() {
     </header>
   );
 }
+

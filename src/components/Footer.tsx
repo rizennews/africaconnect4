@@ -10,8 +10,14 @@ export default function Footer() {
         <div className={styles.topSection}>
           {/* Column 1: Company Info */}
           <div className={styles.companyInfo}>
-            <Link href="/" style={{ textDecoration: 'none' }}>
-              <h2 style={{ fontSize: '2rem', fontWeight: 'bold', color: '#fff', margin: 0 }}>WACREN</h2>
+            <Link href="/" style={{ textDecoration: 'none', display: 'inline-block', marginBottom: '1rem' }}>
+              <Image 
+                src="/africaconnect4.png" 
+                alt="WACREN Logo" 
+                width={160} 
+                height={50} 
+                style={{ objectFit: 'contain', filter: 'brightness(0) invert(1)' }}
+              />
             </Link>
             <p className={styles.description}>
               The West and Central African Research and Education Network — providing world-class infrastructure and services for the region&apos;s research and education community.

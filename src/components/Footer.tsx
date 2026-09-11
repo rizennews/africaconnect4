@@ -16,7 +16,7 @@ export default function Footer() {
                 alt="WACREN Logo" 
                 width={160} 
                 height={50} 
-                style={{ objectFit: 'contain', filter: 'brightness(0) invert(1)' }}
+                style={{ objectFit: 'contain' }}
               />
             </Link>
             <p className={styles.description}>
@@ -33,11 +33,11 @@ export default function Footer() {
           <div className={styles.column}>
             <h3 className={styles.columnTitle}>About</h3>
             <div className={styles.links}>
-              <Link href="#" className={styles.link}>Who we are</Link>
-              <Link href="#" className={styles.link}>Corporate information</Link>
-              <Link href="#" className={styles.link}>Board & governance</Link>
-              <Link href="#" className={styles.link}>Member NRENs</Link>
-              <Link href="#" className={styles.link}>Careers</Link>
+              <Link href="/about" className={styles.link}>Who we are</Link>
+              <Link href="https://wacren.net/en/about-us/corporate-information/" target="_blank" rel="noopener noreferrer" className={styles.link}>Corporate information</Link>
+              <Link href="https://wacren.net/en/directors/" target="_blank" rel="noopener noreferrer" className={styles.link}>Board & governance</Link>
+              <Link href="https://wacren.net/en/community/nrens/" target="_blank" rel="noopener noreferrer" className={styles.link}>Member NRENs</Link>
+              <Link href="https://wacren.net/en/about-us/careers/" target="_blank" rel="noopener noreferrer" className={styles.link}>Careers</Link>
             </div>
           </div>
 
@@ -45,10 +45,10 @@ export default function Footer() {
           <div className={styles.column}>
             <h3 className={styles.columnTitle}>Services & Projects</h3>
             <div className={styles.links}>
-              <Link href="#" className={styles.link}>Network</Link>
-              <Link href="#" className={styles.link}>eduroam & eduGAIN</Link>
-              <Link href="#" className={styles.link}>Video conferencing</Link>
-              <Link href="#" className={styles.link}>LIBSENSE</Link>
+              <Link href="https://wacren.net/en/services/network-performance/" target="_blank" rel="noopener noreferrer" className={styles.link}>Network</Link>
+              <Link href="https://wacren.net/en/services/eduroam-edugain/" target="_blank" rel="noopener noreferrer" className={styles.link}>eduroam & eduGAIN</Link>
+              <Link href="https://wacren.net/en/services/video-conferencing/" target="_blank" rel="noopener noreferrer" className={styles.link}>Video conferencing</Link>
+              <Link href="https://libsense.ren.africa/home" target="_blank" rel="noopener noreferrer" className={styles.link}>LIBSENSE</Link>
             </div>
           </div>
 
@@ -56,10 +56,10 @@ export default function Footer() {
           <div className={styles.column}>
             <h3 className={styles.columnTitle}>Stay In Touch</h3>
             <div className={styles.links}>
-              <Link href="#" className={styles.link}>WACREN 2026 Conference</Link>
-              <Link href="#" className={styles.link}>Newsletter</Link>
-              <Link href="#" className={styles.link}>Press & media</Link>
-              <Link href="#" className={styles.link}>Contact</Link>
+              <Link href="https://wacren2026.wacren.net/" target="_blank" rel="noopener noreferrer" className={styles.link}>WACREN 2026 Conference</Link>
+              <Link href="/news" className={styles.link}>Newsletter</Link>
+              <Link href="/news" className={styles.link}>Press & media</Link>
+              <Link href="/contact" className={styles.link}>Contact</Link>
             </div>
             
             <div className={styles.socialLinks}>

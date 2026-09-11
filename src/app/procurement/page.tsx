@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, Suspense } from 'react';
 import { useSearchParams } from 'next/navigation';
 import ProcurementSidebar, { categories } from '../../components/ProcurementSidebar';
 import OpportunityCard from '../../components/OpportunityCard';
@@ -8,7 +8,7 @@ import styles from './page.module.css';
 
 import { MOCK_OPPORTUNITIES, MOCK_AWARDS } from '../../data/procurement';
 
-export default function ProcurementPage() {
+function ProcurementContent() {
   const searchParams = useSearchParams();
   const initialTab = searchParams.get('tab') || 'open';
   
@@ -244,5 +244,13 @@ export default function ProcurementPage() {
         </div>
       )}
     </div>
+  );
+}
+
+export default function ProcurementPage() {
+  return (
+    <Suspense fallback={<div style={{ padding: '2rem', textAlign: 'center' }}>Loading opportunities...</div>}>
+      <ProcurementContent />
+    </Suspense>
   );
 }

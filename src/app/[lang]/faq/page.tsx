@@ -2,18 +2,27 @@ import type { Metadata } from 'next';
 import PageHero from '@/components/PageHero';
 import FaqAccordion from '@/components/FaqAccordion';
 
-export const metadata: Metadata = {
+export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
+  const { lang } = await params;
+  return {
   title: 'Frequently Asked Questions (FAQ)',
   description: 'Frequently asked questions about AfricaConnect, NRENs, regional networks, and European Union co-funding for African research and education.',
-  alternates: {
-    canonical: '/faq',
-  },
+  
   openGraph: {
     title: 'Frequently Asked Questions (FAQ) | AfricaConnect4',
     description: 'Find answers to common questions about AfricaConnect, NRENs, funding, and partners.',
     url: 'https://africaconnect4.net/faq',
   },
-};
+  alternates: {
+    canonical: `/${lang}/faq`,
+    languages: {
+      en: `/en/faq`,
+      fr: `/fr/faq`,
+      pt: `/pt/faq`,
+    },
+  },
+  };
+}
 
 const faqSchema = {
   '@context': 'https://schema.org',

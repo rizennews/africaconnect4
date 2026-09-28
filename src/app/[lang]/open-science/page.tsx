@@ -4,18 +4,27 @@ import PageHero from '@/components/PageHero';
 import FocusLayout from '@/components/FocusLayout';
 import styles from '@/components/FocusPage.module.css';
 
-export const metadata: Metadata = {
+export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
+  const { lang } = await params;
+  return {
   title: 'Open Science & LIBSENSE Infrastructure',
   description: 'Advancing open science, diamond open access, institutional repositories, and open scholarly communication infrastructures across Africa through LIBSENSE and WACREN.',
-  alternates: {
-    canonical: '/open-science',
-  },
+  
   openGraph: {
     title: 'Open Science & LIBSENSE | AfricaConnect4',
     description: 'Advancing open, equitable access to African research and scholarly communication.',
     url: 'https://africaconnect4.net/open-science',
   },
-};
+  alternates: {
+    canonical: `/${lang}/open-science`,
+    languages: {
+      en: `/en/open-science`,
+      fr: `/fr/open-science`,
+      pt: `/pt/open-science`,
+    },
+  },
+  };
+}
 
 export default async function Page() {
   const dict = await getDictionary();

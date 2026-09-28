@@ -8,18 +8,27 @@ import { futureEvents as futureEventsFr, pastEvents as pastEventsFr, presentEven
 import { futureEvents as futureEventsPt, pastEvents as pastEventsPt, presentEvents as presentEventsPt } from '@/data/events_pt';
 import FundingBanner from '@/components/FundingBanner';
 
-export const metadata: Metadata = {
+export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
+  const { lang } = await params;
+  return {
   title: 'Project Activities & Events',
   description: 'Conferences, workshops, hackathons, training sessions and community meetings across the AfricaConnect4 programme in West and Central Africa.',
-  alternates: {
-    canonical: '/activities',
-  },
+  
   openGraph: {
     title: 'Project Activities & Events | AfricaConnect4',
     description: 'Conferences, workshops, and training sessions across the AfricaConnect4 programme in West and Central Africa.',
     url: 'https://africaconnect4.net/activities',
   },
-};
+  alternates: {
+    canonical: `/${lang}/activities`,
+    languages: {
+      en: `/en/activities`,
+      fr: `/fr/activities`,
+      pt: `/pt/activities`,
+    },
+  },
+  };
+}
 
 export default async function ActivitiesPage({ params }: { params: { lang: string } }) {
   const { lang } = await params;

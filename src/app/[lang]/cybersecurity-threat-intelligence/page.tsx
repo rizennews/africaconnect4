@@ -4,18 +4,27 @@ import PageHero from '@/components/PageHero';
 import FocusLayout from '@/components/FocusLayout';
 import styles from '@/components/FocusPage.module.css';
 
-export const metadata: Metadata = {
+export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
+  const { lang } = await params;
+  return {
   title: 'Cybersecurity & Threat Intelligence | TrustBroker Africa',
   description: 'Strengthening regional cyber resilience, TrustBroker Africa (TBA), CSIRT coordination, and federated trust & identity across West and Central Africa.',
-  alternates: {
-    canonical: '/cybersecurity-threat-intelligence',
-  },
+  
   openGraph: {
     title: 'Cybersecurity & Threat Intelligence | AfricaConnect4',
     description: 'Safeguarding academic and research networks against evolving digital threats.',
     url: 'https://africaconnect4.net/cybersecurity-threat-intelligence',
   },
-};
+  alternates: {
+    canonical: `/${lang}/cybersecurity-threat-intelligence`,
+    languages: {
+      en: `/en/cybersecurity-threat-intelligence`,
+      fr: `/fr/cybersecurity-threat-intelligence`,
+      pt: `/pt/cybersecurity-threat-intelligence`,
+    },
+  },
+  };
+}
 
 export default async function Page() {
   const dict = await getDictionary();

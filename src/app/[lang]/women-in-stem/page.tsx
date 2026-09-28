@@ -6,19 +6,28 @@ import styles from '@/components/FocusPage.module.css';
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://africaconnect4.net';
 
-export const metadata: Metadata = {
+export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
+  const { lang } = await params;
+  return {
   title: 'Women in STEM and Innovation Labs | AfricaConnect4',
   description: 'Empowering African women researchers, engineers, and tech leaders through mentorship, leadership bootcamps, and specialized STEM innovation initiatives across NRENs.',
-  alternates: {
-    canonical: '/women-in-stem',
-  },
+  
   openGraph: {
     title: 'Women in STEM and Innovation Labs | AfricaConnect4',
     description: 'Empowering African women researchers, engineers, and tech leaders through mentorship and leadership bootcamps.',
     url: `${siteUrl}/women-in-stem`,
     images: [{ url: '/og-image.jpg', width: 1200, height: 630 }],
   },
-};
+  alternates: {
+    canonical: `/${lang}/women-in-stem`,
+    languages: {
+      en: `/en/women-in-stem`,
+      fr: `/fr/women-in-stem`,
+      pt: `/pt/women-in-stem`,
+    },
+  },
+  };
+}
 
 export default async function Page() {
   const dict = await getDictionary();

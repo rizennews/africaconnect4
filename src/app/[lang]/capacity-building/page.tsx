@@ -6,19 +6,28 @@ import styles from '@/components/FocusPage.module.css';
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://africaconnect4.net';
 
-export const metadata: Metadata = {
+export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
+  const { lang } = await params;
+  return {
   title: 'Capacity Building and NREN Training | AfricaConnect4',
   description: 'Equipping African network engineers, researchers, and higher education institutions with advanced technical skills, cloud routing expertise, and institutional sustainability frameworks.',
-  alternates: {
-    canonical: '/capacity-building',
-  },
+  
   openGraph: {
     title: 'Capacity Building and NREN Training | AfricaConnect4',
     description: 'Equipping African network engineers, researchers, and higher education institutions with advanced technical skills.',
     url: `${siteUrl}/capacity-building`,
     images: [{ url: '/og-image.jpg', width: 1200, height: 630 }],
   },
-};
+  alternates: {
+    canonical: `/${lang}/capacity-building`,
+    languages: {
+      en: `/en/capacity-building`,
+      fr: `/fr/capacity-building`,
+      pt: `/pt/capacity-building`,
+    },
+  },
+  };
+}
 
 export default async function Page() {
   const dict = await getDictionary();

@@ -6,19 +6,28 @@ import styles from './Contact.module.css';
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://africaconnect4.net';
 
-export const metadata: Metadata = {
+export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
+  const { lang } = await params;
+  return {
   title: 'Contact AfricaConnect4 Project Team | WACREN',
   description: 'Get in touch with the AfricaConnect4 project secretariat, communications team, and regional NREN coordination offices across Africa.',
-  alternates: {
-    canonical: '/contact',
-  },
+  
   openGraph: {
     title: 'Contact AfricaConnect4 Project Team | WACREN',
     description: 'Get in touch with the AfricaConnect4 project secretariat and regional NREN coordination offices.',
     url: `${siteUrl}/contact`,
     images: [{ url: '/og-image.jpg', width: 1200, height: 630 }],
   },
-};
+  alternates: {
+    canonical: `/${lang}/contact`,
+    languages: {
+      en: `/en/contact`,
+      fr: `/fr/contact`,
+      pt: `/pt/contact`,
+    },
+  },
+  };
+}
 
 const contactSchema = {
   '@context': 'https://schema.org',

@@ -4,18 +4,27 @@ import PageHero from '@/components/PageHero';
 import FocusLayout from '@/components/FocusLayout';
 import styles from '@/components/FocusPage.module.css';
 
-export const metadata: Metadata = {
+export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
+  const { lang } = await params;
+  return {
   title: 'Climate Data Infrastructure & Resilience',
   description: 'Empowering West and Central Africa with LoRaWAN environmental monitoring, federated HPC resources for climate modelling, and EUMETCast terrestrial services.',
-  alternates: {
-    canonical: '/climate-data-infrastructure',
-  },
+  
   openGraph: {
     title: 'Climate Data Infrastructure | AfricaConnect4',
     description: 'Building data systems supporting climate resilience across West and Central Africa.',
     url: 'https://africaconnect4.net/climate-data-infrastructure',
   },
-};
+  alternates: {
+    canonical: `/${lang}/climate-data-infrastructure`,
+    languages: {
+      en: `/en/climate-data-infrastructure`,
+      fr: `/fr/climate-data-infrastructure`,
+      pt: `/pt/climate-data-infrastructure`,
+    },
+  },
+  };
+}
 
 export default async function Page() {
   const dict = await getDictionary();

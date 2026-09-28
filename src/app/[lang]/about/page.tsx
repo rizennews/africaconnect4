@@ -7,18 +7,27 @@ import AboutWacrenRegion from '@/components/AboutWacrenRegion';
 import PartnersBanner from '@/components/PartnersBanner';
 import FundingBanner from '@/components/FundingBanner';
 
-export const metadata: Metadata = {
+export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
+  const { lang } = await params;
+  return {
   title: 'About the Project',
   description: 'Learn about AfricaConnect4, an EU co-funded pan-African connectivity project implemented in West and Central Africa by WACREN, connecting research and education communities.',
-  alternates: {
-    canonical: '/about',
-  },
+  
   openGraph: {
     title: 'About the Project | AfricaConnect4',
     description: 'Learn about AfricaConnect4, an EU co-funded pan-African connectivity project implemented in West and Central Africa by WACREN.',
     url: 'https://africaconnect4.net/about',
   },
-};
+  alternates: {
+    canonical: `/${lang}/about`,
+    languages: {
+      en: `/en/about`,
+      fr: `/fr/about`,
+      pt: `/pt/about`,
+    },
+  },
+  };
+}
 
 export default async function AboutPage({ params }: { params: Promise<{ lang: string }> }) {
   const { lang } = await params;

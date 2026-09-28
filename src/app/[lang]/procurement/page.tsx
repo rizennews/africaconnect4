@@ -4,19 +4,28 @@ import { getDictionary } from '@/app/[lang]/dictionaries';
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://africaconnect4.net';
 
-export const metadata: Metadata = {
+export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
+  const { lang } = await params;
+  return {
   title: 'Procurement Opportunities and Tenders | AfricaConnect4',
   description: 'View active tenders, expressions of interest, and contract awards for the AfricaConnect4 project and regional network infrastructure.',
-  alternates: {
-    canonical: '/procurement',
-  },
+  
   openGraph: {
     title: 'Procurement Opportunities and Tenders | AfricaConnect4',
     description: 'View active tenders, expressions of interest, and contract awards for the AfricaConnect4 project.',
     url: `${siteUrl}/procurement`,
     images: [{ url: '/og-image.jpg', width: 1200, height: 630 }],
   },
-};
+  alternates: {
+    canonical: `/${lang}/procurement`,
+    languages: {
+      en: `/en/procurement`,
+      fr: `/fr/procurement`,
+      pt: `/pt/procurement`,
+    },
+  },
+  };
+}
 
 const procurementSchema = {
   '@context': 'https://schema.org',

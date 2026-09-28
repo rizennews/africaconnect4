@@ -7,18 +7,27 @@ import { ARTICLES } from '@/data/articles';
 import { ARTICLES_FR } from '@/data/articles_fr';
 import { ARTICLES_PT } from '@/data/articles_pt';
 
-export const metadata: Metadata = {
+export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
+  const { lang } = await params;
+  return {
   title: 'News & Updates',
   description: 'Announcements, milestones, partnership news and reports from the field across the West and Central Africa cluster of AfricaConnect4.',
-  alternates: {
-    canonical: '/news',
-  },
+  
   openGraph: {
     title: 'News & Updates | AfricaConnect4',
     description: 'Announcements, milestones, and reports from the field across the AfricaConnect4 programme.',
     url: 'https://africaconnect4.net/news',
   },
-};
+  alternates: {
+    canonical: `/${lang}/news`,
+    languages: {
+      en: `/en/news`,
+      fr: `/fr/news`,
+      pt: `/pt/news`,
+    },
+  },
+  };
+}
 
 export default async function Page({ params }: { params: Promise<{ lang: string }> }) {
   const { lang } = await params;

@@ -1,9 +1,11 @@
 import { MetadataRoute } from 'next';
 import { ARTICLES } from '@/data/articles';
+import { MOCK_OPPORTUNITIES } from '@/data/procurement';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://africaconnect4.net';
   const now = new Date();
+  const locales = ['en', 'fr', 'pt'];
 
   const staticRoutes = [
     { path: '', priority: 1.0, changeFrequency: 'weekly' as const },
@@ -22,19 +24,50 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: '/contact', priority: 0.6, changeFrequency: 'yearly' as const },
   ];
 
-  const staticEntries: MetadataRoute.Sitemap = staticRoutes.map((route) => ({
-    url: `${siteUrl}${route.path}`,
-    lastModified: now,
-    changeFrequency: route.changeFrequency,
-    priority: route.priority,
-  }));
+  // Generate one entry per locale per static route with hreflang alternates
+  const staticEntries: MetadataRoute.Sitemap = staticRoutes.flatMap((route) =>
+    locales.map((locale) => ({
+      url: `${siteUrl}/${locale}${route.path}`,
+      lastModified: now,
+      changeFrequency: route.changeFrequency,
+      priority: route.priority,
+      alternates: {
+        languages: Object.fromEntries(
+          locales.map((l) => [l, `${siteUrl}/${l}${route.path}`])
+        ),
+      },
+    }))
+  );
 
-  const articleEntries: MetadataRoute.Sitemap = ARTICLES.map((article) => ({
-    url: `${siteUrl}/news/${article.slug}`,
-    lastModified: new Date(article.timestamp),
-    changeFrequency: 'monthly' as const,
-    priority: 0.85,
-  }));
+  // Generate one entry per locale per article with hreflang alternates
+  const articleEntries: MetadataRoute.Sitemap = ARTICLES.flatMap((article) =>
+    locales.map((locale) => ({
+      url: `${siteUrl}/${locale}/news/${article.slug}`,
+      lastModified: new Date(article.timestamp),
+      changeFrequency: 'monthly' as const,
+      priority: 0.85,
+      alternates: {
+        languages: Object.fromEntries(
+          locales.map((l) => [l, `${siteUrl}/${l}/news/${article.slug}`])
+        ),
+      },
+    }))
+  );
 
-  return [...staticEntries, ...articleEntries];
+  // Generate one entry per locale per procurement opportunity
+  const procurementEntries: MetadataRoute.Sitemap = MOCK_OPPORTUNITIES.flatMap((opp) =>
+    locales.map((locale) => ({
+      url: `${siteUrl}/${locale}/procurement/${opp.id}`,
+      lastModified: now,
+      changeFrequency: 'weekly' as const,
+      priority: 0.75,
+      alternates: {
+        languages: Object.fromEntries(
+          locales.map((l) => [l, `${siteUrl}/${l}/procurement/${opp.id}`])
+        ),
+      },
+    }))
+  );
+
+  return [...staticEntries, ...articleEntries, ...procurementEntries];
 }

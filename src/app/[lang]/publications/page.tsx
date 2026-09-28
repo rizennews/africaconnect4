@@ -8,19 +8,28 @@ import { allFilesPt, foldersPt } from '@/data/publications_pt';
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://africaconnect4.net';
 
-export const metadata: Metadata = {
+export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
+  const { lang } = await params;
+  return {
   title: 'Publications and Public Documents | AfricaConnect4',
   description: 'Access official project documents, technical policy briefs, connectivity roadmaps, and annual impact reports for AfricaConnect4 and partner NRENs.',
-  alternates: {
-    canonical: '/publications',
-  },
+  
   openGraph: {
     title: 'Publications and Public Documents | AfricaConnect4',
     description: 'Access official project documents, technical policy briefs, and annual impact reports.',
     url: `${siteUrl}/publications`,
     images: [{ url: '/og-image.jpg', width: 1200, height: 630 }],
   },
-};
+  alternates: {
+    canonical: `/${lang}/publications`,
+    languages: {
+      en: `/en/publications`,
+      fr: `/fr/publications`,
+      pt: `/pt/publications`,
+    },
+  },
+  };
+}
 
 const publicationSchema = {
   '@context': 'https://schema.org',

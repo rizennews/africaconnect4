@@ -4,18 +4,27 @@ import PageHero from '@/components/PageHero';
 import FocusLayout from '@/components/FocusLayout';
 import styles from '@/components/FocusPage.module.css';
 
-export const metadata: Metadata = {
+export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
+  const { lang } = await params;
+  return {
   title: 'Connectivity Expansion & High-Speed Networks',
   description: 'Expanding high-speed research and education network infrastructure to connect universities and research institutes across West and Central Africa.',
-  alternates: {
-    canonical: '/connectivity-expansion',
-  },
+  
   openGraph: {
     title: 'Connectivity Expansion | AfricaConnect4',
     description: 'Growing regional network infrastructure to connect the unconnected across West and Central Africa.',
     url: 'https://africaconnect4.net/connectivity-expansion',
   },
-};
+  alternates: {
+    canonical: `/${lang}/connectivity-expansion`,
+    languages: {
+      en: `/en/connectivity-expansion`,
+      fr: `/fr/connectivity-expansion`,
+      pt: `/pt/connectivity-expansion`,
+    },
+  },
+  };
+}
 
 export default async function Page() {
   const dict = await getDictionary();

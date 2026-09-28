@@ -247,6 +247,9 @@
       "Media & Communications"
     ]
   },
+  "contactForm": {
+    "title": "Have Questions?"
+  },
   "pages": {
     "connectivity": {
       "heroTitle": "Connectivity Expansion",
@@ -427,5 +430,158 @@
     "women-in-wacren-call-for-facilitators": "Women-In-WACREN Call for Facilitators",
     "women-in-wacren-call-for-mentors": "Women-In-WACREN Call for Mentors",
     "climate-innovation-lab-2026-applications": "Climate Innovation Lab 2026 - Call for Applications"
+  },
+  "procurementPage": {
+    "title": "Procurement Opportunities",
+    "subtitle": "View and filter current tenders and contract awards.",
+    "postBtn": "Post Opportunity",
+    "backToProcurement": "Back to Procurement",
+    "searchPlaceholder": "Search by keyword, reference number...",
+    "tabs": {
+      "open": "Open Opportunities",
+      "closed": "Closed Opportunities",
+      "awards": "Contract Awards"
+    },
+    "emptyState": "No opportunities found matching your filters.",
+    "sidebar": {
+      "filterTitle": "Filter Opportunities",
+      "clearBtn": "Clear",
+      "categoryTitle": "Category",
+      "budgetTitle": "Budget Range",
+      "alertsTitle": "Email Alerts",
+      "alertsDesc": "Get notified about new opportunities that match your interests.",
+      "emailPlaceholder": "Enter your email",
+      "subscribeBtn": "Subscribe",
+      "newToTitle": "New to WACREN?",
+      "newToDesc": "Learn how to register as a supplier and participate in our tenders.",
+      "readGuidelines": "Read Guidelines →",
+      "categories": {
+        "all": "All Categories",
+        "consultancy": "Consultancy",
+        "networkEquipment": "Network Equipment",
+        "softwareDevelopment": "Software Development",
+        "connectivityLinks": "Connectivity/Links",
+        "climateServices": "Climate Services",
+        "otherServices": "Other Services"
+      },
+      "budgetRanges": {
+        "range1": "1 - 30,000",
+        "range2": "30,001 - 150,000",
+        "range3": "150,001 and above"
+      },
+      "guidelinesTitle": "Supplier Guidelines & Terms",
+      "guidelines": [
+        {
+          "title": "1. Eligibility Criteria",
+          "desc": "To participate in WACREN procurement opportunities, suppliers must be legally registered entities with valid tax compliance certificates and a proven track record in their respective fields."
+        },
+        {
+          "title": "2. Submission Process",
+          "desc": "All bids and proposals must be submitted electronically through the portal or to the designated procurement email before the stated deadline. Late submissions will not be considered."
+        },
+        {
+          "title": "3. Required Documentation",
+          "desc": "Depending on the tender, suppliers may be required to provide: Company Registration Certificate, Tax Clearance Certificate, Financial Statements (last 3 years), References from similar past projects."
+        },
+        {
+          "title": "4. Evaluation and Award",
+          "desc": "Submissions are evaluated based on technical compliance, financial competitiveness, and overall value for money. WACREN reserves the right to accept or reject any proposal without incurring any liability."
+        },
+        {
+          "title": "5. Code of Conduct",
+          "desc": "Suppliers are expected to adhere to the highest standards of ethical conduct, including anti-corruption, environmental sustainability, and fair labor practices."
+        }
+      ]
+    },
+    "postModal": {
+      "title": "Post New Opportunity",
+      "refLabel": "Reference Number",
+      "refPlaceholder": "WACREN-202X-001",
+      "catLabel": "Category",
+      "catSelect": "Select category",
+      "titleLabel": "Title",
+      "titlePlaceholder": "e.g. Supply of Fiber Optic Cables",
+      "descLabel": "Description",
+      "descPlaceholder": "Detailed description of the opportunity...",
+      "budgetLabel": "Budget Range",
+      "budgetPlaceholder": "e.g.  - ",
+      "deadlineLabel": "Deadline",
+      "fileLabel": "Upload Documents (PDF, ZIP, DOCX)",
+      "cancelBtn": "Cancel",
+      "submitBtn": "Create Opportunity",
+      "successMsg": "Opportunity Posted successfully!"
+    },
+    "docTypes": {
+      "termsOfReference": "Terms of Reference (ToR)",
+      "applicationForm": "Application Form",
+      "technicalSpecifications": "Technical Specifications",
+      "biddingDocument": "Bidding Document",
+      "billOfQuantities": "Bill of Quantities",
+      "submissionGuidelines": "Submission Guidelines",
+      "auditRequirements": "Audit Requirements"
+    },
+    "card": {
+      "deadline": "Deadline:",
+      "budget": "Budget:",
+      "viewDetails": "View Details",
+      "status": {
+        "open": "OPEN",
+        "closed": "CLOSED",
+        "awarded": "AWARDED"
+      }
+    },
+    "single": {
+      "description": "Description",
+      "documents": "Documents",
+      "contactDesc": "For inquiries regarding this opportunity, please contact the procurement team.",
+      "shareText": "Check out this procurement opportunity from WACREN:",
+      "applyNow": "Apply Now",
+      "closedForApplications": "Closed for Applications",
+      "opportunityAwarded": "Opportunity Awarded",
+      "shareOpportunity": "Share Opportunity",
+      "printDetails": "Print Details",
+      "form": {
+        "applyFor": "Apply for",
+        "fullName": "Full Name",
+        "email": "Email Address",
+        "coverLetter": "Cover Letter",
+        "uploadResume": "Upload Resume / Proposal (PDF)",
+        "cancel": "Cancel",
+        "submit": "Submit Application"
+      }
+    },
+    "items": {
+      "WACREN-2026-003": {
+        "title": "Cybersecurity Assessment Services",
+        "deadline": "20 Feb 2026",
+        "budget": "$30,000 - $45,000",
+        "description": "Comprehensive cybersecurity assessment for regional nodes. The selected consultant will be responsible for conducting vulnerability assessments, penetration testing, and reviewing the existing security architecture to ensure compliance with international standards."
+      },
+      "WACREN-2026-002": {
+        "title": "Fiber Optic Cables and Equipment Supply",
+        "deadline": "15 Mar 2026",
+        "budget": "$200,000 - $300,000",
+        "description": "Supply of high-capacity fiber optic cables, transceivers, and related networking equipment for the expansion of the regional backbone. Vendors must provide equipment that is compatible with our existing infrastructure."
+      },
+      "WACREN-2026-001": {
+        "title": "Network Infrastructure Design Consultancy",
+        "deadline": "28 Feb 2026",
+        "budget": "$50,000 - $75,000",
+        "description": "Seeking a highly qualified consultancy firm to design the next phase of our network infrastructure. The design should account for future scalability, high availability, and integration with partner networks."
+      },
+      "WACREN-2025-098": {
+        "title": "Previous Year Audit Services",
+        "deadline": "31 Dec 2025",
+        "budget": "$20,000 - $30,000",
+        "description": "Annual financial audit services for the preceding fiscal year. The auditing firm must be certified and have experience with non-profit regional organizations."
+      }
+    }
+  },
+  "notFound": {
+    "title": "This page seems to be off the network.",
+    "description": "The link you followed may be broken or the page may have been moved.",
+    "goBackTo": "Go back to",
+    "home": "home",
+    "andRejoin": "and stay connected with AfricaConnect4."
   }
 }

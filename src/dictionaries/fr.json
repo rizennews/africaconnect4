@@ -247,6 +247,9 @@
       "Médias & Communications"
     ]
   },
+  "contactForm": {
+    "title": "Vous avez des questions ?"
+  },
   "pages": {
     "connectivity": {
       "heroTitle": "Expansion de la connectivité",
@@ -427,5 +430,158 @@
     "women-in-wacren-call-for-facilitators": "Women-In-WACREN - Appel à facilitateurs",
     "women-in-wacren-call-for-mentors": "Women-In-WACREN - Appel à mentors",
     "climate-innovation-lab-2026-applications": "Laboratoire d'Innovation Climatique 2026 - Appel à candidatures"
+  },
+  "procurementPage": {
+    "title": "Opportunités de Marchés",
+    "subtitle": "Consultez et filtrez les appels d'offres actuels et les attributions de contrats.",
+    "postBtn": "Publier une opportunité",
+    "backToProcurement": "Retour aux marchés",
+    "searchPlaceholder": "Rechercher par mot-clé, numéro de référence...",
+    "tabs": {
+      "open": "Opportunités Ouvertes",
+      "closed": "Opportunités Fermées",
+      "awards": "Attributions de Contrats"
+    },
+    "emptyState": "Aucune opportunité trouvée correspondant à vos filtres.",
+    "sidebar": {
+      "filterTitle": "Filtrer les Opportunités",
+      "clearBtn": "Effacer",
+      "categoryTitle": "Catégorie",
+      "budgetTitle": "Fourchette de Budget",
+      "alertsTitle": "Alertes par Email",
+      "alertsDesc": "Soyez informé des nouvelles opportunités qui correspondent à vos intérêts.",
+      "emailPlaceholder": "Entrez votre email",
+      "subscribeBtn": "S'abonner",
+      "newToTitle": "Nouveau chez WACREN ?",
+      "newToDesc": "Découvrez comment vous inscrire en tant que fournisseur et participer à nos appels d'offres.",
+      "readGuidelines": "Lire les Lignes Directrices →",
+      "categories": {
+        "all": "Toutes les Catégories",
+        "consultancy": "Conseil",
+        "networkEquipment": "Équipement Réseau",
+        "softwareDevelopment": "Développement de Logiciels",
+        "connectivityLinks": "Connectivité / Liens",
+        "climateServices": "Services Climatiques",
+        "otherServices": "Autres Services"
+      },
+      "budgetRanges": {
+        "range1": "1 - 30 000",
+        "range2": "30 001 - 150 000",
+        "range3": "150 001 et plus"
+      },
+      "guidelinesTitle": "Lignes Directrices et Conditions pour les Fournisseurs",
+      "guidelines": [
+        {
+          "title": "1. Critères d'Éligibilité",
+          "desc": "Pour participer aux opportunités de marché de WACREN, les fournisseurs doivent être des entités légalement enregistrées avec des certificats de conformité fiscale valides et une expérience avérée dans leurs domaines respectifs."
+        },
+        {
+          "title": "2. Processus de Soumission",
+          "desc": "Toutes les offres et propositions doivent être soumises par voie électronique via le portail ou à l'email de marché désigné avant la date limite indiquée. Les soumissions tardives ne seront pas prises en compte."
+        },
+        {
+          "title": "3. Documentation Requise",
+          "desc": "Selon l'appel d'offres, les fournisseurs peuvent être tenus de fournir : Certificat d'enregistrement de l'entreprise, Certificat de quitus fiscal, États financiers (3 dernières années), Références de projets passés similaires."
+        },
+        {
+          "title": "4. Évaluation et Attribution",
+          "desc": "Les soumissions sont évaluées en fonction de la conformité technique, de la compétitivité financière et de l'optimisation globale des ressources. WACREN se réserve le droit d'accepter ou de rejeter toute proposition sans encourir de responsabilité."
+        },
+        {
+          "title": "5. Code de Conduite",
+          "desc": "Les fournisseurs sont tenus d'adhérer aux normes de conduite éthique les plus élevées, y compris la lutte contre la corruption, la durabilité environnementale et les pratiques de travail équitables."
+        }
+      ]
+    },
+    "postModal": {
+      "title": "Publier une Nouvelle Opportunité",
+      "refLabel": "Numéro de Référence",
+      "refPlaceholder": "WACREN-202X-001",
+      "catLabel": "Catégorie",
+      "catSelect": "Sélectionner la catégorie",
+      "titleLabel": "Titre",
+      "titlePlaceholder": "Ex. Fourniture de Câbles à Fibre Optique",
+      "descLabel": "Description",
+      "descPlaceholder": "Description détaillée de l'opportunité...",
+      "budgetLabel": "Fourchette de Budget",
+      "budgetPlaceholder": "Ex. 10k $ - 50k $",
+      "deadlineLabel": "Date limite",
+      "fileLabel": "Télécharger les Documents (PDF, ZIP, DOCX)",
+      "cancelBtn": "Annuler",
+      "submitBtn": "Créer l'Opportunité",
+      "successMsg": "Opportunité publiée avec succès !"
+    },
+    "docTypes": {
+      "termsOfReference": "Termes de Référence (TDR)",
+      "applicationForm": "Formulaire de candidature",
+      "technicalSpecifications": "Spécifications techniques",
+      "biddingDocument": "Document d'appel d'offres",
+      "billOfQuantities": "Devis quantitatif",
+      "submissionGuidelines": "Directives de soumission",
+      "auditRequirements": "Exigences d'audit"
+    },
+    "card": {
+      "deadline": "Date limite :",
+      "budget": "Budget :",
+      "viewDetails": "Voir les détails",
+      "status": {
+        "open": "OUVERT",
+        "closed": "FERMÉ",
+        "awarded": "ATTRIBUÉ"
+      }
+    },
+    "single": {
+      "description": "Description",
+      "documents": "Documents",
+      "contactDesc": "Pour toute question concernant cette opportunité, veuillez contacter l'équipe des marchés.",
+      "shareText": "Découvrez cette opportunité de marché de WACREN :",
+      "applyNow": "Postuler maintenant",
+      "closedForApplications": "Fermé aux candidatures",
+      "opportunityAwarded": "Opportunité attribuée",
+      "shareOpportunity": "Partager l'opportunité",
+      "printDetails": "Imprimer les détails",
+      "form": {
+        "applyFor": "Postuler pour",
+        "fullName": "Nom complet",
+        "email": "Adresse e-mail",
+        "coverLetter": "Lettre de motivation",
+        "uploadResume": "Télécharger le CV / Proposition (PDF)",
+        "cancel": "Annuler",
+        "submit": "Soumettre la candidature"
+      }
+    },
+    "items": {
+      "WACREN-2026-003": {
+        "title": "Services d'Évaluation de la Cybersécurité",
+        "deadline": "20 Fév 2026",
+        "budget": "30 000 $ - 45 000 $",
+        "description": "Évaluation complète de la cybersécurité des nœuds régionaux. Le consultant sélectionné sera responsable de réaliser des évaluations de vulnérabilité, des tests d'intrusion et de revoir l'architecture de sécurité existante pour assurer la conformité aux normes internationales."
+      },
+      "WACREN-2026-002": {
+        "title": "Fourniture de Câbles à Fibre Optique et d'Équipements",
+        "deadline": "15 Mar 2026",
+        "budget": "200 000 $ - 300 000 $",
+        "description": "Fourniture de câbles à fibre optique haute capacité, d'émetteurs-récepteurs et d'équipements réseau connexes pour l'expansion du réseau principal régional. Les fournisseurs doivent proposer des équipements compatibles avec notre infrastructure existante."
+      },
+      "WACREN-2026-001": {
+        "title": "Conseil en Conception d'Infrastructure Réseau",
+        "deadline": "28 Fév 2026",
+        "budget": "50 000 $ - 75 000 $",
+        "description": "Recherche d'un cabinet de conseil hautement qualifié pour concevoir la prochaine phase de notre infrastructure réseau. La conception doit tenir compte de l'évolutivité future, de la haute disponibilité et de l'intégration avec les réseaux partenaires."
+      },
+      "WACREN-2025-098": {
+        "title": "Services d'Audit de l'Année Précédente",
+        "deadline": "31 Déc 2025",
+        "budget": "20 000 $ - 30 000 $",
+        "description": "Services d'audit financier annuel pour l'exercice précédent. Le cabinet d'audit doit être certifié et avoir de l'expérience avec des organisations régionales à but non lucratif."
+      }
+    }
+  },
+  "notFound": {
+    "title": "Cette page semble être hors réseau.",
+    "description": "Le lien que vous avez suivi est peut-être cassé ou la page a été déplacée.",
+    "goBackTo": "Retournez à",
+    "home": "l'accueil",
+    "andRejoin": "et restez connecté avec AfricaConnect4."
   }
 }

@@ -11,7 +11,7 @@ export const ARTICLES_FR: ArticleData[] = [
     ],
     "date": "Aug 18, 2026",
     "readTime": "2 Min Read",
-    "title": "Women-in-WACREN va lancer un nouveau forum et un laboratoire pour améliorer la contribution des femmes à l'innovation climatique en Afrique",
+    "title": "Women-in-WACREN to launch a new forum and a lab to enhance women's contribution to climate innovation in Africa",
     "author": {
       "name": "Kwaku Effah Amponsah",
       "avatar": "/authors/Kwaku Effah Amponsah.png",
@@ -23,11 +23,11 @@ export const ARTICLES_FR: ArticleData[] = [
     "tableOfContents": [
       {
         "id": "climate-innovation-lab-2026",
-        "title": "Laboratoire d'innovation climatique 2026"
+        "title": "Climate Innovation Lab 2026"
       }
     ],
     "content": {
-      "intro": "S'appuyant sur l'héritage des précédentes initiatives Women-in-WACREN (WiW), WACREN est heureux d'annoncer la prochaine étape majeure pour l'inclusion des femmes dans la science et l'innovation climatiques régionales : le réseau Women-in-WACREN.",
+      "intro": "Building on the legacy of previous Women-in-WACREN (WiW) initiatives, WACREN is pleased to announce the next major milestone for women's inclusion in regional climate science and innovation: the Women-in-WACREN Network.",
       "sections": [
         {
           "paragraphs": [
@@ -36,21 +36,21 @@ export const ARTICLES_FR: ArticleData[] = [
         },
         {
           "id": "climate-innovation-lab-2026",
-          "heading": "Laboratoire d'innovation climatique 2026",
+          "heading": "Climate Innovation Lab 2026",
           "paragraphs": [
-            "Parallèlement à ce lancement du réseau, l'événement virtuel présentera officiellement le « Climate Innovation Lab 2026 »- un programme d'innovation structuré et collaboratif qui renforcerait les compétences techniques des femmes dans la conception de solutions numériques pratiques qui répondent aux défis climatiques régionaux urgents. Les participants apprendront comment le programme les guide depuis l'identification initiale du problème jusqu'au mentorat continu en passant par le développement du prototype."
+            "Alongside this Network launch, the virtual event will formally introduce the ‘Climate Innovation Lab 2026 ’- a structured, collaborative innovation programme that would strengthen women’s technical skills in designing practical digital solutions that address pressing regional climate challenges. Participants will learn how the programme guides them from initial problem identification through prototype development to ongoing mentorship."
           ]
         },
         {
           "image": "/blog/wiw-image.jpg",
           "paragraphs": [
-            "Avec le soutien de la Commission européenne à travers AfricaConnect4, WACREN continue de libérer le potentiel des femmes dans la recherche et l'éducation. Rejoignez-nous pour ce lancement virtuel transformateur afin d'élargir votre réseau, d'améliorer vos compétences et de contribuer à façonner un avenir durable pour la science et la technologie africaines."
+            "With support from the European Commission through AfricaConnect4, WACREN continues to unlock the potential of women in research and education. Join us for this transformative virtual launch to expand your network, elevate your skills, and help shape a sustainable future for African science and technology."
           ]
         }
       ],
       "cta": {
         "label": "",
-        "linkText": "Inscrivez-vous ici",
+        "linkText": "Register here",
         "url": "https://wacren.zoom.us/meeting/register/FYmtU0JnSNy8138x8Zkluw"
       }
     }
@@ -65,7 +65,7 @@ export const ARTICLES_FR: ArticleData[] = [
     ],
     "date": "August 20, 2026",
     "readTime": "1 Min Read",
-    "title": "WACREN NREN Academy 2026 pour renforcer les NREN pour une durabilité à long terme",
+    "title": "WACREN NREN Academy 2026 to strengthen NRENs for long-term sustainability",
     "author": {
       "name": "Kwaku Effah Amponsah",
       "avatar": "/authors/Kwaku Effah Amponsah.png",
@@ -77,24 +77,24 @@ export const ARTICLES_FR: ArticleData[] = [
     "tableOfContents": [
       {
         "id": "nren-academy-2026",
-        "title": "Académie WACREN NREN 2026"
+        "title": "WACREN NREN Academy 2026"
       }
     ],
     "content": {
-      "intro": "WACREN est heureux d'annoncer la WACREN NREN Academy 2026, un forum clé conçu pour aider les réseaux nationaux de recherche et d'éducation (NREN) à renforcer leur impact national et à assurer leur durabilité à long terme.",
+      "intro": "WACREN is excited to announce the 2026 WACREN NREN Academy, a key forum designed to help National Research and Education Networks (NRENs) boost their national impact and ensure long-term sustainability.",
       "sections": [
         {
           "id": "nren-academy-2026",
-          "heading": "Concentration et structure",
+          "heading": "Focus and Structure",
           "paragraphs": [
-            "L'Académie 2026 se concentrera sur la transformation des plans stratégiques en résultats pratiques et évolutifs. Le programme combine des évaluations de maturité avec des outils de modélisation d'entreprise pratiques pour aider à développer des services viables et abordables qui peuvent être utilisés à l'échelle nationale et étendus à travers la région.",
-            "Les participants collaboreront pour améliorer les analyses de rentabilisation, explorer la tarification des services et suivre les progrès à l'aide du nouveau tableau de bord NREN Performance. L'Académie lance également la série de cliniques mensuelles NREN, une plateforme régulière de soutien continu, de rétroaction par les pairs et d'apprentissage partagé pendant le projet AfricaConnect."
+            "The 2026 Academy will focus on turning strategic plans into practical, scalable results. The program blends maturity assessments with hands-on business modelling tools to help develop viable, affordable services that can be used nationally and expanded across the region.",
+            "Participants will collaborate to improve business cases, explore service pricing, and track progress using the new NREN Performance Dashboard. The Academy also launches the Monthly NREN Clinic Series, a regular platform for ongoing support, peer feedback, and shared learning during the AfricaConnect project."
           ]
         }
       ],
       "cta": {
         "label": "",
-        "linkText": "En savoir plus",
+        "linkText": "Find out more",
         "url": "https://indico.wacren.net/event/265/"
       }
     }
@@ -109,7 +109,7 @@ export const ARTICLES_FR: ArticleData[] = [
     ],
     "date": "August 22, 2026",
     "readTime": "2 Min Read",
-    "title": "Le président de la Gambie ouvrira la conférence WACREN 2026 à Banjul",
+    "title": "President of The Gambia to open WACREN 2026 Conference in Banjul",
     "author": {
       "name": "Kwaku Effah Amponsah",
       "avatar": "/authors/Kwaku Effah Amponsah.png",
@@ -121,20 +121,20 @@ export const ARTICLES_FR: ArticleData[] = [
     "tableOfContents": [
       {
         "id": "presidential-opening",
-        "title": "Ouverture présidentielle et lancement de GAMREN"
+        "title": "Presidential Opening & GAMREN Launch"
       }
     ],
     "content": {
-      "intro": "Le Président de la République de Gambie, Son Excellence M. Adama Barrow, ouvrira officiellement la Conférence WACREN 2026 en tant qu'invité d'honneur spécial. Le président lancera également officiellement le Gambia Research and Education Network (GAMREN). L'implication de la Présidence souligne la valeur de WACREN et GAMREN dans la révolution de la recherche, de la science et de l'innovation en République de Gambie.",
+      "intro": "The President of the Republic of The Gambia, His Excellency Mr Adama Barrow, will officially open the WACREN 2026 Conference as the special guest of honour. The President will also formally launch the Gambia Research and Education Network (GAMREN). The involvement of the Presidency highlights the value of WACREN and GAMREN in revolutionising research, science and innovation in the Republic of The Gambia.",
       "sections": [
         {
           "id": "presidential-opening",
-          "heading": "Expansion de l'écosystème régional",
+          "heading": "Expanding the Regional Ecosystem",
           "paragraphs": [
-            "Le lancement de GAMREN marque l'expansion de cet écosystème régional, renforçant la mission de WACREN de connecter les systèmes nationaux dans un espace de recherche et d'éducation fiable et intégré à l'échelle mondiale.",
-            "WACREN 2026, hébergé par GAMREN, réunira des NREN, des dirigeants universitaires, des décideurs, des technologues, des chercheurs, des partenaires au développement et des acteurs du secteur privé pour faire progresser le dialogue sur les infrastructures numériques résilientes, l'identité fédérée, la cybersécurité, la science ouverte, l'IA pour l'éducation numérique, l'infrastructure de recherche sur le climat et la souveraineté numérique.",
-            "L'événement accueillera également d'éminents ministres d'État, dont l'honorable professeur Pierre Gomez, ministre de l'Enseignement supérieur, de la Recherche, de la Science et de la Technologie (MoHERST), et S.E. Dr. Aminata Zerbo/Sabané, ministre de la Transition numérique, des Postes et des Communications électroniques, Burkina Faso. Des représentants de la délégation de l'Union européenne, des missions diplomatiques en Gambie, des agences gouvernementales et d'importants partenaires au développement seront également présents.",
-            "La Conférence est financée par la Commission européenne à travers le programme AfricaConnect dans le cadre de son initiative Global Gateway, renforçant la coopération de longue date entre l'Afrique et l'Europe dans la construction d'infrastructures de recherche et d'éducation fiables et performantes."
+            "The launch of GAMREN marks the expansion of this regional ecosystem, strengthening WACREN’s mission to connect national systems into a trusted, globally integrated research and education space.",
+            "WACREN 2026, hosted by GAMREN, will convene NRENs, university leaders, policymakers, technologists, researchers, development partners, and private sector actors to advance dialogue on resilient digital infrastructure, federated identity, cybersecurity, Open Science, AI for digital education, climate research infrastructure, and digital sovereignty.",
+            "The event will also welcome distinguished ministers of state, including the Honourable Professor Pierre Gomez, the Minister of Higher Education, Research, Science and Technology (MoHERST), and H.E. Dr. Aminata Zerbo/Sabané, the Minister of Digital Transition, Posts and Electronic Communications, Burkina Faso. Representatives from the European Union Delegation, diplomatic missions in The Gambia, government agencies, and important development partners will also attend.",
+            "The Conference is funded by the European Commission through the AfricaConnect programme under its Global Gateway initiative, reinforcing long-standing Africa-Europe cooperation in building trusted, high-performance research and education infrastructure."
           ]
         }
       ]
@@ -150,7 +150,7 @@ export const ARTICLES_FR: ArticleData[] = [
     ],
     "date": "August 24, 2026",
     "readTime": "1 Min Read",
-    "title": "WACREN ouvre l'inscription anticipée pour la conférence 2026",
+    "title": "WACREN opens Early Bird Registration for 2026 Conference",
     "author": {
       "name": "Kwaku Effah Amponsah",
       "avatar": "/authors/Kwaku Effah Amponsah.png",
@@ -162,28 +162,28 @@ export const ARTICLES_FR: ArticleData[] = [
     "tableOfContents": [
       {
         "id": "registration-details",
-        "title": "Inscription et modes de paiement"
+        "title": "Registration & Payment Methods"
       }
     ],
     "content": {
-      "intro": "WACREN est heureux d'annoncer l'ouverture de l'inscription anticipée pour la conférence annuelle 2026 prévue les 26 et 27 mars à Banjul.",
+      "intro": "WACREN is pleased to announce the opening of Early Bird Registration for the 2026 annual conference slated for March 26 and 27 in Banjul.",
       "sections": [
         {
           "id": "registration-details",
-          "heading": "Détails de vos inscriptions",
+          "heading": "Registration Details",
           "paragraphs": [
-            "• Les inscrits résidant en Afrique paient : 100 $ ( pour les sessions de conférence et la restauration uniquement)",
-            "• Les inscrits résidant en dehors de l'Afrique paient : 150 $ ( pour les sessions de conférence et la restauration uniquement)",
-            "Vous pouvez payer l'inscription en utilisant l'une des méthodes suivantes :",
-            "• Carte de crédit/débit : payez en ligne en toute sécurité.",
-            "• Virement bancaire : Après avoir effectué le virement, veuillez envoyer un e-mail de confirmation à conf2026@wacren.net.",
-            "Inscrivez-vous maintenant, profitez de la réduction et rejoignez-nous à Banjul pour participer à des échanges perspicaces afin de faire progresser la recherche et l'éducation en Afrique."
+            "• Registrants residing in Africa pay: $100 (for Conference sessions and catering only)",
+            "• Registrants residing outside Africa pay: $150 (for Conference sessions and catering only)",
+            "You can pay for registration using one of the following methods:",
+            "• Credit/Debit Card: Pay securely online.",
+            "• Bank Transfer: After making the transfer, please send a confirmation email to conf2026@wacren.net.",
+            "Register now, enjoy the discount and join us in Banjul to engage in insightful exchanges to advance research and education in Africa."
           ]
         }
       ],
       "cta": {
         "label": "",
-        "linkText": "S’inscrire",
+        "linkText": "Register now",
         "url": "https://wacren2026.wacren.net/register"
       }
     }
@@ -199,7 +199,7 @@ export const ARTICLES_FR: ArticleData[] = [
     ],
     "date": "August 31, 2026",
     "readTime": "10 Min Read",
-    "title": "AfricaConnect reçoit un coup de pouce de 40 millions de € de l'UE pour développer l'infrastructure numérique pour la recherche et l'éducation en Afrique subsaharienne",
+    "title": "AfricaConnect receives €40 million boost from the EU to expand digital infrastructure for Research and Education in Sub-Saharan Africa",
     "author": {
       "name": "Kwaku Effah Amponsah",
       "avatar": "/authors/Kwaku Effah Amponsah.png",
@@ -211,85 +211,85 @@ export const ARTICLES_FR: ArticleData[] = [
     "tableOfContents": [
       {
         "id": "introduction",
-        "title": "Améliorer la connectivité numérique"
+        "title": "Enhancing Digital Connectivity"
       },
       {
         "id": "nren",
-        "title": "Qu'est-ce qu'un réseau de recherche et d'éducation ?"
+        "title": "What is a Research and Education Network?"
       },
       {
         "id": "strategic-partnerships",
-        "title": "Partenariats stratégiques"
+        "title": "Strategic Partnerships"
       },
       {
         "id": "objectives",
-        "title": "Vision d'AfricaConnect"
+        "title": "AfricaConnect’s Vision"
       },
       {
         "id": "quotes",
-        "title": "Déclarations des partenaires"
+        "title": "Partner Statements"
       }
     ],
     "content": {
-      "intro": "L'Union européenne (UE) a accordé 40 millions de € supplémentaires pour le projet AfricaConnect, dans le cadre de la stratégie globale de passerelle de l'UE, visant à améliorer la connectivité numérique et les capacités de recherche en Afrique subsaharienne. La quatrième phase a officiellement commencé et la mise en œuvre a commencé.",
+      "intro": "The European Union (EU) has granted an additional €40 million for the AfricaConnect project, under the EU’s Global Gateway Strategy, aimed at enhancing digital connectivity and research capabilities across Sub-Saharan Africa. The fourth phase has officially begun and the implementation has started.",
       "sections": [
         {
           "id": "introduction",
           "paragraphs": [
             "QUERY LENGTH LIMIT EXCEEDED. MAX ALLOWED QUERY : 500 CHARS",
             "QUERY LENGTH LIMIT EXCEEDED. MAX ALLOWED QUERY : 500 CHARS",
-            "En outre, AfricaConnect4 introduit une initiative d'infrastructure de données climatiques dans la région du Réseau de recherche et d'éducation de l'Afrique de l'Ouest et du Centre (WACREN), y compris la surveillance environnementale basée sur LoRaWAN, les ressources HPC fédérées pour la modélisation climatique et l'activation des services terrestres EUMETCast. Ensemble, ils renforcent la capacité régionale de collecte, d'analyse, de prévision et de prise de décision fondée sur des données probantes."
+            "In addition, AfricaConnect4 introduces a climate data infrastructure initiative within the West and Central African Research and Education Network (WACREN) region, including LoRaWAN-based environmental monitoring, federated HPC resources for climate modelling, and enablement of EUMETCast terrestrial services. Together, these strengthen regional capacity for data collection, analysis, forecasting, and evidence-based decision-making."
           ]
         },
         {
           "id": "nren",
-          "heading": "Qu'est-ce qu'un réseau de recherche et d'éducation ?",
+          "heading": "What is a research and education network?",
           "paragraphs": [
             "QUERY LENGTH LIMIT EXCEEDED. MAX ALLOWED QUERY : 500 CHARS"
           ]
         },
         {
           "id": "strategic-partnerships",
-          "heading": "Partenariats stratégiques",
+          "heading": "Strategic partnerships",
           "paragraphs": [
             "QUERY LENGTH LIMIT EXCEEDED. MAX ALLOWED QUERY : 500 CHARS",
-            "NORDUnet, la collaboration entre les NREN des cinq pays nordiques, soutiendra WACREN à travers des ateliers de développement de services et de durabilité NREN.",
+            "NORDUnet, the collaboration between NRENs from the five Nordic countries, will support WACREN through service development and NREN sustainability workshops.",
             "QUERY LENGTH LIMIT EXCEEDED. MAX ALLOWED QUERY : 500 CHARS"
           ]
         },
         {
           "id": "objectives",
-          "heading": "La vision d'AfricaConnect pour la connectivité et l'éducation",
+          "heading": "AfricaConnect’s vision for connectivity and education",
           "paragraphs": [
-            "Le projet AfricaConnect est conçu pour atteindre les objectifs suivants :",
-            "• rendre les réseaux de R&E plus inclusifs : renforcer les réseaux régionaux et nationaux en améliorant leur gouvernance et leur capacité opérationnelle, en augmentant leur visibilité mondiale et en stimulant l'inclusion et la participation à l'économie numérique grâce à des initiatives telles que le hackathon annuel des femmes axé sur l'innovation verte.",
-            "• faire progresser l'infrastructure de connectivité Internet : se concentrer sur le développement et le maintien de dorsales internationales robustes avec une attention particulière aux technologies vertes et résoudre les problèmes de connectivité du dernier kilomètre en élargissant l'accès à la connectivité nationale dans certains pays.",
-            "• renforcer les services numériques : développer une infrastructure électronique basée sur le cloud qui permet aux chercheurs de stocker et de partager des données en toute sécurité, en soutenant le mouvement Open Science et la recherche sur le changement climatique. En plus des services clés tels qu'Eduroam pour un accès facile à Internet, des services supplémentaires pour soutenir l'adoption de l'apprentissage en ligne seront promus.",
-            "• renforcer les capacités d'apprentissage en ligne et d'enseignement numérique : former des professeurs d'université à la conception, au développement et à la prestation de cours en ligne, y compris la production de capsules vidéo pédagogiques, afin d'améliorer l'accès à l'apprentissage et de soutenir le suivi efficace des cours en ligne pour des milliers d'étudiants."
+            "The AfricaConnect project is designed to achieve the following objectives:",
+            "• making R&E networks more inclusive: strengthening regional and national networks by improving their governance and operational capacity, increasing global visibility, and boosting inclusivity and participation in the digital economy through initiatives like annual women’s hackathon focusing on green innovation.",
+            "• advancing internet connectivity infrastructure: focusing on developing and maintaining robust international backbones with a particular attention to green technologies and addressing last-mile connectivity issues by expanding national connectivity access in selected countries.",
+            "• strengthening digital services: developing cloud-based e-infrastructure that enables researchers to store and share data securely, supporting the Open Science movement and climate change research. On top of key services such as Eduroam for easy internet access, additional services to support e-learning uptake will be promoted.",
+            "• enhancing e-learning and digital teaching capacities: training university lecturers to design, develop, and deliver online courses, including the production of pedagogical video capsules, in order to enhance access to learning and support the effective follow-up of online courses for thousands of students."
           ]
         },
         {
           "image": "/blog/AfricaConnect receives €40 million boost from the EU.jpg",
           "paragraphs": [
-            "Au fil des ans, les REN africains ont considérablement amélioré la connectivité, les infrastructures de données et les services électroniques, notamment Moodle, eduroam, la vidéoconférence, la fédération d'identités, les plateformes de science ouverte, ainsi que la cybersécurité, pour plus de 3 000 institutions et plus de 9 millions d'utilisateurs dans le secteur de la R&E.",
-            "Les RREN et les NREN sont désormais officiellement reconnus comme des moteurs cruciaux de la transformation numérique centrée sur l'humain pour les communautés de la recherche et de l'éducation, favorisant la collaboration scientifique et universitaire, et sont des partenaires précieux pour faire progresser les objectifs de l'UE en matière de numérisation, de science, de technologie et d'innovation dans le cadre de la stratégie globale de passerelle de l'UE.",
-            "En conclusion, le dernier soutien financier de l'UE au projet AfricaConnect marque une avancée majeure dans l'évolution technologique du secteur de la R&E en Afrique.",
-            "Pour en savoir plus sur le succès et les activités menées au cours des phases précédentes du projet, visitez africaconnect3.net"
+            "Over the years, African RENs have significantly enhanced connectivity, data infrastructures, and e-services, including Moodle, eduroam, videoconferencing, identity federation, open science platforms, as well as cybersecurity, for over 3,000 institutions and over 9 million users across the R&E sector.",
+            "RRENs and NRENs are now officially recognised as crucial drivers of human-centric digital transformation for research and education communities, fostering scientific and academic collaboration, and are valuable partners in advancing the EU’s objectives in digitalisation, science, technology, and innovation under the EU Global Gateway Strategy.",
+            "In conclusion, the EU’s latest financial support for the AfricaConnect project marks a major advancement in the technological evolution of Africa’s R&E sector.",
+            "To read about the success and activities carried out during the previous phases of the project, visit africaconnect3.net"
           ]
         },
         {
           "id": "quotes",
           "quote": {
             "text": "QUERY LENGTH LIMIT EXCEEDED. MAX ALLOWED QUERY : 500 CHARS",
-            "author": "Prof. Madara Ogot, PDG de l'Alliance UbuntuNet"
+            "author": "Prof. Madara Ogot, CEO of the UbuntuNet Alliance"
           },
           "paragraphs": []
         },
         {
           "image": "/blog/WACREN-CEO-AC4-announcement-250x300.jpg",
           "quote": {
-            "text": "Pour WACREN, AfricaConnect représente un engagement commun à placer les communautés africaines de recherche et d'éducation au cœur de la création de connaissances mondiales. Cette nouvelle phase renforce notre détermination à faire en sorte que nos communautés en Afrique de l'Ouest et du Centre soient non seulement connectées, mais entièrement équipées pour collaborer, innover et apporter des solutions aux défis mondiaux. Il s'agit de construire des voies numériques inclusives qui libèrent le potentiel intellectuel de l'Afrique avec un avenir numérique souverain.",
-            "author": "Dr Eyouléki T. G. Palanga, PDG de WACREN"
+            "text": "For WACREN, AfricaConnect represents a shared commitment to place African research and education communities at the heart of global knowledge creation. This new phase strengthens our resolve to ensure that our communities in West and Central Africa are not only connected, but fully equipped to collaborate, innovate, and contribute solutions to global challenges. It is about building inclusive digital pathways that unlock Africa’s intellectual potential with a sovereign digital future.",
+            "author": "Dr. Eyouléki T. G. Palanga, CEO of WACREN"
           },
           "paragraphs": []
         },
@@ -297,20 +297,20 @@ export const ARTICLES_FR: ArticleData[] = [
           "image": "/blog/kick-off-AC4-screenshot-1-768x425.png",
           "quote": {
             "text": "QUERY LENGTH LIMIT EXCEEDED. MAX ALLOWED QUERY : 500 CHARS",
-            "author": "Lise Fuhr, PDG de GÉANT"
+            "author": "Lise Fuhr, CEO of GÉANT"
           },
           "paragraphs": []
         },
         {
           "quote": {
             "text": "QUERY LENGTH LIMIT EXCEEDED. MAX ALLOWED QUERY : 500 CHARS",
-            "author": "Cassilde BRENIERE, Directrice des Opérations, EF"
+            "author": "Cassilde BRENIERE, Operations Director, EF"
           },
           "paragraphs": []
         },
         {
           "quote": {
-            "text": "AfricaConnect Digital Campus incarne pleinement la mission de l'IRD : produire et partager des connaissances pour le développement durable, avec et pour les pays du Sud. Avec des décennies de présence et de collaboration scientifique en Afrique de l'Ouest, aux côtés des universités et des instituts de recherche, nous sommes convaincus que le renforcement des infrastructures numériques est un levier essentiel pour que les chercheurs et les étudiants africains contribuent, sur un pied d'égalité, à la science mondiale.",
+            "text": "AfricaConnect Digital Campus fully embodies IRD’s mission: to produce and share knowledge for sustainable development, with and for countries of the Global South. With decades of presence and scientific collaboration in West Africa, alongside universities and research institutions, we are convinced that strengthening digital infrastructure is an essential lever for African researchers and students to contribute, on equal terms, to global science.",
             "author": "Damien ALLINE, Institut de Recherche pour le Développement (IRD)"
           },
           "paragraphs": []
@@ -318,14 +318,14 @@ export const ARTICLES_FR: ArticleData[] = [
         {
           "quote": {
             "text": "QUERY LENGTH LIMIT EXCEEDED. MAX ALLOWED QUERY : 500 CHARS",
-            "author": "Modou DIOUF, Chef de projet senior, Agence Universitaire de la Francophonie"
+            "author": "Modou DIOUF, Senior Project Manager, Agence Universitaire de la Francophonie"
           },
           "paragraphs": []
         },
         {
           "quote": {
-            "text": "NORDUnet est très désireux de continuer à soutenir WACREN dans le contexte des services à valeur ajoutée hors réseau, reconnaissant que la diversification et le renforcement de son portefeuille de services sont essentiels au succès d'un NREN. En particulier, NORDUnet assistera WACREN dans la transition vers une plate-forme vidéo open source pour l'éducation numérique. En outre, à travers la WACREN NREN Academy, notre soutien s'étendra aux ateliers des PDG, en mettant l'accent sur l'amélioration de la durabilité des NREN en Afrique de l'Ouest et du Centre.",
-            "author": "Erik Kikkenborg, directeur de la collaboration chez NORDUnet"
+            "text": "NORDUnet is very keen to continue supporting WACREN in the context of above-the-net value-added services, recognizing that diversifying and strengthening its service portfolio is key to the success of an NREN. In particular, NORDUnet will assist WACREN in transitioning to an open-source video platform for digital education. Furthermore, through the WACREN NREN Academy, our support will extend to CEO workshops, with a focus on enhancing the sustainability of NRENs in West and Central Africa.",
+            "author": "Erik Kikkenborg, Chief Collaboration Officer at NORDUnet"
           },
           "paragraphs": []
         }
@@ -342,7 +342,7 @@ export const ARTICLES_FR: ArticleData[] = [
     ],
     "date": "September 11, 2026",
     "readTime": "2 Min Read",
-    "title": "Appel à animateurs Women-In-WACREN",
+    "title": "Women-In-WACREN Call for Facilitators",
     "author": {
       "name": "Padmore",
       "avatar": "/authors/PAD.png",
@@ -354,86 +354,86 @@ export const ARTICLES_FR: ArticleData[] = [
     "tableOfContents": [
       {
         "id": "facilitator-profile",
-        "title": "Profil de l'intervenant"
+        "title": "Facilitator Profile"
       },
       {
         "id": "expertise",
-        "title": "L'expertise dont nous avons besoin"
+        "title": "Expertise we need"
       },
       {
         "id": "who-we-are-looking-for",
-        "title": "Qui nous recherchons"
+        "title": "Who we're looking for"
       },
       {
         "id": "role",
-        "title": "Rôle pendant le laboratoire"
+        "title": "Role during the Lab"
       },
       {
         "id": "benefits",
-        "title": "Qu'est-ce que vous y gagnez?"
+        "title": "What’s in it for you"
       }
     ],
     "content": {
-      "intro": "Women-in-WACREN est à la recherche de facilitateurs bénévoles (hommes et femmes) pour le Climate Innovation Lab 2026, prévu du 12 au 15 octobre. Ce programme intensif de quatre jours rassemble des équipes multidisciplinaires pour concevoir et construire des solutions numériques répondant aux défis climatiques en Afrique de l'Ouest et du Centre.",
+      "intro": "Women-in-WACREN is seeking volunteer facilitators (men & women) for the Climate Innovation Lab 2026, scheduled for October 12-15. This four-day intensive program brings together multidisciplinary teams to design and build digital solutions addressing climate challenges across West and Central Africa.",
       "sections": [
         {
           "id": "expertise",
-          "heading": "L'expertise dont nous avons besoin",
+          "heading": "Expertise we need",
           "paragraphs": [
-            "Les animateurs doivent avoir une expérience pratique dans un ou plusieurs de ces domaines :",
-            "• Climat et environnement : adaptation, atténuation, durabilité environnementale, résilience ou défis climatiques africains connexes.",
-            "• Technologies numériques pour l'action climatique : application de l'IA, de la science des données, des SIG, de l'observation de la Terre, de l'IdO, des plateformes numériques ou d'autres technologies émergentes aux problèmes climatiques et environnementaux.",
-            "• Conception centrée sur l'humain : définition des problèmes, recherche des utilisateurs et des parties prenantes, analyse des besoins, traduction des défis du monde réel en exigences de solution.",
-            "• Pensée et idéation de conception : exécuter une idéation collaborative, peser les approches, aider les équipes à affiner les idées en concepts viables.",
-            "• Tests, documentation et itération : test utilisateur, interprétation des commentaires, affinement des solutions, production de la documentation dont les équipes ont besoin.",
-            "• Pitching & Adoption : aider les équipes à articuler le problème, la solution, l'impact attendu, le financement potentiel, les partenariats, préparer une démonstration solide et ce qu'il faut pour porter un prototype prometteur au-delà du laboratoire."
+            "Facilitators should have hands-on experience in one or more of these areas:",
+            "• Climate & environment: adaptation, mitigation, environmental sustainability, resilience, or related African climate challenges.",
+            "• Digital technologies for climate action: applying AI, data science, GIS, Earth observation, IoT, digital platforms or other emerging tech to climate and environmental problems.",
+            "• Human-centred design: problem definition, user and stakeholder research, needs analysis, translating real-world challenges into solution requirements.",
+            "• Design thinking & ideation: running collaborative ideation, weighing approaches, helping teams sharpen ideas into viable concepts.",
+            "• Testing, documentation & iteration: user testing, interpreting feedback, refining solutions, producing the documentation teams need.",
+            "• Pitching & Adoption: helping teams articulate the problem, the solution, the expected impact, potential funding, partnerships, prepare a strong demo and what it takes to carry a promising prototype beyond the Lab."
           ]
         },
         {
           "id": "who-we-are-looking-for",
-          "heading": "Qui nous recherchons",
+          "heading": "Who we're looking for",
           "paragraphs": [
-            "• Expérience pratique dans au moins un domaine ci-dessus, pas seulement la familiarité avec elle.",
-            "• À l'aise pour animer et encadrer, pas pour donner des conférences.",
-            "• Être à l'aise avec des équipes multidisciplinaires couvrant différents niveaux de compétences techniques.",
-            "• Habileté à aider les équipes à transformer de vastes défis en solutions spécifiques et réalisables.",
-            "• Connaissance des environnements africains de la recherche, de l'éducation, de l'innovation, du climat ou de la technologie, idéalement grâce à une expérience directe.",
-            "• Capable de donner des commentaires honnêtes et constructifs tout en laissant les équipes s'approprier leurs idées.",
-            "• Ouvert à travailler avec d'autres facilitateurs dont les forces complètent les leurs.",
-            "Les animateurs peuvent provenir d'universités, d'institutions de recherche, de NREN, de pôles d'innovation, du gouvernement, de l'industrie, de la société civile ou d'organisations de développement."
+            "• Practical experience in at least one area above, not just familiarity with it.",
+            "• Comfortable facilitating and mentoring, not lecturing.",
+            "• At ease with multidisciplinary teams spanning different levels of technical skill.",
+            "• Skilled at helping teams turn broad challenges into specific, achievable solutions.",
+            "• Familiar with African research, education, innovation, climate or technology environments, ideally through direct experience.",
+            "• Able to give honest, constructive feedback while leaving teams ownership of their ideas.",
+            "• Open to working alongside other facilitators whose strengths complement their own.",
+            "Facilitators can come from universities, research institutions, NRENs, innovation hubs, government, industry, civil society or development organisations."
           ]
         },
         {
           "id": "role",
-          "heading": "Rôle pendant le laboratoire",
+          "heading": "Role during the Lab",
           "paragraphs": [
-            "Les animateurs guident les équipes à travers l'arc complet : défi climatique, définition des problèmes, besoins des utilisateurs, idéation, conception de solutions, prototype, test, démonstration, feuille de route.",
-            "C'est apprendre par la pratique. La majeure partie du temps d'un animateur consiste à travailler directement avec les équipes : poser des questions, remettre en question les hypothèses, offrir des commentaires de spécialistes et aider les participants à faire de réels progrès plutôt que de rester assis sur la théorie.",
-            "Les animateurs sélectionnés peuvent également être invités à participer à la communauté de pratique post-laboratoire du programme et au mentorat continu de solutions."
+            "Facilitators guide teams through the full arc: climate challenge, problem definition, user needs, ideation, solution design, prototype, testing, demonstration, roadmap.",
+            "This is learning by doing. Most of a facilitator's time goes into working directly with teams: asking questions, challenging assumptions, offering specialist input, and helping participants make real progress rather than sitting in on theory.",
+            "Selected facilitators may also be invited into the programme's post-Lab Community of Practice and ongoing solution mentorship."
           ]
         },
         {
           "id": "benefits",
-          "heading": "Qu'est-ce que vous y gagnez?",
+          "heading": "What’s in it for you",
           "paragraphs": [
-            "• Visibilité et reconnaissance",
-            "• Réseau professionnel élargi",
-            "• Perfectionnement et soutien du leadership",
-            "• Certificat/Accusé de réception formel",
-            "• Parrainage pour la participation en personne au laboratoire d'innovation"
+            "• Visibility and Recognition",
+            "• Expanded Professional Network",
+            "• Leadership Development",
+            "• Certificate/Formal Acknowledgment",
+            "• Sponsorship for in-person participation at the innovation lab"
           ]
         },
         {
-          "heading": "Dates importantes",
+          "heading": "Important Dates",
           "paragraphs": [
-            "Date limite de présentation des demandes : 15 septembre",
-            "Notification de sélection : 21 septembre 2026"
+            "Application Deadline: September 15, 2026",
+            "Selection Notification: September 21, 2026"
           ]
         }
       ],
       "cta": {
         "label": "",
-        "linkText": "Appel à animateurs (Postulez ici)",
+        "linkText": "Call for Facilitators (Apply Here)",
         "url": "https://indico.wacren.net/event/282/registrations/201/"
       }
     }
@@ -448,7 +448,7 @@ export const ARTICLES_FR: ArticleData[] = [
     ],
     "date": "September 11, 2026",
     "readTime": "2 Min Read",
-    "title": "Appel de mentors Women-In-WACREN",
+    "title": "Women-In-WACREN Call for Mentors",
     "author": {
       "name": "Padmore",
       "avatar": "/authors/PAD.png",
@@ -460,71 +460,71 @@ export const ARTICLES_FR: ArticleData[] = [
     "tableOfContents": [
       {
         "id": "areas-of-expertise",
-        "title": "Domaines de compétence "
+        "title": "Areas of expertise"
       },
       {
         "id": "what-mentors-will-do",
-        "title": "Ce que les mentors feront"
+        "title": "What mentors will do"
       },
       {
         "id": "benefits",
-        "title": "Qu'est-ce que vous y gagnez?"
+        "title": "What’s in it for you"
       },
       {
         "id": "who-we-are-looking-for",
-        "title": "Qui nous recherchons"
+        "title": "Who we're looking for"
       }
     ],
     "content": {
-      "intro": "Women-in-WACREN est à la recherche de mentors (hommes et femmes) pour soutenir bénévolement les équipes du Climate Innovation Lab 2026 dans la construction et la mise au point de solutions numériques aux défis climatiques en Afrique de l'Ouest et du Centre. Les mentors contribuent pendant le laboratoire lui-même et/ou par le biais de la communauté de pratique et du programme de mentorat de solutions de six mois après le laboratoire.",
+      "intro": "Women-in-WACREN is looking for mentors (men & women) to volunteer to support teams in the Climate Innovation Lab 2026 as they build and refine digital solutions to climate challenges in West and Central Africa. Mentors contribute during the Lab itself and/or through the six-month post-Lab Community of Practice and Solution Mentorship programme.",
       "sections": [
         {
           "id": "areas-of-expertise",
-          "heading": "Domaines de compétence ",
+          "heading": "Areas of expertise",
           "paragraphs": [
-            "Nous recherchons une expérience pratique dans un ou plusieurs de ces domaines :",
-            "• Changement climatique, science de l'environnement, adaptation ou atténuation",
-            "• Développement de logiciels et architecture de solutions",
-            "Intelligence artificielle et sc. données",
-            "• SIG et observation de la Terre",
-            "• IdO, capteurs et surveillance de l'environnement",
-            "• Expérience utilisateur et conception centrée sur l'humain",
-            "• Entrepreneuriat, modèles commerciaux et durabilité",
-            "• Développement et déploiement de produits",
-            "• Adoption institutionnelle et partenariats",
-            "III. CONTRÔLE, ÉVALUATION ET IMPACT"
+            "We're looking for practical experience in one or more of these:",
+            "• Climate change, environmental science, adaptation or mitigation",
+            "• Software development and solution architecture",
+            "• Artificial intelligence and data science",
+            "• GIS and Earth observation",
+            "• IoT, sensors and environmental monitoring",
+            "• User experience and human-centred design",
+            "• Entrepreneurship, business models and sustainability",
+            "• Product development and deployment",
+            "• Institutional adoption and partnerships",
+            "• Monitoring, evaluation and impact"
           ]
         },
         {
           "id": "what-mentors-will-do",
-          "heading": "Ce que les mentors feront",
+          "heading": "What mentors will do",
           "paragraphs": [
-            "Cela varie selon l'équipe, mais les mentors peuvent s'attendre à :",
-            "• Donner des conseils techniques ou de domaine spécialisés.",
-            "• Passer en revue les concepts et les prototypes de solutions.",
-            "• Aider les équipes à repérer rapidement les problèmes techniques ou de mise en œuvre.",
-            "• Connecter les équipes à des outils, données, expertises ou réseaux utiles.",
-            "• Conseiller sur les tests, le déploiement et l'adoption.",
-            "• Aider les équipes à élaborer des feuilles de route techniques et de mise en œuvre réalistes.",
-            "• Vérifiez périodiquement au fur et à mesure que les solutions se développent après le laboratoire."
+            "This varies by team, but mentors can expect to:",
+            "• Give specialist technical or domain advice.",
+            "• Review solution concepts and prototypes.",
+            "• Help teams spot technical or implementation challenges early.",
+            "• Connect teams to useful tools, data, expertise or networks.",
+            "• Advise on testing, deployment and adoption.",
+            "• Help teams build realistic technical and implementation roadmaps.",
+            "• Check in periodically as solutions develop after the Lab."
           ]
         },
         {
           "id": "benefits",
-          "heading": "Qu'est-ce que vous y gagnez?",
+          "heading": "What’s in it for you",
           "paragraphs": [
-            "• Visibilité et reconnaissance",
-            "• Réseau professionnel élargi",
-            "• Perfectionnement et soutien du leadership",
-            "• Certificat/Accusé de réception formel",
-            "• Parrainage pour la participation en personne au laboratoire d'innovation"
+            "• Visibility and Recognition",
+            "• Expanded Professional Network",
+            "• Leadership Development",
+            "• Certificate/Formal Acknowledgment",
+            "• Sponsorship for in-person participation at the innovation lab"
           ]
         },
         {
           "id": "who-we-are-looking-for",
-          "heading": "Qui nous recherchons",
+          "heading": "Who we're looking for",
           "paragraphs": [
-            "Les mentors peuvent provenir d'universités, d'institutions de recherche, de NREN, du gouvernement, de l'industrie, de pôles d'innovation, de la société civile ou d'organisations de développement.",
+            "Mentors can come from universities, research institutions, NRENs, government, industry, innovation hubs, civil society or development organisations.",
             "What matters most is relevant, practical experience, ease working across multidisciplinary teams, and the ability to give honest guidance while letting participants keep ownership of their solutions.",
             "Mentors don't need to be trainers or facilitators. The point is to make the right expertise available to teams exactly when they need it."
           ]

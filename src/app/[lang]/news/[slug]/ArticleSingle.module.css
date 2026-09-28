@@ -220,7 +220,7 @@
 }
 
 .heroImage {
-  object-fit: cover;
+  object-fit: contain;
 }
 
 /* Content Layout */

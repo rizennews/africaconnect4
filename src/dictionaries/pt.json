@@ -247,6 +247,9 @@
       "Mídia & Comunicações"
     ]
   },
+  "contactForm": {
+    "title": "Tem Perguntas?"
+  },
   "pages": {
     "connectivity": {
       "heroTitle": "Expansão de Conectividade",
@@ -427,5 +430,158 @@
     "women-in-wacren-call-for-facilitators": "Women-In-WACREN - Convite à apresentação de facilitadores",
     "women-in-wacren-call-for-mentors": "Women-In-WACREN - Convite à apresentação de mentores",
     "climate-innovation-lab-2026-applications": "Laboratório de Inovação Climática 2026 - Convite à apresentação de candidaturas"
+  },
+  "procurementPage": {
+    "title": "Oportunidades de Aquisição",
+    "subtitle": "Veja e filtre licitações atuais e adjudicações de contratos.",
+    "postBtn": "Publicar Oportunidade",
+    "backToProcurement": "Voltar para Aquisições",
+    "searchPlaceholder": "Pesquisar por palavra-chave, número de referência...",
+    "tabs": {
+      "open": "Oportunidades Abertas",
+      "closed": "Oportunidades Fechadas",
+      "awards": "Adjudicações de Contratos"
+    },
+    "emptyState": "Nenhuma oportunidade encontrada com os seus filtros.",
+    "sidebar": {
+      "filterTitle": "Filtrar Oportunidades",
+      "clearBtn": "Limpar",
+      "categoryTitle": "Categoria",
+      "budgetTitle": "Faixa de Orçamento",
+      "alertsTitle": "Alertas por Email",
+      "alertsDesc": "Seja notificado sobre novas oportunidades que correspondam aos seus interesses.",
+      "emailPlaceholder": "Introduza o seu email",
+      "subscribeBtn": "Subscrever",
+      "newToTitle": "Novo na WACREN?",
+      "newToDesc": "Saiba como se registar como fornecedor e participar nos nossos concursos.",
+      "readGuidelines": "Ler as Diretrizes →",
+      "categories": {
+        "all": "Todas as Categorias",
+        "consultancy": "Consultoria",
+        "networkEquipment": "Equipamento de Rede",
+        "softwareDevelopment": "Desenvolvimento de Software",
+        "connectivityLinks": "Conectividade / Links",
+        "climateServices": "Serviços Climáticos",
+        "otherServices": "Outros Serviços"
+      },
+      "budgetRanges": {
+        "range1": "1 - 30.000",
+        "range2": "30.001 - 150.000",
+        "range3": "150.001 e acima"
+      },
+      "guidelinesTitle": "Diretrizes e Termos para Fornecedores",
+      "guidelines": [
+        {
+          "title": "1. Critérios de Elegibilidade",
+          "desc": "Para participar em oportunidades de aquisição da WACREN, os fornecedores devem ser entidades legalmente registadas com certificados de conformidade fiscal válidos e um histórico comprovado nos seus respetivos campos."
+        },
+        {
+          "title": "2. Processo de Submissão",
+          "desc": "Todas as propostas devem ser submetidas eletronicamente através do portal ou para o email de aquisição designado antes do prazo indicado. Submissões tardias não serão consideradas."
+        },
+        {
+          "title": "3. Documentação Exigida",
+          "desc": "Dependendo do concurso, pode ser exigido aos fornecedores que forneçam: Certificado de Registo da Empresa, Certificado de Regularização Fiscal, Demonstrações Financeiras (últimos 3 anos), Referências de projetos anteriores semelhantes."
+        },
+        {
+          "title": "4. Avaliação e Adjudicação",
+          "desc": "As submissões são avaliadas com base na conformidade técnica, competitividade financeira e valor geral para o dinheiro. A WACREN reserva-se o direito de aceitar ou rejeitar qualquer proposta sem incorrer em qualquer responsabilidade."
+        },
+        {
+          "title": "5. Código de Conduta",
+          "desc": "Espera-se que os fornecedores adiram aos mais altos padrões de conduta ética, incluindo práticas anticorrupção, sustentabilidade ambiental e práticas de trabalho justas."
+        }
+      ]
+    },
+    "postModal": {
+      "title": "Publicar Nova Oportunidade",
+      "refLabel": "Número de Referência",
+      "refPlaceholder": "WACREN-202X-001",
+      "catLabel": "Categoria",
+      "catSelect": "Selecionar categoria",
+      "titleLabel": "Título",
+      "titlePlaceholder": "Ex. Fornecimento de Cabos de Fibra Ótica",
+      "descLabel": "Descrição",
+      "descPlaceholder": "Descrição detalhada da oportunidade...",
+      "budgetLabel": "Faixa de Orçamento",
+      "budgetPlaceholder": "Ex.  - ",
+      "deadlineLabel": "Prazo",
+      "fileLabel": "Carregar Documentos (PDF, ZIP, DOCX)",
+      "cancelBtn": "Cancelar",
+      "submitBtn": "Criar Oportunidade",
+      "successMsg": "Oportunidade publicada com sucesso!"
+    },
+    "docTypes": {
+      "termsOfReference": "Termos de Referência (TdR)",
+      "applicationForm": "Formulário de Candidatura",
+      "technicalSpecifications": "Especificações Técnicas",
+      "biddingDocument": "Documento de Licitação",
+      "billOfQuantities": "Lista de Quantidades",
+      "submissionGuidelines": "Diretrizes de Submissão",
+      "auditRequirements": "Requisitos de Auditoria"
+    },
+    "card": {
+      "deadline": "Prazo:",
+      "budget": "Orçamento:",
+      "viewDetails": "Ver Detalhes",
+      "status": {
+        "open": "ABERTO",
+        "closed": "FECHADO",
+        "awarded": "ADJUDICADO"
+      }
+    },
+    "single": {
+      "description": "Descrição",
+      "documents": "Documentos",
+      "contactDesc": "Para questões relativas a esta oportunidade, contacte a equipa de aquisições.",
+      "shareText": "Veja esta oportunidade de aquisição da WACREN:",
+      "applyNow": "Candidatar-se agora",
+      "closedForApplications": "Candidaturas Encerradas",
+      "opportunityAwarded": "Oportunidade Adjudicada",
+      "shareOpportunity": "Partilhar Oportunidade",
+      "printDetails": "Imprimer Detalhes",
+      "form": {
+        "applyFor": "Candidatar-se a",
+        "fullName": "Nome Completo",
+        "email": "Endereço de Email",
+        "coverLetter": "Carta de Apresentação",
+        "uploadResume": "Carregar Currículo / Proposta (PDF)",
+        "cancel": "Cancelar",
+        "submit": "Submeter Candidatura"
+      }
+    },
+    "items": {
+      "WACREN-2026-003": {
+        "title": "Serviços de Avaliação de Cibersegurança",
+        "deadline": "20 Fev 2026",
+        "budget": "$30,000 - $45,000",
+        "description": "Avaliação abrangente de cibersegurança para nós regionais. O consultor selecionado será responsável pela realização de avaliações de vulnerabilidade, testes de invasão e revisão da arquitetura de segurança existente para garantir a conformidade com as normas internacionais."
+      },
+      "WACREN-2026-002": {
+        "title": "Fornecimento de Cabos de Fibra Ótica e Equipamentos",
+        "deadline": "15 Mar 2026",
+        "budget": "$200,000 - $300,000",
+        "description": "Fornecimento de cabos de fibra ótica de alta capacidade, transceptores e equipamentos de rede relacionados para a expansão do backbone regional. Os fornecedores devem fornecer equipamentos compatíveis com a nossa infraestrutura existente."
+      },
+      "WACREN-2026-001": {
+        "title": "Consultoria em Design de Infraestrutura de Rede",
+        "deadline": "28 Fev 2026",
+        "budget": "$50,000 - $75,000",
+        "description": "Procurando uma empresa de consultoria altamente qualificada para projetar a próxima fase de nossa infraestrutura de rede. O design deve levar em conta a escalabilidade futura, alta disponibilidade e integração com redes parceiras."
+      },
+      "WACREN-2025-098": {
+        "title": "Serviços de Auditoria do Ano Anterior",
+        "deadline": "31 Dez 2025",
+        "budget": "$20,000 - $30,000",
+        "description": "Serviços anuais de auditoria financeira do exercício anterior. A empresa de auditoria deve ser certificada e ter experiência com organizações regionais sem fins lucrativos."
+      }
+    }
+  },
+  "notFound": {
+    "title": "Esta página parece estar fora da rede.",
+    "description": "O link que seguiu pode estar partido ou a página pode ter sido movida.",
+    "goBackTo": "Volte para a",
+    "home": "página inicial",
+    "andRejoin": "e mantenha-se ligado ao AfricaConnect4."
   }
 }

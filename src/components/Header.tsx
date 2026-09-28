@@ -175,9 +175,11 @@ export default function Header({ dict, lang }: HeaderProps) {
                     ))}
                   </div>
                 </li>
+                {/* Procurement hidden from menu for now
                 <li className={styles.navItem}>
                   <Link href={href('/procurement')} className={styles.navLink}>{dict.nav.procurement}</Link>
                 </li>
+                */}
                 <li className={styles.navItem}>
                   <Link href={href('/contact')} className={styles.navLink}>{dict.nav.contact}</Link>
                 </li>
@@ -258,9 +260,11 @@ export default function Header({ dict, lang }: HeaderProps) {
                   ))}
                 </div>
               </li>
+              {/* Procurement hidden from menu for now
               <li className={styles.mobileNavItem}>
                 <Link href={href('/procurement')} className={styles.mobileNavLink} onClick={toggleMobileMenu}>{dict.nav.procurement}</Link>
               </li>
+              */}
               <li className={styles.mobileNavItem}>
                 <Link href={href('/contact')} className={styles.mobileNavLink} onClick={toggleMobileMenu}>{dict.nav.contact}</Link>
               </li>

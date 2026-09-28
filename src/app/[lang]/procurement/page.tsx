@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import ProcurementClient from '@/components/ProcurementClient';
+import { getDictionary } from '@/app/[lang]/dictionaries';
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://africaconnect4.net';
 
@@ -48,14 +49,16 @@ const procurementSchema = {
   ],
 };
 
-export default function ProcurementPage() {
+export default async function ProcurementPage() {
+  const dict = await getDictionary();
+
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(procurementSchema) }}
       />
-      <ProcurementClient />
+      <ProcurementClient dict={dict.procurementPage} />
     </>
   );
 }

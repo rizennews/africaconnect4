@@ -2,7 +2,7 @@
 
 import React from 'react';
 import styles from './UpcomingCrawler.module.css';
-import { futureEvents } from './ActivitiesToggle';
+import { futureEvents } from '@/data/events';
 
 export default function UpcomingCrawler() {
   if (!futureEvents || futureEvents.length === 0) return null;

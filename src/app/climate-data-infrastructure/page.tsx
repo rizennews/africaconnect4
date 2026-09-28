@@ -1,13 +1,41 @@
+import type { Metadata } from 'next';
 import PageHero from '@/components/PageHero';
 import FocusLayout from '@/components/FocusLayout';
 import styles from '@/components/FocusPage.module.css';
 
+export const metadata: Metadata = {
+  title: 'Climate Data Infrastructure & Resilience',
+  description: 'Empowering West and Central Africa with LoRaWAN environmental monitoring, federated HPC resources for climate modelling, and EUMETCast terrestrial services.',
+  alternates: {
+    canonical: '/climate-data-infrastructure',
+  },
+  openGraph: {
+    title: 'Climate Data Infrastructure | AfricaConnect4',
+    description: 'Building data systems supporting climate resilience across West and Central Africa.',
+    url: 'https://africaconnect4.net/climate-data-infrastructure',
+  },
+};
+
 export default function Page() {
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://africaconnect4.net';
+  const breadcrumb = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: siteUrl },
+      { '@type': 'ListItem', position: 2, name: 'Climate Data Infrastructure', item: `${siteUrl}/climate-data-infrastructure` },
+    ],
+  };
+
   return (
     <main>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }}
+      />
       <PageHero 
         title="Climate Data Infrastructure" 
-        description="Building data systems supporting climate resilience."
+        description="Building data systems supporting climate resilience." 
       />
       <FocusLayout activeHref="/climate-data-infrastructure">
         <p className={styles.lead}>
@@ -27,7 +55,7 @@ export default function Page() {
           </div>
           <div className={styles.featureCard}>
             <h3>
-              <svg className={styles.featureIcon} width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M3 3v18h18"></path><path d="M18.7 8l-5.1 5.2-2.8-2.7L7 14.3"></path></svg>
+              <svg className={styles.featureIcon} width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
               Real-time Analytics
             </h3>
             <p>Providing the high-throughput connectivity needed for real-time weather tracking and disaster early warning systems.</p>

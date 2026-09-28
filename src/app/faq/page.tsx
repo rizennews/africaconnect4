@@ -1,9 +1,74 @@
+import type { Metadata } from 'next';
 import PageHero from '@/components/PageHero';
 import FaqAccordion from '@/components/FaqAccordion';
+
+export const metadata: Metadata = {
+  title: 'Frequently Asked Questions (FAQ)',
+  description: 'Frequently asked questions about AfricaConnect, NRENs, regional networks, and European Union co-funding for African research and education.',
+  alternates: {
+    canonical: '/faq',
+  },
+  openGraph: {
+    title: 'Frequently Asked Questions (FAQ) | AfricaConnect4',
+    description: 'Find answers to common questions about AfricaConnect, NRENs, funding, and partners.',
+    url: 'https://africaconnect4.net/faq',
+  },
+};
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    {
+      '@type': 'Question',
+      name: 'What is an NREN?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'A National Research and Education Network (NREN) is a dedicated internet infrastructure and service provider to the research and educational (R&E) communities within a country, connecting universities, research institutes, schools, libraries, and teaching hospitals.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'How are NRENs different from internet service providers?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'An NREN is much more than an ISP. NRENs provide an advanced, diversified portfolio of ICT services tailored for research and education, such as eduroam, cloud services, federated SSO, eduGAIN, and high-performance regional research backbones.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'What is AfricaConnect?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'AfricaConnect is an EU co-funded pan-African connectivity programme that supports the development and consolidation of high-capacity regional research and education networks across Africa, interconnecting them with the pan-European GÉANT network.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Who are the project partners?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'The project is implemented by WACREN in West and Central Africa, UbuntuNet Alliance in Eastern and Southern Africa, and ASREN in North Africa, in partnership with GÉANT and co-funded by the European Union.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'How do I connect to AfricaConnect?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Institutions connect through their local National Research and Education Network (NREN), which is interconnected with the regional network (WACREN, UbuntuNet Alliance, or ASREN).',
+      },
+    },
+  ],
+};
 
 export default function FAQPage() {
   return (
     <main>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
       <PageHero 
         title="FAQ." 
         description="Frequently asked questions about the programme."
@@ -118,7 +183,7 @@ export default function FAQPage() {
               Any type of not-for-profit research and education activity can use the network. It is especially suited to data-intensive, bandwidth-hungry projects requiring reliable high-speed connectivity, but can equally be used to provide fast access to conventional web-based resources from all over Africa and other parts of the world.
             </p>
             <p>
-              Specific research applications cover areas such as health, bi o-medical sciences, climate, agriculture, education and environment.
+              Specific research applications cover areas such as health, bio-medical sciences, climate, agriculture, education and environment.
             </p>
           </FaqAccordion>
 

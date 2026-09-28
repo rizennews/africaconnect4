@@ -1,10 +1,77 @@
+import type { Metadata } from 'next';
 import PageHero from '@/components/PageHero';
 import ContactForm from '@/components/ContactForm';
 import styles from './Contact.module.css';
 
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://africaconnect4.net';
+
+export const metadata: Metadata = {
+  title: 'Contact AfricaConnect4 Project Team | WACREN',
+  description: 'Get in touch with the AfricaConnect4 project secretariat, communications team, and regional NREN coordination offices across Africa.',
+  alternates: {
+    canonical: '/contact',
+  },
+  openGraph: {
+    title: 'Contact AfricaConnect4 Project Team | WACREN',
+    description: 'Get in touch with the AfricaConnect4 project secretariat and regional NREN coordination offices.',
+    url: `${siteUrl}/contact`,
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630 }],
+  },
+};
+
+const contactSchema = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'ContactPage',
+      '@id': `${siteUrl}/contact#webpage`,
+      'url': `${siteUrl}/contact`,
+      'name': 'Contact AfricaConnect4 and WACREN',
+      'description': 'Direct contact channels for the AfricaConnect4 secretariat.',
+      'mainEntity': {
+        '@type': 'Organization',
+        'name': 'WACREN',
+        'url': 'https://wacren.net',
+        'email': 'secretariat@wacren.net',
+        'telephone': '+233 30 294 2873',
+        'address': {
+          '@type': 'PostalAddress',
+          'streetAddress': 'VCG Office Complex, IPS Road',
+          'postOfficeBoxNumber': 'P O Box LG 1279',
+          'addressLocality': 'Accra',
+          'addressCountry': 'GH',
+        },
+      },
+    },
+    {
+      '@type': 'BreadcrumbList',
+      '@id': `${siteUrl}/contact#breadcrumb`,
+      'itemListElement': [
+        {
+          '@type': 'ListItem',
+          'position': 1,
+          'name': 'Home',
+          'item': siteUrl,
+        },
+        {
+          '@type': 'ListItem',
+          'position': 2,
+          'name': 'Contact Us',
+          'item': `${siteUrl}/contact`,
+        },
+      ],
+    },
+  ],
+};
+
 export default function Page() {
   return (
-    <main>
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(contactSchema) }}
+      />
+      <main>
       <PageHero 
         title="Contact Us" 
         description="We'd love to hear from you."
@@ -51,5 +118,6 @@ export default function Page() {
         </div>
       </section>
     </main>
+    </>
   );
 }

@@ -1,13 +1,41 @@
+import type { Metadata } from 'next';
 import PageHero from '@/components/PageHero';
 import FocusLayout from '@/components/FocusLayout';
 import styles from '@/components/FocusPage.module.css';
 
+export const metadata: Metadata = {
+  title: 'Cybersecurity & Threat Intelligence | TrustBroker Africa',
+  description: 'Strengthening regional cyber resilience, TrustBroker Africa (TBA), CSIRT coordination, and federated trust & identity across West and Central Africa.',
+  alternates: {
+    canonical: '/cybersecurity-threat-intelligence',
+  },
+  openGraph: {
+    title: 'Cybersecurity & Threat Intelligence | AfricaConnect4',
+    description: 'Safeguarding academic and research networks against evolving digital threats.',
+    url: 'https://africaconnect4.net/cybersecurity-threat-intelligence',
+  },
+};
+
 export default function Page() {
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://africaconnect4.net';
+  const breadcrumb = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: siteUrl },
+      { '@type': 'ListItem', position: 2, name: 'Cybersecurity & Threat Intelligence', item: `${siteUrl}/cybersecurity-threat-intelligence` },
+    ],
+  };
+
   return (
     <main>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }}
+      />
       <PageHero 
         title="Cybersecurity" 
-        description="Strengthening regional cyber resilience and threat intelligence."
+        description="Strengthening regional cyber resilience and threat intelligence." 
       />
       <FocusLayout activeHref="/cybersecurity-threat-intelligence">
         <p className={styles.lead}>

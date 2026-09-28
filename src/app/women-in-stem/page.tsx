@@ -1,10 +1,51 @@
+import type { Metadata } from 'next';
 import PageHero from '@/components/PageHero';
 import FocusLayout from '@/components/FocusLayout';
 import styles from '@/components/FocusPage.module.css';
 
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://africaconnect4.net';
+
+export const metadata: Metadata = {
+  title: 'Women in STEM and Innovation Labs | AfricaConnect4',
+  description: 'Empowering African women researchers, engineers, and tech leaders through mentorship, leadership bootcamps, and specialized STEM innovation initiatives across NRENs.',
+  alternates: {
+    canonical: '/women-in-stem',
+  },
+  openGraph: {
+    title: 'Women in STEM and Innovation Labs | AfricaConnect4',
+    description: 'Empowering African women researchers, engineers, and tech leaders through mentorship and leadership bootcamps.',
+    url: `${siteUrl}/women-in-stem`,
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630 }],
+  },
+};
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  'itemListElement': [
+    {
+      '@type': 'ListItem',
+      'position': 1,
+      'name': 'Home',
+      'item': siteUrl,
+    },
+    {
+      '@type': 'ListItem',
+      'position': 2,
+      'name': 'Women in STEM',
+      'item': `${siteUrl}/women-in-stem`,
+    },
+  ],
+};
+
 export default function Page() {
   return (
-    <main>
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+      <main>
       <PageHero 
         title="Women in STEM" 
         description="Advancing gender inclusion in technology."
@@ -35,5 +76,6 @@ export default function Page() {
         </div>
       </FocusLayout>
     </main>
+    </>
   );
 }

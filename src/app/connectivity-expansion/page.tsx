@@ -1,13 +1,41 @@
+import type { Metadata } from 'next';
 import PageHero from '@/components/PageHero';
 import FocusLayout from '@/components/FocusLayout';
 import styles from '@/components/FocusPage.module.css';
 
+export const metadata: Metadata = {
+  title: 'Connectivity Expansion & High-Speed Networks',
+  description: 'Expanding high-speed research and education network infrastructure to connect universities and research institutes across West and Central Africa.',
+  alternates: {
+    canonical: '/connectivity-expansion',
+  },
+  openGraph: {
+    title: 'Connectivity Expansion | AfricaConnect4',
+    description: 'Growing regional network infrastructure to connect the unconnected across West and Central Africa.',
+    url: 'https://africaconnect4.net/connectivity-expansion',
+  },
+};
+
 export default function Page() {
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://africaconnect4.net';
+  const breadcrumb = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: siteUrl },
+      { '@type': 'ListItem', position: 2, name: 'Connectivity Expansion', item: `${siteUrl}/connectivity-expansion` },
+    ],
+  };
+
   return (
     <main>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }}
+      />
       <PageHero 
         title="Connectivity Expansion" 
-        description="Growing regional network infrastructure to connect the unconnected."
+        description="Growing regional network infrastructure to connect the unconnected." 
       />
       <FocusLayout activeHref="/connectivity-expansion">
         <p className={styles.lead}>

@@ -1,10 +1,51 @@
+import type { Metadata } from 'next';
 import PageHero from '@/components/PageHero';
 import FocusLayout from '@/components/FocusLayout';
 import styles from '@/components/FocusPage.module.css';
 
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://africaconnect4.net';
+
+export const metadata: Metadata = {
+  title: 'Capacity Building and NREN Training | AfricaConnect4',
+  description: 'Equipping African network engineers, researchers, and higher education institutions with advanced technical skills, cloud routing expertise, and institutional sustainability frameworks.',
+  alternates: {
+    canonical: '/capacity-building',
+  },
+  openGraph: {
+    title: 'Capacity Building and NREN Training | AfricaConnect4',
+    description: 'Equipping African network engineers, researchers, and higher education institutions with advanced technical skills.',
+    url: `${siteUrl}/capacity-building`,
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630 }],
+  },
+};
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  'itemListElement': [
+    {
+      '@type': 'ListItem',
+      'position': 1,
+      'name': 'Home',
+      'item': siteUrl,
+    },
+    {
+      '@type': 'ListItem',
+      'position': 2,
+      'name': 'Capacity Building',
+      'item': `${siteUrl}/capacity-building`,
+    },
+  ],
+};
+
 export default function Page() {
   return (
-    <main>
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+      <main>
       <PageHero 
         title="Capacity Building" 
         description="Training and institutional development for the future."
@@ -35,5 +76,6 @@ export default function Page() {
         </div>
       </FocusLayout>
     </main>
+    </>
   );
 }

@@ -1,2 +1,1 @@
-## AfricaConnect4
-
+## AfricaConnect is a major pan-European and African initiative that builds high-capacity internet networks for research and education across Sub-Saharan Africa

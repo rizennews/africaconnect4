@@ -45,8 +45,8 @@ export function DeveloperFootprint() {
         "  Contact:    hello@padmoreaning.com\n\n" +
         "  [ATTRIBUTION NOTE]\n" +
         "  Padmore Aning crafted and engineered this website platform.\n" +
-        "  AfricaConnect4 is co-funded by the European Union and implemented\n" +
-        "  by GÉANT, WACREN, UbuntuNet Alliance, and ASREN.\n",
+        "  AfricaConnect4 is a WACREN (https://wacren.net) initiative,\n" +
+        "  co-funded by the European Union.\n",
         "color: #94A3B8; font-family: monospace; font-size: 11px; line-height: 1.6;"
       );
     }

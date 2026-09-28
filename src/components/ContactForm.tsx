@@ -3,26 +3,30 @@
 import React, { useState } from 'react';
 import styles from './ContactForm.module.css';
 
-export default function ContactForm() {
+interface ContactFormProps {
+  dict: any;
+}
+
+export default function ContactForm({ dict }: ContactFormProps) {
   const [status, setStatus] = useState<'idle' | 'submitting' | 'success' | 'error'>('idle');
   const [errorMessage, setErrorMessage] = useState('');
-  const [category, setCategory] = useState('General Inquiry');
-
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    setStatus('submitting');
-    setErrorMessage('');
+  const [category, setCategory] = useState(dict.categories[0]);
     
-    const target = e.target as typeof e.target & {
-      name: { value: string };
-      email: { value: string };
-      subject: { value: string };
-      message: { value: string };
-    };
-    
-    const combinedSubject = category !== 'General Inquiry' 
-      ? `[${category}] ${target.subject.value}`
-      : target.subject.value;
+    const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+      e.preventDefault();
+      setStatus('submitting');
+      setErrorMessage('');
+      
+      const target = e.target as typeof e.target & {
+        name: { value: string };
+        email: { value: string };
+        subject: { value: string };
+        message: { value: string };
+      };
+      
+      const combinedSubject = category !== dict.categories[0] 
+        ? `[${category}] ${target.subject.value}`
+        : target.subject.value;
 
     const data = {
       name: target.name.value,
@@ -57,15 +61,15 @@ export default function ContactForm() {
   const handleReset = () => {
     setStatus('idle');
     setErrorMessage('');
-    setCategory('General Inquiry');
+    setCategory(dict.categories[0]);
   };
 
   return (
     <div className={styles.formCard}>
       <div className={styles.formHeader}>
-        <h3 className={styles.formTitle}>Send Us a Message</h3>
+        <h3 className={styles.formTitle}>{dict.title}</h3>
         <p className={styles.formSubtitle}>
-          Complete the form below and our regional coordination team will follow up promptly.
+          {dict.subtitle}
         </p>
       </div>
       
@@ -76,12 +80,12 @@ export default function ContactForm() {
               <polyline points="20 6 9 17 4 12"></polyline>
             </svg>
           </div>
-          <h4 className={styles.successTitle}>Inquiry Sent Successfully</h4>
+          <h4 className={styles.successTitle}>{dict.successTitle}</h4>
           <p className={styles.successDesc}>
-            Thank you for reaching out. The AfricaConnect4 coordination team at WACREN has received your message and will review it shortly.
+            {dict.successDesc}
           </p>
           <button type="button" onClick={handleReset} className={styles.resetBtn}>
-            Send Another Message
+            {dict.sendAnother}
           </button>
         </div>
       ) : (
@@ -101,7 +105,7 @@ export default function ContactForm() {
           <div className={styles.formRow}>
             <div className={styles.formGroup}>
               <label className={styles.label} htmlFor="name">
-                <span>Full Name <span className={styles.required}>*</span></span>
+                <span>{dict.fullName} <span className={styles.required}>*</span></span>
               </label>
               <div className={styles.inputWrapper}>
                 <svg className={styles.inputIcon} width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -114,7 +118,7 @@ export default function ContactForm() {
                   name="name"
                   className={styles.input} 
                   required 
-                  placeholder="e.g. Dr. Jane Doe" 
+                  placeholder={dict.namePlaceholder} 
                   disabled={status === 'submitting'} 
                 />
               </div>
@@ -122,7 +126,7 @@ export default function ContactForm() {
             
             <div className={styles.formGroup}>
               <label className={styles.label} htmlFor="email">
-                <span>Email Address <span className={styles.required}>*</span></span>
+                <span>{dict.emailAddress} <span className={styles.required}>*</span></span>
               </label>
               <div className={styles.inputWrapper}>
                 <svg className={styles.inputIcon} width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -135,7 +139,7 @@ export default function ContactForm() {
                   name="email"
                   className={styles.input} 
                   required 
-                  placeholder="jane@institution.edu" 
+                  placeholder={dict.emailPlaceholder} 
                   disabled={status === 'submitting'} 
                 />
               </div>
@@ -146,7 +150,7 @@ export default function ContactForm() {
           <div className={styles.formRow}>
             <div className={styles.formGroup}>
               <label className={styles.label} htmlFor="category">
-                <span>Inquiry Area</span>
+                <span>{dict.inquiryArea}</span>
               </label>
               <div className={styles.inputWrapper}>
                 <svg className={styles.inputIcon} width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -163,21 +167,16 @@ export default function ContactForm() {
                   onChange={(e) => setCategory(e.target.value)}
                   disabled={status === 'submitting'}
                 >
-                  <option value="General Inquiry">General Inquiry</option>
-                  <option value="High-Speed Connectivity">High-Speed Connectivity</option>
-                  <option value="LIBSENSE & Open Science">LIBSENSE & Open Science</option>
-                  <option value="Climate Data Infrastructure">Climate Data Infrastructure</option>
-                  <option value="Cybersecurity CSIRT">Cybersecurity & Trust</option>
-                  <option value="Capacity Building">Capacity Building & Training</option>
-                  <option value="Procurement & Tenders">Procurement & Tenders</option>
-                  <option value="Media & Press">Media & Communications</option>
+                  {dict.categories.map((cat: string) => (
+                    <option key={cat} value={cat}>{cat}</option>
+                  ))}
                 </select>
               </div>
             </div>
 
             <div className={styles.formGroup}>
               <label className={styles.label} htmlFor="subject">
-                <span>Subject <span className={styles.required}>*</span></span>
+                <span>{dict.subject} <span className={styles.required}>*</span></span>
               </label>
               <div className={styles.inputWrapper}>
                 <svg className={styles.inputIcon} width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -191,7 +190,7 @@ export default function ContactForm() {
                   name="subject"
                   className={styles.input} 
                   required 
-                  placeholder="Subject of your message" 
+                  placeholder={dict.subjectPlaceholder} 
                   disabled={status === 'submitting'} 
                 />
               </div>
@@ -201,14 +200,14 @@ export default function ContactForm() {
           {/* Row 3: Message */}
           <div className={styles.formGroup}>
             <label className={styles.label} htmlFor="message">
-              <span>Your Message <span className={styles.required}>*</span></span>
+              <span>{dict.yourMessage} <span className={styles.required}>*</span></span>
             </label>
             <textarea 
               id="message" 
               name="message"
               className={styles.textarea} 
               required 
-              placeholder="Please provide details about your question, project requirement, or partnership idea..." 
+              placeholder={dict.messagePlaceholder} 
               disabled={status === 'submitting'}
             ></textarea>
           </div>
@@ -227,11 +226,11 @@ export default function ContactForm() {
                   <line x1="4.93" y1="19.07" x2="7.76" y2="16.24"></line>
                   <line x1="16.24" y1="7.76" x2="19.07" y2="4.93"></line>
                 </svg>
-                <span>Sending Message...</span>
+                <span>{dict.sending}</span>
               </>
             ) : (
               <>
-                <span>Send Message</span>
+                <span>{dict.sendMessage}</span>
                 <svg className={styles.btnArrow} width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                   <line x1="5" y1="12" x2="19" y2="12"></line>
                   <polyline points="12 5 19 12 12 19"></polyline>

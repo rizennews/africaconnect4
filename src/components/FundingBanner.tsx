@@ -1,8 +1,12 @@
 import React from 'react';
 import Image from 'next/image';
+import { getDictionary } from '@/app/[lang]/dictionaries';
 import styles from './FundingBanner.module.css';
 
-export default function FundingBanner() {
+export default async function FundingBanner() {
+  const dict = await getDictionary();
+  const t = dict.funding;
+
   return (
     <section className={styles.section}>
       <div className={styles.container}>
@@ -19,9 +23,9 @@ export default function FundingBanner() {
           </div>
           
           <div className={styles.textContent}>
-            <span className={styles.fundedBy}>Funded by</span>
+            <span className={styles.fundedBy}>{t.fundedBy}</span>
             <p className={styles.fundingText}>
-              The European Union, under the EU Global Gateway Strategy and the Africa-Europe Investment Package, through DG INTPA.
+              {t.fundingText}
             </p>
           </div>
         </div>
@@ -29,7 +33,7 @@ export default function FundingBanner() {
         {/* Right Side: Disclaimer */}
         <div className={styles.rightContent}>
           <p className={styles.disclaimerText}>
-            Views and opinions expressed are those of the author(s) only and do not necessarily reflect those of the European Union. Neither the European Union nor the granting authority can be held responsible.
+            {t.disclaimer}
           </p>
         </div>
       </div>

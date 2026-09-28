@@ -3,63 +3,14 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { usePathname } from 'next/navigation';
+import { usePathname, useRouter } from 'next/navigation';
 import styles from './Header.module.css';
+import type { Dictionary } from '@/app/[lang]/dictionaries';
 
-const focusItems = [
-  {
-    title: 'Connectivity Expansion',
-    desc: 'Growing regional network infrastructure',
-    href: '/connectivity-expansion',
-  },
-  {
-    title: 'Climate Data Infrastructure',
-    desc: 'Data systems supporting climate resilience',
-    href: '/climate-data-infrastructure',
-  },
-  {
-    title: 'Women in STEM',
-    desc: 'Advancing gender inclusion in technology',
-    href: '/women-in-stem',
-  },
-  {
-    title: 'Cybersecurity & Threat Intelligence',
-    desc: 'Strengthening regional cyber resilience',
-    href: '/cybersecurity-threat-intelligence',
-  },
-  {
-    title: 'Capacity Building',
-    desc: 'Training and institutional development',
-    href: '/capacity-building',
-  },
-  {
-    title: 'Open Science and Open scholarly communication infrastructure',
-    desc: 'Advancing open science paradigm',
-    href: '/open-science',
-  },
-];
-
-const mediaItems = [
-  {
-    title: 'News',
-    desc: 'Latest updates and announcements',
-    href: '/news',
-  },
-  {
-    title: 'Publications',
-    desc: 'Reports, briefs and research papers',
-    href: '/publications',
-  },
-  {
-    title: 'Gallery',
-    desc: 'Photos from events and activities',
-    href: 'https://photos.wacren.net/index.php?/category/178',
-  },
-  {
-    title: 'Videos',
-    desc: 'Session recordings and highlights',
-    href: 'https://video.wacren.net/channel/WACREN+Conferences/597270',
-  },
+const languages = [
+  { code: 'en', name: 'English', flagUrl: 'https://flagcdn.com/w40/gb.png' },
+  { code: 'fr', name: 'Français', flagUrl: 'https://flagcdn.com/w40/fr.png' },
+  { code: 'pt', name: 'Português', flagUrl: 'https://flagcdn.com/w40/pt.png' },
 ];
 
 const topbarItems = [
@@ -68,19 +19,24 @@ const topbarItems = [
   { title: 'AfricaConnect3', href: 'https://africaconnect3.net/' },
 ];
 
-const languages = [
-  { code: 'en', name: 'English', flagUrl: 'https://flagcdn.com/w40/gb.png' },
-  { code: 'fr', name: 'Français', flagUrl: 'https://flagcdn.com/w40/fr.png' },
-  { code: 'pt', name: 'Português', flagUrl: 'https://flagcdn.com/w40/pt.png' },
-];
+type HeaderDict = Dictionary['header'];
 
-export default function Header() {
+interface HeaderProps {
+  dict: HeaderDict;
+  lang: string;
+}
+
+export default function Header({ dict, lang }: HeaderProps) {
   const pathname = usePathname();
-  const isProcurement = pathname?.startsWith('/procurement');
+  const router = useRouter();
+
+  // Strip the locale prefix to get the "bare" path  e.g. /fr/about → /about
+  const barePath = pathname.replace(/^\/(en|fr|pt)/, '') || '/';
+  const isProcurement = barePath.startsWith('/procurement');
 
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [openMobileMega, setOpenMobileMega] = useState<string | null>(null);
-  const [currentLang, setCurrentLang] = useState(languages[0]);
+  const currentLang = languages.find((l) => l.code === lang) ?? languages[0];
   const [isLangOpen, setIsLangOpen] = useState(false);
 
   const toggleMobileMenu = () => {
@@ -92,6 +48,15 @@ export default function Header() {
     setOpenMobileMega(openMobileMega === menu ? null : menu);
   };
 
+  const switchLang = (code: string) => {
+    const target = `/${code}${barePath === '/' ? '' : barePath}`;
+    router.push(target);
+    setIsLangOpen(false);
+  };
+
+  // Build localised hrefs for nav links
+  const href = (path: string) => `/${lang}${path}`;
+
   return (
     <header className={styles.headerContainer}>
       {/* Topbar */}
@@ -100,7 +65,7 @@ export default function Header() {
           <ul className={styles.topbarNav}>
             {topbarItems.map((item) => (
               <li key={item.title}>
-                <Link href={item.href} target={item.href.startsWith('http') ? '_blank' : undefined} rel={item.href.startsWith('http') ? 'noopener noreferrer' : undefined}>{item.title}</Link>
+                <Link href={item.href} target="_blank" rel="noopener noreferrer">{item.title}</Link>
               </li>
             ))}
           </ul>
@@ -118,17 +83,17 @@ export default function Header() {
             
             {isLangOpen && (
               <div className={styles.langDropdown}>
-                {languages.map((lang) => (
+                {languages.map((l) => (
                   <button 
-                    key={lang.code} 
+                    key={l.code} 
                     className={styles.langOption}
-                    onClick={() => {
-                      setCurrentLang(lang);
-                      setIsLangOpen(false);
+                    onMouseDown={(e) => {
+                      e.preventDefault();
+                      switchLang(l.code);
                     }}
                   >
-                    <img src={lang.flagUrl} width="20" alt="" style={{ borderRadius: '2px' }} />
-                    <span>{lang.name}</span>
+                    <img src={l.flagUrl} width="20" alt="" style={{ borderRadius: '2px' }} />
+                    <span>{l.name}</span>
                   </button>
                 ))}
               </div>
@@ -140,7 +105,7 @@ export default function Header() {
       {/* Main Header */}
       <div className={styles.mainHeader}>
         <div className={styles.logo}>
-          <Link href="/">
+          <Link href={href('/')}>
             <Image 
               src="/africaconnect4.png" 
               alt="AfricaConnect4 Logo" 
@@ -158,31 +123,31 @@ export default function Header() {
             {isProcurement ? (
               <>
                 <li className={styles.navItem}>
-                  <Link href="/procurement" className={styles.navLink}>Opportunities</Link>
+                  <Link href={href('/procurement')} className={styles.navLink}>{dict.procurement.opportunities}</Link>
                 </li>
                 <li className={styles.navItem}>
-                  <Link href="/procurement?tab=contract-awards" className={styles.navLink}>Contract Awards</Link>
+                  <Link href={href('/procurement?tab=contract-awards')} className={styles.navLink}>{dict.procurement.contractAwards}</Link>
                 </li>
                 <li className={styles.navItem}>
-                  <Link href="#" className={styles.navLink}>Supplier Registration</Link>
+                  <Link href="#" className={styles.navLink}>{dict.procurement.supplierReg}</Link>
                 </li>
                 <li className={styles.navItem}>
-                  <Link href="/" className={styles.navLink}>Back to Main Site</Link>
+                  <Link href={href('/')} className={styles.navLink}>{dict.procurement.backToMain}</Link>
                 </li>
               </>
             ) : (
               <>
                 <li className={styles.navItem}>
-                  <Link href="/about" className={styles.navLink}>About</Link>
+                  <Link href={href('/about')} className={styles.navLink}>{dict.nav.about}</Link>
                 </li>
                 <li className={styles.navItem}>
                   <span className={styles.navLink}>
-                    Focus
+                    {dict.focusLabel}
                     <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
                   </span>
                   <div className={styles.megaMenu}>
-                    {focusItems.map((item) => (
-                      <Link href={item.href} key={item.title} className={styles.megaMenuLink} target={item.href.startsWith('http') ? '_blank' : undefined} rel={item.href.startsWith('http') ? 'noopener noreferrer' : undefined}>
+                    {dict.focus.map((item) => (
+                      <Link href={href(item.href ?? '/')} key={item.title} className={styles.megaMenuLink}>
                         <div className={styles.megaMenuItem}>
                           <span className={styles.megaMenuTitle}>{item.title}</span>
                           <span className={styles.megaMenuDesc}>{item.desc}</span>
@@ -192,16 +157,16 @@ export default function Header() {
                   </div>
                 </li>
                 <li className={styles.navItem}>
-                  <Link href="/activities" className={styles.navLink}>Activities</Link>
+                  <Link href={href('/activities')} className={styles.navLink}>{dict.nav.activities}</Link>
                 </li>
                 <li className={styles.navItem}>
                   <span className={styles.navLink}>
-                    Media
+                    {dict.mediaLabel}
                     <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
                   </span>
                   <div className={`${styles.megaMenu} ${styles.megaMenuRight}`}>
-                    {mediaItems.map((item) => (
-                      <Link href={item.href} key={item.title} className={styles.megaMenuLink} target={item.href.startsWith('http') ? '_blank' : undefined} rel={item.href.startsWith('http') ? 'noopener noreferrer' : undefined}>
+                    {dict.media.map((item) => (
+                      <Link href={item.href?.startsWith('http') ? item.href : href(item.href ?? '/news')} key={item.title} className={styles.megaMenuLink} target={item.href?.startsWith('http') ? '_blank' : undefined} rel={item.href?.startsWith('http') ? 'noopener noreferrer' : undefined}>
                         <div className={styles.megaMenuItem}>
                           <span className={styles.megaMenuTitle}>{item.title}</span>
                           <span className={styles.megaMenuDesc}>{item.desc}</span>
@@ -211,10 +176,10 @@ export default function Header() {
                   </div>
                 </li>
                 <li className={styles.navItem}>
-                  <Link href="/procurement" className={styles.navLink}>Procurement</Link>
+                  <Link href={href('/procurement')} className={styles.navLink}>{dict.nav.procurement}</Link>
                 </li>
                 <li className={styles.navItem}>
-                  <Link href="/contact" className={styles.navLink}>Contact</Link>
+                  <Link href={href('/contact')} className={styles.navLink}>{dict.nav.contact}</Link>
                 </li>
               </>
             )}
@@ -241,31 +206,31 @@ export default function Header() {
           {isProcurement ? (
             <>
               <li className={styles.mobileNavItem}>
-                <Link href="/procurement" className={styles.mobileNavLink} onClick={toggleMobileMenu}>Opportunities</Link>
+                <Link href={href('/procurement')} className={styles.mobileNavLink} onClick={toggleMobileMenu}>{dict.procurement.opportunities}</Link>
               </li>
               <li className={styles.mobileNavItem}>
-                <Link href="/procurement?tab=contract-awards" className={styles.mobileNavLink} onClick={toggleMobileMenu}>Contract Awards</Link>
+                <Link href={href('/procurement?tab=contract-awards')} className={styles.mobileNavLink} onClick={toggleMobileMenu}>{dict.procurement.contractAwards}</Link>
               </li>
               <li className={styles.mobileNavItem}>
-                <Link href="#" className={styles.mobileNavLink} onClick={toggleMobileMenu}>Supplier Registration</Link>
+                <Link href="#" className={styles.mobileNavLink} onClick={toggleMobileMenu}>{dict.procurement.supplierReg}</Link>
               </li>
               <li className={styles.mobileNavItem}>
-                <Link href="/" className={styles.mobileNavLink} onClick={toggleMobileMenu}>Back to Main Site</Link>
+                <Link href={href('/')} className={styles.mobileNavLink} onClick={toggleMobileMenu}>{dict.procurement.backToMain}</Link>
               </li>
             </>
           ) : (
             <>
               <li className={styles.mobileNavItem}>
-                <Link href="/about" className={styles.mobileNavLink} onClick={toggleMobileMenu}>About</Link>
+                <Link href={href('/about')} className={styles.mobileNavLink} onClick={toggleMobileMenu}>{dict.nav.about}</Link>
               </li>
               <li className={styles.mobileNavItem}>
                 <button className={styles.mobileNavLink} onClick={() => toggleMobileMega('focus')}>
-                  Focus
+                  {dict.focusLabel}
                   <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ transform: openMobileMega === 'focus' ? 'rotate(180deg)' : 'rotate(0)' }}><polyline points="6 9 12 15 18 9"></polyline></svg>
                 </button>
                 <div className={`${styles.mobileMegaMenu} ${openMobileMega === 'focus' ? styles.open : ''}`}>
-                  {focusItems.map((item) => (
-                    <Link href={item.href} key={item.title} className={styles.megaMenuLink} onClick={toggleMobileMenu} target={item.href.startsWith('http') ? '_blank' : undefined} rel={item.href.startsWith('http') ? 'noopener noreferrer' : undefined}>
+                  {dict.focus.map((item) => (
+                    <Link href={href(item.href ?? '/')} key={item.title} className={styles.megaMenuLink} onClick={toggleMobileMenu}>
                       <div className={styles.megaMenuItem}>
                         <span className={styles.megaMenuTitle}>{item.title}</span>
                         <span className={styles.megaMenuDesc}>{item.desc}</span>
@@ -275,16 +240,16 @@ export default function Header() {
                 </div>
               </li>
               <li className={styles.mobileNavItem}>
-                <Link href="/activities" className={styles.mobileNavLink} onClick={toggleMobileMenu}>Activities</Link>
+                <Link href={href('/activities')} className={styles.mobileNavLink} onClick={toggleMobileMenu}>{dict.nav.activities}</Link>
               </li>
               <li className={styles.mobileNavItem}>
                 <button className={styles.mobileNavLink} onClick={() => toggleMobileMega('media')}>
-                  Media
+                  {dict.mediaLabel}
                   <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ transform: openMobileMega === 'media' ? 'rotate(180deg)' : 'rotate(0)' }}><polyline points="6 9 12 15 18 9"></polyline></svg>
                 </button>
                 <div className={`${styles.mobileMegaMenu} ${openMobileMega === 'media' ? styles.open : ''}`}>
-                  {mediaItems.map((item) => (
-                    <Link href={item.href} key={item.title} className={styles.megaMenuLink} onClick={toggleMobileMenu} target={item.href.startsWith('http') ? '_blank' : undefined} rel={item.href.startsWith('http') ? 'noopener noreferrer' : undefined}>
+                  {dict.media.map((item) => (
+                    <Link href={item.href?.startsWith('http') ? item.href : href(item.href ?? '/news')} key={item.title} className={styles.megaMenuLink} onClick={toggleMobileMenu} target={item.href?.startsWith('http') ? '_blank' : undefined} rel={item.href?.startsWith('http') ? 'noopener noreferrer' : undefined}>
                       <div className={styles.megaMenuItem}>
                         <span className={styles.megaMenuTitle}>{item.title}</span>
                         <span className={styles.megaMenuDesc}>{item.desc}</span>
@@ -294,10 +259,10 @@ export default function Header() {
                 </div>
               </li>
               <li className={styles.mobileNavItem}>
-                <Link href="/procurement" className={styles.mobileNavLink} onClick={toggleMobileMenu}>Procurement</Link>
+                <Link href={href('/procurement')} className={styles.mobileNavLink} onClick={toggleMobileMenu}>{dict.nav.procurement}</Link>
               </li>
               <li className={styles.mobileNavItem}>
-                <Link href="/contact" className={styles.mobileNavLink} onClick={toggleMobileMenu}>Contact</Link>
+                <Link href={href('/contact')} className={styles.mobileNavLink} onClick={toggleMobileMenu}>{dict.nav.contact}</Link>
               </li>
             </>
           )}
@@ -308,25 +273,25 @@ export default function Header() {
           <ul className={styles.mobileTopbarList}>
             {topbarItems.map((item) => (
               <li key={item.title}>
-                <Link href={item.href} onClick={toggleMobileMenu} target={item.href.startsWith('http') ? '_blank' : undefined} rel={item.href.startsWith('http') ? 'noopener noreferrer' : undefined}>{item.title}</Link>
+                <Link href={item.href} onClick={toggleMobileMenu} target="_blank" rel="noopener noreferrer">{item.title}</Link>
               </li>
             ))}
           </ul>
           
           <div className={styles.mobileLangList}>
-            <p className={styles.mobileLangTitle}>Select Language</p>
+            <p className={styles.mobileLangTitle}>{dict.selectLanguage}</p>
             <div className={styles.mobileLangOptions}>
-              {languages.map((lang) => (
+              {languages.map((l) => (
                 <button 
-                  key={lang.code}
-                  className={`${styles.mobileLangBtn} ${currentLang.code === lang.code ? styles.activeLang : ''}`}
+                  key={l.code}
+                  className={`${styles.mobileLangBtn} ${currentLang.code === l.code ? styles.activeLang : ''}`}
                   onClick={() => {
-                    setCurrentLang(lang);
+                    switchLang(l.code);
                     toggleMobileMenu();
                   }}
                 >
-                  <img src={lang.flagUrl} width="20" alt="" style={{ borderRadius: '2px' }} />
-                  <span>{lang.name}</span>
+                  <img src={l.flagUrl} width="20" alt="" style={{ borderRadius: '2px' }} />
+                  <span>{l.name}</span>
                 </button>
               ))}
             </div>
@@ -336,4 +301,3 @@ export default function Header() {
     </header>
   );
 }
-

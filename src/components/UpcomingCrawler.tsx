@@ -2,47 +2,61 @@
 
 import React from 'react';
 import styles from './UpcomingCrawler.module.css';
-import { futureEvents } from '@/data/events';
+import { EventData } from '@/components/EventsGrid';
+import { useParams } from 'next/navigation';
+import Link from 'next/link';
 
-export default function UpcomingCrawler() {
-  if (!futureEvents || futureEvents.length === 0) return null;
+type UpcomingCrawlerDict = {
+  upcoming: string;
+};
+
+export default function UpcomingCrawler({ dict, events }: { dict: UpcomingCrawlerDict, events: EventData[] }) {
+  const params = useParams();
+  const lang = (params.lang as string) || 'en';
+
+  if (!events || events.length === 0) return null;
+
+  const getHref = (link?: string) => {
+    if (!link) return '#';
+    return link.startsWith('http') ? link : `/${lang}${link.startsWith('/') ? link : `/${link}`}`;
+  };
 
   return (
     <div className={styles.crawlerWrapper}>
       <div className={styles.crawlerLabel}>
-        UPCOMING
+        {dict.upcoming}
       </div>
       <div className={styles.crawlerTrack}>
         <div className={styles.crawlerContent}>
-          {futureEvents.map((ev, i) => (
+          {events.map((ev, i) => (
             <React.Fragment key={i}>
-              <a href={ev.link} target="_blank" rel="noopener noreferrer" className={styles.crawlerItem}>
+              <Link href={getHref(ev.link)} target={ev.link?.startsWith('http') ? '_blank' : undefined} rel={ev.link?.startsWith('http') ? 'noopener noreferrer' : undefined} className={styles.crawlerItem}>
                 <span className={styles.date}>{ev.day} {ev.month} {ev.year}</span>
                 <span className={styles.title}>{ev.title}</span>
                 <span className={styles.arrow}>→</span>
-              </a>
+              </Link>
               <span className={styles.separator}>•</span>
             </React.Fragment>
           ))}
           {/* Duplicate for infinite seamless scroll */}
-          {futureEvents.map((ev, i) => (
+          {events.map((ev, i) => (
             <React.Fragment key={`dup-${i}`}>
-              <a href={ev.link} target="_blank" rel="noopener noreferrer" className={styles.crawlerItem}>
+              <Link href={getHref(ev.link)} target={ev.link?.startsWith('http') ? '_blank' : undefined} rel={ev.link?.startsWith('http') ? 'noopener noreferrer' : undefined} className={styles.crawlerItem}>
                 <span className={styles.date}>{ev.day} {ev.month} {ev.year}</span>
                 <span className={styles.title}>{ev.title}</span>
                 <span className={styles.arrow}>→</span>
-              </a>
+              </Link>
               <span className={styles.separator}>•</span>
             </React.Fragment>
           ))}
           {/* Third copy to ensure enough width for large screens */}
-          {futureEvents.map((ev, i) => (
+          {events.map((ev, i) => (
             <React.Fragment key={`dup2-${i}`}>
-              <a href={ev.link} target="_blank" rel="noopener noreferrer" className={styles.crawlerItem}>
+              <Link href={getHref(ev.link)} target={ev.link?.startsWith('http') ? '_blank' : undefined} rel={ev.link?.startsWith('http') ? 'noopener noreferrer' : undefined} className={styles.crawlerItem}>
                 <span className={styles.date}>{ev.day} {ev.month} {ev.year}</span>
                 <span className={styles.title}>{ev.title}</span>
                 <span className={styles.arrow}>→</span>
-              </a>
+              </Link>
               <span className={styles.separator}>•</span>
             </React.Fragment>
           ))}

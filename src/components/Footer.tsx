@@ -1,16 +1,23 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import { lang as getLang } from 'next/root-params';
+import { getDictionary } from '@/app/[lang]/dictionaries';
 import styles from './Footer.module.css';
 
-export default function Footer() {
+export default async function Footer() {
+  const dict = await getDictionary();
+  const t = dict.footer;
+  const locale = await getLang();
+  const href = (path: string) => `/${locale}${path}`;
+
   return (
     <footer className={styles.footer}>
       <div className={styles.container}>
         <div className={styles.topSection}>
           {/* Column 1: Company Info */}
           <div className={styles.companyInfo}>
-            <Link href="/" style={{ textDecoration: 'none', display: 'inline-block', marginBottom: '1rem' }}>
+            <Link href={href('/')} style={{ textDecoration: 'none', display: 'inline-block', marginBottom: '1rem' }}>
               <Image 
                 src="/africaconnect4.png" 
                 alt="WACREN Logo" 
@@ -20,7 +27,7 @@ export default function Footer() {
               />
             </Link>
             <p className={styles.description}>
-              The West and Central African Research and Education Network provides world-class infrastructure and services for the region&apos;s research and education community.
+              {t.description}
             </p>
             <address className={styles.address}>
               <span>VCG Office Complex, IPS Road</span>
@@ -31,35 +38,35 @@ export default function Footer() {
 
           {/* Column 2: About */}
           <div className={styles.column}>
-            <h3 className={styles.columnTitle}>About</h3>
+            <h3 className={styles.columnTitle}>{t.aboutTitle}</h3>
             <div className={styles.links}>
-              <Link href="/about" className={styles.link}>Who we are</Link>
-              <Link href="https://wacren.net/en/about-us/corporate-information/" target="_blank" rel="noopener noreferrer" className={styles.link}>Corporate information</Link>
-              <Link href="https://wacren.net/en/directors/" target="_blank" rel="noopener noreferrer" className={styles.link}>Board & governance</Link>
-              <Link href="https://wacren.net/en/community/nrens/" target="_blank" rel="noopener noreferrer" className={styles.link}>Member NRENs</Link>
-              <Link href="https://wacren.net/en/about-us/careers/" target="_blank" rel="noopener noreferrer" className={styles.link}>Careers</Link>
+              <Link href={href('/about')} className={styles.link}>{t.links.whoWeAre}</Link>
+              <Link href="https://wacren.net/en/about-us/corporate-information/" target="_blank" rel="noopener noreferrer" className={styles.link}>{t.links.corporate}</Link>
+              <Link href="https://wacren.net/en/directors/" target="_blank" rel="noopener noreferrer" className={styles.link}>{t.links.board}</Link>
+              <Link href="https://wacren.net/en/community/nrens/" target="_blank" rel="noopener noreferrer" className={styles.link}>{t.links.memberNrens}</Link>
+              <Link href="https://wacren.net/en/about-us/careers/" target="_blank" rel="noopener noreferrer" className={styles.link}>{t.links.careers}</Link>
             </div>
           </div>
 
           {/* Column 3: Services & Projects */}
           <div className={styles.column}>
-            <h3 className={styles.columnTitle}>Services & Projects</h3>
+            <h3 className={styles.columnTitle}>{t.servicesTitle}</h3>
             <div className={styles.links}>
-              <Link href="https://wacren.net/en/services/network-performance/" target="_blank" rel="noopener noreferrer" className={styles.link}>Network</Link>
-              <Link href="https://wacren.net/en/services/eduroam-edugain/" target="_blank" rel="noopener noreferrer" className={styles.link}>eduroam & eduGAIN</Link>
-              <Link href="https://wacren.net/en/services/video-conferencing/" target="_blank" rel="noopener noreferrer" className={styles.link}>Video conferencing</Link>
-              <Link href="https://libsense.ren.africa/home" target="_blank" rel="noopener noreferrer" className={styles.link}>LIBSENSE</Link>
+              <Link href="https://wacren.net/en/services/network-performance/" target="_blank" rel="noopener noreferrer" className={styles.link}>{t.links.network}</Link>
+              <Link href="https://wacren.net/en/services/eduroam-edugain/" target="_blank" rel="noopener noreferrer" className={styles.link}>{t.links.eduroam}</Link>
+              <Link href="https://wacren.net/en/services/video-conferencing/" target="_blank" rel="noopener noreferrer" className={styles.link}>{t.links.video}</Link>
+              <Link href="https://libsense.ren.africa/home" target="_blank" rel="noopener noreferrer" className={styles.link}>{t.links.libsense}</Link>
             </div>
           </div>
 
           {/* Column 4: Stay In Touch */}
           <div className={styles.column}>
-            <h3 className={styles.columnTitle}>Stay In Touch</h3>
+            <h3 className={styles.columnTitle}>{t.stayInTouchTitle}</h3>
             <div className={styles.links}>
-              <Link href="https://wacren2026.wacren.net/" target="_blank" rel="noopener noreferrer" className={styles.link}>WACREN 2026 Conference</Link>
-              <Link href="/news" className={styles.link}>Newsletter</Link>
-              <Link href="/news" className={styles.link}>Press & media</Link>
-              <Link href="/contact" className={styles.link}>Contact</Link>
+              <Link href="https://wacren2026.wacren.net/" target="_blank" rel="noopener noreferrer" className={styles.link}>{t.links.conference}</Link>
+              <Link href={href('/news')} className={styles.link}>{t.links.newsletter}</Link>
+              <Link href={href('/news')} className={styles.link}>{t.links.press}</Link>
+              <Link href={href('/contact')} className={styles.link}>{t.links.contact}</Link>
             </div>
             
             <div className={styles.socialLinks}>
@@ -95,10 +102,10 @@ export default function Footer() {
         </div>
 
         <div className={styles.bottomSection}>
-          <p>© {new Date().getFullYear()} WACREN. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} WACREN. {t.links.rights}</p>
           <div className={styles.bottomLinks}>
-            <Link href="#" className={styles.link}>Privacy Policy</Link>
-            <Link href="#" className={styles.link}>Terms of Service</Link>
+            <Link href="#" className={styles.link}>{t.links.privacy}</Link>
+            <Link href="#" className={styles.link}>{t.links.terms}</Link>
           </div>
         </div>
       </div>

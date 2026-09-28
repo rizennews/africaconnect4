@@ -2,28 +2,38 @@ import React from 'react';
 import Link from 'next/link';
 import styles from './PartnersBanner.module.css';
 
-const partners = [
-  { name: 'WACREN', role: 'Lead - W&C Africa', url: 'https://wacren.net/' },
-  { name: 'UbuntuNet Alliance', role: 'E&S Africa Cluster', url: 'https://ubuntunet.net/' },
-  { name: 'GÉANT', role: 'European RREN', url: 'https://geant.org/' },
-  { name: 'NORDUnet', role: 'Nordic Partner', url: 'https://nordu.net/' },
-  { name: 'Expertise France/IRD', role: 'Implementing Partners', url: 'https://www.expertisefrance.fr/en' },
-];
+interface Partner {
+  name: string;
+  role: string;
+}
 
-export default function PartnersBanner() {
+interface PartnersBannerDict {
+  title: string;
+  partners: Partner[];
+}
+
+export default function PartnersBanner({ dict }: { dict: PartnersBannerDict }) {
+  const partnerUrls = [
+    'https://wacren.net/',
+    'https://ubuntunet.net/',
+    'https://geant.org/',
+    'https://nordu.net/',
+    'https://www.expertisefrance.fr/en'
+  ];
+
   return (
     <section className={styles.partnersSection}>
       <div className={styles.container}>
         <div className={styles.titleWrapper}>
           <h2 className={styles.title}>
-            Project partners
+            {dict.title}
           </h2>
         </div>
         
         <div className={styles.partnersList}>
-          {partners.map((partner, index) => (
+          {dict.partners.map((partner, index) => (
             <div key={index} className={styles.partnerItem}>
-              <Link href={partner.url} className={styles.partnerName} target="_blank" rel="noopener noreferrer">{partner.name}</Link>
+              <Link href={partnerUrls[index] || '#'} className={styles.partnerName} target="_blank" rel="noopener noreferrer">{partner.name}</Link>
               <span className={styles.partnerRole}>{partner.role}</span>
             </div>
           ))}

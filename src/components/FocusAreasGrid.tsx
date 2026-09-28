@@ -1,8 +1,15 @@
 import React from 'react';
 import Link from 'next/link';
+import { lang as getLang } from 'next/root-params';
+import { getDictionary } from '@/app/[lang]/dictionaries';
 import styles from './FocusAreasGrid.module.css';
 
-export default function FocusAreasGrid() {
+export default async function FocusAreasGrid() {
+  const dict = await getDictionary();
+  const t = dict.focusGrid;
+  const locale = await getLang();
+  const href = (path: string) => `/${locale}${path}`;
+
   return (
     <section className={styles.section}>
       <div className={styles.container}>
@@ -15,12 +22,12 @@ export default function FocusAreasGrid() {
             </svg>
           </div>
 
-          <h3 className={styles.title}>Connectivity Expansion</h3>
+          <h3 className={styles.title}>{t.cards[0].title}</h3>
           <p className={styles.description}>
-            Strengthening the WACREN backbone, extending high-speed regional links and tackling last-mile gaps bringing new countries into the network in Phase 4.
+            {t.cards[0].description}
           </p>
-          <Link href="#" className={styles.exploreLink}>
-            Explore 
+          <Link href={href('/connectivity-expansion')} className={styles.exploreLink}>
+            {t.exploreLink} 
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
           </Link>
         </div>
@@ -37,12 +44,12 @@ export default function FocusAreasGrid() {
             </svg>
           </div>
 
-          <h3 className={styles.title}>Climate Data Infrastructure</h3>
+          <h3 className={styles.title}>{t.cards[1].title}</h3>
           <p className={styles.description}>
-            HPC clusters, EUMETCast terrestrial data portals, WMO-compliant weather stations and LoRaWAN gateways building the digital plumbing for African climate research, all under the WACREN CLIMET service. 
+            {t.cards[1].description}
           </p>
-          <Link href="#" className={styles.exploreLink}>
-            Explore 
+          <Link href={href('/climate-data-infrastructure')} className={styles.exploreLink}>
+            {t.exploreLink} 
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
           </Link>
         </div>
@@ -56,12 +63,12 @@ export default function FocusAreasGrid() {
             </svg>
           </div>
 
-          <h3 className={styles.title}>Women in STEM</h3>
+          <h3 className={styles.title}>{t.cards[2].title}</h3>
           <p className={styles.description}>
-            Growing women’s leadership through the Women-in-WACREN programme, annual hackathons and mentorship.
+            {t.cards[2].description}
           </p>
-          <Link href="#" className={styles.exploreLink}>
-            Explore 
+          <Link href={href('/women-in-stem')} className={styles.exploreLink}>
+            {t.exploreLink} 
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
           </Link>
         </div>
@@ -74,12 +81,12 @@ export default function FocusAreasGrid() {
             </svg>
           </div>
 
-          <h3 className={styles.title}>Cybersecurity & Threat Intelligence</h3>
+          <h3 className={styles.title}>{t.cards[3].title}</h3>
           <p className={styles.description}>
-            Standing up an ISAC, strengthening CSIRT cooperation and securing federated identity across the region’s NRENs, through the TrustBroker Africa and the WACREN T&I programmes
+            {t.cards[3].description}
           </p>
-          <Link href="#" className={styles.exploreLink}>
-            Explore 
+          <Link href={href('/cybersecurity-threat-intelligence')} className={styles.exploreLink}>
+            {t.exploreLink} 
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
           </Link>
         </div>
@@ -94,12 +101,12 @@ export default function FocusAreasGrid() {
             </svg>
           </div>
 
-          <h3 className={styles.title}>Capacity Building</h3>
+          <h3 className={styles.title}>{t.cards[4].title}</h3>
           <p className={styles.description}>
-            The NREN Academy, business accelerators, technical training and exchange programmes equipping a new generation of African REN leaders, all through the Africa Training Initiative (ATI).
+            {t.cards[4].description}
           </p>
-          <Link href="#" className={styles.exploreLink}>
-            Explore 
+          <Link href={href('/capacity-building')} className={styles.exploreLink}>
+            {t.exploreLink} 
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
           </Link>
         </div>

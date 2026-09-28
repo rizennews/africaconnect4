@@ -1,13 +1,17 @@
 import React from 'react';
+import { getDictionary } from '@/app/[lang]/dictionaries';
 import styles from './FocusAreasIntro.module.css';
 
-export default function FocusAreasIntro() {
+export default async function FocusAreasIntro() {
+  const dict = await getDictionary();
+  const t = dict.focusIntro;
+
   return (
     <section className={styles.section}>
       <div className={styles.container}>
         <div className={styles.leftColumn}>
           <h2 className={styles.title}>
-            Five thematic <span className={styles.highlight}>focus areas</span>
+            {t.preTitle} <span className={styles.highlight}>{t.highlight}</span>
           </h2>
         </div>
 

@@ -1,9 +1,14 @@
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
+import { useParams } from 'next/navigation';
 import styles from './EventCard.module.css';
 import { getPlaceholderBase64 } from '@/utils/placeholder';
 
+import type { EventCardDict } from './EventsGrid';
+
 interface EventCardProps {
+  dict: EventCardDict;
   status: 'UPCOMING' | 'PAST' | 'PRESENT';
   type?: string;
   title: string;
@@ -18,6 +23,7 @@ interface EventCardProps {
 }
 
 export default function EventCard({
+  dict,
   status,
   type,
   title,
@@ -32,6 +38,12 @@ export default function EventCard({
 }: EventCardProps) {
   const isUpcoming = status === 'UPCOMING';
   const cardClass = isUpcoming ? styles.upcoming : styles.past;
+  const params = useParams();
+  const lang = (params.lang as string) || 'en';
+
+  const getHref = (url: string) => {
+    return url.startsWith('http') ? url : `/${lang}${url.startsWith('/') ? url : `/${url}`}`;
+  };
 
   const cardInner = (
     <>
@@ -78,7 +90,7 @@ export default function EventCard({
         {/* Floating Tags */}
         <div className={styles.floatingTags}>
           <span className={`${styles.statusTag} ${isUpcoming ? styles.statusUpcoming : styles.statusPast}`}>
-            {status}
+            {status === 'UPCOMING' ? dict.upcoming : status === 'PAST' ? dict.past : dict.present}
           </span>
           {type && <span className={styles.typeTag}>{type}</span>}
         </div>
@@ -102,7 +114,7 @@ export default function EventCard({
           ) : <span />}
 
           <span className={styles.action}>
-            {isUpcoming ? 'Apply / Details' : 'Details'} &rarr;
+            {isUpcoming ? dict.applyDetails : dict.details} &rarr;
           </span>
         </div>
       </div>
@@ -110,15 +122,16 @@ export default function EventCard({
   );
 
   if (link) {
+    const isExternal = link.startsWith('http');
     return (
-      <a 
-        href={link} 
-        target="_blank" 
-        rel="noopener noreferrer" 
+      <Link 
+        href={getHref(link)} 
+        target={isExternal ? "_blank" : undefined} 
+        rel={isExternal ? "noopener noreferrer" : undefined} 
         className={`${styles.card} ${cardClass}`}
       >
         {cardInner}
-      </a>
+      </Link>
     );
   }
 

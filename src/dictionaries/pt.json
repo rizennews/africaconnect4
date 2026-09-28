@@ -1,0 +1,431 @@
+{
+  "header": {
+    "focusLabel": "Áreas",
+    "mediaLabel": "Mídia",
+    "selectLanguage": "Selecionar idioma",
+    "nav": {
+      "about": "Sobre",
+      "activities": "Atividades",
+      "procurement": "Aquisições",
+      "contact": "Contato"
+    },
+    "focus": [
+      {
+        "title": "Expansão de Conectividade",
+        "desc": "Crescimento da infraestrutura de rede regional",
+        "href": "/connectivity-expansion"
+      },
+      {
+        "title": "Infraestrutura de Dados Climáticos",
+        "desc": "Sistemas de dados para resiliência climática",
+        "href": "/climate-data-infrastructure"
+      },
+      {
+        "title": "Mulheres nas STEM",
+        "desc": "Promovendo a inclusão de género na tecnologia",
+        "href": "/women-in-stem"
+      },
+      {
+        "title": "Cibersegurança e Inteligência de Ameaças",
+        "desc": "Fortalecendo a ciber-resiliência regional",
+        "href": "/cybersecurity-threat-intelligence"
+      },
+      {
+        "title": "Capacitação",
+        "desc": "Formação e desenvolvimento institucional",
+        "href": "/capacity-building"
+      },
+      {
+        "title": "Ciência Aberta e infraestrutura de comunicação científica aberta",
+        "desc": "Promovendo o paradigma da ciência aberta",
+        "href": "/open-science"
+      }
+    ],
+    "media": [
+      {
+        "title": "Notícias",
+        "desc": "Últimas atualizações e anúncios",
+        "href": "/news"
+      },
+      {
+        "title": "Publicações",
+        "desc": "Relatórios, notas e artigos de pesquisa",
+        "href": "/publications"
+      },
+      {
+        "title": "Galeria",
+        "desc": "Fotos de eventos e atividades",
+        "href": "https://photos.wacren.net/index.php?/category/178"
+      },
+      {
+        "title": "Vídeos",
+        "desc": "Gravações de sessões e destaques",
+        "href": "https://video.wacren.net/channel/WACREN+Conferences/597270"
+      }
+    ],
+    "procurement": {
+      "opportunities": "Oportunidades",
+      "contractAwards": "Contratos adjudicados",
+      "supplierReg": "Registo de fornecedores",
+      "backToMain": "Voltar ao site principal"
+    }
+  },
+  "footer": {
+    "description": "A Rede de Investigação e Educação da África Ocidental e Central fornece infraestrutura e serviços de classe mundial para a comunidade de investigação e educação da região.",
+    "aboutTitle": "Sobre",
+    "servicesTitle": "Serviços e Projetos",
+    "stayInTouchTitle": "Mantenha-se em Contacto",
+    "links": {
+      "whoWeAre": "Quem somos",
+      "corporate": "Informação institucional",
+      "board": "Conselho & governança",
+      "memberNrens": "NRENs membros",
+      "careers": "Carreiras",
+      "network": "Rede",
+      "eduroam": "eduroam & eduGAIN",
+      "video": "Videoconferência",
+      "libsense": "LIBSENSE",
+      "conference": "Conferência WACREN 2026",
+      "newsletter": "Boletim informativo",
+      "press": "Imprensa & mídia",
+      "contact": "Contato",
+      "privacy": "Política de privacidade",
+      "terms": "Termos de serviço",
+      "rights": "Todos os direitos reservados."
+    }
+  },
+  "hero": {
+    "title": "Conectando África a possibilidades ilimitadas",
+    "description": "AfricaConnect4 é a quarta iteração de uma iniciativa financiada pela UE que desenvolve o setor de investigação e educação em África através de conectividade de alta velocidade, infraestrutura de dados climáticos, serviços digitais e capacitação implementados na África Ocidental e Central pelo WACREN.",
+    "explore": "Explorar AfricaConnect4",
+    "viewActivities": "Ver atividades"
+  },
+  "focusIntro": {
+    "preTitle": "Cinco",
+    "highlight": "áreas temáticas"
+  },
+  "focusGrid": {
+    "exploreLink": "Explorar",
+    "cards": [
+      {
+        "title": "Expansão de Conectividade",
+        "description": "Fortalecimento do backbone WACREN, extensão de ligações regionais de alta velocidade e resolução de lacunas de conectividade na Fase 4."
+      },
+      {
+        "title": "Infraestrutura de Dados Climáticos",
+        "description": "Clusters HPC, portais terrestres EUMETCast, estações meteorológicas conformes à OMM e gateways LoRaWAN para a investigação climática africana sob o serviço WACREN CLIMET."
+      },
+      {
+        "title": "Mulheres nas STEM",
+        "description": "Desenvolvimento da liderança feminina através do programa Women-in-WACREN, hackathons anuais e mentoria."
+      },
+      {
+        "title": "Cibersegurança e Inteligência de Ameaças",
+        "description": "Criação de um ISAC, fortalecimento da cooperação CSIRT e segurança de identidade federada através do TrustBroker Africa e programas WACREN T&I."
+      },
+      {
+        "title": "Capacitação",
+        "description": "A Academia NREN, aceleradoras de negócios, formação técnica e programas de intercâmbio para uma nova geração de líderes REN africanos através da Africa Training Initiative (ATI)."
+      }
+    ]
+  },
+  "stats": {
+    "title": "Construindo sobre o sucesso de três fases anteriores.",
+    "description": "Desde 2015, a participação do WACREN no projeto AfricaConnect remodelou fundamentalmente o panorama das redes de investigação e educação da nossa região. A Fase 4 consolida e expande estes resultados em toda a região WACREN.",
+    "reportLink": "Ler o relatório de impacto AfricaConnect",
+    "items": [
+      {
+        "number": "18",
+        "label": "NRENs em 22 países apoiados"
+      },
+      {
+        "number": "150+",
+        "label": "Instituições com conectividade de alta velocidade"
+      },
+      {
+        "number": "1M+",
+        "label": "Investigadores, estudantes e funcionários impactados"
+      },
+      {
+        "number": "12",
+        "label": "Países conectados ao backbone regional"
+      }
+    ]
+  },
+  "news": {
+    "title": "Notícias e atualizações",
+    "viewAll": "Ver todas as notícias",
+    "description": "Anúncios, marcos, notícias de parcerias e relatórios de campo em todo o cluster da África Ocidental e Central do AfricaConnect4."
+  },
+  "funding": {
+    "fundedBy": "Financiado por",
+    "fundingText": "A União Europeia, no âmbito da Estratégia EU Global Gateway e do Pacote de Investimento África-Europa, através da DG INTPA.",
+    "disclaimer": "As opiniões e pontos de vista expressos são exclusivamente dos autores e não refletem necessariamente os da União Europeia. Nem a União Europeia nem a autoridade concedente podem ser consideradas responsáveis."
+  },
+  "aboutHero": {
+    "title": "Conectando África a possibilidades ilimitadas",
+    "tags": {
+      "euFunded": "Programa cofinanciado pela UE",
+      "cluster": "Cluster 2 · África Ocidental e Central",
+      "duration": "Implementação de 48 meses",
+      "countries": "22+ países no âmbito"
+    }
+  },
+  "aboutIntro": {
+    "title": "O que é AfricaConnect4?",
+    "para1": "AfricaConnect4 (AC4) é um projeto pan-africano de conectividade cofinanciado pela UE que consolida e expande os resultados de três fases anteriores, apoiando conjuntamente a criação, desenvolvimento e utilização de redes de investigação e educação de alta capacidade em todo o continente.",
+    "para2": "O objetivo global do projeto é aumentar o acesso e utilização das tecnologias de informação e comunicação pelas comunidades de investigação e educação africanas, e reforçar a cooperação internacional em ciência, tecnologia e inovação.",
+    "objectivesTitle": "TRÊS OBJETIVOS ESPECÍFICOS",
+    "objectives": [
+      "Melhorar a capacidade de prestação e a sustentabilidade financeira e institucional das Redes Regionais e Nacionais de Investigação e Educação africanas.",
+      "Assegurar o acesso das comunidades I&E africanas a conectividade acessível, fiável e de alta velocidade, e ligação à comunidade global I&E.",
+      "Reforçar a prestação de serviços acima da rede, com especial foco na e-learning, ciência das alterações climáticas e disciplinas relacionadas."
+    ]
+  },
+  "focusLayout": {
+    "sidebarTitle": "Áreas Temáticas",
+    "items": [
+      {
+        "title": "Expansão de Conectividade",
+        "href": "/connectivity-expansion"
+      },
+      {
+        "title": "Infraestrutura de Dados Climáticos",
+        "href": "/climate-data-infrastructure"
+      },
+      {
+        "title": "Mulheres nas STEM",
+        "href": "/women-in-stem"
+      },
+      {
+        "title": "Cibersegurança e Inteligência de Ameaças",
+        "href": "/cybersecurity-threat-intelligence"
+      },
+      {
+        "title": "Capacitação",
+        "href": "/capacity-building"
+      },
+      {
+        "title": "Ciência Aberta",
+        "href": "/open-science"
+      }
+    ]
+  },
+  "contact": {
+    "heroTitle": "Contacte-nos",
+    "heroDesc": "Canais de comunicação diretos para o projeto AfricaConnect4 e parceiros regionais.",
+    "secretariatTitle": "Secretariado",
+    "secretariatAddress": "Secretariado WACREN\nVCG Office Complex, IPS Road\nP O Box LG 1279, Accra, Gana",
+    "emailTitle": "Envie-nos um email",
+    "callTitle": "Ligue-nos"
+  },
+  "form": {
+    "title": "Envie-nos uma mensagem",
+    "subtitle": "Preencha o formulário abaixo e a nossa equipa de coordenação regional responderá prontamente.",
+    "successTitle": "Mensagem enviada com sucesso",
+    "successDesc": "Obrigado por nos contactar. A equipa de coordenação AfricaConnect4 no WACREN recebeu a sua mensagem e irá revê-la brevemente.",
+    "sendAnother": "Enviar outra mensagem",
+    "fullName": "Nome completo",
+    "emailAddress": "Endereço de email",
+    "inquiryArea": "Área da consulta",
+    "subject": "Assunto",
+    "yourMessage": "A sua mensagem",
+    "sendMessage": "Enviar mensagem",
+    "sending": "A enviar mensagem...",
+    "namePlaceholder": "ex. Dr. Maria Silva",
+    "emailPlaceholder": "maria@instituicao.edu",
+    "subjectPlaceholder": "Assunto da sua mensagem",
+    "messagePlaceholder": "Por favor, forneça detalhes sobre a sua pergunta, requisito do projeto ou ideia de parceria...",
+    "categories": [
+      "Consulta geral",
+      "Conectividade de alta velocidade",
+      "LIBSENSE & Ciência Aberta",
+      "Infraestrutura de Dados Climáticos",
+      "Cibersegurança & Confiança",
+      "Capacitação & Formação",
+      "Aquisições & Concursos",
+      "Mídia & Comunicações"
+    ]
+  },
+  "pages": {
+    "connectivity": {
+      "heroTitle": "Expansão de Conectividade",
+      "heroDesc": "Crescimento da infraestrutura de rede regional para conectar os não conectados.",
+      "lead": "Uma rede robusta e expansiva é a base da transformação digital em toda a África Ocidental e Central.",
+      "para": "Através do projeto AfricaConnect4, estamos a expandir significativamente o alcance da nossa rede de alta velocidade. Ao implantar novas ligações e melhorar as existentes, visamos colmatar o fosso digital, fornecendo aos investigadores, educadores e estudantes acesso à Internet fiável e rápido.",
+      "card1Title": "Atualizações de Rede",
+      "card1Desc": "Melhoramento da capacidade e resiliência do backbone nos países membros para responder às futuras exigências de dados.",
+      "card2Title": "Peering Global",
+      "card2Desc": "Estabelecimento de ligações diretas vitais com redes de investigação internacionais e grandes fornecedores de conteúdo."
+    },
+    "climate": {
+      "heroTitle": "Infraestrutura de Dados Climáticos",
+      "heroDesc": "Construindo sistemas de dados para a resiliência climática.",
+      "lead": "Dotar a região da infraestrutura digital necessária para monitorizar, analisar e combater eficazmente as alterações climáticas.",
+      "para": "A investigação climática requer enorme poder de computação e armazenamento de dados. A iniciativa AfricaConnect4 fornece infraestrutura dedicada e trânsito de alta velocidade para dados de observação da Terra, permitindo que cientistas locais colaborem globalmente.",
+      "card1Title": "Repositórios de Dados",
+      "card1Desc": "Criação de hubs centralizados e acessíveis para dados ambientais regionais e registos climáticos históricos.",
+      "card2Title": "Análise em Tempo Real",
+      "card2Desc": "Fornecimento de conectividade de alto débito necessária para rastreamento meteorológico em tempo real e sistemas de alerta precoce."
+    },
+    "women": {
+      "heroTitle": "Mulheres nas STEM",
+      "heroDesc": "Promovendo a inclusão de género na tecnologia.",
+      "lead": "Impulsionar mudanças sistémicas capacitando e aumentando a representação de mulheres nas Ciências, Tecnologia, Engenharia e Matemática.",
+      "para": "A iniciativa Women-in-STEM do AfricaConnect4 concentra-se na criação de vias, oportunidades de mentoria e programas de liderança. Visamos derrubar barreiras, fornecendo às investigadoras e engenheiras os recursos necessários para prosperar.",
+      "card1Title": "Mentoria",
+      "card1Desc": "Ligação de jovens profissionais com líderes estabelecidos para orientação, patrocínio e desenvolvimento de carreira.",
+      "card2Title": "Programas de Liderança",
+      "card2Desc": "Workshops especializados destinados a dotar as mulheres das competências necessárias para assumir funções executivas nos NRENs."
+    },
+    "cybersecurity": {
+      "heroTitle": "Cibersegurança",
+      "heroDesc": "Fortalecendo a ciber-resiliência regional e a inteligência de ameaças.",
+      "lead": "Salvaguardando as redes académicas e de investigação contra ameaças digitais em constante evolução.",
+      "para": "À medida que a conectividade se expande, aumenta também a superfície de ataque. O nosso foco em cibersegurança trabalha para construir mecanismos de defesa robustos em toda a rede regional, promovendo a colaboração entre os NRENs.",
+      "card1Title": "Inteligência Partilhada",
+      "card1Desc": "Uma plataforma unificada para que as instituições membros reportem vulnerabilidades e partilhem assinaturas de ameaças em tempo real.",
+      "card2Title": "Confiança & Identidade",
+      "card2Desc": "Implementação de federações de autenticação segura como eduroam e eduGAIN em toda a região WACREN."
+    },
+    "capacity": {
+      "heroTitle": "Capacitação",
+      "heroDesc": "Formação e desenvolvimento institucional para o futuro.",
+      "lead": "Dotando engenheiros, investigadores e instituições com as competências necessárias para sustentar o crescimento digital.",
+      "para": "A infraestrutura por si só não é suficiente. A iniciativa de Capacitação foca-se na educação contínua, workshops práticos e apoio institucional. Formamos engenheiros de rede em protocolos de encaminhamento modernos.",
+      "card1Title": "Formação Técnica",
+      "card1Desc": "Bootcamps abrangentes sobre implantação em cloud, gestão de redes e estratégias de encaminhamento avançadas.",
+      "card2Title": "Desenvolvimento NREN",
+      "card2Desc": "Consultoria estratégica para Redes Nacionais de Investigação e Educação emergentes sobre modelos de sustentabilidade."
+    },
+    "openScience": {
+      "heroTitle": "Ciência Aberta e infraestrutura de comunicação científica aberta",
+      "heroDesc": "Promovendo o paradigma da ciência aberta",
+      "lead": "O acesso aberto e equitativo à investigação africana é central para a transformação digital da região.",
+      "para": "Através do projeto AfricaConnect4, o WACREN avança esta agenda através do LIBSENSE, um programa liderado pelo WACREN que constrói uma comunidade de prática para a ciência aberta e promove a adoção de serviços e infraestruturas de ciência aberta em toda a África."
+    },
+    "activities": {
+      "heroTitle": "Atividades do projeto.",
+      "heroDesc": "Conferências, workshops, hackathons, sessões de treinamento e reuniões da comunidade em todo o programa AfricaConnect4 na África Ocidental e Central."
+    }
+  },
+  "upcomingCrawler": {
+    "upcoming": "PRÓXIMO"
+  },
+  "activitiesToggle": {
+    "all": "Todos",
+    "past": "Passado",
+    "present": "Presente",
+    "future": "Futuro",
+    "allActivities": "Todas as Atividades",
+    "pastActivities": "Atividades Passadas",
+    "presentActivities": "Atividades Presentes",
+    "upcomingActivities": "Próximas Atividades",
+    "noActivities": "Nenhuma atividade",
+    "atTheMoment": "no momento.",
+    "checkBack": "Volte mais tarde para atualizações!"
+  },
+  "aboutTimeline": {
+    "title": "Construindo sobre uma década de progresso",
+    "subtitle": "A Comissão Europeia tem apoiado as redes africanas de pesquisa e educação (RENs) através do programa AfricaConnect desde 2011. A WACREN juntou-se ao projeto na segunda fase (AfricaConnect2 - 2015 - 2019).",
+    "visitSite": "Visite o site",
+    "card2Title": "AfricaConnect2",
+    "card2Desc": "Lançou o backbone WACREN, conectando os NRENs da Nigéria, Gana e Togo à GÉANT.",
+    "card3Title": "AfricaConnect3",
+    "card3Desc": "Conectividade estendida a seis novos países e abertura de um novo hub de agregação em Dakar.",
+    "card4Title": "AfricaConnect4",
+    "card4Desc": "Preenche as lacunas restantes, aprofunda os serviços além da rede e constrói a sustentabilidade a longo prazo.",
+    "currentPhase": "Fase atual"
+  },
+  "aboutWacrenRegion": {
+    "title": "AfricaConnect4 na região da WACREN",
+    "subtitle": "A WACREN lidera o AfricaConnect4 na África Ocidental e Central (Cluster 2), uma área de implementação que abrange mais de 22 países. Nesta região, o projeto trabalha para:"
+  },
+  "partnersBanner": {
+    "title": "Parceiros do projeto",
+    "partners": [
+      {
+        "name": "WACREN",
+        "role": "Líder - África Ocidental e Central"
+      },
+      {
+        "name": "UbuntuNet Alliance",
+        "role": "Cluster África Oriental e Austral"
+      },
+      {
+        "name": "GÉANT",
+        "role": "RREN Europeu"
+      },
+      {
+        "name": "NORDUnet",
+        "role": "Parceiro Nórdico"
+      },
+      {
+        "name": "Expertise France/IRD",
+        "role": "Parceiros de Implementação"
+      }
+    ]
+  },
+  "publications": {
+    "title": "Documentos Públicos",
+    "description": "",
+    "searchPlaceholder": "Pesquisar documentos...",
+    "allDocuments": "Todos os documentos",
+    "folders": "PASTAS",
+    "items": "itens",
+    "files": "ARQUIVOS",
+    "tableHeaders": {
+      "name": "NOME",
+      "date": "ÚLTIMA MODIFICAÇÃO",
+      "size": "TAMANHO",
+      "download": "BAIXAR"
+    },
+    "noDocuments": "Nenhum documento encontrado."
+  },
+  "newsGrid": {
+    "all": "Todos",
+    "news": "Notícias",
+    "blog": "Blog",
+    "event": "Evento",
+    "searchPlaceholder": "Pesquisar...",
+    "sortByNewest": "Ordenar por: Mais recente",
+    "sortByOldest": "Ordenar por: Mais antigo",
+    "featuredRead": "DESTAQUE",
+    "readTimeSuffix": "Min de leitura",
+    "read": "Ler",
+    "noArticles": "Nenhum artigo encontrado."
+  },
+  "eventCard": {
+    "upcoming": "PRÓXIMO",
+    "past": "PASSADO",
+    "present": "PRESENTE",
+    "applyDetails": "Inscrever-se / Detalhes",
+    "details": "Detalhes"
+  },
+  "articleSingle": {
+    "tableOfContents": "Índice",
+    "readyToParticipate": "Pronto para participar?",
+    "registrationInfo": "As inscrições e candidaturas são geridas através do portal oficial de eventos WACREN Indico.",
+    "relatedArticles": "Artigos Relacionados",
+    "home": "Início",
+    "news": "Notícias",
+    "share": "Partilhar",
+    "linkCopied": "Link copiado!",
+    "copyLink": "Copiar link",
+    "shareOnX": "Partilhar no X",
+    "shareOnLinkedIn": "Partilhar no LinkedIn",
+    "shareOnFacebook": "Partilhar no Facebook",
+    "shareViaWhatsApp": "Partilhar via WhatsApp",
+    "sendViaEmail": "Enviar por email"
+  },
+  "articleTitles": {
+    "women-in-wacren-climate-innovation-lab": "Women-in-WACREN lança um novo fórum e um laboratório para melhorar a contribuição das mulheres na inovação climática em África",
+    "wacren-nren-academy-2026-sustainability": "Academia WACREN NREN 2026 para reforçar a sustentabilidade a longo prazo das NRENs",
+    "president-gambia-open-wacren-2026": "Presidente da Gâmbia abrirá a Conferência WACREN 2026 em Banjul",
+    "wacren-opens-early-bird-registration-2026": "A WACREN abre as inscrições antecipadas para a Conferência 2026",
+    "africaconnect-40-million-boost": "AfricaConnect recebe reforço de 40 milhões de euros da UE para expandir a infraestrutura digital de Ensino e Investigação na África Subsariana",
+    "women-in-wacren-call-for-facilitators": "Women-In-WACREN - Convite à apresentação de facilitadores",
+    "women-in-wacren-call-for-mentors": "Women-In-WACREN - Convite à apresentação de mentores",
+    "climate-innovation-lab-2026-applications": "Laboratório de Inovação Climática 2026 - Convite à apresentação de candidaturas"
+  }
+}

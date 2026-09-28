@@ -16,13 +16,22 @@ export interface EventData {
   image?: string;
 }
 
+export interface EventCardDict {
+  upcoming: string;
+  past: string;
+  present: string;
+  applyDetails: string;
+  details: string;
+}
+
 interface EventsGridProps {
+  dict: EventCardDict;
   title: string;
   category: string;
   events: EventData[];
 }
 
-export default function EventsGrid({ title, category, events }: EventsGridProps) {
+export default function EventsGrid({ dict, title, category, events }: EventsGridProps) {
   return (
     <section className={styles.section}>
       <div className={styles.container}>
@@ -32,7 +41,7 @@ export default function EventsGrid({ title, category, events }: EventsGridProps)
         </div>
         <div className={styles.grid}>
           {events.map((event, index) => (
-            <EventCard key={index} {...event} />
+            <EventCard key={index} dict={dict} {...event} />
           ))}
         </div>
       </div>

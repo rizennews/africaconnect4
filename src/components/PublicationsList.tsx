@@ -3,44 +3,32 @@
 import React, { useState } from 'react';
 import styles from './PublicationsList.module.css';
 
-interface Publication {
-  id: string;
-  tag: string;
-  title: string;
-  date: string;
-  size: string;
-  category: string;
-  path: string;
+import { Publication, Folder } from '@/data/publications';
+
+interface PublicationsListDict {
+  searchPlaceholder: string;
+  allDocuments: string;
+  folders: string;
+  items: string;
+  files: string;
+  tableHeaders: {
+    name: string;
+    date: string;
+    size: string;
+    download: string;
+  };
+  noDocuments: string;
 }
 
-const allFiles: Publication[] = [
-  {
-    id: '1',
-    tag: 'CONSULTANCY',
-    title: 'ToR- Consultancy for GPUHPC-Based Water and Energy Budget Modelling_WACREN.pdf',
-    date: 'Aug 31, 2026',
-    size: '253 KB',
-    category: 'Consultancy',
-    path: '/documents/consultancy/ToR- Consultancy for GPUHPC-Based Water and Energy Budget Modelling_WACREN.pdf'
-  },
-  {
-    id: '2',
-    tag: 'MAPS',
-    title: 'WACREN Timeline.mp4',
-    date: 'Aug 31, 2026',
-    size: '47.5 MB',
-    category: 'Maps',
-    path: '/documents/maps/WACREN Timeline.mp4'
-  }
-];
-
-const folders = [
-  { name: 'Presentations', count: 0 },
-  { name: 'Consultancy', count: 1 },
-  { name: 'Maps', count: 1 }
-];
-
-export default function PublicationsList() {
+export default function PublicationsList({ 
+  dict, 
+  allFiles, 
+  folders 
+}: { 
+  dict: PublicationsListDict;
+  allFiles: Publication[];
+  folders: Folder[];
+}) {
   const [activeFolder, setActiveFolder] = useState<string | null>(null);
   const [searchQuery, setSearchQuery] = useState('');
 
@@ -63,7 +51,7 @@ export default function PublicationsList() {
         </svg>
         <input 
           type="text" 
-          placeholder="Search documents..." 
+          placeholder={dict.searchPlaceholder} 
           className={styles.searchInput}
           value={searchQuery}
           onChange={(e) => setSearchQuery(e.target.value)}
@@ -71,10 +59,10 @@ export default function PublicationsList() {
       </div>
 
       <h3 className={styles.sectionSubtitle}>
-        {activeFolder ? `${activeFolder} Documents` : 'All Documents'}
+        {activeFolder ? `${activeFolder} Documents` : dict.allDocuments}
       </h3>
 
-      <div className={styles.sectionLabel}>Folders</div>
+      <div className={styles.sectionLabel}>{dict.folders}</div>
       <div className={styles.foldersGrid}>
         <div 
           className={`${styles.folderCard} ${activeFolder === null ? styles.active : ''}`}
@@ -86,8 +74,8 @@ export default function PublicationsList() {
             </svg>
           </div>
           <div className={styles.folderInfo}>
-            <span className={styles.folderName}>All Documents</span>
-            <span className={styles.folderCount}>{allFiles.length} items</span>
+            <span className={styles.folderName}>{dict.allDocuments}</span>
+            <span className={styles.folderCount}>{allFiles.length} {dict.items}</span>
           </div>
         </div>
         
@@ -104,19 +92,19 @@ export default function PublicationsList() {
             </div>
             <div className={styles.folderInfo}>
               <span className={styles.folderName}>{folder.name}</span>
-              <span className={styles.folderCount}>{folder.count} items</span>
+              <span className={styles.folderCount}>{folder.count} {dict.items}</span>
             </div>
           </div>
         ))}
       </div>
 
-      <div className={styles.sectionLabel}>Files</div>
+      <div className={styles.sectionLabel}>{dict.files}</div>
       <div className={styles.tableContainer}>
         <div className={styles.tableHeader}>
-          <div>NAME</div>
-          <div>LAST MODIFIED</div>
-          <div>SIZE</div>
-          <div style={{ textAlign: 'right', paddingRight: '0.5rem' }}>DOWNLOAD</div>
+          <div>{dict.tableHeaders.name}</div>
+          <div>{dict.tableHeaders.date}</div>
+          <div>{dict.tableHeaders.size}</div>
+          <div style={{ textAlign: 'right', paddingRight: '0.5rem' }}>{dict.tableHeaders.download}</div>
         </div>
         
         {filteredFiles.map(file => (
@@ -145,7 +133,7 @@ export default function PublicationsList() {
         
         {filteredFiles.length === 0 && (
           <div style={{ textAlign: 'center', padding: '3rem', color: 'rgba(12, 25, 77, 0.6)', fontSize: '0.9rem' }}>
-            No documents found.
+            {dict.noDocuments}
           </div>
         )}
       </div>

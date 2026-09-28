@@ -1,24 +1,31 @@
 import React from 'react';
 import Link from 'next/link';
+import { lang as getLang } from 'next/root-params';
 import styles from './Hero.module.css';
+import { getDictionary } from '@/app/[lang]/dictionaries';
 
-export default function Hero() {
+export default async function Hero() {
+  const dict = await getDictionary();
+  const t = dict.hero;
+  const locale = await getLang();
+  const href = (path: string) => `/${locale}${path}`;
+
   return (
     <div className={styles.heroWrapper}>
       <section className={styles.heroSection}>
         <div className={styles.content}>
           <h1 className={styles.title}>
-            Connecting Africa to unlimited possibilities
+            {t.title}
           </h1>
           <p className={styles.description}>
-            AfricaConnect4 is the fourth interation of an EU-funded initiative growing Africa’s research and education sector through high-speed connectivity, climate data infrastructure, digital services and capacity building implemented in West and Central Africa by WACREN.
+            {t.description}
           </p>
           <div className={styles.buttonGroup}>
-            <Link href="/about" className={styles.primaryButton}>
-              Explore AfricaConnect4
+            <Link href={href('/about')} className={styles.primaryButton}>
+              {t.explore}
             </Link>
-            <Link href="/activities" className={styles.secondaryButton}>
-              View Activities
+            <Link href={href('/activities')} className={styles.secondaryButton}>
+              {t.viewActivities}
             </Link>
           </div>
         </div>

@@ -4,7 +4,7 @@ import React, { useState, useEffect, Suspense } from 'react';
 import { useSearchParams } from 'next/navigation';
 import ProcurementSidebar, { categories } from '@/components/ProcurementSidebar';
 import OpportunityCard from '@/components/OpportunityCard';
-import styles from '@/app/procurement/page.module.css';
+import styles from '@/app/[lang]/procurement/page.module.css';
 import { MOCK_OPPORTUNITIES, MOCK_AWARDS } from '@/data/procurement';
 
 function ProcurementContent() {

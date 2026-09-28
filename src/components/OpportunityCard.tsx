@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import { useParams } from 'next/navigation';
 import styles from './OpportunityCard.module.css';
 
 interface OpportunityCardProps {
@@ -19,6 +20,9 @@ export default function OpportunityCard({
   budget,
   status
 }: OpportunityCardProps) {
+  const params = useParams();
+  const lang = (params.lang as string) || 'en';
+
   return (
     <div className={styles.card}>
       <div className={styles.cardHeader}>
@@ -51,7 +55,7 @@ export default function OpportunityCard({
         </div>
         
         <div className={styles.actions}>
-          <Link href={`/procurement/${id}`} className={styles.viewBtn}>
+          <Link href={`/${lang}/procurement/${id}`} className={styles.viewBtn}>
             View Details
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
           </Link>

@@ -3,14 +3,29 @@ import Link from 'next/link';
 import styles from './AboutWacrenRegion.module.css';
 import focusStyles from './FocusAreasGrid.module.css';
 
-export default function AboutWacrenRegion() {
+interface AboutWacrenRegionDict {
+  title: string;
+  subtitle: string;
+}
+
+interface FocusCard {
+  title: string;
+  description: string;
+}
+
+interface FocusGridDict {
+  exploreLink: string;
+  cards: FocusCard[];
+}
+
+export default function AboutWacrenRegion({ dict, cards, lang }: { dict: AboutWacrenRegionDict, cards: FocusGridDict, lang: string }) {
   return (
     <section className={styles.section}>
       <div className={styles.container}>
         <div className={styles.header}>
-          <h2 className={styles.title}>AfricaConnect4 in the WACREN region</h2>
+          <h2 className={styles.title}>{dict.title}</h2>
           <p className={styles.subtitle}>
-            WACREN leads AfricaConnect4 in West and Central Africa (Cluster 2), an implementation area covering more than 22 countries. Within this region, the project is working to:
+            {dict.subtitle}
           </p>
         </div>
 
@@ -24,12 +39,12 @@ export default function AboutWacrenRegion() {
               </svg>
             </div>
 
-            <h3 className={focusStyles.title}>Connectivity Expansion</h3>
+            <h3 className={focusStyles.title}>{cards.cards[0].title}</h3>
             <p className={focusStyles.description}>
-              Strengthening the WACREN backbone, extending high-speed regional links and tackling last-mile gaps bringing new countries into the network in Phase 4.
+              {cards.cards[0].description}
             </p>
-            <Link href="#" className={focusStyles.exploreLink}>
-              Explore 
+            <Link href={`/${lang}/connectivity-expansion`} className={focusStyles.exploreLink}>
+              {cards.exploreLink} 
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
             </Link>
           </div>
@@ -46,12 +61,12 @@ export default function AboutWacrenRegion() {
               </svg>
             </div>
 
-            <h3 className={focusStyles.title}>Climate Data Infrastructure</h3>
+            <h3 className={focusStyles.title}>{cards.cards[1].title}</h3>
             <p className={focusStyles.description}>
-              HPC clusters, EUMETCast terrestrial data portals, WMO-compliant weather stations and LoRaWAN gateways building the digital plumbing for African climate research, all under the WACREN CLIMET service. 
+              {cards.cards[1].description}
             </p>
-            <Link href="#" className={focusStyles.exploreLink}>
-              Explore 
+            <Link href={`/${lang}/climate-data-infrastructure`} className={focusStyles.exploreLink}>
+              {cards.exploreLink} 
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
             </Link>
           </div>
@@ -65,12 +80,12 @@ export default function AboutWacrenRegion() {
               </svg>
             </div>
 
-            <h3 className={focusStyles.title}>Women in STEM</h3>
+            <h3 className={focusStyles.title}>{cards.cards[2].title}</h3>
             <p className={focusStyles.description}>
-              Growing women’s leadership through the Women-in-WACREN programme, annual hackathons and mentorship.
+              {cards.cards[2].description}
             </p>
-            <Link href="#" className={focusStyles.exploreLink}>
-              Explore 
+            <Link href={`/${lang}/women-in-stem`} className={focusStyles.exploreLink}>
+              {cards.exploreLink} 
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
             </Link>
           </div>
@@ -83,12 +98,12 @@ export default function AboutWacrenRegion() {
               </svg>
             </div>
 
-            <h3 className={focusStyles.title}>Cybersecurity & Threat Intelligence</h3>
+            <h3 className={focusStyles.title}>{cards.cards[3].title}</h3>
             <p className={focusStyles.description}>
-              Standing up an ISAC, strengthening CSIRT cooperation and securing federated identity across the region’s NRENs, through the TrustBroker Africa and the WACREN T&I programmes
+              {cards.cards[3].description}
             </p>
-            <Link href="#" className={focusStyles.exploreLink}>
-              Explore 
+            <Link href={`/${lang}/cybersecurity-threat-intelligence`} className={focusStyles.exploreLink}>
+              {cards.exploreLink} 
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
             </Link>
           </div>
@@ -103,12 +118,12 @@ export default function AboutWacrenRegion() {
               </svg>
             </div>
 
-            <h3 className={focusStyles.title}>Capacity Building</h3>
+            <h3 className={focusStyles.title}>{cards.cards[4].title}</h3>
             <p className={focusStyles.description}>
-              The NREN Academy, business accelerators, technical training and exchange programmes equipping a new generation of African REN leaders, all through the Africa Training Initiative (ATI).
+              {cards.cards[4].description}
             </p>
-            <Link href="#" className={focusStyles.exploreLink}>
-              Explore 
+            <Link href={`/${lang}/capacity-building`} className={focusStyles.exploreLink}>
+              {cards.exploreLink} 
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
             </Link>
           </div>

@@ -3,6 +3,7 @@
 import React, { useState, useMemo } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import { useParams } from 'next/navigation';
 import styles from './NewsGrid.module.css';
 import { getPlaceholderBase64 } from '@/utils/placeholder';
 
@@ -18,7 +19,22 @@ export interface NewsArticle {
   timestamp: number; // for chronological sorting
 }
 
+interface NewsGridDict {
+  all: string;
+  news: string;
+  blog: string;
+  event: string;
+  searchPlaceholder: string;
+  sortByNewest: string;
+  sortByOldest: string;
+  featuredRead: string;
+  readTimeSuffix: string;
+  read: string;
+  noArticles: string;
+}
+
 interface NewsGridProps {
+  dict: NewsGridDict;
   articles?: NewsArticle[];
   items?: NewsArticle[];
   showControls?: boolean;
@@ -26,7 +42,7 @@ interface NewsGridProps {
 
 const CATEGORIES = ['All', 'News', 'Blog', 'Event'] as const;
 
-export default function NewsGrid({ articles, items, showControls = true }: NewsGridProps) {
+export default function NewsGrid({ dict, articles, items, showControls = true }: NewsGridProps) {
   const [activeCategory, setActiveCategory] = useState<string>('All');
   const [searchQuery, setSearchQuery] = useState<string>('');
   const [sortBy, setSortBy] = useState<'newest' | 'oldest'>('newest');
@@ -77,7 +93,7 @@ export default function NewsGrid({ articles, items, showControls = true }: NewsG
                 }`}
                 onClick={() => setActiveCategory(cat)}
               >
-                {cat}
+                {cat === 'All' ? dict.all : cat === 'News' ? dict.news : cat === 'Blog' ? dict.blog : dict.event}
               </button>
             ))}
           </div>
@@ -102,7 +118,7 @@ export default function NewsGrid({ articles, items, showControls = true }: NewsG
               </svg>
               <input
                 type="text"
-                placeholder="Search posts"
+                placeholder={dict.searchPlaceholder}
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
                 className={styles.searchInput}
@@ -116,8 +132,8 @@ export default function NewsGrid({ articles, items, showControls = true }: NewsG
                 onChange={(e) => setSortBy(e.target.value as 'newest' | 'oldest')}
                 className={styles.sortSelect}
               >
-                <option value="newest">Sort by: Newest</option>
-                <option value="oldest">Sort by: Oldest</option>
+                <option value="newest">{dict.sortByNewest}</option>
+                <option value="oldest">{dict.sortByOldest}</option>
               </select>
               <svg
                 className={styles.sortChevron}
@@ -153,17 +169,17 @@ export default function NewsGrid({ articles, items, showControls = true }: NewsG
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 />
                 <div className={styles.overlayCategory}>
-                  {item.category ? item.category.toUpperCase() : 'FEATURED READ'}
+                  {item.category ? (item.category === 'News' ? dict.news : item.category === 'Blog' ? dict.blog : dict.event).toUpperCase() : dict.featuredRead}
                 </div>
                 <div className={styles.overlayTime}>
-                  {item.readTime}
+                  {item.readTime.replace('Min Read', dict.readTimeSuffix)}
                 </div>
               </div>
 
               <div className={styles.cardBody}>
                 <h3 className={styles.cardTitle}>{item.title}</h3>
                 <div className={styles.readButton}>
-                  Read &raquo;
+                  {dict.read} &raquo;
                 </div>
               </div>
             </Link>
@@ -172,7 +188,7 @@ export default function NewsGrid({ articles, items, showControls = true }: NewsG
 
         {filteredAndSortedArticles.length === 0 && (
           <div className={styles.emptyState}>
-            <p>No articles found matching your criteria.</p>
+            <p>{dict.noArticles}</p>
           </div>
         )}
       </div>

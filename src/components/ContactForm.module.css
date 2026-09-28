@@ -113,7 +113,7 @@
   outline: none;
   border-color: var(--color-primary-orange);
   background-color: #ffffff;
-  box-shadow: 0 0 0 3px rgba(250, 154, 13, 0.16);
+  box-shadow: none;
 }
 
 .inputWrapper:focus-within .inputIcon {
@@ -136,19 +136,19 @@
   border: none;
   border-radius: 10px;
   cursor: pointer;
-  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  transition: background-color 0.2s ease, transform 0.2s ease;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 0.6rem;
-  box-shadow: 0 4px 14px rgba(250, 154, 13, 0.25);
+  box-shadow: none;
   margin-top: 0.5rem;
 }
 
 .submitBtn:hover:not(:disabled) {
   background: var(--color-secondary-orange);
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(250, 154, 13, 0.35);
+  box-shadow: none;
 }
 
 .submitBtn:active:not(:disabled) {
@@ -184,13 +184,6 @@
   }
 }
 
-.privacyNote {
-  font-size: 0.8rem;
-  color: #64748b;
-  text-align: center;
-  margin-top: 0.85rem;
-  line-height: 1.4;
-}
 
 /* Success Card */
 .successCard {
@@ -214,7 +207,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 4px 15px rgba(34, 197, 94, 0.3);
+  box-shadow: none;
 }
 
 .successTitle {

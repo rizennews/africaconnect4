@@ -126,10 +126,6 @@ export default function Page() {
                 </div>
               </div>
             </div>
-
-            <div className={styles.initiativeNote}>
-              <strong>Institutional Partnership:</strong> AfricaConnect4 is a WACREN initiative co-funded by the European Union.
-            </div>
           </div>
           
           <div className={styles.formSection}>

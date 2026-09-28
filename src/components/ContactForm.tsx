@@ -239,10 +239,6 @@ export default function ContactForm() {
               </>
             )}
           </button>
-          
-          <p className={styles.privacyNote}>
-            Your information is kept confidential and processed in accordance with WACREN data protection practices.
-          </p>
         </form>
       )}
     </div>

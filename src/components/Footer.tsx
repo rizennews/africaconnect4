@@ -20,7 +20,7 @@ export default function Footer() {
               />
             </Link>
             <p className={styles.description}>
-              The West and Central African Research and Education Network — providing world-class infrastructure and services for the region&apos;s research and education community.
+              The West and Central African Research and Education Network provides world-class infrastructure and services for the region&apos;s research and education community.
             </p>
             <address className={styles.address}>
               <span>VCG Office Complex, IPS Road</span>

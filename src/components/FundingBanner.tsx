@@ -21,7 +21,7 @@ export default function FundingBanner() {
           <div className={styles.textContent}>
             <span className={styles.fundedBy}>Funded by</span>
             <p className={styles.fundingText}>
-              The European Union — under the EU Global Gateway Strategy and the Africa-Europe Investment Package, through DG INTPA.
+              The European Union, under the EU Global Gateway Strategy and the Africa-Europe Investment Package, through DG INTPA.
             </p>
           </div>
         </div>

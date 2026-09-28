@@ -3,7 +3,7 @@ import Link from 'next/link';
 import styles from './PartnersBanner.module.css';
 
 const partners = [
-  { name: 'WACREN', role: 'Lead — W&C Africa', url: 'https://wacren.net/' },
+  { name: 'WACREN', role: 'Lead - W&C Africa', url: 'https://wacren.net/' },
   { name: 'UbuntuNet Alliance', role: 'E&S Africa Cluster', url: 'https://ubuntunet.net/' },
   { name: 'GÉANT', role: 'European RREN', url: 'https://geant.org/' },
   { name: 'NORDUnet', role: 'Nordic Partner', url: 'https://nordu.net/' },

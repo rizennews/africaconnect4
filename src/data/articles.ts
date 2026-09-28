@@ -160,7 +160,7 @@ export const ARTICLES: ArticleData[] = [
             'The launch of GAMREN marks the expansion of this regional ecosystem, strengthening WACREN’s mission to connect national systems into a trusted, globally integrated research and education space.',
             'WACREN 2026, hosted by GAMREN, will convene NRENs, university leaders, policymakers, technologists, researchers, development partners, and private sector actors to advance dialogue on resilient digital infrastructure, federated identity, cybersecurity, Open Science, AI for digital education, climate research infrastructure, and digital sovereignty.',
             'The event will also welcome distinguished ministers of state, including the Honourable Professor Pierre Gomez, the Minister of Higher Education, Research, Science and Technology (MoHERST), and H.E. Dr. Aminata Zerbo/Sabané, the Minister of Digital Transition, Posts and Electronic Communications, Burkina Faso. Representatives from the European Union Delegation, diplomatic missions in The Gambia, government agencies, and important development partners will also attend.',
-            'The Conference is funded by the European Commission through the AfricaConnect programme under its Global Gateway initiative, reinforcing long-standing Africa–Europe cooperation in building trusted, high-performance research and education infrastructure.'
+            'The Conference is funded by the European Commission through the AfricaConnect programme under its Global Gateway initiative, reinforcing long-standing Africa-Europe cooperation in building trusted, high-performance research and education infrastructure.'
           ]
         }
       ]
@@ -195,11 +195,11 @@ export const ARTICLES: ArticleData[] = [
           id: 'registration-details',
           heading: 'Registration Details',
           paragraphs: [
-            '• Registrants residing in Africa pay – $100 (for Conference sessions and catering only)',
-            '• Registrants residing outside Africa pay – $150 (for Conference sessions and catering only)',
+            '• Registrants residing in Africa pay: $100 (for Conference sessions and catering only)',
+            '• Registrants residing outside Africa pay: $150 (for Conference sessions and catering only)',
             'You can pay for registration using one of the following methods:',
-            '• Credit/Debit Card – Pay securely online.',
-            '• Bank Transfer – After making the transfer, please send a confirmation email to conf2026@wacren.net.',
+            '• Credit/Debit Card: Pay securely online.',
+            '• Bank Transfer: After making the transfer, please send a confirmation email to conf2026@wacren.net.',
             'Register now, enjoy the discount and join us in Banjul to engage in insightful exchanges to advance research and education in Africa.'
           ]
         }
@@ -249,7 +249,7 @@ export const ARTICLES: ArticleData[] = [
           id: 'nren',
           heading: 'What is a research and education network?',
           paragraphs: [
-            'A National Research and Education Network (NREN) is a dedicated internet infrastructure and service provider to the research and educational communities within a country. NRENs provide connectivity and services to higher education establishments, i.e. universities, and research institutes, but can also support schools, libraries, museums, and teaching hospitals. The real value of NRENs goes beyond reduced bandwidth prices, in that they offer more than just network services – providing a diversified ICT services portfolio that enables resource access and global science collaboration, while also advocating for optimized ICT tools tailored to the needs of research and education. There are 38 established NRENs in the African continent. Regional Research and Education Networks (RRENs) connect NRENs at regional level and link them to R&E networks worldwide.'
+            'A National Research and Education Network (NREN) is a dedicated internet infrastructure and service provider to the research and educational communities within a country. NRENs provide connectivity and services to higher education establishments, i.e. universities, and research institutes, but can also support schools, libraries, museums, and teaching hospitals. The real value of NRENs goes beyond reduced bandwidth prices, in that they offer more than just network services, providing a diversified ICT services portfolio that enables resource access and global science collaboration, while also advocating for optimized ICT tools tailored to the needs of research and education. There are 38 established NRENs in the African continent. Regional Research and Education Networks (RRENs) connect NRENs at regional level and link them to R&E networks worldwide.'
           ]
         },
         {
@@ -360,19 +360,19 @@ export const ARTICLES: ArticleData[] = [
       { id: 'benefits', title: 'What’s in it for you' }
     ],
     content: {
-      intro: 'Women-in-WACREN is seeking volunteer facilitators (men & women) for the Climate Innovation Lab 2026, scheduled for October 12–15. This four-day intensive program brings together multidisciplinary teams to design and build digital solutions addressing climate challenges across West and Central Africa.',
+      intro: 'Women-in-WACREN is seeking volunteer facilitators (men & women) for the Climate Innovation Lab 2026, scheduled for October 12-15. This four-day intensive program brings together multidisciplinary teams to design and build digital solutions addressing climate challenges across West and Central Africa.',
       sections: [
         {
           id: 'expertise',
           heading: 'Expertise we need',
           paragraphs: [
             'Facilitators should have hands-on experience in one or more of these areas:',
-            '• Climate & environment — adaptation, mitigation, environmental sustainability, resilience, or related African climate challenges.',
-            '• Digital technologies for climate action — applying AI, data science, GIS, Earth observation, IoT, digital platforms or other emerging tech to climate and environmental problems.',
-            '• Human-centred design — problem definition, user and stakeholder research, needs analysis, translating real-world challenges into solution requirements.',
-            '• Design thinking & ideation — running collaborative ideation, weighing approaches, helping teams sharpen ideas into viable concepts.',
-            '• Testing, documentation & iteration — user testing, interpreting feedback, refining solutions, producing the documentation teams need.',
-            '• Pitching & Adoption — helping teams articulate the problem, the solution, the expected impact, potential funding, partnerships, prepare a strong demo and what it takes to carry a promising prototype beyond the Lab.'
+            '• Climate & environment: adaptation, mitigation, environmental sustainability, resilience, or related African climate challenges.',
+            '• Digital technologies for climate action: applying AI, data science, GIS, Earth observation, IoT, digital platforms or other emerging tech to climate and environmental problems.',
+            '• Human-centred design: problem definition, user and stakeholder research, needs analysis, translating real-world challenges into solution requirements.',
+            '• Design thinking & ideation: running collaborative ideation, weighing approaches, helping teams sharpen ideas into viable concepts.',
+            '• Testing, documentation & iteration: user testing, interpreting feedback, refining solutions, producing the documentation teams need.',
+            '• Pitching & Adoption: helping teams articulate the problem, the solution, the expected impact, potential funding, partnerships, prepare a strong demo and what it takes to carry a promising prototype beyond the Lab.'
           ]
         },
         {

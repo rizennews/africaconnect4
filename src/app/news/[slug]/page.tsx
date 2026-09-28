@@ -144,7 +144,7 @@ export default async function Page({ params }: PageProps) {
                     <span className={styles.quoteIcon}>“</span>
                     <div className={styles.quoteContent}>
                       <p className={styles.quoteText}>{section.quote.text}</p>
-                      <cite className={styles.quoteAuthor}>— {section.quote.author}</cite>
+                      <cite className={styles.quoteAuthor}>- {section.quote.author}</cite>
                     </div>
                   </blockquote>
                 )}

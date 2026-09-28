@@ -9,9 +9,9 @@ export default function FeaturedActivity() {
         <div className={styles.left}>
           <div>
             <span className={styles.tag}>Featured · Flagship event</span>
-            <h2 className={styles.title}>WACREN 2026 —<br />Connected Futures</h2>
+            <h2 className={styles.title}>WACREN 2026<br />Connected Futures</h2>
             <p className={styles.description}>
-              The flagship annual gathering of the West and Central African research and education networking community — a week of workshops, project meetings and the main two-day conference under the theme <em>Advancing Africa&apos;s Digital Sovereignty Through Open Collaboration.</em>
+              The flagship annual gathering of the West and Central African research and education networking community, featuring a week of workshops, project meetings and the main two-day conference under the theme <em>Advancing Africa&apos;s Digital Sovereignty Through Open Collaboration.</em>
             </p>
             <div style={{ marginBottom: '3rem' }}>
               <a href="https://wacren2026.wacren.net/" target="_blank" rel="noopener noreferrer" style={{ display: 'inline-block', backgroundColor: 'var(--color-primary-orange)', color: 'var(--color-primary-dark)', padding: '0.75rem 2rem', borderRadius: '50px', fontWeight: 'bold', textDecoration: 'none' }}>
@@ -23,7 +23,7 @@ export default function FeaturedActivity() {
           <div className={styles.metaGrid}>
             <div className={styles.metaItem}>
               <span className={styles.metaLabel}>When</span>
-              <span className={styles.metaValue}>23 — 27 March<br/>2026</span>
+              <span className={styles.metaValue}>23 - 27 March<br/>2026</span>
             </div>
             <div className={styles.metaItem}>
               <span className={styles.metaLabel}>Where</span>
@@ -45,13 +45,13 @@ export default function FeaturedActivity() {
           
           <div>
             <div className={styles.year}>2026</div>
-            <h3 className={styles.subtitle}>Connected Futures — Advancing Africa&apos;s digital sovereignty.</h3>
+            <h3 className={styles.subtitle}>Connected Futures: Advancing Africa&apos;s digital sovereignty.</h3>
           </div>
           
           <div className={styles.rightMetaGrid}>
             <div className={styles.metaItem}>
               <span className={styles.rightMetaLabel}>Dates</span>
-              <span className={styles.rightMetaValue}>23 — 27 Mar<br/>2026</span>
+              <span className={styles.rightMetaValue}>23 - 27 Mar<br/>2026</span>
             </div>
             <div className={styles.metaItem}>
               <span className={styles.rightMetaLabel}>Venue</span>

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Outfit } from "next/font/google";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { DeveloperFootprint } from "@/components/DeveloperFootprint";
 import "./globals.css";
 
 const outfit = Outfit({
@@ -14,6 +15,8 @@ const outfit = Outfit({
 export const metadata: Metadata = {
   title: "AfricaConnect4",
   description: "AfricaConnect4 Multilingual Website",
+  authors: [{ name: "Padmore Aning", url: "https://padmoreaning.com" }],
+  creator: "Padmore Aning",
 };
 
 export default function RootLayout({
@@ -24,6 +27,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={outfit.variable} data-scroll-behavior="smooth">
       <body>
+        <DeveloperFootprint />
         <Header />
         <main>{children}</main>
         <Footer />

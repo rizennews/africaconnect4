@@ -2,6 +2,7 @@
   "name": "africaconnect4",
   "version": "0.1.0",
   "private": true,
+  "author": "Padmore Aning <hello@padmoreaning.com> (https://padmoreaning.com/)",
   "scripts": {
     "dev": "next dev",
     "build": "next build",

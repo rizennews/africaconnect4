@@ -12,7 +12,8 @@ const pastEvents: EventData[] = [
     description: 'WACREN Conference 2026',
     day: '23', month: 'MAR', year: '2026',
     location: 'Banjul, The Gambia',
-    link: 'https://wacren2026.wacren.net/'
+    link: 'https://wacren2026.wacren.net/',
+    image: '/activities/wacren-2026.jpeg'
   },
   {
     status: 'PAST',
@@ -21,7 +22,8 @@ const pastEvents: EventData[] = [
     description: 'LIBSENSE ECR Leadership Workshop',
     day: '15', month: 'FEB', year: '2026',
     location: 'Virtual',
-    link: 'https://indico.wacren.net/event/266/'
+    link: 'https://indico.wacren.net/event/266/',
+    image: '/activities/libsense-ecr-leadership.jpg'
   },
   {
     status: 'PAST',
@@ -30,7 +32,8 @@ const pastEvents: EventData[] = [
     description: 'Diamond Open Access Day',
     day: '10', month: 'JAN', year: '2026',
     location: 'Virtual',
-    link: 'https://indico.wacren.net/event/264/'
+    link: 'https://indico.wacren.net/event/264/',
+    image: '/activities/diamond-open-access-day.jpg'
   },
   {
     status: 'PAST',
@@ -39,7 +42,8 @@ const pastEvents: EventData[] = [
     description: 'LIBSENSE Open Science Symposium - The Gambia',
     day: '05', month: 'JAN', year: '2026',
     location: 'Banjul, The Gambia',
-    link: 'https://indico.wacren.net/event/262/'
+    link: 'https://indico.wacren.net/event/262/',
+    image: '/activities/libsense-open-science-symposium.jpg'
   },
   {
     status: 'PAST',
@@ -48,7 +52,8 @@ const pastEvents: EventData[] = [
     description: 'NREN Academy 2026',
     day: '12', month: 'DEC', year: '2025',
     location: 'Virtual',
-    link: 'https://indico.wacren.net/event/265/'
+    link: 'https://indico.wacren.net/event/265/',
+    image: '/activities/nren-academy-2026.jpg'
   },
   {
     status: 'PAST',
@@ -57,7 +62,8 @@ const pastEvents: EventData[] = [
     description: 'ATI-6: Network Monitoring & Management Workshop (NMM) - The Gambia',
     day: '20', month: 'NOV', year: '2025',
     location: 'Banjul, The Gambia',
-    link: 'https://indico.wacren.net/event/263/'
+    link: 'https://indico.wacren.net/event/263/',
+    image: '/activities/network-monitoring-management.jpg'
   },
   {
     status: 'PAST',
@@ -66,7 +72,8 @@ const pastEvents: EventData[] = [
     description: 'TrustBroker Africa (TBA) VI - Community & Training Event',
     day: '15', month: 'OCT', year: '2025',
     location: 'Virtual',
-    link: 'https://indico.wacren.net/event/270/'
+    link: 'https://indico.wacren.net/event/270/',
+    image: '/activities/csirt-trustbroker-africa.png'
   },
   {
     status: 'PAST',
@@ -75,7 +82,8 @@ const pastEvents: EventData[] = [
     description: 'Atelier Confiance et Identite - Togo',
     day: '10', month: 'SEP', year: '2025',
     location: 'Lomé, Togo',
-    link: 'https://indico.wacren.net/event/260/'
+    link: 'https://indico.wacren.net/event/260/',
+    image: '/activities/atelier-confiance-identite.jpg'
   }
 ];
 
@@ -89,7 +97,8 @@ export const futureEvents: EventData[] = [
     description: 'Tuesday 25 Aug 2026, 13:00 to 14:00',
     day: '25', month: 'AUG', year: '2026',
     location: 'TBA',
-    link: 'https://indico.wacren.net/event/279/'
+    link: 'https://indico.wacren.net/event/279/',
+    image: '/activities/climate-innovation-lab-2026.jpg'
   },
   {
     status: 'UPCOMING',
@@ -98,7 +107,8 @@ export const futureEvents: EventData[] = [
     description: 'Open from 25 Aug 2026, 09:00 to 15 Sept 2026, 23:59',
     day: '25', month: 'AUG', year: '2026',
     location: 'Virtual',
-    link: 'https://indico.wacren.net/event/282/'
+    link: 'https://indico.wacren.net/event/282/',
+    image: '/activities/wiw-call-for-facilitators.jpg'
   },
   {
     status: 'UPCOMING',
@@ -107,7 +117,8 @@ export const futureEvents: EventData[] = [
     description: 'Open from 25 Aug 2026, 09:00 to 15 Sept 2026, 23:59',
     day: '25', month: 'AUG', year: '2026',
     location: 'Virtual',
-    link: 'https://indico.wacren.net/event/283/'
+    link: 'https://indico.wacren.net/event/283/',
+    image: '/activities/wiw-call-for-mentors.jpg'
   },
   {
     status: 'UPCOMING',
@@ -116,7 +127,8 @@ export const futureEvents: EventData[] = [
     description: 'This workshop opens a new strand of LIBSENSE work on Responsible Research Governance (RRG): what it means to govern research responsibly within African institutions.',
     day: '14', month: 'DEC', year: '2026',
     location: 'Office of the University Librarian, KNUST - Kumasi',
-    link: 'https://indico.wacren.net/event/284/'
+    link: 'https://indico.wacren.net/event/284/',
+    image: '/activities/responsible-research-governance.jpg'
   }
 ];
 

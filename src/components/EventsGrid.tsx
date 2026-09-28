@@ -13,6 +13,7 @@ export interface EventData {
   location?: string;
   duration?: string;
   link?: string;
+  image?: string;
 }
 
 interface EventsGridProps {

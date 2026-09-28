@@ -1,0 +1,11 @@
+/* TEAM */
+  Developer: Padmore Aning
+  Portfolio: https://padmoreaning.com/
+  Contact: hello@padmoreaning.com
+
+/* THANKS */
+  WACREN, UbuntuNet Alliance, ASREN, GÉANT, European Union
+
+/* SITE */
+  Standards: HTML5, CSS3, TypeScript
+  Framework: Next.js (App Router), React

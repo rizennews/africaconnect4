@@ -9,6 +9,7 @@ interface ContactFormProps {
 }
 
 export default function ContactForm({ dict }: ContactFormProps) {
+  const [status, setStatus] = useState<'idle' | 'submitting' | 'success' | 'error'>('idle');
   const [errorMessage, setErrorMessage] = useState('');
   const [category, setCategory] = useState(dict.categories[0]);
   const [hcaptchaToken, setHcaptchaToken] = useState('');

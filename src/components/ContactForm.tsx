@@ -1,6 +1,7 @@
 "use client";
 
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
+import HCaptcha from '@hcaptcha/react-hcaptcha';
 import styles from './ContactForm.module.css';
 
 interface ContactFormProps {
@@ -8,9 +9,10 @@ interface ContactFormProps {
 }
 
 export default function ContactForm({ dict }: ContactFormProps) {
-  const [status, setStatus] = useState<'idle' | 'submitting' | 'success' | 'error'>('idle');
   const [errorMessage, setErrorMessage] = useState('');
   const [category, setCategory] = useState(dict.categories[0]);
+  const [hcaptchaToken, setHcaptchaToken] = useState('');
+  const captchaRef = useRef<HCaptcha>(null);
     
     const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
       e.preventDefault();
@@ -24,6 +26,12 @@ export default function ContactForm({ dict }: ContactFormProps) {
         message: { value: string };
       };
       
+      if (!hcaptchaToken) {
+        setStatus('error');
+        setErrorMessage('Please complete the CAPTCHA to verify you are human.');
+        return;
+      }
+      
       const combinedSubject = category !== dict.categories[0] 
         ? `[${category}] ${target.subject.value}`
         : target.subject.value;
@@ -33,6 +41,7 @@ export default function ContactForm({ dict }: ContactFormProps) {
       email: target.email.value,
       subject: combinedSubject,
       message: target.message.value,
+      hcaptchaToken: hcaptchaToken,
     };
 
     try {
@@ -62,6 +71,10 @@ export default function ContactForm({ dict }: ContactFormProps) {
     setStatus('idle');
     setErrorMessage('');
     setCategory(dict.categories[0]);
+    setHcaptchaToken('');
+    if (captchaRef.current) {
+      captchaRef.current.resetCaptcha();
+    }
   };
 
   return (
@@ -210,6 +223,16 @@ export default function ContactForm({ dict }: ContactFormProps) {
               placeholder={dict.messagePlaceholder} 
               disabled={status === 'submitting'}
             ></textarea>
+          </div>
+
+          {/* hCaptcha */}
+          <div className={styles.formGroup} style={{ marginTop: '1rem', marginBottom: '1rem' }}>
+            <HCaptcha
+              sitekey={process.env.NEXT_PUBLIC_HCAPTCHA_SITE_KEY || ''}
+              onVerify={(token) => { setHcaptchaToken(token); setErrorMessage(''); }}
+              onExpire={() => setHcaptchaToken('')}
+              ref={captchaRef}
+            />
           </div>
           
           {/* Submit Button */}

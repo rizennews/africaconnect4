@@ -4,13 +4,41 @@ import nodemailer from 'nodemailer';
 export async function POST(request: Request) {
   try {
     const body = await request.json();
-    const { name, email, subject, message } = body;
+    const { name, email, subject, message, hcaptchaToken } = body;
 
     if (!name || !email || !subject || !message) {
       return NextResponse.json(
         { error: 'Missing required fields' },
         { status: 400 }
       );
+    }
+
+    if (!hcaptchaToken) {
+      return NextResponse.json(
+        { error: 'CAPTCHA verification is missing' },
+        { status: 400 }
+      );
+    }
+
+    // Verify hCaptcha token
+    const hcaptchaSecret = process.env.HCAPTCHA_SECRET_KEY;
+    if (hcaptchaSecret) {
+      const verifyRes = await fetch('https://hcaptcha.com/siteverify', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/x-www-form-urlencoded',
+        },
+        body: `secret=${hcaptchaSecret}&response=${hcaptchaToken}`,
+      });
+      const verifyData = await verifyRes.json();
+      if (!verifyData.success) {
+        return NextResponse.json(
+          { error: 'CAPTCHA verification failed. Please try again.' },
+          { status: 400 }
+        );
+      }
+    } else {
+      console.warn('HCAPTCHA_SECRET_KEY is not defined, skipping verification');
     }
 
     // Ensure SMTP details are configured

@@ -12,6 +12,7 @@ export default function ContactForm({ dict }: ContactFormProps) {
   const [errorMessage, setErrorMessage] = useState('');
   const [category, setCategory] = useState(dict.categories[0]);
   const [hcaptchaToken, setHcaptchaToken] = useState('');
+  const [honeypot, setHoneypot] = useState('');
   const captchaRef = useRef<HCaptcha>(null);
     
     const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
@@ -26,6 +27,12 @@ export default function ContactForm({ dict }: ContactFormProps) {
         message: { value: string };
       };
       
+      // Honeypot check
+      if (honeypot.trim() !== '') {
+        setStatus('success'); // Silently pretend it worked for bots
+        return;
+      }
+
       if (!hcaptchaToken) {
         setStatus('error');
         setErrorMessage('Please complete the CAPTCHA to verify you are human.');
@@ -71,6 +78,7 @@ export default function ContactForm({ dict }: ContactFormProps) {
     setStatus('idle');
     setErrorMessage('');
     setCategory(dict.categories[0]);
+    setHoneypot('');
     setHcaptchaToken('');
     if (captchaRef.current) {
       captchaRef.current.resetCaptcha();
@@ -223,6 +231,20 @@ export default function ContactForm({ dict }: ContactFormProps) {
               placeholder={dict.messagePlaceholder} 
               disabled={status === 'submitting'}
             ></textarea>
+          </div>
+
+          {/* Honeypot Field */}
+          <div style={{ display: 'none', opacity: 0, position: 'absolute', top: '-9999px', left: '-9999px' }} aria-hidden="true">
+            <label htmlFor="website_url">Website URL (Leave blank if human)</label>
+            <input 
+              type="text" 
+              id="website_url" 
+              name="website_url" 
+              value={honeypot}
+              onChange={(e) => setHoneypot(e.target.value)}
+              tabIndex={-1} 
+              autoComplete="off" 
+            />
           </div>
 
           {/* hCaptcha */}

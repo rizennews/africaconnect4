@@ -649,5 +649,176 @@ export const ARTICLES_FR: ArticleData[] = [
         "url": "https://indico.wacren.net/event/279/registrations/198/"
       }
     }
+  },
+  {
+    "slug": "responsible-research-governance-workshop",
+    "id": "9",
+    "category": "Event",
+    "tags": ["Event", "Workshop", "LIBSENSE"],
+    "date": "10 Octobre 2026",
+    "readTime": "2 Min de lecture",
+    "title": "Atelier sur la gouvernance responsable de la recherche (RRG) : inscriptions ouvertes",
+    "author": {
+      "name": "Kwaku Effah Amponsah",
+      "avatar": "/authors/Kwaku Effah Amponsah.png",
+      "role": "Responsable de la communication"
+    },
+    "image": "/blog/responsible-research-governance-workshop.jpg",
+    "cutoutPosition": "bottom",
+    "timestamp": 1791590400000,
+    "tableOfContents": [
+      { "id": "governance-in-african-institutions", "title": "Gouvernance dans les institutions africaines" },
+      { "id": "four-core-areas", "title": "Quatre axes de discussion" },
+      { "id": "registration-and-support", "title": "Inscriptions et soutien" }
+    ],
+    "content": {
+      "intro": "L'atelier sur la gouvernance responsable de la recherche (RRG) interroge ce que signifie gouverner la recherche de manière responsable au sein des institutions africaines, au-delà de la science ouverte ou de l'évaluation.",
+      "sections": [
+        {
+          "id": "governance-in-african-institutions",
+          "heading": "Gouvernance institutionnelle et cultures d'évaluation équitables",
+          "paragraphs": [
+            "La gouvernance définit le cadre et les règles selon lesquels la recherche s'opère, y compris son évaluation. Les travaux récents de LIBSENSE sur l'évaluation responsable de la recherche ont démontré que la réforme de l'évaluation dépend d'une gouvernance institutionnelle soutenant des cultures d'évaluation équitables.",
+            "Le RRG élargit cette réflexion aux conditions institutionnelles, éthiques et infrastructurelles dans lesquelles la recherche est conçue, menée et partagée."
+          ]
+        },
+        {
+          "id": "four-core-areas",
+          "heading": "Quatre domaines clés de discussion",
+          "paragraphs": [
+            "Quatre thématiques ouvriront les échanges du webinaire : la gouvernance des données de recherche, l'éthique et le soin de la recherche, l'utilisation responsable de l'IA générative et les pratiques de recherche institutionnelles.",
+            "Les participants examineront ces domaines pour décider s'ils doivent être remodelés, étendus ou reconsidérés. L'atelier marque également un engagement précoce auprès de la communauté des administrateurs de la recherche, dont le rôle est central pour l'ancrage de pratiques responsables."
+          ]
+        },
+        {
+          "id": "registration-and-support",
+          "heading": "Inscriptions et soutien du projet",
+          "paragraphs": [
+            "Les inscriptions se clôturent le 30 octobre 2026. Pour en savoir plus sur l'atelier, ses objectifs, le public cible et pour vous inscrire, visitez le portail de l'événement.",
+            "Cet événement est parrainé par la Commission européenne dans le cadre du projet AfricaConnect4."
+          ]
+        }
+      ],
+      "cta": {
+        "label": "",
+        "linkText": "S'inscrire à l'atelier RRG",
+        "url": "https://indico.wacren.net/event/284/"
+      }
+    }
+  },
+  {
+    "slug": "digital-sovereignty-diamond-open-access-webinar",
+    "id": "10",
+    "category": "Event",
+    "tags": ["Event", "Webinar", "Open Access"],
+    "date": "11 Octobre 2026",
+    "readTime": "2 Min de lecture",
+    "title": "Souveraineté numérique et accès ouvert diamant : le projet pilote RASPA à Dakar et le flux BAOBAB–Episciences",
+    "author": {
+      "name": "Kwaku Effah Amponsah",
+      "avatar": "/authors/Kwaku Effah Amponsah.png",
+      "role": "Responsable de la communication"
+    },
+    "image": "/blog/digital-sovereignty-diamond-open-access-webinar.jpg",
+    "cutoutPosition": "bottom",
+    "timestamp": 1791676800000,
+    "tableOfContents": [
+      { "id": "diamond-open-access-principles", "title": "Accès ouvert diamant et revues en épi" },
+      { "id": "dakar-raspa-pilot", "title": "Le projet RASPA et le flux BAOBAB" },
+      { "id": "event-details", "title": "Détails de l'événement et public cible" }
+    ],
+    "content": {
+      "intro": "Les revues africaines peuvent-elles publier des recherches rigoureusement évaluées par les pairs sans frais pour les auteurs ou les lecteurs, en s'appuyant sur des infrastructures gérées par des institutions africaines ? WACREN et Episciences vous invitent à un webinaire explorant des moyens pratiques pour concrétiser cette vision.",
+      "sections": [
+        {
+          "id": "diamond-open-access-principles",
+          "heading": "Principes de l'accès ouvert diamant et revues en épi",
+          "paragraphs": [
+            "La session présentera les principes de l'accès ouvert diamant, le rôle des prépublications dans le partage des connaissances, et le modèle des revues en épi (overlay journals).",
+            "Les revues en épi s'appuient sur l'évaluation et la curation des prépublications pour assurer l'évaluation par les pairs et le contrôle éditorial à moindre coût."
+          ]
+        },
+        {
+          "id": "dakar-raspa-pilot",
+          "heading": "Le projet pilote RASPA à Dakar et le flux BAOBAB–Episciences",
+          "paragraphs": [
+            "À titre d'étude de cas, le Dr Bitsha-Kitime Dieudonné KABKIA de la revue RASPA expliquera comment RASPA fonctionne actuellement en tant que revue en épi sur HAL et présentera sa migration prévue vers l'entrepôt BAOBAB.",
+            "Une démonstration en direct mettra également en évidence la connexion technique entre BAOBAB et Episciences, moissonnant les métadonnées, identifiants ORCID, affiliations et textes intégraux via OAI-PMH.",
+            "Le webinaire se terminera par une présentation de LIBSENSE, la communauté de pratique francophone de WACREN, suivie d'une séance de questions-réponses ouverte."
+          ]
+        },
+        {
+          "id": "event-details",
+          "heading": "Détails de l'événement et public cible",
+          "paragraphs": [
+            "• Date et heure : 21 octobre 2026, 13:00–14:00 UTC",
+            "• Lieu : En ligne via Zoom",
+            "L'événement s'adresse aux chercheurs francophones, éditeurs et équipes éditoriales de revues, gestionnaires de bibliothèques et de dépôts institutionnels, directeurs de recherche, administrateurs et bailleurs de fonds de la recherche, ainsi qu'aux représentants des réseaux nationaux de recherche et d'éducation."
+          ]
+        }
+      ],
+      "cta": {
+        "label": "",
+        "linkText": "S'inscrire sur Indico",
+        "url": "https://indico.wacren.net/event/293/"
+      }
+    }
+  },
+  {
+    "slug": "libsense-pidslink-international-oa-week",
+    "id": "11",
+    "category": "Event",
+    "tags": ["Event", "Webinar", "PIDsLink", "Open Access"],
+    "date": "12 Octobre 2026",
+    "readTime": "3 Min de lecture",
+    "title": "LIBSENSE réunit la communauté de recherche africaine sur PIDsLink lors de la Semaine internationale du libre accès",
+    "author": {
+      "name": "Kwaku Effah Amponsah",
+      "avatar": "/authors/Kwaku Effah Amponsah.png",
+      "role": "Responsable de la communication"
+    },
+    "image": "/blog/libsense-pidslink-international-oa-week-webinar.jpg",
+    "cutoutPosition": "bottom",
+    "timestamp": 1791763200000,
+    "tableOfContents": [
+      { "id": "cost-of-invisibility", "title": "Le coût de l'invisibilité" },
+      { "id": "pidslink-ecosystem", "title": "PIDsLink et démonstrations en direct" },
+      { "id": "community-action", "title": "Campus Champions et inscriptions" }
+    ],
+    "content": {
+      "intro": "La recherche issue des institutions africaines est souvent difficile à trouver, à citer et à valoriser car les articles, jeux de données et thèses manquent d'identifiants fiables les reliant à leurs auteurs et institutions. Durant la Semaine internationale du libre accès 2026, LIBSENSE tiendra un webinaire sur l'impact transformateur des identifiants pérennes (PID).",
+      "sections": [
+        {
+          "id": "cost-of-invisibility",
+          "heading": "Le coût de l'invisibilité : Valoriser la recherche africaine avec PIDsLink",
+          "paragraphs": [
+            "Intitulée « Le coût de l'invisibilité : Valoriser la recherche africaine avec PIDsLink », cette session de 90 minutes aura lieu le mercredi 21 octobre 2026, de 10h00 à 11h30 UTC. Elle s'adresse aux bibliothécaires, gestionnaires de dépôts, rédacteurs de revues et chercheurs.",
+            "PIDsLink est le service d'identifiants pérennes de WACREN pour l'Afrique de l'Ouest et du Centre, d'ores et déjà opérationnel. Il réunit deux services complémentaires : Archival Resource Keys (ARK) et Crossref DOI, accessibles via le rôle de WACREN comme Sponsor Crossref. Le webinaire montrera comment les bibliothèques, dépôts et revues peuvent utiliser ces services, et pourquoi les PID sont essentiels à la science ouverte."
+          ]
+        },
+        {
+          "id": "pidslink-ecosystem",
+          "heading": "Démonstrations en direct et panels d'experts",
+          "paragraphs": [
+            "Les participants assisteront à la création et à la résolution d'un ARK en direct, et découvriront comment la Bibliothèque nationale du Nigeria et ses partenaires mettent en œuvre un modèle national d'identifiants pérennes. Des intervenants de l'ARK Alliance, Crossref et ORCID discuteront de l'interopérabilité entre ARK, Crossref DOI et ORCID iD.",
+            "Un panel de jeunes chercheurs et de Campus Champions LIBSENSE du Nigeria et du Ghana partagera ensuite l'impact des ORCID iD et DOI sur leurs travaux et les mesures que les institutions peuvent prendre pour soutenir leur adoption. Le webinaire se clôturera par des étapes pratiques pour les acteurs de la recherche."
+          ]
+        },
+        {
+          "id": "community-action",
+          "heading": "Prochaines étapes pour les jeunes chercheurs",
+          "paragraphs": [
+            "Les jeunes chercheurs sont encouragés à créer ou mettre à jour leur identifiant ORCID iD et à le connecter à leurs travaux avant l'événement. Ils pourront également apprendre à créer ou rejoindre un groupe Campus Champions LIBSENSE.",
+            "• Date et heure : Mercredi 21 octobre 2026, 10:00–11:30 UTC",
+            "• Plateforme : En ligne via Zoom"
+          ]
+        }
+      ],
+      "cta": {
+        "label": "",
+        "linkText": "S'inscrire au webinaire PIDsLink",
+        "url": "https://indico.wacren.net/event/295/"
+      }
+    }
   }
 ];

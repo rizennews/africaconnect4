@@ -118,11 +118,31 @@ export const futureEvents: EventData[] = [
   },
   {
     status: 'UPCOMING',
+    type: 'WEBINAR',
+    title: 'Digital Sovereignty & Diamond Open Access',
+    description: 'The Dakar RASPA Pilot and the BAOBAB–Episciences Workflow. Wednesday 21 Oct 2026, 13:00 to 14:00 UTC.',
+    day: '21', month: 'OCT', year: '2026',
+    location: 'Virtual (Zoom)',
+    link: 'https://indico.wacren.net/event/293/',
+    image: '/activities/digital-sovereignty-diamond-open-access.jpg'
+  },
+  {
+    status: 'UPCOMING',
+    type: 'WEBINAR',
+    title: 'The Cost of Invisibility: Making Africa’s Research Count with PIDsLink',
+    description: 'International Open Access Week 2026 webinar on persistent identifiers (PIDs). Wednesday 21 Oct 2026, 10:00 to 11:30 UTC.',
+    day: '21', month: 'OCT', year: '2026',
+    location: 'Virtual (Zoom)',
+    link: 'https://indico.wacren.net/event/295/',
+    image: '/activities/libsense-pidslink-international-oa-week.jpg'
+  },
+  {
+    status: 'UPCOMING',
     type: 'WORKSHOP',
     title: 'Responsible Research Governance (RRG) Workshop',
-    description: 'This workshop opens a new strand of LIBSENSE work on Responsible Research Governance (RRG): what it means to govern research responsibly within African institutions.',
+    description: 'Registration closes 30 October 2026. This workshop explores what it means to govern research responsibly within African institutions.',
     day: '14', month: 'DEC', year: '2026',
-    location: 'Office of the University Librarian, KNUST - Kumasi',
+    location: 'Office of the University Librarian, KNUST - Kumasi / Virtual',
     link: 'https://indico.wacren.net/event/284/',
     image: '/activities/responsible-research-governance.jpg'
   }

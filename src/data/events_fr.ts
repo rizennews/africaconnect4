@@ -140,13 +140,37 @@ export const futureEvents: EventData[] = [
   },
   {
     "status": "UPCOMING",
+    "type": "WEBINAR",
+    "title": "Souveraineté numérique et accès ouvert diamant",
+    "description": "Le projet pilote RASPA à Dakar et le flux BAOBAB–Episciences. Mercredi 21 oct 2026, 13:00 à 14:00 UTC.",
+    "day": "21",
+    "month": "OCT",
+    "year": "2026",
+    "location": "Virtuel (Zoom)",
+    "link": "https://indico.wacren.net/event/293/",
+    "image": "/activities/digital-sovereignty-diamond-open-access.jpg"
+  },
+  {
+    "status": "UPCOMING",
+    "type": "WEBINAR",
+    "title": "Le coût de l'invisibilité : Valoriser la recherche africaine avec PIDsLink",
+    "description": "Webinaire Semaine internationale du libre accès 2026 sur les identifiants pérennes (PID). Mercredi 21 oct 2026, 10:00 à 11:30 UTC.",
+    "day": "21",
+    "month": "OCT",
+    "year": "2026",
+    "location": "Virtuel (Zoom)",
+    "link": "https://indico.wacren.net/event/295/",
+    "image": "/activities/libsense-pidslink-international-oa-week.jpg"
+  },
+  {
+    "status": "UPCOMING",
     "type": "WORKSHOP",
     "title": "Atelier sur la gouvernance responsable de la recherche (RRG)",
-    "description": "Cet atelier ouvre un nouveau volet des travaux de LIBSENSE sur la gouvernance responsable de la recherche (RRG) : ce que signifie gouverner la recherche de manière responsable au sein des institutions africaines.",
+    "description": "Clôture des inscriptions le 30 octobre 2026. Cet atelier explore ce que signifie gouverner la recherche de manière responsable au sein des institutions africaines.",
     "day": "14",
     "month": "DÉC",
     "year": "2026",
-    "location": "Bureau du bibliothécaire universitaire, KNUST - Kumasi",
+    "location": "Bureau du bibliothécaire universitaire, KNUST - Kumasi / Virtuel",
     "link": "https://indico.wacren.net/event/284/",
     "image": "/activities/responsible-research-governance.jpg"
   }

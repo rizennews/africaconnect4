@@ -119,16 +119,6 @@ export const futureEvents: EventData[] = [
   {
     status: 'UPCOMING',
     type: 'WEBINAR',
-    title: 'Digital Sovereignty & Diamond Open Access',
-    description: 'The Dakar RASPA Pilot and the BAOBAB–Episciences Workflow. Wednesday 21 Oct 2026, 13:00 to 14:00 UTC.',
-    day: '21', month: 'OCT', year: '2026',
-    location: 'Virtual (Zoom)',
-    link: 'https://indico.wacren.net/event/293/',
-    image: '/activities/digital-sovereignty-diamond-open-access.jpg'
-  },
-  {
-    status: 'UPCOMING',
-    type: 'WEBINAR',
     title: 'The Cost of Invisibility: Making Africa’s Research Count with PIDsLink',
     description: 'International Open Access Week 2026 webinar on persistent identifiers (PIDs). Wednesday 21 Oct 2026, 10:00 to 11:30 UTC.',
     day: '21', month: 'OCT', year: '2026',

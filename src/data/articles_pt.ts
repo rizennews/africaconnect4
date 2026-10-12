@@ -707,66 +707,8 @@ export const ARTICLES_PT: ArticleData[] = [
     }
   },
   {
-    "slug": "digital-sovereignty-diamond-open-access-webinar",
-    "id": "10",
-    "category": "Event",
-    "tags": ["Event", "Webinar", "Open Access"],
-    "date": "11 de Outubro de 2026",
-    "readTime": "2 Min de Leitura",
-    "title": "Soberania Digital e Acesso Aberto Diamante: O Piloto RASPA de Dacar e o Fluxo BAOBAB–Episciences",
-    "author": {
-      "name": "Kwaku Effah Amponsah",
-      "avatar": "/authors/Kwaku Effah Amponsah.png",
-      "role": "Líder de Comunicação"
-    },
-    "image": "/blog/digital-sovereignty-diamond-open-access-webinar.jpg",
-    "cutoutPosition": "bottom",
-    "timestamp": 1791676800000,
-    "tableOfContents": [
-      { "id": "diamond-open-access-principles", "title": "Acesso Aberto Diamante e Revues em Sobreposição" },
-      { "id": "dakar-raspa-pilot", "title": "O Piloto RASPA e o Fluxo BAOBAB" },
-      { "id": "event-details", "title": "Detalhes do Evento e Público-Alvo" }
-    ],
-    "content": {
-      "intro": "Podem os periódicos africanos publicar pesquisas rigorosamente avaliadas por pares sem cobrar taxas de autores ou leitores, contando com infraestruturas administradas por instituições africanas? A WACREN e a Episciences convidam você para um webinar que explora caminhos práticos para tornar isso viável.",
-      "sections": [
-        {
-          "id": "diamond-open-access-principles",
-          "heading": "Princípios do Acesso Aberto Diamante e Periódicos Sobrepostos",
-          "paragraphs": [
-            "A sessão apresentará os fundamentos do acesso aberto diamante, o papel dos preprints na disseminação do conhecimento e o modelo de revistas sobrepostas (overlay journals).",
-            "As revistas sobrepostas baseiam-se na avaliação e curadoria de preprints para oferecer revisão por pares e controle editorial a custos reduzidos."
-          ]
-        },
-        {
-          "id": "dakar-raspa-pilot",
-          "heading": "O Piloto RASPA de Dacar e o Fluxo BAOBAB–Episciences",
-          "paragraphs": [
-            "Como estudo de caso, o Dr. Bitsha-Kitime Dieudonné KABKIA, da revista RASPA, explicará a operação atual como revista sobreposta no HAL e apresentará a migração prevista para o repositório BAOBAB.",
-            "Uma demonstração prática ao vivo ilustrará a integração técnica entre o BAOBAB e a Episciences, capturando metadados, identificadores ORCID, afiliações e artigos completos via OAI-PMH.",
-            "O webinar concluirá com uma introdução à LIBSENSE, comunidade francófona de prática da WACREN, seguida de sessão de perguntas e respostas."
-          ]
-        },
-        {
-          "id": "event-details",
-          "heading": "Detalhes do Evento e Público-Alvo",
-          "paragraphs": [
-            "• Data e Hora: 21 de outubro de 2026, 13:00–14:00 UTC",
-            "• Local: Online via Zoom",
-            "O evento destina-se a pesquisadores francófonos, editores e comitês editoriais, gestores de bibliotecas e repositórios, diretores de pesquisa, administradores e financiadores de pesquisa, bem como representantes de redes nacionais de pesquisa e educação (NRENs)."
-          ]
-        }
-      ],
-      "cta": {
-        "label": "",
-        "linkText": "Inscreva-se no Indico",
-        "url": "https://indico.wacren.net/event/293/"
-      }
-    }
-  },
-  {
     "slug": "libsense-pidslink-international-oa-week",
-    "id": "11",
+    "id": "10",
     "category": "Event",
     "tags": ["Event", "Webinar", "PIDsLink", "Open Access"],
     "date": "12 de Outubro de 2026",

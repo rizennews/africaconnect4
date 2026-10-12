@@ -141,18 +141,6 @@ export const futureEvents: EventData[] = [
   {
     "status": "UPCOMING",
     "type": "WEBINAR",
-    "title": "Souveraineté numérique et accès ouvert diamant",
-    "description": "Le projet pilote RASPA à Dakar et le flux BAOBAB–Episciences. Mercredi 21 oct 2026, 13:00 à 14:00 UTC.",
-    "day": "21",
-    "month": "OCT",
-    "year": "2026",
-    "location": "Virtuel (Zoom)",
-    "link": "https://indico.wacren.net/event/293/",
-    "image": "/activities/digital-sovereignty-diamond-open-access.jpg"
-  },
-  {
-    "status": "UPCOMING",
-    "type": "WEBINAR",
     "title": "Le coût de l'invisibilité : Valoriser la recherche africaine avec PIDsLink",
     "description": "Webinaire Semaine internationale du libre accès 2026 sur les identifiants pérennes (PID). Mercredi 21 oct 2026, 10:00 à 11:30 UTC.",
     "day": "21",

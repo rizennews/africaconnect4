@@ -707,66 +707,8 @@ export const ARTICLES_FR: ArticleData[] = [
     }
   },
   {
-    "slug": "digital-sovereignty-diamond-open-access-webinar",
-    "id": "10",
-    "category": "Event",
-    "tags": ["Event", "Webinar", "Open Access"],
-    "date": "11 Octobre 2026",
-    "readTime": "2 Min de lecture",
-    "title": "Souveraineté numérique et accès ouvert diamant : le projet pilote RASPA à Dakar et le flux BAOBAB–Episciences",
-    "author": {
-      "name": "Kwaku Effah Amponsah",
-      "avatar": "/authors/Kwaku Effah Amponsah.png",
-      "role": "Responsable de la communication"
-    },
-    "image": "/blog/digital-sovereignty-diamond-open-access-webinar.jpg",
-    "cutoutPosition": "bottom",
-    "timestamp": 1791676800000,
-    "tableOfContents": [
-      { "id": "diamond-open-access-principles", "title": "Accès ouvert diamant et revues en épi" },
-      { "id": "dakar-raspa-pilot", "title": "Le projet RASPA et le flux BAOBAB" },
-      { "id": "event-details", "title": "Détails de l'événement et public cible" }
-    ],
-    "content": {
-      "intro": "Les revues africaines peuvent-elles publier des recherches rigoureusement évaluées par les pairs sans frais pour les auteurs ou les lecteurs, en s'appuyant sur des infrastructures gérées par des institutions africaines ? WACREN et Episciences vous invitent à un webinaire explorant des moyens pratiques pour concrétiser cette vision.",
-      "sections": [
-        {
-          "id": "diamond-open-access-principles",
-          "heading": "Principes de l'accès ouvert diamant et revues en épi",
-          "paragraphs": [
-            "La session présentera les principes de l'accès ouvert diamant, le rôle des prépublications dans le partage des connaissances, et le modèle des revues en épi (overlay journals).",
-            "Les revues en épi s'appuient sur l'évaluation et la curation des prépublications pour assurer l'évaluation par les pairs et le contrôle éditorial à moindre coût."
-          ]
-        },
-        {
-          "id": "dakar-raspa-pilot",
-          "heading": "Le projet pilote RASPA à Dakar et le flux BAOBAB–Episciences",
-          "paragraphs": [
-            "À titre d'étude de cas, le Dr Bitsha-Kitime Dieudonné KABKIA de la revue RASPA expliquera comment RASPA fonctionne actuellement en tant que revue en épi sur HAL et présentera sa migration prévue vers l'entrepôt BAOBAB.",
-            "Une démonstration en direct mettra également en évidence la connexion technique entre BAOBAB et Episciences, moissonnant les métadonnées, identifiants ORCID, affiliations et textes intégraux via OAI-PMH.",
-            "Le webinaire se terminera par une présentation de LIBSENSE, la communauté de pratique francophone de WACREN, suivie d'une séance de questions-réponses ouverte."
-          ]
-        },
-        {
-          "id": "event-details",
-          "heading": "Détails de l'événement et public cible",
-          "paragraphs": [
-            "• Date et heure : 21 octobre 2026, 13:00–14:00 UTC",
-            "• Lieu : En ligne via Zoom",
-            "L'événement s'adresse aux chercheurs francophones, éditeurs et équipes éditoriales de revues, gestionnaires de bibliothèques et de dépôts institutionnels, directeurs de recherche, administrateurs et bailleurs de fonds de la recherche, ainsi qu'aux représentants des réseaux nationaux de recherche et d'éducation."
-          ]
-        }
-      ],
-      "cta": {
-        "label": "",
-        "linkText": "S'inscrire sur Indico",
-        "url": "https://indico.wacren.net/event/293/"
-      }
-    }
-  },
-  {
     "slug": "libsense-pidslink-international-oa-week",
-    "id": "11",
+    "id": "10",
     "category": "Event",
     "tags": ["Event", "Webinar", "PIDsLink", "Open Access"],
     "date": "12 Octobre 2026",

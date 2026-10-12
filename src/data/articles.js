@@ -629,66 +629,8 @@ exports.ARTICLES = [
         }
     },
     {
-        slug: 'digital-sovereignty-diamond-open-access-webinar',
-        id: '10',
-        category: 'Event',
-        tags: ['Event', 'Webinar', 'Open Access'],
-        date: 'October 11, 2026',
-        readTime: '2 Min Read',
-        title: 'Digital Sovereignty and Diamond Open Access: The Dakar RASPA Pilot and the BAOBAB–Episciences Workflow',
-        author: {
-            name: 'Kwaku Effah Amponsah',
-            avatar: '/authors/Kwaku Effah Amponsah.png',
-            role: 'Communications Lead'
-        },
-        image: '/blog/digital-sovereignty-diamond-open-access-webinar.jpg',
-        cutoutPosition: 'bottom',
-        timestamp: 1791676800000,
-        tableOfContents: [
-            { id: 'diamond-open-access-principles', title: 'Diamond Open Access & Overlay Journals' },
-            { id: 'dakar-raspa-pilot', title: 'The Dakar RASPA Pilot & BAOBAB Workflow' },
-            { id: 'event-details', title: 'Event Details & Target Audience' }
-        ],
-        content: {
-            intro: 'Can African journals publish rigorously peer-reviewed research without charging authors or readers, while relying on infrastructure managed by African institutions? WACREN and Episciences invite you to a webinar exploring practical ways to make this possible.',
-            sections: [
-                {
-                    id: 'diamond-open-access-principles',
-                    heading: 'Diamond Open Access & Overlay Journals',
-                    paragraphs: [
-                        'The session will introduce the principles of diamond open access, the role of preprints in sharing knowledge, and the overlay journal model.',
-                        'Overlay journals build on the evaluation and curation of preprints (PRC) to provide peer review and editorial control at lower cost.'
-                    ]
-                },
-                {
-                    id: 'dakar-raspa-pilot',
-                    heading: 'The Dakar RASPA Pilot & BAOBAB–Episciences Workflow',
-                    paragraphs: [
-                        'As a case study, Dr Bitsha-Kitime Dieudonné KABKIA of the journal RASPA will explain how RASPA currently operates as an overlay journal on HAL and present its planned migration to the BAOBAB repository.',
-                        'A live demonstration will also show the technical connection between BAOBAB and Episciences, which harvests metadata, ORCID identifiers, affiliations, and full-text articles via OAI-PMH.',
-                        'The webinar will conclude with an introduction to LIBSENSE, WACREN’s Francophone community of practice, followed by an open Q&A.'
-                    ]
-                },
-                {
-                    id: 'event-details',
-                    heading: 'Event Details & Target Audience',
-                    paragraphs: [
-                        '• Date & Time: 21 October 2026, 13:00–14:00 UTC',
-                        '• Location: Online via Zoom',
-                        'The event is intended for Francophone researchers, journal editors and editorial teams, library and institutional repository managers, research directors, research administrators and funders, and representatives of national research and education networks.'
-                    ]
-                }
-            ],
-            cta: {
-                label: '',
-                linkText: 'Register for the Webinar',
-                url: 'https://indico.wacren.net/event/293/'
-            }
-        }
-    },
-    {
         slug: 'libsense-pidslink-international-oa-week',
-        id: '11',
+        id: '10',
         category: 'Event',
         tags: ['Event', 'Webinar', 'PIDsLink', 'Open Access'],
         date: 'October 12, 2026',

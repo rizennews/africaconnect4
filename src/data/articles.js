@@ -668,65 +668,65 @@ exports.ARTICLES = [
                     id: 'day-1-schedule',
                     heading: 'Monday 12 October – Day 1: Understand the Problem',
                     paragraphs: [
-                        '08:30 → 09:00 | Registration & Networking (30m)\nParticipants and mentors assemble',
-                        '09:00 → 09:30 | Welcome & Innovation Lab Briefing (30m)\nWelcome from our Host (NOUN), Welcome from Sponsors (NgREN), Grouping & Expectations\nSpeaker: Abigail Essel',
-                        '09:30 → 10:15 | Climate Challenges & People (45m)\nIntroduce the climate-resilience challenges and the people/institutions affected\nSpeaker: Prof. Amos Kabo-Bah (AfriGEO)',
-                        '10:15 → 10:45 | From Problems to Solutions (30m)\nShort practical introduction to human-centred design, users, value propositions and assumptions\nSpeaker: Dr Vivian Chinwe Nnamdi',
-                        '10:45 → 11:15 | Tea Break (30m)',
-                        '11:15 → 12:45 | Team Lab 1: Understand the Problem (1h 30m)\nTeams examine their assigned challenge, identify target users, needs/pain points, existing approaches and underlying assumptions',
-                        '12:45 → 13:30 | Problem Review with Mentors (45m)\nEach team presents its problem statement and receives challenge/feedback before designing the solution',
-                        '13:30 → 14:30 | Lunch (1h)',
-                        '14:30 → 15:00 | From Ideas to Testable Prototypes (30m)\nWhat constitutes a prototype; choosing what needs to be demonstrated rather than building everything\nSpeaker: Mr Joshua Opoku Agyemang (IoT Network Hub Africa)',
-                        '15:00 → 16:30 | Team Lab 2: Define the Solution (1h 30m)\nDefine intervention, value proposition, key user journey, critical assumptions and prototype scope',
-                        '16:30 → 17:00 | Day 1 Checkpoint (30m)\nOutput: validated/refined problem statement + target users + proposed intervention + critical assumptions + prototype scope\nSpeaker: Abigail Essel'
+                        '• 08:30 → 09:00 (30m): Registration & Networking – Participants and mentors assemble',
+                        '• 09:00 → 09:30 (30m): Welcome & Innovation Lab Briefing – Welcome from our Host (NOUN), Welcome from Sponsors (NgREN), Grouping & Expectations (Speaker: Abigail Essel)',
+                        '• 09:30 → 10:15 (45m): Climate Challenges & People – Introduce the climate-resilience challenges and the people/institutions affected (Speaker: Prof. Amos Kabo-Bah, AfriGEO)',
+                        '• 10:15 → 10:45 (30m): From Problems to Solutions – Short practical introduction to human-centred design, users, value propositions and assumptions (Speaker: Dr Vivian Chinwe Nnamdi)',
+                        '• 10:45 → 11:15 (30m): Tea Break',
+                        '• 11:15 → 12:45 (1h 30m): Team Lab 1: Understand the Problem – Teams examine their assigned challenge, identify target users, needs/pain points, existing approaches and underlying assumptions',
+                        '• 12:45 → 13:30 (45m): Problem Review with Mentors – Each team presents its problem statement and receives challenge/feedback before designing the solution',
+                        '• 13:30 → 14:30 (1h): Lunch',
+                        '• 14:30 → 15:00 (30m): From Ideas to Testable Prototypes – What constitutes a prototype; choosing what needs to be demonstrated rather than building everything (Speaker: Mr Joshua Opoku Agyemang, IoT Network Hub Africa)',
+                        '• 15:00 → 16:30 (1h 30m): Team Lab 2: Define the Solution – Define intervention, value proposition, key user journey, critical assumptions and prototype scope',
+                        '• 16:30 → 17:00 (30m): Day 1 Checkpoint – Output: validated/refined problem statement + target users + proposed intervention + critical assumptions + prototype scope (Speaker: Abigail Essel)'
                     ]
                 },
                 {
                     id: 'day-2-schedule',
                     heading: 'Tuesday 13 October – Day 2: Build the Prototype',
                     paragraphs: [
-                        '09:00 → 09:45 | Team Build Plans (45m)\nTeams present what they intend to demonstrate by the end of the day',
-                        '09:45 → 10:15 | Technology Clinic (30m)\nJust-in-time introduction to relevant tools, data, AI, APIs, low/no-code, web/mobile etc. based on actual team needs\nSpeaker: Yazid Mikail',
-                        '10:15 → 10:45 | Build Sprint 1 (30m)\nDevelop core user journey/proof of concept',
-                        '10:45 → 11:15 | Tea Break (30m)',
-                        '11:15 → 13:30 | Build Sprint 2 (2h 15m)\nBuild the critical functionality or simulation needed to test the idea',
-                        '13:30 → 14:30 | Lunch (1h)',
-                        '14:30 → 16:00 | Build Sprint 3 (1h 30m)\nIntegrate data/content, complete prototype flow and prepare demonstration',
-                        '16:00 → 16:30 | Mentor Prototype Review (30m)\nMentors test whether the prototype actually demonstrates the team\'s central proposition',
-                        '16:30 → 17:00 | Day 2 Checkpoint (30m)\nOutput: testable prototype + defined assumptions/questions for user testing\nSpeaker: Abigail Essel'
+                        '• 09:00 → 09:45 (45m): Team Build Plans – Teams present what they intend to demonstrate by the end of the day',
+                        '• 09:45 → 10:15 (30m): Technology Clinic – Just-in-time introduction to relevant tools, data, AI, APIs, low/no-code, web/mobile etc. based on actual team needs (Speaker: Yazid Mikail)',
+                        '• 10:15 → 10:45 (30m): Build Sprint 1 – Develop core user journey/proof of concept',
+                        '• 10:45 → 11:15 (30m): Tea Break',
+                        '• 11:15 → 13:30 (2h 15m): Build Sprint 2 – Build the critical functionality or simulation needed to test the idea',
+                        '• 13:30 → 14:30 (1h): Lunch',
+                        '• 14:30 → 16:00 (1h 30m): Build Sprint 3 – Integrate data/content, complete prototype flow and prepare demonstration',
+                        '• 16:00 → 16:30 (30m): Mentor Prototype Review – Mentors test whether the prototype actually demonstrates the team\'s central proposition',
+                        '• 16:30 → 17:00 (30m): Day 2 Checkpoint – Output: testable prototype + defined assumptions/questions for user testing (Speaker: Abigail Essel)'
                     ]
                 },
                 {
                     id: 'day-3-schedule',
                     heading: 'Wednesday 14 October – Day 3: Test, Learn & Refine',
                     paragraphs: [
-                        '09:00 → 09:30 | Building Strong Prototypes (30m)\nWhat constitutes useful evidence; testing assumptions rather than asking whether people "like" the prototype\nSpeaker: Ms Chineme Esor',
-                        '09:30 → 10:45 | User Testing Round 1 (1h 15m)\nIntended users/domain representatives interact with prototypes; teams observe and collect structured feedback\nSpeaker: Ms Zainab Usman',
-                        '10:45 → 11:15 | Tea Break (30m)',
-                        '11:15 → 12:00 | Team Lab: What Did We Learn? (45m)\nAnalyse feedback: confirmed assumptions, rejected assumptions, unexpected findings',
-                        '12:00 → 13:00 | Refinement Sprint 1 (1h)\nPrioritise and implement the most important changes',
-                        '13:00 → 14:00 | Lunch (1h)',
-                        '14:00 → 15:15 | Refinement Sprint 2 (1h 15m)\nImprove prototype and test critical changes',
-                        '15:15 → 15:45 | Demo & Evidence Preparation (30m)\nTeams prepare problem → evidence → solution → prototype → learning → next-step story',
-                        '15:45 → 16:30 | From Prototype to Pilot (45m)\nTeams share their 6months detailed step by step plan (Introduce the transition from four-day prototype to six-month development/pilot)',
-                        '16:30 → 17:00 | Day 3 Readiness Review (30m)\nOutput: refined prototype + user evidence + lessons + initial six-month development hypothesis\nSpeaker: Amina Ramallan (WACREN)'
+                        '• 09:00 → 09:30 (30m): Building Strong Prototypes – What constitutes useful evidence; testing assumptions rather than asking whether people "like" the prototype (Speaker: Ms Chineme Esor)',
+                        '• 09:30 → 10:45 (1h 15m): User Testing Round 1 – Intended users/domain representatives interact with prototypes; teams observe and collect structured feedback (Speaker: Ms Zainab Usman)',
+                        '• 10:45 → 11:15 (30m): Tea Break',
+                        '• 11:15 → 12:00 (45m): Team Lab: What Did We Learn? – Analyse feedback: confirmed assumptions, rejected assumptions, unexpected findings',
+                        '• 12:00 → 13:00 (1h): Refinement Sprint 1 – Prioritise and implement the most important changes',
+                        '• 13:00 → 14:00 (1h): Lunch',
+                        '• 14:00 → 15:15 (1h 15m): Refinement Sprint 2 – Improve prototype and test critical changes',
+                        '• 15:15 → 15:45 (30m): Demo & Evidence Preparation – Teams prepare problem → evidence → solution → prototype → learning → next-step story',
+                        '• 15:45 → 16:30 (45m): From Prototype to Pilot – Teams share their 6months detailed step by step plan (Introduce the transition from four-day prototype to six-month development/pilot)',
+                        '• 16:30 → 17:00 (30m): Day 3 Readiness Review – Output: refined prototype + user evidence + lessons + initial six-month development hypothesis (Speaker: Amina Ramallan, WACREN)'
                     ]
                 },
                 {
                     id: 'day-4-schedule',
                     heading: 'Thursday 15 October – Day 4: Women in WACREN Community Day',
                     paragraphs: [
-                        '09:30 → 10:00 | Registration & Networking (30m)\nCommunity members, partners and guests arrive',
-                        '10:00 → 10:20 | Women in WACREN Community Day Opening (20m)\nWelcome address and expectations for the day\nSpeaker: Abigail Essel',
-                        '10:20 → 11:20 | Women in STEM: Experiences, Lessons and Key Takeaways (1h)\nWider context and inspiration',
-                        '11:20 → 11:40 | 6months Engagement Key Next Steps (20m)\nEngagement and clarification on 6months programme structure\nSpeaker: Abigail Essel',
-                        '11:40 → 12:10 | Tea Break (30m)',
-                        '12:10 → 12:40 | Expert & Mentor Reflections (30m)\nStructured feedback: desirability, feasibility, potential impact and key unanswered questions',
-                        '12:40 → 13:10 | Partner/Community Spotlights (30m)\nRelevant communities and organisations; focus on resources/opportunities that could help teams',
-                        '13:10 → 14:00 | Panel: Women at the Forefront of Digital Innovation: Harnessing Technology for Climate Resilience in Africa (50m)\nConversation with women across diverse countries',
-                        '14:00 → 15:00 | Lunch & Networking (1h)',
-                        '15:00 → 16:00 | Community Conversation (1h)\nQ&A\'s, connections, country perspectives and opportunities for collaboration',
-                        '16:00 → 17:00 | Commitments & Closing (1h)\nTeams state what they will take forward; mentor/partner acknowledgements and closing\nSpeaker: Abigail Essel'
+                        '• 09:30 → 10:00 (30m): Registration & Networking – Community members, partners and guests arrive',
+                        '• 10:00 → 10:20 (20m): Women in WACREN Community Day Opening – Welcome address and expectations for the day (Speaker: Abigail Essel)',
+                        '• 10:20 → 11:20 (1h): Women in STEM: Experiences, Lessons and Key Takeaways – Wider context and inspiration',
+                        '• 11:20 → 11:40 (20m): 6months Engagement Key Next Steps – Engagement and clarification on 6months programme structure (Speaker: Abigail Essel)',
+                        '• 11:40 → 12:10 (30m): Tea Break',
+                        '• 12:10 → 12:40 (30m): Expert & Mentor Reflections – Structured feedback: desirability, feasibility, potential impact and key unanswered questions',
+                        '• 12:40 → 13:10 (30m): Partner/Community Spotlights – Relevant communities and organisations; focus on resources/opportunities that could help teams',
+                        '• 13:10 → 14:00 (50m): Panel: Women at the Forefront of Digital Innovation: Harnessing Technology for Climate Resilience in Africa – Conversation with women across diverse countries',
+                        '• 14:00 → 15:00 (1h): Lunch & Networking',
+                        '• 15:00 → 16:00 (1h): Community Conversation – Q&A\'s, connections, country perspectives and opportunities for collaboration',
+                        '• 16:00 → 17:00 (1h): Commitments & Closing – Teams state what they will take forward; mentor/partner acknowledgements and closing (Speaker: Abigail Essel)'
                     ]
                 }
             ],

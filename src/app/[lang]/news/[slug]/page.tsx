@@ -259,55 +259,11 @@ export default async function Page({ params }: PageProps) {
                     />
                   </div>
                 )}
-                {section.paragraphs.map((p, pIdx) => {
-                  const isSchedule = /^\d{2}:\d{2}\s*→\s*\d{2}:\d{2}/.test(p);
-                  if (isSchedule) {
-                    const lines = p.split('\n');
-                    const headerLine = lines[0];
-                    const details = lines.slice(1);
-
-                    const match = headerLine.match(/^(\d{2}:\d{2}\s*→\s*\d{2}:\d{2})(?:\s*\|\s*|\s+)(.*?)(?:\s*\(([^)]+)\))?$/);
-                    const time = match ? match[1] : '';
-                    const title = match ? match[2] : headerLine;
-                    const duration = match ? match[3] : '';
-
-                    const speakerLine = details.find(
-                      (l) =>
-                        l.toLowerCase().startsWith('speaker:') ||
-                        l.toLowerCase().startsWith('intervenant:') ||
-                        l.toLowerCase().startsWith('palestrante:')
-                    );
-                    const descLines = details.filter((l) => l !== speakerLine);
-
-                    return (
-                      <div key={pIdx} className={styles.scheduleItem}>
-                        <div className={styles.scheduleTimeBadge}>
-                          <span className={styles.scheduleTime}>{time}</span>
-                          {duration && <span className={styles.scheduleDuration}>{duration}</span>}
-                        </div>
-                        <div className={styles.scheduleContent}>
-                          <div className={styles.scheduleItemTitle}>{title}</div>
-                          {descLines.length > 0 && (
-                            <p className={styles.scheduleDesc}>{descLines.join(' ')}</p>
-                          )}
-                          {speakerLine && (
-                            <div className={styles.scheduleSpeaker}>
-                              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
-                              <span>{speakerLine}</span>
-                            </div>
-                          )}
-                        </div>
-                      </div>
-                    );
-                  }
-
-                  const isBullet = p.startsWith('•');
-                  return (
-                    <p key={pIdx} className={`${styles.paragraph} ${isBullet ? styles.bulletItem : ''}`}>
-                      {p}
-                    </p>
-                  );
-                })}
+                {section.paragraphs.map((p, pIdx) => (
+                  <p key={pIdx} className={styles.paragraph}>
+                    {p}
+                  </p>
+                ))}
                 {section.quote && (
                   <blockquote className={styles.quoteBlock}>
                     <span className={styles.quoteIcon}>“</span>

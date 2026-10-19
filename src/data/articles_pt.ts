@@ -705,6 +705,133 @@ export const ARTICLES_PT: ArticleData[] = [
         "url": "https://indico.wacren.net/event/284/"
       }
     }
+  },
+  {
+    "slug": "women-in-wacren-climate-innovation-lab-2026",
+    "id": "10",
+    "category": "Blog",
+    "tags": [
+      "Blog",
+      "WiW",
+      "Event"
+    ],
+    "date": "October 12, 2026",
+    "readTime": "4 Min Read",
+    "title": "Laboratório de Inovação Climática Women-In-WACREN 2026",
+    "author": {
+      "name": "Kwaku Effah Amponsah",
+      "avatar": "/authors/Kwaku Effah Amponsah.png",
+      "role": "Communications Lead"
+    },
+    "image": "/blog/WIW-Climate Innovation Lab.jpg",
+    "cutoutPosition": "bottom",
+    "timestamp": 1791793800000,
+    "tableOfContents": [
+      {
+        "id": "programme-coordination",
+        "title": "Coordenação e Contato do Programa"
+      },
+      {
+        "id": "day-1-schedule",
+        "title": "Dia 1: segunda-feira, 12 de outubro – Entenda o problema"
+      },
+      {
+        "id": "day-2-schedule",
+        "title": "Dia 2: Terça-feira, 13 de outubro – Construa o Protótipo"
+      },
+      {
+        "id": "day-3-schedule",
+        "title": "Dia 3: quarta-feira, 14 de outubro – teste, aprenda e refine"
+      },
+      {
+        "id": "day-4-schedule",
+        "title": "Dia 4: Quinta-feira, 15 de outubro – Dia Comunitário das Mulheres na WACREN"
+      }
+    ],
+    "content": {
+      "intro": "Women-In-WACREN (WiW) está hospedando o Laboratório de Inovação Climática 2026, um programa de inovação estruturado que combina uma rede virtual de mulheres em STEM, um Laboratório de Inovação Climática presencial intensivo e um programa de mentoria pós-laboratório. O programa visa reforçar a capacidade das mulheres em STEM em toda a África Ocidental e Central para conceber e desenvolver de forma colaborativa soluções digitais inovadoras que abordem os desafios de adaptação e mitigação das alterações climáticas nas suas comunidades e instituições.",
+      "sections": [
+        {
+          "id": "programme-coordination",
+          "heading": "Coordenação e Contato do Programa",
+          "paragraphs": [
+            "O Laboratório de Inovação Climática reúne participantes, mentores, facilitadores e parceiros em toda a África Ocidental e Central para conceber e desenvolver de forma colaborativa soluções digitais inovadoras.",
+            "• Coordenador: Coordenador W-i-W",
+            "• E-mail: wiw@wacren.net",
+            "• Telefone: +233 501100457"
+          ]
+        },
+        {
+          "id": "day-1-schedule",
+          "heading": "Segunda-feira, 12 de outubro – Dia 1: Entenda o problema",
+          "paragraphs": [
+            "08h30 → 09h00 | Registro e Networking (30m)\nParticipantes e mentores se reúnem",
+            "09h00 → 09h30 | Briefing do Laboratório de Boas-Vindas e Inovação (30m)\nBoas-vindas do nosso anfitrião (NOUN), Boas-vindas dos patrocinadores (NgREN), Agrupamento e expectativas\nPalestrante: Abigail Essel",
+            "09h30 → 10h15 | Desafios climáticos e pessoas (45m)\nApresentar os desafios da resiliência climática e as pessoas/instituições afetadas\nPalestrante: Prof. Amos Kabo-Bah (AfriGEO)",
+            "10h15 → 10h45 | Dos Problemas às Soluções (30m)\nBreve introdução prática ao design centrado no ser humano, usuários, propostas de valor e suposições\nPalestrante: Dra. Vivian Chinwe Nnamdi",
+            "10h45 → 11h15 | Pausa para Chá (30m)",
+            "11h15 → 12h45 | Equipe Laboratório 1: Entenda o Problema (1h 30m)\nAs equipes examinam o desafio atribuído, identificam usuários-alvo, necessidades/pontos problemáticos, abordagens existentes e suposições subjacentes",
+            "12h45 → 13h30 | Revisão de Problemas com Mentores (45m)\nCada equipe apresenta sua declaração de problema e recebe desafio/feedback antes de projetar a solução",
+            "13h30 → 14h30 | Almoço (1h)",
+            "14h30 → 15h00 | Das Ideias aos Protótipos Testáveis (30m)\nO que constitui um protótipo; escolher o que precisa ser demonstrado em vez de construir tudo\nPalestrante: Sr. Joshua Opoku Agyemang (IoT Network Hub Africa)",
+            "15h00 → 16h30 | Team Lab 2: Definir a Solução (1h 30m)\nDefinir intervenção, proposta de valor, jornada do usuário-chave, premissas críticas e escopo do protótipo",
+            "16h30 → 17h00 | Ponto de verificação do dia 1 (30m)\nResultado: declaração do problema validada/refinada + usuários-alvo + intervenção proposta + suposições críticas + escopo do protótipo\nPalestrante: Abigail Essel"
+          ]
+        },
+        {
+          "id": "day-2-schedule",
+          "heading": "Terça-feira, 13 de outubro – Dia 2: Construa o Protótipo",
+          "paragraphs": [
+            "09h00 → 09h45 | Planos de formação de equipe (45m)\nEquipes apresentam o que pretendem demonstrar até o final do dia",
+            "09h45 → 10h15 | Clínica de Tecnologia (30m)\nIntrodução just-in-time a ferramentas relevantes, dados, IA, APIs, low/no-code, web/mobile etc. com base nas necessidades reais da equipe\nPalestrante: Yazid Mikail",
+            "10h15 → 10h45 | Construir Sprint 1 (30m)\nDesenvolva a jornada do usuário/prova de conceito principal",
+            "10h45 → 11h15 | Pausa para Chá (30m)",
+            "11h15 → 13h30 | Construir Sprint 2 (2h 15m)\nCrie a funcionalidade crítica ou simulação necessária para testar a ideia",
+            "13h30 → 14h30 | Almoço (1h)",
+            "14h30 → 16h00 | Construir Sprint 3 (1h 30m)\nIntegre dados/conteúdo, conclua o fluxo do protótipo e prepare a demonstração",
+            "16h00 → 16h30 | Revisão do protótipo do mentor (30m)\nMentores testam se o protótipo realmente demonstra a proposta central da equipe",
+            "16h30 → 17h00 | Ponto de verificação do dia 2 (30m)\nResultado: protótipo testável + suposições/perguntas definidas para teste do usuário\nPalestrante: Abigail Essel"
+          ]
+        },
+        {
+          "id": "day-3-schedule",
+          "heading": "Quarta-feira, 14 de outubro – dia 3: teste, aprenda e refine",
+          "paragraphs": [
+            "09h00 → 09h30 | Construindo Protótipos Fortes (30m)\nO que constitui evidência útil; testar suposições em vez de perguntar se as pessoas \"gostam\" do protótipo\nPalestrante: Sra. Chineme Esor",
+            "09h30 → 10h45 | Rodada de testes de usuário 1 (1h 15m)\nOs usuários/representantes de domínio pretendidos interagem com os protótipos; as equipes observam e coletam feedback estruturado\nPalestrante: Sra. Zainab Usman",
+            "10h45 → 11h15 | Pausa para Chá (30m)",
+            "11h15 → 12h00 | Laboratório de equipe: o que aprendemos? (45m)\nAnalise o feedback: suposições confirmadas, suposições rejeitadas, descobertas inesperadas",
+            "12h → 13h | Sprint de Refinamento 1 (1h)\nPriorize e implemente as mudanças mais importantes",
+            "13h → 14h | Almoço (1h)",
+            "14h → 15h15 | Sprint de Refinamento 2 (1h 15m)\nMelhore o protótipo e teste mudanças críticas",
+            "15h15 → 15h45 | Demonstração e preparação de evidências (30m)\nAs equipes preparam o problema → evidências → solução → protótipo → aprendizagem → história do próximo passo",
+            "15h45 → 16h30 | Do Protótipo ao Piloto (45m)\nAs equipes compartilham seu plano passo a passo detalhado de 6 meses (apresentar a transição do protótipo de quatro dias para o desenvolvimento/piloto de seis meses)",
+            "16h30 → 17h00 | Revisão de preparação do dia 3 (30m)\nResultado: protótipo refinado + evidências do usuário + lições + hipótese de desenvolvimento inicial de seis meses\nPalestrante: Amina Ramallan (WACREN)"
+          ]
+        },
+        {
+          "id": "day-4-schedule",
+          "heading": "Quinta-feira, 15 de outubro – Dia 4: Dia Comunitário das Mulheres na WACREN",
+          "paragraphs": [
+            "09h30 → 10h00 | Registro e Networking (30m)\nChegam membros da comunidade, parceiros e convidados",
+            "10h → 10h20 | Mulheres na abertura do Dia Comunitário da WACREN (20m)\nEndereço de boas-vindas e expectativas para o dia\nPalestrante: Abigail Essel",
+            "10h20 → 11h20 | Mulheres em STEM: experiências, lições e principais conclusões (1h)\nContexto mais amplo e inspiração",
+            "11h20 → 11h40 | Próximas etapas principais de engajamento de 6 meses (20m)\nEnvolvimento e esclarecimento sobre a estrutura do programa de 6 meses\nPalestrante: Abigail Essel",
+            "11h40 → 12h10 | Pausa para Chá (30m)",
+            "12h10 → 12h40 | Reflexões de especialistas e mentores (30m)\nFeedback estruturado: conveniência, viabilidade, impacto potencial e principais questões não respondidas",
+            "12h40 → 13h10 | Destaques de parceiros/comunidade (30m)\nComunidades e organizações relevantes; concentre-se em recursos/oportunidades que possam ajudar as equipes",
+            "13h10 → 14h00 | Painel: Mulheres na vanguarda da inovação digital: Aproveitando a tecnologia para a resiliência climática em África (50 milhões)\nConversa com mulheres de diversos países",
+            "14h → 15h | Almoço e Networking (1h)",
+            "15h → 16h | Conversa Comunitária (1h)\nPerguntas e respostas, conexões, perspectivas do país e oportunidades de colaboração",
+            "16h → 17h | Compromissos e Fechamento (1h)\nAs equipes declaram o que irão levar adiante; agradecimentos e encerramento do mentor/parceiro\nPalestrante: Abigail Essel"
+          ]
+        }
+      ],
+      "cta": {
+        "label": "Tem dúvidas ou deseja se conectar com a equipe do WiW Climate Innovation Lab?",
+        "linkText": "Entre em contato com o coordenador do WiW",
+        "url": "mailto:wiw@wacren.net"
+      }
+    }
   }
 ];
-

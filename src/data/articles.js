@@ -627,62 +627,6 @@ exports.ARTICLES = [
                 url: 'https://indico.wacren.net/event/284/'
             }
         }
-    },
-    {
-        slug: 'libsense-pidslink-international-oa-week',
-        id: '10',
-        category: 'Event',
-        tags: ['Event', 'Webinar', 'PIDsLink', 'Open Access'],
-        date: 'October 12, 2026',
-        readTime: '3 Min Read',
-        title: 'LIBSENSE to convene African research community on PIDsLink at International OA Week',
-        author: {
-            name: 'Kwaku Effah Amponsah',
-            avatar: '/authors/Kwaku Effah Amponsah.png',
-            role: 'Communications Lead'
-        },
-        image: '/blog/libsense-pidslink-international-oa-week-webinar.jpg',
-        cutoutPosition: 'bottom',
-        timestamp: 1791763200000,
-        tableOfContents: [
-            { id: 'cost-of-invisibility', title: 'The Cost of Invisibility' },
-            { id: 'pidslink-ecosystem', title: 'PIDsLink & Live Demonstrations' },
-            { id: 'community-action', title: 'Campus Champions & Registration' }
-        ],
-        content: {
-            intro: 'Research from African institutions is often hard to find, cite, and credit because articles, datasets, and theses lack identifiers that reliably link them to their authors and institutions. During International Open Access Week 2026, LIBSENSE will hold a webinar on how persistent identifiers (PIDs) can change that.',
-            sections: [
-                {
-                    id: 'cost-of-invisibility',
-                    heading: 'The Cost of Invisibility: Making Africa’s Research Count with PIDsLink',
-                    paragraphs: [
-                        'Titled "The Cost of Invisibility: Making Africa’s Research Count with PIDsLink", the 90-minute session takes place on Wednesday, 21 October 2026, from 10:00 to 11:30 UTC. It is aimed at librarians, repository managers, journal editors and researchers.',
-                        'PIDsLink is WACREN’s persistent identifier service for West and Central Africa, and it is already running. It brings together two complementary services: Archival Resource Keys (ARKs) and Crossref DOIs, which journals and publishers in the region can access through WACREN’s role as a Crossref Sponsor. The webinar will show how libraries, repositories and journals can use these services, and why persistent identifiers are central to open science.'
-                    ]
-                },
-                {
-                    id: 'pidslink-ecosystem',
-                    heading: 'Live Demonstrations & Collaborative Panels',
-                    paragraphs: [
-                        'Participants will see an ARK created and resolved live, and hear how the National Library of Nigeria and its partners are putting a national persistent identifier model into practice. Speakers from the ARK Alliance, Crossref and ORCID will then discuss how ARKs, Crossref DOIs and ORCID iDs work together.',
-                        'A panel of LIBSENSE early-career researchers and Campus Champions from Nigeria and Ghana will follow, sharing how ORCID iDs and DOIs have affected their work and what institutions can do to support their use. The webinar will close with practical next steps for libraries, repositories, journals and researchers.'
-                    ]
-                },
-                {
-                    id: 'community-action',
-                    heading: 'Next Steps for Early-Career Researchers',
-                    paragraphs: [
-                        'Early-career researchers are encouraged to create or update their ORCID iD and connect it to their work before the event. They can also learn how to start or join a LIBSENSE Campus Champions group.',
-                        '• Date & Time: Wednesday, 21 October 2026, 10:00–11:30 UTC',
-                        '• Platform: Online via Zoom'
-                    ]
-                }
-            ],
-            cta: {
-                label: '',
-                linkText: 'Register for PIDsLink Webinar',
-                url: 'https://indico.wacren.net/event/295/'
-            }
-        }
     }
 ];
+

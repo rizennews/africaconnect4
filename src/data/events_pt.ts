@@ -3,6 +3,42 @@ import { EventData } from '@/components/EventsGrid';
 export const pastEvents: EventData[] = [
   {
     "status": "PAST",
+    "type": "CALL",
+    "title": "Chamada para Mentores Women-In-WACREN",
+    "description": "Aberto de 25 de Agosto de 2026, 09:00 a 15 de Set de 2026, 23:59",
+    "day": "25",
+    "month": "AGO",
+    "year": "2026",
+    "location": "Virtual",
+    "link": "https://indico.wacren.net/event/283/",
+    "image": "/activities/wiw-call-for-mentors.jpg"
+  },
+  {
+    "status": "PAST",
+    "type": "CALL",
+    "title": "Chamada para Facilitadores Women-In-WACREN",
+    "description": "Aberto de 25 de Agosto de 2026, 09:00 a 15 de Set de 2026, 23:59",
+    "day": "25",
+    "month": "AGO",
+    "year": "2026",
+    "location": "Virtual",
+    "link": "https://indico.wacren.net/event/282/",
+    "image": "/activities/wiw-call-for-facilitators.jpg"
+  },
+  {
+    "status": "PAST",
+    "type": "LAB",
+    "title": "Laboratório de Inovação Climática Women-In-WACREN",
+    "description": "Terça-feira, 25 de Agosto de 2026, 13:00 às 14:00",
+    "day": "25",
+    "month": "AGO",
+    "year": "2026",
+    "location": "A confirmar",
+    "link": "https://indico.wacren.net/event/279/",
+    "image": "/activities/climate-innovation-lab-2026.jpg"
+  },
+  {
+    "status": "PAST",
     "type": "CONFERENCE",
     "title": "WACREN 2026",
     "description": "Conferência WACREN 2026",
@@ -99,47 +135,9 @@ export const pastEvents: EventData[] = [
   }
 ];
 
-export const presentEvents: EventData[] = [];
-
-export const futureEvents: EventData[] = [
+export const presentEvents: EventData[] = [
   {
-    "status": "UPCOMING",
-    "type": "LAB",
-    "title": "Laboratório de Inovação Climática Women-In-WACREN",
-    "description": "Terça-feira, 25 de Agosto de 2026, 13:00 às 14:00",
-    "day": "25",
-    "month": "AGO",
-    "year": "2026",
-    "location": "A confirmar",
-    "link": "https://indico.wacren.net/event/279/",
-    "image": "/activities/climate-innovation-lab-2026.jpg"
-  },
-  {
-    "status": "UPCOMING",
-    "type": "CALL",
-    "title": "Chamada para Facilitadores Women-In-WACREN",
-    "description": "Aberto de 25 de Agosto de 2026, 09:00 a 15 de Set de 2026, 23:59",
-    "day": "25",
-    "month": "AGO",
-    "year": "2026",
-    "location": "Virtual",
-    "link": "https://indico.wacren.net/event/282/",
-    "image": "/activities/wiw-call-for-facilitators.jpg"
-  },
-  {
-    "status": "UPCOMING",
-    "type": "CALL",
-    "title": "Chamada para Mentores Women-In-WACREN",
-    "description": "Aberto de 25 de Agosto de 2026, 09:00 a 15 de Set de 2026, 23:59",
-    "day": "25",
-    "month": "AGO",
-    "year": "2026",
-    "location": "Virtual",
-    "link": "https://indico.wacren.net/event/283/",
-    "image": "/activities/wiw-call-for-mentors.jpg"
-  },
-  {
-    "status": "UPCOMING",
+    "status": "PRESENT",
     "type": "WEBINAR",
     "title": "O Custo da Invisibilidade: Fazendo a Pesquisa Africana Contar com o PIDsLink",
     "description": "Webinar da Semana Internacional do Acesso Aberto 2026 sobre identificadores persistentes (PIDs). Quarta-feira, 21 de out de 2026, 10:00 às 11:30 UTC.",
@@ -149,7 +147,10 @@ export const futureEvents: EventData[] = [
     "location": "Virtual (Zoom)",
     "link": "https://indico.wacren.net/event/295/",
     "image": "/activities/libsense-pidslink-international-oa-week.jpg"
-  },
+  }
+];
+
+export const futureEvents: EventData[] = [
   {
     "status": "UPCOMING",
     "type": "WORKSHOP",

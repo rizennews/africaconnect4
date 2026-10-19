@@ -3,6 +3,36 @@ import { EventData } from '@/components/EventsGrid';
 export const pastEvents: EventData[] = [
   {
     status: 'PAST',
+    type: 'CALL',
+    title: 'Women-In-WACREN Call for Mentors',
+    description: 'Open from 25 Aug 2026, 09:00 to 15 Sept 2026, 23:59',
+    day: '25', month: 'AUG', year: '2026',
+    location: 'Virtual',
+    link: 'https://indico.wacren.net/event/283/',
+    image: '/activities/wiw-call-for-mentors.jpg'
+  },
+  {
+    status: 'PAST',
+    type: 'CALL',
+    title: 'Women-In-WACREN Call for Facilitators',
+    description: 'Open from 25 Aug 2026, 09:00 to 15 Sept 2026, 23:59',
+    day: '25', month: 'AUG', year: '2026',
+    location: 'Virtual',
+    link: 'https://indico.wacren.net/event/282/',
+    image: '/activities/wiw-call-for-facilitators.jpg'
+  },
+  {
+    status: 'PAST',
+    type: 'LAB',
+    title: 'Women-In-WACREN Climate Innovation Lab',
+    description: 'Tuesday 25 Aug 2026, 13:00 to 14:00',
+    day: '25', month: 'AUG', year: '2026',
+    location: 'TBA',
+    link: 'https://indico.wacren.net/event/279/',
+    image: '/activities/climate-innovation-lab-2026.jpg'
+  },
+  {
+    status: 'PAST',
     type: 'CONFERENCE',
     title: 'WACREN 2026',
     description: 'WACREN Conference 2026',
@@ -83,41 +113,9 @@ export const pastEvents: EventData[] = [
   }
 ];
 
-export const presentEvents: EventData[] = [];
-
-export const futureEvents: EventData[] = [
+export const presentEvents: EventData[] = [
   {
-    status: 'UPCOMING',
-    type: 'LAB',
-    title: 'Women-In-WACREN Climate Innovation Lab',
-    description: 'Tuesday 25 Aug 2026, 13:00 to 14:00',
-    day: '25', month: 'AUG', year: '2026',
-    location: 'TBA',
-    link: 'https://indico.wacren.net/event/279/',
-    image: '/activities/climate-innovation-lab-2026.jpg'
-  },
-  {
-    status: 'UPCOMING',
-    type: 'CALL',
-    title: 'Women-In-WACREN Call for Facilitators',
-    description: 'Open from 25 Aug 2026, 09:00 to 15 Sept 2026, 23:59',
-    day: '25', month: 'AUG', year: '2026',
-    location: 'Virtual',
-    link: 'https://indico.wacren.net/event/282/',
-    image: '/activities/wiw-call-for-facilitators.jpg'
-  },
-  {
-    status: 'UPCOMING',
-    type: 'CALL',
-    title: 'Women-In-WACREN Call for Mentors',
-    description: 'Open from 25 Aug 2026, 09:00 to 15 Sept 2026, 23:59',
-    day: '25', month: 'AUG', year: '2026',
-    location: 'Virtual',
-    link: 'https://indico.wacren.net/event/283/',
-    image: '/activities/wiw-call-for-mentors.jpg'
-  },
-  {
-    status: 'UPCOMING',
+    status: 'PRESENT',
     type: 'WEBINAR',
     title: 'The Cost of Invisibility: Making Africa’s Research Count with PIDsLink',
     description: 'International Open Access Week 2026 webinar on persistent identifiers (PIDs). Wednesday 21 Oct 2026, 10:00 to 11:30 UTC.',
@@ -125,7 +123,10 @@ export const futureEvents: EventData[] = [
     location: 'Virtual (Zoom)',
     link: 'https://indico.wacren.net/event/295/',
     image: '/activities/libsense-pidslink-international-oa-week.jpg'
-  },
+  }
+];
+
+export const futureEvents: EventData[] = [
   {
     status: 'UPCOMING',
     type: 'WORKSHOP',

@@ -705,62 +705,6 @@ export const ARTICLES_FR: ArticleData[] = [
         "url": "https://indico.wacren.net/event/284/"
       }
     }
-  },
-  {
-    "slug": "libsense-pidslink-international-oa-week",
-    "id": "10",
-    "category": "Event",
-    "tags": ["Event", "Webinar", "PIDsLink", "Open Access"],
-    "date": "12 Octobre 2026",
-    "readTime": "3 Min de lecture",
-    "title": "LIBSENSE réunit la communauté de recherche africaine sur PIDsLink lors de la Semaine internationale du libre accès",
-    "author": {
-      "name": "Kwaku Effah Amponsah",
-      "avatar": "/authors/Kwaku Effah Amponsah.png",
-      "role": "Responsable de la communication"
-    },
-    "image": "/blog/libsense-pidslink-international-oa-week-webinar.jpg",
-    "cutoutPosition": "bottom",
-    "timestamp": 1791763200000,
-    "tableOfContents": [
-      { "id": "cost-of-invisibility", "title": "Le coût de l'invisibilité" },
-      { "id": "pidslink-ecosystem", "title": "PIDsLink et démonstrations en direct" },
-      { "id": "community-action", "title": "Campus Champions et inscriptions" }
-    ],
-    "content": {
-      "intro": "La recherche issue des institutions africaines est souvent difficile à trouver, à citer et à valoriser car les articles, jeux de données et thèses manquent d'identifiants fiables les reliant à leurs auteurs et institutions. Durant la Semaine internationale du libre accès 2026, LIBSENSE tiendra un webinaire sur l'impact transformateur des identifiants pérennes (PID).",
-      "sections": [
-        {
-          "id": "cost-of-invisibility",
-          "heading": "Le coût de l'invisibilité : Valoriser la recherche africaine avec PIDsLink",
-          "paragraphs": [
-            "Intitulée « Le coût de l'invisibilité : Valoriser la recherche africaine avec PIDsLink », cette session de 90 minutes aura lieu le mercredi 21 octobre 2026, de 10h00 à 11h30 UTC. Elle s'adresse aux bibliothécaires, gestionnaires de dépôts, rédacteurs de revues et chercheurs.",
-            "PIDsLink est le service d'identifiants pérennes de WACREN pour l'Afrique de l'Ouest et du Centre, d'ores et déjà opérationnel. Il réunit deux services complémentaires : Archival Resource Keys (ARK) et Crossref DOI, accessibles via le rôle de WACREN comme Sponsor Crossref. Le webinaire montrera comment les bibliothèques, dépôts et revues peuvent utiliser ces services, et pourquoi les PID sont essentiels à la science ouverte."
-          ]
-        },
-        {
-          "id": "pidslink-ecosystem",
-          "heading": "Démonstrations en direct et panels d'experts",
-          "paragraphs": [
-            "Les participants assisteront à la création et à la résolution d'un ARK en direct, et découvriront comment la Bibliothèque nationale du Nigeria et ses partenaires mettent en œuvre un modèle national d'identifiants pérennes. Des intervenants de l'ARK Alliance, Crossref et ORCID discuteront de l'interopérabilité entre ARK, Crossref DOI et ORCID iD.",
-            "Un panel de jeunes chercheurs et de Campus Champions LIBSENSE du Nigeria et du Ghana partagera ensuite l'impact des ORCID iD et DOI sur leurs travaux et les mesures que les institutions peuvent prendre pour soutenir leur adoption. Le webinaire se clôturera par des étapes pratiques pour les acteurs de la recherche."
-          ]
-        },
-        {
-          "id": "community-action",
-          "heading": "Prochaines étapes pour les jeunes chercheurs",
-          "paragraphs": [
-            "Les jeunes chercheurs sont encouragés à créer ou mettre à jour leur identifiant ORCID iD et à le connecter à leurs travaux avant l'événement. Ils pourront également apprendre à créer ou rejoindre un groupe Campus Champions LIBSENSE.",
-            "• Date et heure : Mercredi 21 octobre 2026, 10:00–11:30 UTC",
-            "• Plateforme : En ligne via Zoom"
-          ]
-        }
-      ],
-      "cta": {
-        "label": "",
-        "linkText": "S'inscrire au webinaire PIDsLink",
-        "url": "https://indico.wacren.net/event/295/"
-      }
-    }
   }
 ];
+
